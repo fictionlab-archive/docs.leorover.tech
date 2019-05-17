@@ -2,7 +2,7 @@
 
 * [Welcome to LeoRover Docs](README.md)
 
-## introduction
+## Introduction
 
 ## Manuals
 
