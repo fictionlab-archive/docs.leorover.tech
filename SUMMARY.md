@@ -10,7 +10,6 @@
 
 ## Assembly manuals
 
-* [Introduction](assembly-manuals/introduction.md)
 * [3D printing](assembly-manuals/3d-printing.md)
 * [Wheel assembly](assembly-manuals/wheel-assembly.md)
 * [Frame assembly manual](assembly-manuals/frame-assembly-manual.md)
