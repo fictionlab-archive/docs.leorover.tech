@@ -1,8 +1,6 @@
 # Wheel assembly
 
-aa
-
-## List of parts & tools
+## Parts & tools
 
 ![](../.gitbook/assets/img_20190515_123406.jpg)
 
