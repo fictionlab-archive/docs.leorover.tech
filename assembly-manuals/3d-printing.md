@@ -1,6 +1,10 @@
 # 3D printing
 
-## Parts to print
+## Printed parts files
+
+[https://drive.google.com/open?id=1fjLZ5CPHxrnR3lw8I2mug7GF09sP5THD](https://drive.google.com/open?id=1fjLZ5CPHxrnR3lw8I2mug7GF09sP5THD)
+
+## Materials and quantities
 
 | ID | Name | Material | Pcs. needed | Est. time |
 | :--- | :--- | :--- | :--- | :--- |
