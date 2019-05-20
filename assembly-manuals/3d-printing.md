@@ -9,7 +9,7 @@
 | ID | Name | Material | Pcs. needed | Est. time |
 | :--- | :--- | :--- | :--- | :--- |
 | 00158 | MEB Box | Gray PLA | 1 | 11h00min |
-| 00158-cover | MEB cover | Gray PLA | 1 | 5h40m |
+| 00158-cover | MEB cover | Gray PLA | 1 | 5h40m \(20% inf.\) |
 | 00183 | Wifi adapter | Black PET / Any | 1 | 0h28m |
 | 00182 | Converter adapter | Gray PLA / Any | 1 | 1h00min |
 | 00098 | Front cover | Gray PLA | 1 |  |
