@@ -63,6 +63,8 @@
 
 ![](../.gitbook/assets/img_20190515_191833.jpg)
 
+To heat-press the inserts you'll need a cheapest soldering iron that most probably won't be used for real soldering anymore - it's messy.
+
 ![](../.gitbook/assets/img_20190515_191849.jpg)
 
 ![](../.gitbook/assets/img_20190515_191943.jpg)
@@ -70,4 +72,10 @@
 ![](../.gitbook/assets/img_20190515_191947.jpg)
 
 ![](../.gitbook/assets/img_20190515_192000.jpg)
+
+You'll have to press 12x M3 inserts in each of the wheel rims \(00129\), 4x m4 and 2x m5 inserts in Wheel Upper Mount \(00175\) and 4x M4 and 4x M3 in MEB Box \(00158\).
+
+![](../.gitbook/assets/img_20190515_124330.jpg)
+
+![](../.gitbook/assets/img_20190515_134256.jpg)
 
