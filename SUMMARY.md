@@ -6,6 +6,11 @@
 
 ## Manuals
 
+* [Software update/flashing](manuals/software-update-flashing.md)
+* [Connect to the console \(SSH\)](manuals/connect-to-the-console-ssh.md)
+* [Connect to the Internet](manuals/connect-to-the-internet.md)
+* [Change WiFi name & password](manuals/change-wifi-name-and-password.md)
+
 ## ROS tutorials
 
 ## Assembly manuals
