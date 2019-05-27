@@ -22,14 +22,14 @@ There's not enough photos here, but we're working on it. Here are some bullet po
 12. Assemble the adapter using A2 screws to Core2ROS. Plug USB connector to the Raspberry.
 13. Plug microSD extending tape to the Raspberry.
 14. Plug a USB connector of miniUSB sealed interface \(from the case\) to the RasperryPi.
-15. Put the Core2ROS + RaspberryPi assembly on the case distances and secure it using A1 screws. It will be tight, so do your best to squeeze it right.
+15. Put the Core2ROS + RaspberryPi assembly on the case distances and secure it using A1 screws. It will be tight, so do your best to squeeze it right. \(Warning! Make sure that your Core2ROS has the right firmware flashed\)
 16. Connect the power connector to Core2 and plug its green connector to Core2 6th servo interface \(3pin, closes to the edge\).
 17. Connect the camera tape to the camera.
 18. Connect the antenna to the modem and secure it with a ziptie \(it tends to disconnect if you do it wrong\).
 19. Do Wheel Cable Connection 4 times \(sorry for photos out of order\).
 20. Connect the Wheel pins to Core2ROS: red is OutA; black OutB; etc.
 21. Squeeze the microSD extender tape as much as you can in the assembly.
-22. Add the microSD card with Leo Software image.
+22. Add the microSD card with Leo Software image \([Software update/flashing](../manuals/software-update-flashing.md)\).
 23. Put a cover seal in the box groove - the loose ends should overlap each other.
 24. Tighten the cover using proper m4x12 screws.
 25. And ... woila! Done.
