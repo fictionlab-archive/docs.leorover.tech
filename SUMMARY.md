@@ -5,6 +5,7 @@
 ## Introduction
 
 * [Getting started](introduction/getting-started.md)
+* [Interface pinout](introduction/interface-pinout.md)
 
 ## Manuals
 
