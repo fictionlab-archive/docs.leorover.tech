@@ -12,7 +12,9 @@
 * [Software update/flashing](manuals/software-update-flashing.md)
 * [Connect to the console \(SSH\)](manuals/connect-to-the-console-ssh.md)
 * [Change WiFi name & password](manuals/change-wifi-name-and-password.md)
-* [Core2ROS driver manual](https://husarion.com/manuals/core2/)
+* [Upload files to your Rover](manuals/upload-files-to-your-rover.md)
+* [Husarion CORE2 board manual](https://husarion.com/manuals/core2/)
+* [Flash firmware to CORE2 board](manuals/flash-firmware-to-core2-board.md)
 
 ## ROS tutorials
 

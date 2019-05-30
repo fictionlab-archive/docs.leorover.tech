@@ -4,8 +4,6 @@
 
 To access microSD card from your Rover, open the main electronics box \(4 socket-headed screws\) and extract the card from white-tape SD-slot extension.
 
-TODO - pictures
-
 Put the microSD card in the adapter and then connect it to your computer.
 
 ## 2. Download newest LeoRover image
