@@ -19,6 +19,8 @@
 
 ## Development tutorials
 
+* [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
+
 ## Assembly manuals
 
 * [3D printing](assembly-manuals/3d-printing.md)
