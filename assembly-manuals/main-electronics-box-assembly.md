@@ -22,7 +22,7 @@ There's not enough photos here, but we're working on it. Here are some bullet po
 12. Assemble the adapter using A2 screws to Core2ROS. Plug USB connector to the Raspberry.
 13. Plug microSD extending tape to the Raspberry.
 14. Plug a USB connector of miniUSB sealed interface \(from the case\) to the RasperryPi.
-15. Put the Core2ROS + RaspberryPi assembly on the case distances and secure it using A1 screws. It will be tight, so do your best to squeeze it right. \(Warning! Make sure that your Core2ROS has the right firmware flashed\)
+15. Put the Core2ROS + RaspberryPi assembly on the case distances and secure it using A1 screws. It will be tight, so do your best to squeeze it right. \(Warning! Make sure that your Core2ROS has the right firmware flashed; [Flash firmware to CORE2 board](../manuals/flash-firmware-to-core2-board.md)\)
 16. Connect the power connector to Core2 and plug its green connector to Core2 6th servo interface \(3pin, closes to the edge\).
 17. Connect the camera tape to the camera.
 18. Connect the antenna to the modem and secure it with a ziptie \(it tends to disconnect if you do it wrong\).

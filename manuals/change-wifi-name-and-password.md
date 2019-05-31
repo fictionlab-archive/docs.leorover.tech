@@ -16,7 +16,7 @@ sudo nano /etc/hostapd/hostapd.conf
 
 An editor interface should appear.
 
-![](../.gitbook/assets/image.png)
+![](../.gitbook/assets/image%20%281%29.png)
 
 Modify `ssid` and `wpa_passphrase` fields, then type `Ctrl+O` and `Enter` to save the modified configuration and `Ctrl+X` to exit the editor.
 
