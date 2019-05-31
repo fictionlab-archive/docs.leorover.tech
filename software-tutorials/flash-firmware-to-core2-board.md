@@ -4,8 +4,6 @@
 
 Make sure that your Raspberry Pi is connected to CORE2 board through a micro USB hSerial port.
 
-TODO - picture
-
 ### 2. Download the newest Leo Rover firmware
 
 You can find all firmware versions and their changelogs on our [GitHub releases page](https://github.com/LeoRover/leo_firmware/releases).
