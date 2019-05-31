@@ -6,11 +6,9 @@ To access microSD card from your Rover, open the main electronics box \(4 socket
 
 Put the microSD card in the adapter and then connect it to your computer.
 
-## 2. Download newest LeoRover image
+## 2. Download newest Leo Rover image
 
-You can download the newest LeoRover image here:
-
-{% embed url="https://drive.google.com/file/d/1bvsTQ5c-kzSewyeoj8cQ4t2hUqLxTYa3/view" %}
+You can find all of our image [here](http://files.fictionlab.pl/leo_images/). To download the newest one, just choose `leo.img.xz` file.
 
 ## 3. Flash image to microSD card
 
