@@ -43,7 +43,7 @@ Windows is not a supported platform for ROS at the moment, so some parts may not
 
 ### C. Bootable USB drive with Ubuntu
 
-We prepared a bootable image with Ubuntu 16.04 and ROS preinstalled. It supports 64-bit architecture and both UEFI and Legacy boot. The image can be found [here](https://drive.google.com/open?id=1g46OwVfrr1-Mx9JrBzcAPIxFRX3P_0dE).
+We prepared a bootable image with Ubuntu 16.04 and ROS preinstalled. It supports 64-bit architecture and both UEFI and Legacy boot. The image can be found [here](http://files.fictionlab.pl/ubuntu-ros.zip).
 
 You will need an USB drive with at least 8GB storage capacity. To flash the image you can follow the same instructions as when flashing Rover image to SD card:
 
