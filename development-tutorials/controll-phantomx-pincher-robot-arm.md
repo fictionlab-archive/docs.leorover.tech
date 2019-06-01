@@ -1,4 +1,4 @@
-# Controlling PhantomX Pincher Robot Arm
+# Controll PhantomX Pincher Robot Arm
 
 In this tutorial, we will show you how to configure and remotely control PhantomX Pincher Robot connected to the Rover.
 

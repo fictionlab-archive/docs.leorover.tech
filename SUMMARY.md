@@ -20,7 +20,7 @@
 ## Development tutorials
 
 * [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
-* [Controlling PhantomX Pincher Robot Arm](development-tutorials/controlling-phantomx-pincher-robot-arm.md)
+* [Controll PhantomX Pincher Robot Arm](development-tutorials/controll-phantomx-pincher-robot-arm.md)
 
 ## Assembly manuals
 
