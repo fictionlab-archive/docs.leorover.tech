@@ -64,5 +64,27 @@ There's not enough photos here, but we're working on it. Here are some bullet po
 
 ![](../.gitbook/assets/img_20190515_134735.jpg)
 
+Depending on the Kit setup you'll be provided with either 1x6 goldpin plugs or 2x6 goldpin. In case of 2x6 connect mating pair of wheels into one plug.
 
+## Wheel connection
+
+Find the proper wheel name on Core2ROS driver to connect. The connectors are located in left bottom of the image below.
+
+| Wheel position | Wheel name on board |
+| :--- | :--- |
+| Front right | A |
+| Rear right | B |
+| Front left | C |
+| Rear left | D |
+
+| Cable name | Cable color |
+| :--- | :--- |
+| Out A | Red |
+| Out B | Black |
+| GND | Green |
+| +5V | Blue |
+| ENC A | Yellow |
+| ENC B | White |
+
+![](../.gitbook/assets/core2_top_small.jpg)
 
