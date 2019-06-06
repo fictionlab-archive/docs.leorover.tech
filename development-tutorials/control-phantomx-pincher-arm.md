@@ -72,7 +72,7 @@ If you are using Ubuntu on `Windows Subsytem for Linux` , you need to open Devic
 
 A terminal prompt should appear. Type `help` for list of commands.
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
 Connect the Dynamixel you want to set id to. Then type `ls` to see id of connected servo and `mv [source] [target]` to change it. For example, when the servo has id 1 and we want to set it to 2, just type `mv 1 2`. 
 
@@ -237,7 +237,7 @@ To view robot arm model with actual position:
 * Click `Add` in Displays panel
 * Select `RobotModel` and click `Ok`
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
 To test Motion Planning with MoveIt! : 
 
