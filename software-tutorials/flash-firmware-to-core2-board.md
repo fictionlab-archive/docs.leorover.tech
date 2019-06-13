@@ -38,3 +38,25 @@ sudo systemctl restart leo
 
 to restart the ROS serial node.
 
+### Troubleshooting
+
+#### bootloader not flashed
+
+If you happened to receive a not-previously-flashed CORE2 board, you might need to flash the bootloader first for a firmware to work. 
+
+To do this, download the bootloader from [here](https://files.husarion.com/bootloader/bootloader_1_0_0_core2.hex) and upload it to your Rover, or if you connected the Rover to the Internet, just type:
+
+```bash
+wget https://files.husarion.com/bootloader/bootloader_1_0_0_core2.hex
+```
+
+Then, do the following commands:
+
+```bash
+/opt/husarion/tools/rpi-linux/core2-flasher --unprotect
+/opt/husarion/tools/rpi-linux/core2-flasher bootloader_1_0_0_core2.hex
+/opt/husarion/tools/rpi-linux/core2-flasher --protect
+```
+
+Now you can proceed with the firmware flashing operation.
+
