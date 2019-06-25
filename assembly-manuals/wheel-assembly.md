@@ -4,7 +4,21 @@
 
 ![](../.gitbook/assets/img_20190515_123406.jpg)
 
+{% hint style="info" %}
+
+{% endhint %}
+
 ![](../.gitbook/assets/img_20190515_123608.jpg)
+
+## Prepare aluminum tubes \(part no. 00008\)
+
+{% hint style="info" %}
+If you received the aluminum tubes with plastic motor mounts already attached - continue to the next point.
+{% endhint %}
+
+![](../.gitbook/assets/00025.jpg) 
+
+If you 3d-printed plastic parts on your own, you'll need to glue the plastic motor mounts to the tubes using any resin-based glue \(do not use cyanoacrylate glues - the 5 minute ones etc., because they tend not to stick to the plastic\).
 
 ## Ball bearings and sealing
 
