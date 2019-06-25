@@ -14,7 +14,7 @@
 * [Change WiFi name & password](software-tutorials/change-wifi-name-and-password.md)
 * [Connect to the Internet](software-tutorials/connect-to-the-internet.md)
 * [Upload files to your Rover](software-tutorials/upload-files-to-your-rover.md)
-* [Husarion CORE2 board manual](https://husarion.com/manuals/core2/)
+* [\[external\] Husarion CORE2 board manual](https://husarion.com/manuals/core2/)
 * [Flash firmware to CORE2 board](software-tutorials/flash-firmware-to-core2-board.md)
 
 ## Development tutorials
