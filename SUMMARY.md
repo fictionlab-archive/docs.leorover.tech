@@ -19,7 +19,8 @@
 
 ## Development tutorials
 
-* [Leo Rover's Software Structure](development-tutorials/leo-rovers-software-structure.md)
+* [Hardware Structure](development-tutorials/hardware-structure.md)
+* [Software Structure](development-tutorials/software-structure.md)
 * [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
 * [Control PhantomX Pincher Arm](development-tutorials/control-phantomx-pincher-arm.md)
 

@@ -1,4 +1,4 @@
-# Leo Rover's Software Structure
+# Software Structure
 
 ![](../.gitbook/assets/image%20%2810%29.png)
 
