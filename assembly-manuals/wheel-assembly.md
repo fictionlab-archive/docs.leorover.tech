@@ -1,7 +1,5 @@
 # Wheel assembly
 
-
-
 ![](../.gitbook/assets/a0002-section.jpg)
 
 ## Parts & tools
