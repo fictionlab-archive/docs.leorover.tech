@@ -12,7 +12,7 @@ Before you begin, make sure you have internet connection on your Rover.
 
 Also, you need to have ROS installed on your computer.
 
-{% page-ref page="install-ros-on-your-computer.md" %}
+{% page-ref page="../development-tutorials/install-ros-on-your-computer.md" %}
 
 And, of course, assembled Pincher Arm together with ArbotiX-M Robocontroller connected to your Rover. 
 

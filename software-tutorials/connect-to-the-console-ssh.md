@@ -4,7 +4,7 @@
 
 Before you can connect to Rover's console, you need to connect to WiFi network. 
 
-{% page-ref page="../introduction/getting-started.md" %}
+{% page-ref page="../getting-started.md" %}
 
 ## on Windows via Putty
 

@@ -13,7 +13,7 @@ Password: password
 
 For instructions on how to change WiFi network credentials, you can visit this page:
 
-{% page-ref page="../software-tutorials/change-wifi-name-and-password.md" %}
+{% page-ref page="software-tutorials/change-wifi-name-and-password.md" %}
 
 Connect to the network.
 

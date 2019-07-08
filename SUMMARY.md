@@ -1,11 +1,11 @@
 # Table of contents
 
 * [Welcome to Leo Rover Docs](README.md)
+* [Getting started](getting-started.md)
 
-## Introduction
+## Addons manuals
 
-* [Getting started](introduction/getting-started.md)
-* [Interface pinout](introduction/interface-pinout.md)
+* [Control PhantomX Pincher Arm](addons-manuals/control-phantomx-pincher-arm.md)
 
 ## Software tutorials
 
@@ -19,10 +19,10 @@
 
 ## Development tutorials
 
-* [Hardware Structure](development-tutorials/hardware-structure.md)
+* [Hardware Structure](development-tutorials/hardware-structure/README.md)
+  * [Interface pinout](development-tutorials/hardware-structure/interface-pinout.md)
 * [Software Structure](development-tutorials/software-structure.md)
 * [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
-* [Control PhantomX Pincher Arm](development-tutorials/control-phantomx-pincher-arm.md)
 
 ## Assembly manuals
 
