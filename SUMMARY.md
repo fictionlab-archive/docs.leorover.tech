@@ -31,4 +31,5 @@
 * [Frame assembly manual](assembly-manuals/frame-assembly-manual.md)
 * [Suspension assembly manual](assembly-manuals/suspension-assembly-manual.md)
 * [Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
+* [Battery Box assembly](assembly-manuals/battery-box-assembly.md)
 
