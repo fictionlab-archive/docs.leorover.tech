@@ -2,7 +2,7 @@
 
 ## Flashing new Raspberry Pi image
 
-The newest Raspberry Pi image for Leo Rover was released on `7th July 2019`
+The newest Raspberry Pi image for Leo Rover was released on `15th July 2019`
 
 ### 1. Access microSD card 
 
