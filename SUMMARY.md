@@ -6,6 +6,7 @@
 ## Addons manuals
 
 * [Control PhantomX Pincher Arm](addons-manuals/control-phantomx-pincher-arm.md)
+* [Control 4 relays](addons-manuals/control-4-relays.md)
 
 ## Software tutorials
 
