@@ -26,8 +26,6 @@ Make sure the Rover is connected to the internet
 
 In the tutorial we are using hSense1 port to connect relays to the board.
 
-You can use any hSense port you want, just make sure to remember it going through the tutorial.
-
 ![](../.gitbook/assets/core2_top_small%20%281%29.jpg)
 
 ![](../.gitbook/assets/zrzut-ekranu-z-2019-08-08-10-54-15.png)
