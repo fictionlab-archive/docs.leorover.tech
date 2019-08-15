@@ -1,14 +1,12 @@
 # Change WiFi name & password
 
-## 1. Connect to the Rover console
-
-Instructions on how to do this can be found on this page:
+## Prerequisites
 
 {% page-ref page="connect-to-the-console-ssh.md" %}
 
-## 2. Modify Access Point configuration file
+## Modify the access point configuration file
 
-You can use `nano` or `vim` editors to modify the configuration file. To edit the file with `nano`, type:
+Modify the 'hostapd.conf' configuration file by typing:
 
 ```bash
 sudo nano /etc/hostapd/hostapd.conf
@@ -18,15 +16,23 @@ An editor interface should appear.
 
 ![](../.gitbook/assets/image%20%283%29.png)
 
-Modify `ssid` and `wpa_passphrase` fields, then type `Ctrl+O` and `Enter` to save the modified configuration and `Ctrl+X` to exit the editor.
+Modify the `ssid` and `wpa_passphrase` fields.
 
-In order to apply the modifications, you need to restart the access points daemon. To do so, just type:
+`ssid` corresponds to the access point name \(default: LeoRover-XXYYY\) and  `wpa_passphrase` is the network password \(default: password\).
+
+Type `Ctrl+O` and `Enter` to save the modified configuration and `Ctrl+X` to exit the editor.
+
+In order to apply the modifications, you need to restart the access point. To do so, just type:
 
 ```bash
 sudo systemctl restart hostapd
 ```
 
+{% hint style="success" %}
+Done.
+{% endhint %}
+
 {% hint style="info" %}
-In some cases, you might need to restart the Rover 
+In some cases, the changes may appear only after you restart the Rover 
 {% endhint %}
 

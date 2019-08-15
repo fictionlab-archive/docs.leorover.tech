@@ -2,11 +2,13 @@
 
 ## Prerequisites
 
-Before you can connect to Rover's console, you need to connect to WiFi network. 
+Connect to the Rover WiFi network.
 
 {% page-ref page="../getting-started.md" %}
 
-## on Windows via Putty
+## Connect via SSH
+
+### on Windows via Putty
 
 Download and install [Putty](https://www.putty.org/) - it will allow you to establish SSH connection with the Rover and open command console.
 
@@ -25,7 +27,7 @@ login: `husarion`  password: `husarion`
 
 You'll see something like this. You're in!
 
-## on Windows 10 via OpenSSH
+### on Windows 10 via OpenSSH
 
 Open `run` command line \(⊞ Win + X and click `Run` or ⊞ Win + R\)
 
@@ -43,7 +45,7 @@ ssh husarion@10.0.0.1
 
 password: `husarion`
 
-## on Linux or Mac
+### on Linux or Mac
 
 Access command console and enter:
 
