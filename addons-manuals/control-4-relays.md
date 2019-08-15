@@ -2,12 +2,12 @@
 
 In this tutorial, we will show you how to configure and remotely control relays via additional user's web interface.
 
-![relays board ](../.gitbook/assets/20f89e2c6f6df9d5aecdb9c46b559d5478fdd8e2.jpg)
+![Relay board ](../.gitbook/assets/20f89e2c6f6df9d5aecdb9c46b559d5478fdd8e2.jpg)
 
-## Items needed:
+## Items needed
 
-* LeoRover with Husarion board
-* 4 channels relay's board 
+* Leo Rover
+* 4 channel relay board 
 * IDC plug 2x3
 * ribbon cable \(6 cores\)
 * 3D printed cover
@@ -22,23 +22,25 @@ Make sure the Rover is connected to the internet
 
 {% page-ref page="../software-tutorials/connect-to-the-internet.md" %}
 
-## 1. Connect your relay board to Core2ROS board
+## 1. Connect the relay board to Core2-ROS
 
 In the tutorial we are using hSense1 port to connect relays to the board.
+
+Connect the relay board to hSense1 port using IDC plug. Pins 1-4 are for signals, 5 is +5V and the last one is GND.
 
 ![](../.gitbook/assets/core2_top_small%20%281%29.jpg)
 
 ![](../.gitbook/assets/zrzut-ekranu-z-2019-08-08-10-54-15.png)
 
-Connect the relay board to hSense1 port using IDC plug. Pins 1-4 are for signals, 5 is +5V and the last one is GND.
+
 
 {% hint style="info" %}
 Well done! Hardware is ready
 {% endhint %}
 
-## 2. Flash firmware into Husarion
+## 2. Flash a dedicated firmware to enable hSense1 port
 
-### 1. Download dedicated firmware with additional functionality to handle the relays
+### 1. Download a dedicated firmware
 
 [https://github.com/szlachcic/leo\_firmware\_relay/releases](https://github.com/szlachcic/leo_firmware_relay/releases)
 
@@ -62,9 +64,10 @@ sudo systemctl restart leo
 
 to restart ROS serial node.
 
-### 4. Troubleshooting - if bootloader not flashed
+{% hint style="info" %}
+### Troubleshooting - if bootloader not flashed
 
-If you a brand new CORE2 board, you may need to flash its bootloader for a firmware to work.
+If you have a brand new CORE2 board \(never flashed\), you may need to flash its bootloader for a firmware to work.
 
 Download the bootloader from [here](https://files.husarion.com/bootloader/bootloader_1_0_0_core2.hex) and upload it to your Rover or, if you connected the Rover to the Internet, just type:
 
@@ -80,7 +83,8 @@ Then, type the following commands:
 /opt/husarion/tools/rpi-linux/core2-flasher --protect
 ```
 
-Now you can proceed with the firmware flashing operation.
+Now you can get back to the firmware flashing operation.
+{% endhint %}
 
 ## 3. Build additional user web interface
 
@@ -100,13 +104,13 @@ cd /etc/nginx/sites-available
 sudo cp leo_ui leo_ui_relay
 ```
 
-Open the created file as root to make changes in server configuration
+Open the created file
 
 ```text
 sudo nano leo_ui_relay 
 ```
 
-Make changes according to below
+and make changes in the lines as below
 
 ```text
 listen 80 default_server;        ==>    listen 90 default_server;
@@ -116,7 +120,7 @@ root /opt/leo_ui;                ==>    root /opt/leo_ui_relay;
 ```
 
 {% hint style="info" %}
-Do not forget about saving file by typing ctrl+o
+Save the file - type ctrl+o 
 {% endhint %}
 
 #### 3. Restart nginx service
