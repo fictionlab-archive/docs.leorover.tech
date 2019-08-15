@@ -1,6 +1,6 @@
 # Welcome to Leo Rover Docs
 
-![](.gitbook/assets/leo-rover_logo-final-package-15.png)
+![](.gitbook/assets/leo-rover_logo-final-package-13.jpg)
 
 {% hint style="info" %}
 If you want to access Turtle Rover docs \(previous version of the Rover\), see:
