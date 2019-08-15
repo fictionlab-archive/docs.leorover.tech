@@ -1,4 +1,4 @@
-# Flash firmware to CORE2 board
+# Flash firmware to Core2-ROS board
 
 ### 1. Check connection to USB hSerial port
 
