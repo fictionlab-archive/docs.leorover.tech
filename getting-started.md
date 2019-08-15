@@ -23,5 +23,9 @@ To access Web User Interface, enter your web browser and type in the address lin
 http://10.0.0.1/
 ```
 
+## Leo Rover UI \(leo\_ui\)
+
+![](.gitbook/assets/leo-day-2.png)
+
 
 
