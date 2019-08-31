@@ -7,6 +7,8 @@
 
 * [PhantomX Pincher Arm](addons-manuals/control-phantomx-pincher-arm.md)
 * [Relay module](addons-manuals/control-4-relays.md)
+* [GPS module \(coming soon\)](addons-manuals/gps-module-coming-soon.md)
+* [IMU module \(coming soon\)](addons-manuals/imu-module.md)
 
 ## Software tutorials
 
