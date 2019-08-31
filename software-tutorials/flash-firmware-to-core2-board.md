@@ -1,5 +1,11 @@
 # Flash firmware to Core2-ROS board
 
+{% hint style="info" %}
+If your Core2-ROS board has not been previously flashed, you may need to flash the bootloader first for a firmware to work.
+
+To do that - go to 'troubleshooting' section.
+{% endhint %}
+
 ### 1. Check connection to USB hSerial port
 
 Make sure that your Raspberry Pi is connected to CORE2 board through a micro USB hSerial port.
@@ -24,7 +30,7 @@ This part is already covered in our previous tutorial:
 
 ### 5. Flash the firmware
 
-Make sure you are in the home directory \(`/home/husarion`\) and type:
+Make sure you are in the home directory \(by default you should be there;`/home/husarion`\) and type:
 
 ```bash
 /opt/husarion/tools/rpi-linux/core2-flasher leo_firmware.hex
@@ -42,7 +48,7 @@ to restart the ROS serial node.
 
 #### bootloader not flashed
 
-If you happened to receive a not-previously-flashed CORE2 board, you might need to flash the bootloader first for a firmware to work. 
+If your Core2-ROS board has not been previously flashed, you may need to flash the bootloader first for a firmware to work. 
 
 To do this, download the bootloader from [here](https://files.husarion.com/bootloader/bootloader_1_0_0_core2.hex) and upload it to your Rover, or if you connected the Rover to the Internet, just type:
 
