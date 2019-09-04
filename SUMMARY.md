@@ -12,8 +12,8 @@
 
 ## Software tutorials
 
-* [Software update/flashing](software-tutorials/software-update-flashing.md)
-* [Flash firmware to Core2-ROS board](software-tutorials/flash-firmware-to-core2-board.md)
+* [Software update](software-tutorials/software-update-flashing.md)
+* [Firmware update](software-tutorials/flash-firmware-to-core2-board.md)
 * [Connect to the console \(SSH\)](software-tutorials/connect-to-the-console-ssh.md)
 * [Change WiFi name & password](software-tutorials/change-wifi-name-and-password.md)
 * [Connect to the Internet](software-tutorials/connect-to-the-internet.md)

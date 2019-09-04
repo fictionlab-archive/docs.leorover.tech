@@ -1,4 +1,4 @@
-# Software update/flashing
+# Software update
 
 ## Flashing new Raspberry Pi image
 
