@@ -6,7 +6,9 @@
 ## Addons manuals
 
 * [PhantomX Pincher Arm](addons-manuals/control-phantomx-pincher-arm.md)
-* [Relay module](addons-manuals/control-4-relays.md)
+* [Relay module](addons-manuals/control-4-relays/README.md)
+  * [Sample UI- relay funcionality](addons-manuals/control-4-relays/sample-ui-relay-funcionality.md)
+  * [Firmware modification- relay functionality](addons-manuals/control-4-relays/firmware-modification-relay-functionality.md)
 * [GPS module \(coming soon\)](addons-manuals/gps-module-coming-soon.md)
 * [IMU module \(coming soon\)](addons-manuals/imu-module.md)
 
@@ -22,6 +24,7 @@
 
 ## Development tutorials
 
+* [UI Structure \(coming soon\)](development-tutorials/ui-structure-coming-soon.md)
 * [Hardware Structure](development-tutorials/hardware-structure/README.md)
   * [Interface pinout](development-tutorials/hardware-structure/interface-pinout.md)
 * [Software Structure](development-tutorials/software-structure.md)
