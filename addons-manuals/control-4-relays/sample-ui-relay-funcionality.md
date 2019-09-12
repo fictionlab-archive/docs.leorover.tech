@@ -8,11 +8,11 @@ In this tutorial we will try to teach you how to build your own custom user's in
 
 #### 1. Tool for editing code 
 
-If you would like to develop user's interface you don't need any specific tools- the simplest text editor is enough. But is easier to develop WEB page in code editor, so we strongly recommend using Visual Studio Code- there is some useful tools which we will use ;-\)
+If you would like to develop user's interface you won't need any specific tools- the simplest text editor is enough. But is easier to develop WEB page in code editor, so we strongly recommend using Visual Studio Code- there are some useful tools which we will use ;-\)
 
 #### 2. Download Visual Studio Code
 
-Visual Studio Code is free code editor. You can easy download [ it here https://code.visualstudio.com/download](https://code.visualstudio.com/download). Chose your operating system and go across instalation process.
+Visual Studio Code is free code editor. You can easly download [ it here https://code.visualstudio.com/download](https://code.visualstudio.com/download). Choose your operating system and go across instalation process.
 
 #### 3. Download sample UI
 
@@ -24,16 +24,16 @@ First, prepare directory for your workspace. We will put there UI files.
 git clone https://github.com/LeoRover/leo_ui_sample_relay.git
 ```
 
-   2. In diferent case you can download it directly from [https://github.com/LeoRover/leo\_ui\_sample\_relay](https://github.com/LeoRover/leo_ui_sample_relay) and unzip to your directory.
+   2. In other case you can download it directly from [https://github.com/LeoRover/leo\_ui\_sample\_relay](https://github.com/LeoRover/leo_ui_sample_relay) and unzip to your directory.
 
 #### 4. Visual Studia Code configuration
 
-Open directory leo\_ui\_sample\_relay in VS code. For simples checking how our website look like during development, we will add VS code extension called Live Server. 
+Open directory leo\_ui\_sample\_relay in VS code. For simpler checking how our website look like during development, we will add VS code extension called Live Server. 
 
 ![](../../.gitbook/assets/zrzut-ekranu-z-2019-09-07-13-07-30.png)
 
 {% hint style="info" %}
-If sample UI's code is opened and extension is added corectyl you should see image like below.
+If sample UI's code is opened and extension is added corectly you should see image like below.
 {% endhint %}
 
 ![](../../.gitbook/assets/zrzut-ekranu-z-2019-09-07-13-13-17.png)
@@ -42,23 +42,23 @@ If sample UI's code is opened and extension is added corectyl you should see ima
 
 ![](../../.gitbook/assets/zrzut-ekranu-z-2019-09-07-13-18-45.png)
 
-Screenshot of directory tree shows content of directory. As you can noticed leo\_ui\_sample\_relay directory contain four subdirectory: css, fonts, img, js and file index.html. Rest of files are not necessary. Check content of every files inside these directories. 
+Screenshot of directory tree shows content of directory. As you can notice leo\_ui\_sample\_relay directory contains four subdirectories: css, fonts, img, js and file index.html. The rest of files are not necessary. Check content of every file inside these directories. 
 
-In UI we used open sourced libraries. Check them useing links on the list below.
+In UI we used open sourced libraries. Check them using links on the list below.
 
 * Bootstrap 4 [https://getbootstrap.com/](https://getbootstrap.com/)
 * roslibjs [http://wiki.ros.org/roslibjs](http://wiki.ros.org/roslibjs)
 * jQuery [https://jquery.com/](https://jquery.com/)
 
 {% hint style="info" %}
-In the following part of tutorial we will focuse on index.html and leo.js file and application os included libraries. If you would like to know more check [https://www.w3schools.com/html/](https://www.w3schools.com/html/) and API/documentacion of included libraries.
+In the following part of tutorial we will focuse on index.html and leo.js file and application of included libraries. If you would like to know more check [https://www.w3schools.com/html/](https://www.w3schools.com/html/) and API/documentacion of included libraries.
 {% endhint %}
 
 ## 2. Code description step by step
 
 ### index.html
 
-First part of HTML code is head. It is contain information how web browser should interpret code
+First part of HTML code is head. It contains information how web browser should interpret code
 
 * character encoding for the HTML document
 * title and website logo 
@@ -104,9 +104,9 @@ First part of HTML code is head. It is contain information how web browser shoul
 
 ### index.html
 
-Secon part of HTML code is body. It is contain decsription how our website look like and inicialization of JavaScript function.
+Secon part of HTML code is body. It contains decsription how our website look like and inicialization of JavaScript function.
 
-In the begining of body part is description of website nav bar. Every class used below are from Bootstarp 4 library. If you want to know more or  build your custom nav bar check this: [https://getbootstrap.com/docs/4.3/components/navbar/](https://getbootstrap.com/docs/4.3/components/navbar/)
+In the begining of body part ther is description of website nav bar. Every class used below is from Bootstarp 4 library. If you want to know more or  build your custom nav bar check this: [https://getbootstrap.com/docs/4.3/components/navbar/](https://getbootstrap.com/docs/4.3/components/navbar/)
 
 ```text
 <nav class="navbar navbar-expand-md bg-bar">
@@ -147,19 +147,19 @@ In the begining of body part is description of website nav bar. Every class used
 	</nav>
 ```
 
-Propobly if you were studing nav bar code you have noticed function call "oncilick". We are using it to intialize of functions after specyfic buttons on nav bar are presed.
+Probably if you were studying nav bar code you have noticed function call "oncilick". We are using it to intialize functions after specyfic buttons on nav bar are presed.
 
-List of functions initiazlize after buttons presed:
+List of functions initiazlize after buttons pressed:
 
 * fullScreen\(\)
 * systemReboot\(\)
 * turnOff\(\)
 
-Description how these functions works you will find in leo.js paragraph.
+Description of how these functions works you will find in leo.js paragraph.
 
 ### index.html
 
-Next in body part of HTML code we can notice description of relay switches. If switch is presed functions are initialize. These functionsalso will be described in leo.js paragraph.
+Next in body part of HTML code we can notice description of relay switches. If switch is pressed, functions are initialized. These functionsalso will be described in leo.js paragraph.
 
 {% hint style="info" %}
 Check description of Bootstrap 4 switches class: [https://getbootstrap.com/docs/4.3/components/forms/\#switches](https://getbootstrap.com/docs/4.3/components/forms/#switches)
