@@ -33,7 +33,7 @@ This part is already covered in our previous tutorial:
 Make sure you are in the home directory \(by default you should be there;`/home/husarion`\) and type:
 
 ```bash
-/opt/husarion/tools/rpi-linux/core2-flasher leo_firmware.hex
+sudo /opt/husarion/tools/rpi-linux/core2-flasher leo_firmware.hex
 ```
 
 {% hint style="warning" %}
