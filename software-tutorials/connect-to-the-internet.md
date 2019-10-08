@@ -12,7 +12,7 @@ Then, open the network manager text user interface \(you need root privileges to
 sudo nmtui
 ```
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2818%29.png)
 
 Select `Activate a connection` and choose your network from list below.
 
@@ -32,7 +32,7 @@ Open your web browser and type in the address bar:
 http://192.168.50.1:8600
 ```
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2820%29.png)
 
 Click `Connect to Wi-Fi network`.Choose your network, type the password and click `Continue`.
 

@@ -1,4 +1,4 @@
-# Sample UI- relay funcionality
+# Sample UI - relay functionality
 
 In this tutorial we will try to teach you how to build your own custom user's interface based on sample UI prepared for relays. 
 

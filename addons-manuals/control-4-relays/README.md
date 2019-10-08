@@ -24,9 +24,9 @@ Make sure the Rover is connected to the internet
 
 ## 1. Connect the relay board to Core2-ROS
 
-In the tutorial we are using hSense1 port to connect relays to the board.
+In the tutorial we are using hSens1 port to connect relays to the board.
 
-Connect the relay board to hSense1 port using IDC plug. Pins 1-4 are for signals, 5 is +5V and the last one is GND.
+Connect the relay board to hSens1 port using IDC plug. Pins 1-4 are for signals, 5 is +5V and the last one is GND.
 
 ![](../../.gitbook/assets/core2_top_small%20%281%29.jpg)
 
