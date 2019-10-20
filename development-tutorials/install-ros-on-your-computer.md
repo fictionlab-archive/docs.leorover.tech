@@ -22,9 +22,9 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 Reboot when prompted
 
-Install [Ubuntu 16.04](https://www.microsoft.com/pl-pl/p/ubuntu-1604-lts/9pjn388hp8c9) from Microsoft Store and open the application.
+Install [Ubuntu 16.04](https://www.microsoft.com/pl-pl/p/ubuntu-1604-lts/9pjn388hp8c9) or [Ubuntu 18.04](https://www.microsoft.com/pl-pl/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab) from Microsoft Store and open the application.
 
-You can now follow steps from [ros installation tutorial](http://wiki.ros.org/kinetic/Installation/Ubuntu) on ROS wiki.
+You can now follow steps from [ros installation tutorial](http://wiki.ros.org/ROS/Installation) on ROS wiki \(Choose Kinetic for Ubuntu 16.04 or Melodic for 18.04\).
 
 To run graphical applications, you need to install X server on Windows. We recommend using [VcXsrv](https://sourceforge.net/projects/vcxsrv/). Install it and run with default configuration except for `Native OpenGL` which should be unchecked \(otherwise, `rviz` may fail to launch\)
 
@@ -43,7 +43,7 @@ Windows is not a supported platform for ROS at the moment, so some parts may not
 
 ### C. Bootable USB drive with Ubuntu
 
-We prepared a bootable image with Ubuntu 16.04 and ROS preinstalled. It supports 64-bit architecture and both UEFI and Legacy boot. The image can be found [here](http://files.fictionlab.pl/ubuntu-ros.zip).
+We prepared bootable images with Ubuntu and ROS preinstalled. They support 64-bit architecture and both UEFI and Legacy boot. The images can be found [here](http://files.fictionlab.pl/ubuntu_ros_images/). Choose either Ubuntu 16.04 with ROS Kinetic or Ubuntu 18.04 with ROS Melodic.
 
 You will need an USB drive with at least 8GB storage capacity. To flash the image you can follow the same instructions as when flashing Rover image to SD card:
 
