@@ -27,8 +27,8 @@
 * [UI Structure \(coming soon\)](development-tutorials/ui-structure-coming-soon.md)
 * [Hardware Structure](development-tutorials/hardware-structure/README.md)
   * [Interface pinout](development-tutorials/hardware-structure/interface-pinout.md)
-* [Software Structure](development-tutorials/software-structure.md)
 * [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
+* [Software Development](development-tutorials/software-development.md)
 
 ## Assembly manuals
 
