@@ -1,4 +1,4 @@
-# Check the boxes
+# Check if you have everything
 
 Here you have part-count lists which you can use to check if everything needed to assemble the Rover is on table.
 

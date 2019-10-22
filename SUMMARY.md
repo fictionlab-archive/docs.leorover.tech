@@ -32,6 +32,7 @@
 
 ## Assembly manuals
 
+* [Check if you have everything](assembly-manuals/check-the-boxes.md)
 * [Wheel assembly](assembly-manuals/wheel-assembly.md)
 * [Frame assembly manual](assembly-manuals/frame-assembly-manual.md)
 * [Suspension assembly manual](assembly-manuals/suspension-assembly-manual.md)
@@ -39,5 +40,4 @@
 * [Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
 * [Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
 * [\[Archive\] 3D printing](assembly-manuals/3d-printing.md)
-* [Check the boxes](assembly-manuals/check-the-boxes.md)
 
