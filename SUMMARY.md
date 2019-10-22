@@ -39,4 +39,5 @@
 * [Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
 * [Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
 * [\[Archive\] 3D printing](assembly-manuals/3d-printing.md)
+* [Check the boxes](assembly-manuals/check-the-boxes.md)
 
