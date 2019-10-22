@@ -2,6 +2,8 @@
 
 In this tutorial, we will show you how to configure and remotely control PhantomX Pincher Robot connected to the Rover.
 
+![](../.gitbook/assets/71099672_434779074055562_670313626036338688_n%20%281%29.jpg)
+
 
 
 ![source: trossenrobotics.com](../.gitbook/assets/image%20%287%29.png)
