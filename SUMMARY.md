@@ -20,7 +20,7 @@
 * [Change WiFi name & password](software-tutorials/change-wifi-name-and-password.md)
 * [Connect to the Internet](software-tutorials/connect-to-the-internet.md)
 * [Upload files to your Rover](software-tutorials/upload-files-to-your-rover.md)
-* [\[external\] Husarion CORE2 board manual](https://husarion.com/manuals/core2/)
+* [Husarion CORE2-ROS controller](software-tutorials/husarion-core2-ros-controller.md)
 
 ## Development tutorials
 
@@ -32,10 +32,11 @@
 
 ## Assembly manuals
 
-* [3D printing](assembly-manuals/3d-printing.md)
 * [Wheel assembly](assembly-manuals/wheel-assembly.md)
 * [Frame assembly manual](assembly-manuals/frame-assembly-manual.md)
 * [Suspension assembly manual](assembly-manuals/suspension-assembly-manual.md)
 * [Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
-* [Battery Box assembly](assembly-manuals/battery-box-assembly.md)
+* [Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
+* [Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
+* [\[Archive\] 3D printing](assembly-manuals/3d-printing.md)
 
