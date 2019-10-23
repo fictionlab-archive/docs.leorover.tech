@@ -132,13 +132,104 @@ description: Main Electronics Box = MEB (for future references)
 
 ![](../.gitbook/assets/p1010818_wynik.JPG)
 
-![](../.gitbook/assets/p1010820_wynik%20%281%29.JPG)
+![](../.gitbook/assets/p1010821_wynik.JPG)
 
-\[Rest of the photos will be available soon. Sorry for the inconvenience.\]
+![](../.gitbook/assets/p1010822_wynik.JPG)
 
+![](../.gitbook/assets/p1010824_wynik.JPG)
 
+![](../.gitbook/assets/p1010825_wynik.JPG)
 
-1. 
+## 9. Core2-ROS assembly and cabling
+
+![](../.gitbook/assets/p1010827_wynik.JPG)
+
+![](../.gitbook/assets/p1010829_wynik.JPG)
+
+![](../.gitbook/assets/p1010830_wynik.JPG)
+
+![](../.gitbook/assets/p1010831_wynik.JPG)
+
+![](../.gitbook/assets/p1010832_wynik.JPG)
+
+![](../.gitbook/assets/p1010833_wynik%20%281%29.JPG)
+
+![](../.gitbook/assets/p1010834_wynik.JPG)
+
+![](../.gitbook/assets/p1010836_wynik.JPG)
+
+![](../.gitbook/assets/p1010837_wynik.JPG)
+
+![](../.gitbook/assets/p1010839_wynik.JPG)
+
+![](../.gitbook/assets/p1010840_wynik.JPG)
+
+![](../.gitbook/assets/p1010841_wynik.JPG)
+
+![](../.gitbook/assets/p1010842_wynik.JPG)
+
+![](../.gitbook/assets/p1010845_wynik.JPG)
+
+![](../.gitbook/assets/p1010846_wynik.JPG)
+
+![](../.gitbook/assets/p1010848_wynik.JPG)
+
+![](../.gitbook/assets/p1010851_wynik.JPG)
+
+## 10. WiFi modem assembly
+
+![](../.gitbook/assets/p1010853_wynik.JPG)
+
+![](../.gitbook/assets/p1010861_wynik.JPG)
+
+![](../.gitbook/assets/p1010862_wynik.JPG)
+
+![](../.gitbook/assets/p1010863_wynik.JPG)
+
+![](../.gitbook/assets/p1010864_wynik.JPG)
+
+![](../.gitbook/assets/p1010866_wynik.JPG)
+
+![](../.gitbook/assets/p1010870_wynik.JPG)
+
+![](../.gitbook/assets/p1010872_wynik%20%281%29.JPG)
+
+![](../.gitbook/assets/p1010875_wynik.JPG)
+
+![](../.gitbook/assets/p1010877_wynik.JPG)
+
+![](../.gitbook/assets/p1010878_wynik.JPG)
+
+![](../.gitbook/assets/p1010882_wynik.JPG)
+
+![](../.gitbook/assets/p1010884_wynik.JPG)
+
+## 11. Seal assembly
+
+![](../.gitbook/assets/p1010887_wynik.JPG)
+
+![](../.gitbook/assets/p1010891_wynik.JPG)
+
+![](../.gitbook/assets/p1010893_wynik.JPG)
+
+![](../.gitbook/assets/p1010895_wynik.JPG)
+
+## 12. Cover assembly
+
+![](../.gitbook/assets/p1010898_wynik.JPG)
+
+![](../.gitbook/assets/p1010900_wynik.JPG)
+
+![](../.gitbook/assets/p1010902_wynik.JPG)
+
+![](../.gitbook/assets/p1010903_wynik.JPG)
+
+![](../.gitbook/assets/p1010907_wynik.JPG)
+
+![](../.gitbook/assets/p1010908_wynik.JPG)
+
+![](../.gitbook/assets/p1010910_wynik.JPG)
+
 ## Wheel connection
 
 Depending on the Kit setup you'll be provided with either 1x6 goldpin plugs or 2x6 goldpin. In case of 2x6 connect mating pair of wheels into one plug.
