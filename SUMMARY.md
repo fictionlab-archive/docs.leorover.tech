@@ -11,6 +11,7 @@
   * [Firmware modification - relay functionality](addons-manuals/control-4-relays/firmware-modification-relay-functionality.md)
 * [GPS module \(coming soon\)](addons-manuals/gps-module-coming-soon.md)
 * [IMU module](addons-manuals/imu-module.md)
+* [USB Camera](addons-manuals/usb-camera.md)
 
 ## Software tutorials
 
