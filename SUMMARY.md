@@ -21,10 +21,10 @@
 * [Change WiFi name & password](software-tutorials/change-wifi-name-and-password.md)
 * [Connect to the Internet](software-tutorials/connect-to-the-internet.md)
 * [Upload files to your Rover](software-tutorials/upload-files-to-your-rover.md)
-* [Husarion CORE2-ROS controller](software-tutorials/husarion-core2-ros-controller.md)
 
 ## Development tutorials
 
+* [Husarion CORE2-ROS controller](development-tutorials/husarion-core2-ros-controller.md)
 * [UI Structure \(coming soon\)](development-tutorials/ui-structure-coming-soon.md)
 * [Hardware Structure](development-tutorials/hardware-structure/README.md)
   * [Interface pinout](development-tutorials/hardware-structure/interface-pinout.md)
