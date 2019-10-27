@@ -93,6 +93,139 @@ Leo firmware provides many parameters that can be adjusted for more personalized
 
 To modify some parameters, open `params.h` file and change selected values. Next, build the firmware again \(`Ctrl+Shift+B`\).
 
+### Write your own custom firmware
+
+To write a custom project, create a new folder and open it in VS Code. Then, type `Ctrl+Shift+P`, `Create Husarion project`. New files should spawn. 
+
+To set project name, open `CMakeLists.txt` and change `myproject` to your custom name.
+
+Now, you can build the project \(`Ctrl+Shift+B`\) and, if the build was successful, a `myproject.hex` file should appear \(or another if you changed the project name\).
+
+Now, you can edit `main.cpp` file to write your custom code.
+
+There are many examples on [Husarion docs page](https://husarion.com/software/hframework/%20) and in [hFramework repository](https://github.com/husarion/hFramework/tree/master/examples/core2) that present basic functionality provided by the library. You can also take a look at [hFramework API reference](https://husarion.com/core2/api_reference/classes.html%20) to learn more about available classes and their application.
+
+To communicate with Raspberry Pi, however, you need to use ROS topics.   
+The rosserial client library is provided in hROS module, so make sure to have this line is present in your `CMakeLists.txt`:
+
+```text
+enable_module(hROS)
+```
+
+Here's an example code that uses hFramework to interact with CORE2 board hardware and hROS to communicate with rosserial node on Raspberry Pi: 
+
+```cpp
+#include "hFramework.h"
+
+// Include ROS client library and the needed message type definitions
+#include "ros.h"
+#include "std_msgs/Bool.h"
+#include "std_msgs/Empty.h"
+
+using namespace hFramework;
+
+// Declare necessary global variables
+ros::NodeHandle nh;
+
+std_msgs::Bool btn_msg;
+ros::Publisher *btn_pub;
+
+ros::Subscriber<std_msgs::Empty> *led_sub;
+
+// This function will be called when a new message is received on /toggle_led topic
+void toggleLEDCallback(const std_msgs::Empty& msg)
+{
+    // toggle the led state
+    hLED1.toggle();
+}
+
+// This function will publish a current button state every 100 ms
+void btnLoop()
+{
+    while (true)
+    {
+        // Read the button value and replace the message data field
+        btn_msg.data = hBtn1.isPressed(); 
+
+        // Publish the message
+        btn_pub->publish(&btn_msg);
+
+        //wait 100 ms
+        sys.delay(100);
+    }
+}
+
+void hMain()
+{
+    // Set baudrate of serial communication to 250kbps
+    RPi.setBaudrate(250000);
+
+    // Initialize ROS node with a serial device
+    nh.getHardware()->initWithDevice(&RPi);
+    nh.initNode();
+    
+    // Create publisher and subscriber instances
+    btn_pub = new ros::Publisher("/btn_state", &btn_msg);
+    led_sub = new ros::Subscriber<std_msgs::Empty>("/toggle_led", &toggleLEDCallback);
+
+    // Register new publishers and subscribers
+    nh.advertise(*btn_pub);
+    nh.subscribe(*led_sub);
+
+    // Create asynchronous task that will publish button state
+    sys.taskCreate(&btnLoop);
+
+    while (true)
+    {
+        // Process all available message callbacks and publications
+        nh.spinOnce();
+
+        // wait 10 ms
+        sys.delay(10); 
+    }
+}
+
+```
+
+Replace `main.cpp` with this code, build it and flash to your Board.
+
+Now log into your Rover's console, and type:
+
+```bash
+sudo systemctl restart leo
+```
+
+This will restart rosserial node \(together with all other ROS nodes\).  
+After a while, type:
+
+```bash
+rostopic list
+```
+
+The topics `/btn_state` and `/toggle_led` should appear on the list.  
+The topic `/btn_state` should be published by the firmware every tenth of a second with a Bool message \(True or False\) indicating whether hBtn1 on CORE2 is currently pressed.  
+When a message is published to `/toggle_led` topic, hLED1 should change it's state to opposite. 
+
+Try it yourself! Type:
+
+```text
+rostopic echo /btn_state
+```
+
+and try pressing the button to see how the value changes.
+
+Then, type repeatedly:
+
+```text
+rostopic pub /toggle_led std_msgs/Empty
+```
+
+and notice how the LED turns on and off.
+
+### Add features to Leo firmware
+
+todo
+
 ## 3. ROS development
 
 coming soon!
