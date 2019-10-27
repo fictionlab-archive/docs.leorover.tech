@@ -33,7 +33,7 @@ This part is already covered in our previous tutorial:
 Make sure you are in the home directory \(by default you should be there;`/home/husarion`\) and type:
 
 ```bash
-sudo /opt/husarion/tools/rpi-linux/core2-flasher leo_firmware.hex
+/opt/husarion/tools/rpi-linux/core2-flasher leo_firmware.hex
 ```
 
 {% hint style="warning" %}
@@ -65,7 +65,7 @@ wget https://files.husarion.com/bootloader/bootloader_1_0_0_core2.hex
 Then, do the following commands:
 
 ```bash
-sudo /opt/husarion/tools/rpi-linux/core2-flasher --unprotect
+/opt/husarion/tools/rpi-linux/core2-flasher --unprotect
 /opt/husarion/tools/rpi-linux/core2-flasher bootloader_1_0_0_core2.hex
 /opt/husarion/tools/rpi-linux/core2-flasher --protect
 ```
