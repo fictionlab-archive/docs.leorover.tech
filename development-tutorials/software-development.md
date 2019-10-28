@@ -93,7 +93,7 @@ Leo firmware provides many parameters that can be adjusted for more personalized
 
 To modify some parameters, open `params.h` file and change selected values. Next, build the firmware again \(`Ctrl+Shift+B`\).
 
-### Write your own custom firmware
+### Writing your own custom firmware
 
 To write a custom project, create a new folder and open it in VS Code. Then, type `Ctrl+Shift+P`, `Create Husarion project`. New files should spawn. 
 
@@ -106,7 +106,7 @@ Now, you can edit `main.cpp` file to write your custom code.
 There are many examples on [Husarion docs page](https://husarion.com/software/hframework/%20) and in [hFramework repository](https://github.com/husarion/hFramework/tree/master/examples/core2) that present basic functionality provided by the library. You can also take a look at [hFramework API reference](https://husarion.com/core2/api_reference/classes.html%20) to learn more about available classes and their application.
 
 To communicate with Raspberry Pi, however, you need to use ROS topics.   
-The rosserial client library is provided in hROS module, so make sure to have this line is present in your `CMakeLists.txt`:
+The rosserial client library is provided in hROS module, so make sure this line is present in your `CMakeLists.txt`:
 
 ```text
 enable_module(hROS)
@@ -222,9 +222,116 @@ rostopic pub /toggle_led std_msgs/Empty
 
 and notice how the LED turns on and off.
 
-### Add features to Leo firmware
+### Adding features to Leo firmware
 
-todo
+Writing your own firmware for the Rover from scratch can be tedious and disappointing. A more straightforward approach would be to add features to stock [leo\_firmware](https://github.com/LeoRover/leo_firmware).
+
+One of the most commonly desired features is to add GPIO support via ROS topics. In this example we will add one publisher that sends voltage level read at pin2 of hExt port \(GPIO input\) and one subscriber that sets voltage level \(high or low\) on pin3 of hExt port \(GPIO output\).
+
+First, we need to include appropriate message type definitions. For GPIO input, we will use [std\_msgs/Float32](http://docs.ros.org/api/std_msgs/html/msg/Float32.html) and for the output [std\_msgs/Bool](http://docs.ros.org/api/std_msgs/html/msg/Bool.html), so make sure that after `#include "ros.h"`, these messages are included:
+
+```cpp
+#include "std_msgs/Float32.h"
+#include "std_msgs/Bool.h"
+```
+
+Declare these global variables on the top of the file \(where other publishers and subscribers are declared\):
+
+```cpp
+std_msgs::Float32 gpio_in_msg;
+ros::Publisher *gpio_in_pub;
+bool publish_gpio_in = false;
+
+ros::Subscriber<std_msgs::Bool> *gpio_out_sub;
+```
+
+Leo firmware publishes all messages in one loop that works with a frequency of 1 kHz. `publish_gpio_in` will tell this loop that a new message is to be published.
+
+Before `initROS()` function \(where all subscriber callbacks are declared\) add this function:
+
+```cpp
+void GPIOOutCallback(const std_msgs::Bool& msg)
+{
+	hExt.pin3.write(msg.data);
+}
+```
+
+Somewhere inside `initROS()` function, add these lines:
+
+```cpp
+gpio_in_pub = new ros::Publisher("/gpio_in", &gpio_in_msg);
+gpio_out_sub = new ros::Subscriber<std_msgs::Bool>("/gpio_out", &GPIOOutCallback);
+
+nh.advertise(*gpio_in_pub);
+nh.subscribe(*gpio_out_sub);
+```
+
+Before `hMain()` function, add:
+
+```cpp
+void GPIOInLoop()
+{
+	uint32_t t = sys.getRefTime();
+	long dt = 100;
+	while(true)
+	{
+		if (!publish_gpio_in)
+		{
+			gpio_in_msg.data = hExt.pin2.analogReadVoltage();
+			publish_gpio_in = true;
+		}
+
+		sys.delaySync(t, dt);
+	}
+}
+```
+
+This function will check, with frequency of 10Hz, if the previous message was published, and if it was, it will read the voltage value and tell the main loop that the next message is to be published.
+
+Now, in `hMain()` add these lines before `initROS()` function call to setup the pins on hExt port:
+
+```cpp
+hExt.pin2.enableADC();
+hExt.pin3.setOut();
+```
+
+And after `initROS()`, add:
+
+```cpp
+sys.taskCreate(&GPIOInLoop);
+```
+
+To start the function asynchronously.
+
+The last thing that's left to do is to actually publish the message. To do this, just add these lines to the main loop:
+
+```cpp
+if (publish_gpio_in){
+	gpio_in_pub->publish(&gpio_in_msg);
+	publish_gpio_in = false;
+}
+```
+
+In case you missed something, here's a working example \(built on top of 0.5.1 version of leo firmware\):  
+[https://pastebin.com/7xJRShsS](https://pastebin.com/7xJRShsS)
+
+Build and flash the firmware, log into the console and check with `rostopic list` if the new topics have spawned.
+
+Now, you should be able to check the voltage readings with:
+
+```text
+rostopic echo /gpio_in
+```
+
+and set the output level with:
+
+```text
+rostopic pub /gpio_out std_msgs/Bool -- "data: true"
+```
+
+{% hint style="info" %}
+`true` will set the output to high \(3.3V\) and `false` will set the output to low \(0V\).
+{% endhint %}
 
 ## 3. ROS development
 
