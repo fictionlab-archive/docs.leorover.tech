@@ -330,7 +330,7 @@ rostopic pub /gpio_out std_msgs/Bool -- "data: true"
 ```
 
 {% hint style="info" %}
-`true` will set the output to high \(3.3V\) and `false` will set the output to low \(0V\).
+`true` will set the output to high \(3.3V\) and `false` will set it to low \(0V\).
 {% endhint %}
 
 ## 3. ROS development
