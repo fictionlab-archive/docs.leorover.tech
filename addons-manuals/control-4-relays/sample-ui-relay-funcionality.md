@@ -1,22 +1,22 @@
-# Sample UI - relay functionality
+# Make your own UI - Relay switches
 
-In this tutorial we will try to teach you how to build your own custom user's interface based on sample UI prepared for relays. 
+In this tutorial we will show you how to build your custom user interface based on sample UI prepared for the relays.
 
 ![](../../.gitbook/assets/zrzut-ekranu-z-2019-08-08-14-27-31.png)
 
 ## 1. Prepare programing environment
 
-#### 1. Tool for editing code 
+### 1. Tool for code editing
 
-If you would like to develop user's interface you won't need any specific tools- the simplest text editor is enough. But is easier to develop WEB page in code editor, so we strongly recommend using Visual Studio Code- there are some useful tools which we will use ;-\)
+Although you don't need any specific tools to develop the interface, we strongly recommend using Visual Studio Code to edit the code. There are some useful tools which can be helpful in the development.
 
-#### 2. Download Visual Studio Code
+### 2. Download Visual Studio Code
 
-Visual Studio Code is free code editor. You can easly download [ it here https://code.visualstudio.com/download](https://code.visualstudio.com/download). Choose your operating system and go across instalation process.
+{% embed url="https://code.visualstudio.com/download" %}
 
-#### 3. Download sample UI
+### 3. Download sample UI
 
-First, prepare directory for your workspace. We will put there UI files.
+First, prepare a directory for your workspace. We will put UI files in the directory.
 
 1. If you have git tool,  you can clone it directly to your directory from LeoRover GitHub by typing
 
@@ -24,16 +24,18 @@ First, prepare directory for your workspace. We will put there UI files.
 git clone https://github.com/LeoRover/leo_ui_sample_relay.git
 ```
 
-   2. In other case you can download it directly from [https://github.com/LeoRover/leo\_ui\_sample\_relay](https://github.com/LeoRover/leo_ui_sample_relay) and unzip to your directory.
+2. In other case you can download it directly from [https://github.com/LeoRover/leo\_ui\_sample\_relay](https://github.com/LeoRover/leo_ui_sample_relay) and upload the files manually.
 
-#### 4. Visual Studia Code configuration
+{% page-ref page="../../software-tutorials/upload-files-to-your-rover.md" %}
 
-Open directory leo\_ui\_sample\_relay in VS code. For simpler checking how our website look like during development, we will add VS code extension called Live Server. 
+### 4. VSC configuration
+
+Open leo\_ui\_sample\_relay directory in VS Code. To see the website changes live we'll install VS Code extension called Live Server.
 
 ![](../../.gitbook/assets/zrzut-ekranu-z-2019-09-07-13-07-30.png)
 
 {% hint style="info" %}
-If sample UI's code is opened and extension is added corectly you should see image like below.
+If sample UI code is opened and extension is added correctly you should see image like below.
 {% endhint %}
 
 ![](../../.gitbook/assets/zrzut-ekranu-z-2019-09-07-13-13-17.png)
@@ -54,7 +56,7 @@ In UI we used open sourced libraries. Check them using links on the list below.
 In the following part of tutorial we will focuse on index.html and leo.js file and application of included libraries. If you would like to know more check [https://www.w3schools.com/html/](https://www.w3schools.com/html/) and API/documentacion of included libraries.
 {% endhint %}
 
-## 2. Code description step by step
+## 3. Code description step by step
 
 ### index.html
 

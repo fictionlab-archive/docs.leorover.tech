@@ -2,5 +2,5 @@
 description: Coming soon
 ---
 
-# Firmware modification - relay functionality
+# Firmware modification - Relay switches \(coming soon\)
 

@@ -2,11 +2,15 @@
 
 A little IP66 USB camera that we use in our robots. Originally we use 180-degree fisheye 2MPx camera, but you can mount anything you like.
 
+Here we prepared a graphic description how to assemble your own camera using either our kit or parts that you source based on a BOM provided. Have fun!
+
 ![](../.gitbook/assets/p1010458.JPG)
 
 {% hint style="info" %}
 Disclaimer: the camera is not a plug&play solution for Leo Rover. You still need to treat it as a typical USB camera \(install drivers and stuff\).
 {% endhint %}
+
+## 0. BOM
 
 |  |  | Where? |
 | :--- | :--- | :--- |

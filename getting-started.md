@@ -1,6 +1,6 @@
 # Getting started
 
-## **Before turning on the rover**
+## **Before you power on the Rover**
 
 ### **How to use Leo Rover connectors?**
 
