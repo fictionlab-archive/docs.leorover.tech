@@ -25,11 +25,12 @@
 ## Development tutorials
 
 * [Husarion CORE2-ROS controller](development-tutorials/husarion-core2-ros-controller.md)
-* [UI Structure \(coming soon\)](development-tutorials/ui-structure-coming-soon.md)
 * [Hardware Structure](development-tutorials/hardware-structure/README.md)
   * [Interface pinout](development-tutorials/hardware-structure/interface-pinout.md)
 * [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
 * [Software Development](development-tutorials/software-development.md)
+* [Dev-Covers for addons](development-tutorials/integrate-addons-in-meb-cover.md)
+* [UI Structure \(coming soon\)](development-tutorials/ui-structure-coming-soon.md)
 
 ## Assembly manuals
 
