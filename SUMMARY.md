@@ -29,7 +29,7 @@
   * [Interface pinout](development-tutorials/hardware-structure/interface-pinout.md)
 * [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
 * [Software Development](development-tutorials/software-development.md)
-* [Dev-Covers for addons](development-tutorials/integrate-addons-in-meb-cover.md)
+* [Dev-Covers for addons](development-tutorials/dev-covers-for-addons.md)
 * [UI Structure \(coming soon\)](development-tutorials/ui-structure-coming-soon.md)
 
 ## Assembly manuals
