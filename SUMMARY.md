@@ -25,21 +25,21 @@
 ## Development tutorials
 
 * [Husarion CORE2-ROS controller](development-tutorials/husarion-core2-ros-controller.md)
+* [Software Development](development-tutorials/software-development.md)
 * [Hardware Structure](development-tutorials/hardware-structure/README.md)
   * [Interface pinout](development-tutorials/hardware-structure/interface-pinout.md)
 * [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
-* [Software Development](development-tutorials/software-development.md)
 * [Dev-Covers for addons](development-tutorials/dev-covers-for-addons.md)
 * [UI Structure \(coming soon\)](development-tutorials/ui-structure-coming-soon.md)
 
 ## Assembly manuals
 
-* [Check if you have everything](assembly-manuals/check-the-boxes.md)
-* [Wheel assembly](assembly-manuals/wheel-assembly.md)
-* [Frame assembly manual](assembly-manuals/frame-assembly-manual.md)
-* [Suspension assembly manual](assembly-manuals/suspension-assembly-manual.md)
-* [Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
-* [Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
-* [Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
+* [0. Check if you have everything](assembly-manuals/check-the-boxes.md)
+* [1. Wheel assembly](assembly-manuals/wheel-assembly.md)
+* [2. Frame assembly manual](assembly-manuals/frame-assembly-manual.md)
+* [3. Suspension assembly manual](assembly-manuals/suspension-assembly-manual.md)
+* [4. Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
+* [5. Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
+* [6. Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
 * [\[Archive\] 3D printing](assembly-manuals/3d-printing.md)
 

@@ -1,4 +1,4 @@
-# Suspension assembly manual
+# 3. Suspension assembly manual
 
 The same as in Turtle Rover:
 

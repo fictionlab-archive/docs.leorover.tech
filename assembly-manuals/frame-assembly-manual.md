@@ -1,4 +1,4 @@
-# Frame assembly manual
+# 2. Frame assembly manual
 
 Same as in Turtle Rover:
 

@@ -1,4 +1,4 @@
-# Wheel assembly
+# 1. Wheel assembly
 
 ![](../.gitbook/assets/a0002-section.jpg)
 

@@ -1,4 +1,4 @@
-# Battery quarter \(left\) assembly
+# 5. Battery quarter \(left\) assembly
 
 ## 1. Button and power socket
 
