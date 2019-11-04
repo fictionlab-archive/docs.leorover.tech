@@ -1,8 +1,12 @@
+---
+description: >-
+  In this tutorial, we will show you how to connect and use IMU module on your
+  Rover.
+---
+
 # IMU module
 
-In this tutorial, we will show you how to connect and use IMU module on your Rover.
-
-### Prerequisites
+## Prerequisites
 
 First, make sure you have compatible IMU module. We recommend `Grove - IMU 9DOF v2.0` but any module with `MPU-9250` sensor should work.
 
@@ -14,7 +18,7 @@ IMU functionality was introduced in [leo\_firmware](https://github.com/LeoRover/
 
 {% page-ref page="../software-tutorials/flash-firmware-to-core2-board.md" %}
 
-### 1. Connect the IMU module to CORE2 board
+## 1. Connect the IMU module to CORE2 board
 
 By default, the IMU will work on hSens2 port. You can change it to hSens1 by modifying [params.h](https://github.com/LeoRover/leo_firmware/blob/master/params.h) in `leo_firmare`. 
 
@@ -39,7 +43,7 @@ If you use Grove IMU, you can 3D print one of our `custom elecronic box lids` \(
 
 ![](../.gitbook/assets/image%20%288%29.png)
 
-### 2. Turn on IMU functionality
+## 2. Turn on IMU functionality
 
 Log in to the Rover's console via SSH
 
@@ -79,7 +83,7 @@ The accelerometer data \(`imu/accel` topic\) represents linear acceleration alon
 
 The magnetometer data \(`imu/mag` topic\) represents magnetic field along sensor's axes in G \(Gauss\)
 
-### 3. Calibrate the sensor
+## 3. Calibrate the sensor
 
 The firmware also provides services that perform sensor calibration and store the results in a persistent storage.
 
