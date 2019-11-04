@@ -12,7 +12,7 @@ First what you need is GPS module ;-\) Our code is made to communicate with GPS 
 
 First step is to buy a GPS module that fits the tutorial requirements. We're using an of-the-shelf module which communicates via UART and parses NMEA sentences. It may happen that most of the modules on the market fit the job, but we recommend to get the same one as the one we used here just for easier integration.
 
-u-blox NEO-6m GPS module
+**u-blox NEO-6m GPS module**
 
 * Power requirements:  2,7 V - 5,0 V; 80 mA
 * Communication: NMEA, UART 4800, 9600 \(default\), 19200, 38400, 57600, 115200, 230400 bps
