@@ -9,7 +9,7 @@
 * [Relay module](addons-manuals/control-4-relays/README.md)
   * [Make your own UI - Relay switches](addons-manuals/control-4-relays/sample-ui-relay-funcionality.md)
   * [Firmware modification - Relay switches \(coming soon\)](addons-manuals/control-4-relays/firmware-modification-relay-functionality.md)
-* [GPS module \(coming soon\)](addons-manuals/gps-module-coming-soon.md)
+* [GPS module](addons-manuals/gps-module-coming-soon.md)
 * [IMU module](addons-manuals/imu-module.md)
 * [USB Camera](addons-manuals/usb-camera.md)
 
