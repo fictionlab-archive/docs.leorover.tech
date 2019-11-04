@@ -1,34 +1,36 @@
 # Firmware update
 
-{% hint style="info" %}
-If your Core2-ROS board has not been previously flashed, you may need to flash the bootloader first for a firmware to work.
+{% hint style="warning" %}
+If your Core2-ROS board has not been previously flashed, you may need to flash the bootloader before you flash the firmware.
 
 To do that - go to 'troubleshooting' section.
 {% endhint %}
 
-### 1. Check connection to USB hSerial port
+## Firmware flashing
 
-Make sure that your Raspberry Pi is connected to CORE2 board through a micro USB hSerial port.
+### Connect to micro USB hSerial port
 
-### 2. Download the newest Leo Rover firmware
+Make sure that your RaspberryPi is connected to CORE2 board through a micro USB hSerial port.
 
-You can find all firmware versions and their changelogs on our [GitHub releases page](https://github.com/LeoRover/leo_firmware/releases).
+{% hint style="info" %}
+You'll need a USB A - USB micro cable, if you get a 5 cm one you'll be able to leave it connected all the time inside the main electronics box \(MEB\).
+{% endhint %}
 
-Choose the version you want and download `leo_firmware.hex` file to your computer
+### Download the newest Leo Rover firmware
 
-### 3. Upload the firmware to the Rover
+You can find all firmware versions and their changelogs in our [GitHub releases page](https://github.com/LeoRover/leo_firmware/releases).
 
-Place the `leo_firmware.hex` file inside home directory of your Rover.
+Choose the version you want and download the .hex file \(ex. 'leo\_firmware.hex'\) to your computer.
+
+### Upload the firmware to the Rover
+
+Place the firware .hex file inside `/home/husarion` directory of your Rover.
 
 {% page-ref page="upload-files-to-your-rover.md" %}
 
-### 4. Establish SSH connection
-
-This part is already covered in our previous tutorial:
+### Flash the firmware
 
 {% page-ref page="connect-to-the-console-ssh.md" %}
-
-### 5. Flash the firmware
 
 Make sure you are in the home directory \(by default you should be there;`/home/husarion`\) and type:
 
@@ -40,19 +42,15 @@ Make sure you are in the home directory \(by default you should be there;`/home/
 Modify the last phrase in the line above if your file name is different.
 {% endhint %}
 
-The process of flashing should begin. 
+The process of flashing should begin. After it completes, restart the Rover.
 
-After it completes, type:
+{% hint style="success" %}
+Done!
+{% endhint %}
 
-```bash
-sudo systemctl restart leo
-```
+## Troubleshooting
 
-to restart the ROS serial node.
-
-### Troubleshooting
-
-#### bootloader not flashed
+### Core2-ROS straight out of the box = bootloader not flashed
 
 If your Core2-ROS board has not been previously flashed, you may need to flash the bootloader first for a firmware to work. 
 
@@ -71,4 +69,6 @@ Then, do the following commands:
 ```
 
 Now you can proceed with the firmware flashing operation.
+
+### 
 

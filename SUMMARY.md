@@ -38,8 +38,10 @@
 * [1. Wheel assembly](assembly-manuals/wheel-assembly.md)
 * [2. Frame assembly manual](assembly-manuals/frame-assembly-manual.md)
 * [3. Suspension assembly manual](assembly-manuals/suspension-assembly-manual.md)
-* [4. Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
-* [5. Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
-* [6. Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
+* [4. Wheels to suspension](assembly-manuals/4.-wheels-to-suspension.md)
+* [5. Front cover](assembly-manuals/5.-front-cover.md)
+* [6. Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
+* [7. Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
+* [8. Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
 * [\[Archive\] 3D printing](assembly-manuals/3d-printing.md)
 

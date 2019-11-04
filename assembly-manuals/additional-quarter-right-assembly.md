@@ -1,4 +1,4 @@
-# 6. Additional quarter \(right\) assembly
+# 8. Additional quarter \(right\) assembly
 
 Currently the additional quarter is used to hold 24V-12V DC converter used to run 24V batteries with 12V internal electronics.
 
