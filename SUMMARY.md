@@ -9,7 +9,7 @@
 * [Relay module](addons-manuals/control-4-relays/README.md)
   * [Make your own UI - Relay switches](addons-manuals/control-4-relays/sample-ui-relay-funcionality.md)
   * [Firmware modification - Relay switches \(coming soon\)](addons-manuals/control-4-relays/firmware-modification-relay-functionality.md)
-* [GPS module](addons-manuals/gps-module-coming-soon.md)
+* [GPS module](addons-manuals/gps-module.md)
 * [IMU module](addons-manuals/imu-module.md)
 * [USB Camera](addons-manuals/usb-camera.md)
 
@@ -30,7 +30,7 @@
   * [Interface pinout](development-tutorials/hardware-structure/interface-pinout.md)
 * [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
 * [Dev-Covers for addons](development-tutorials/dev-covers-for-addons.md)
-* [UI Structure \(coming soon\)](development-tutorials/ui-structure-coming-soon.md)
+* [UI Structure \(coming soon\)](development-tutorials/ui-structure.md)
 
 ## Assembly manuals
 
