@@ -25,7 +25,10 @@
 ## Development tutorials
 
 * [Husarion CORE2-ROS controller](development-tutorials/husarion-core2-ros-controller.md)
-* [Software Development](development-tutorials/software-development.md)
+* [Software Development](development-tutorials/software-development/README.md)
+  * [Firmware Development](development-tutorials/software-development/firmware-development.md)
+  * [ROS Development](development-tutorials/software-development/ros-development.md)
+  * [Web UI Development](development-tutorials/software-development/web-ui-development.md)
 * [Hardware Structure](development-tutorials/hardware-structure/README.md)
   * [Interface pinout](development-tutorials/hardware-structure/interface-pinout.md)
 * [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
