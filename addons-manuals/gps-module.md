@@ -81,7 +81,7 @@ Open a new ssh connection to the Rover's console.
 Set the GPS functionality on by sending the message to `/gps_enable` topic:
 
 ```bash
-rostopic pub /gps_enable std_msgs/Bool -- "data: true"
+rostopic pub /core2/set_gps std_msgs/Bool -- "data: true"
 ```
 
 Restart the board to apply changes.
