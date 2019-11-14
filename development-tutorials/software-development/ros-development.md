@@ -268,7 +268,63 @@ sudo systemctl daemon-reload && sudo systemctl start leo-custom
 
 ## Connecting other computer to ROS network 
 
-coming soon!
+ROS is designed with distributed computing in mind. The nodes make no assumption about where in the network they run. Configuring your computer to be able to communicate with ROS network will let you run nodes that interfere with the Rover's hardware, as well as graphical tools \(like rqt or rviz\) directly on your host machine. 
+
+To install ROS on your computer, you can follow this tutorial:
+
+{% page-ref page="../install-ros-on-your-computer.md" %}
+
+In this section we will assume, you run Ubuntu 18.04 with ROS Melodic.
+
+First, connect your computer to the same network your Rover is connected. It can be either the Rover's Access Point \(`LeoRover-XXYYY` by default\) or an external router \(if you followed `Connect to the Internet` tutorial\).
+
+To properly communicate over the ROS network, you need to be able to resolve husarion hostname. Type:
+
+```bash
+getent hosts husarion
+```
+
+If you don't see any output, that means you cannot resolve the hostname.
+
+If you are connected to Rover's Access Point, you should be able to resolve it, but if there is and issue with DNS server on the Rover or you are connected through external router, add this line to `/etc/hosts` file on you computer:
+
+```bash
+10.0.0.1 husarion
+```
+
+{% hint style="warning" %}
+If you are connected through router, you need to change `10.0.0.1` to IP address of the Rover on your local network.
+{% endhint %}
+
+If everything works, you should be able to `ping` the Rover by it's hostname. Type `ping husarion` to check.
+
+Now, to be connected in ROS network, you need to set some environment variables. Start by `sourcing` the result space you are using:
+
+```bash
+source /opt/ros/melodic/setup.bash
+```
+
+Specify the address of the master node:
+
+```bash
+export ROS_MASTER_URI=http://husarion:11311
+```
+
+And your IP on the network:
+
+```bash
+export ROS_IP=X.X.X.X
+```
+
+Replace `X.X.X.X` with your IP address.
+
+{% hint style="info" %}
+You can check your address by typing `ip address`. Search for your wireless network interface and the `inet` keyword.
+{% endhint %}
+
+You will need this lines executed at every terminal session you want to use ROS on. To do this automatically at the start of every session, you can add this lines to `~/.bashrc` file.
+
+You should now be able to do all the things from `the first section` of this tutorial on your computer.
 
 ## Examples of ROS use 
 
