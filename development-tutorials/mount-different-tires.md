@@ -2,14 +2,14 @@
 
 You can change the Rover tires to different compound \(toughness\) and thread easily. Just source for standard 1/10 RC-car tires of a certain specifications listed below.
 
-![](../.gitbook/assets/dsc_0531_00a281be-ca10-45a0-8759-6705c1e8e6a8_grande.jpg)
-
 ## Tire specifications
 
 * Inner rim diameter: 2.8"
 * Outer diameter: ~ 125 mm
 * Width: ~ 70 mm
 * Typically described as for 1/10 scale Monster Truck RC vehicles
+
+![](../.gitbook/assets/dsc_0531_00a281be-ca10-45a0-8759-6705c1e8e6a8_grande.jpg)
 
 {% hint style="info" %}
 The dimensions may vary +- 10mm with no compatibility issues, remember the tires are made of rubber, they can stretch.

@@ -35,6 +35,7 @@
 * [Dev-Covers for addons](development-tutorials/dev-covers-for-addons.md)
 * [UI Structure \(coming soon\)](development-tutorials/ui-structure.md)
 * [Mount different tires](development-tutorials/mount-different-tires.md)
+* [Motors specification](development-tutorials/motors-specification.md)
 
 ## Assembly manuals
 
