@@ -2,13 +2,15 @@
 
 ![](../.gitbook/assets/a0002-section.jpg)
 
-## Parts & tools
+## Wheel assembly guide
+
+### 0. Parts & tools
 
 ![](../.gitbook/assets/img_20190515_123406.jpg)
 
 ![](../.gitbook/assets/img_20190515_123608.jpg)
 
-## Prepare aluminum tubes \(part no. 00008\)
+### 1. Prepare aluminum tubes \(part no. 00008\)
 
 {% hint style="info" %}
 If you received the aluminum tubes with plastic motor mounts already attached - continue to the next point.
@@ -22,7 +24,7 @@ If you 3d-printed plastic parts on your own, you'll need to glue the plastic mot
 Do not use cyanoacrylate glues - the 5 minute ones etc., because they tend not to stick to the plastic.
 {% endhint %}
 
-## Ball bearings and sealing
+### 2. Ball bearings and sealing
 
 {% hint style="info" %}
 Your kit may include 2x metal-covered bearings \(no rubber-sealed bearing - black\) - don't worry then, we're just experimenting with different types of bearings and all of them are just fine.
@@ -44,7 +46,7 @@ The same with rubber sealings - they may be different colour, don't worry as wel
 
 ![](../.gitbook/assets/img_20190515_124150.jpg)
 
-## Wheel mount
+### 3. Wheel mount
 
 ![](../.gitbook/assets/img_20190515_124250.jpg)
 
@@ -56,7 +58,7 @@ The same with rubber sealings - they may be different colour, don't worry as wel
 
 ![](../.gitbook/assets/img_20190515_124458.jpg)
 
-## Tire & beadlock
+### 4. Tire & beadlock
 
 ![](../.gitbook/assets/img_20190515_124541.jpg)
 
@@ -86,7 +88,7 @@ The same with rubber sealings - they may be different colour, don't worry as wel
 
 ![](../.gitbook/assets/img_20190515_125400.jpg)
 
-## Wheel cap preparation
+### 5. Wheel cap preparation
 
 ![](../.gitbook/assets/img_20190515_125610.jpg)
 
@@ -98,7 +100,7 @@ The same with rubber sealings - they may be different colour, don't worry as wel
 
 ![](../.gitbook/assets/img_20190515_130917.jpg)
 
-## Wheel cable
+### 6. Wheel cable
 
 ![](../.gitbook/assets/img_20190515_131539.jpg)
 
@@ -122,7 +124,7 @@ The same with rubber sealings - they may be different colour, don't worry as wel
 
 ![](../.gitbook/assets/img_20190515_132302.jpg)
 
-## Motor to wheel
+### 7. Motor to wheel
 
 ![](../.gitbook/assets/img_20190515_132629.jpg)
 
@@ -136,7 +138,7 @@ The same with rubber sealings - they may be different colour, don't worry as wel
 
 ![](../.gitbook/assets/img_20190515_133146.jpg)
 
-## Torque plate
+### 8. Torque plate
 
 ![](../.gitbook/assets/img_20190515_133413.jpg)
 
@@ -162,5 +164,7 @@ The same with rubber sealings - they may be different colour, don't worry as wel
 
 ![](../.gitbook/assets/img_20190515_133931.jpg)
 
-
+{% hint style="success" %}
+Done! Only 3 more to go.
+{% endhint %}
 
