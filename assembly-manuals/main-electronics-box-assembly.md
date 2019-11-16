@@ -140,7 +140,7 @@ description: Main Electronics Box = MEB (for future references)
 
 ![](../.gitbook/assets/p1010825_wynik.JPG)
 
-## 9. Core2-ROS assembly and cabling
+### 9. Core2-ROS assembly and cabling
 
 ![](../.gitbook/assets/p1010827_wynik.JPG)
 
@@ -176,7 +176,7 @@ description: Main Electronics Box = MEB (for future references)
 
 ![](../.gitbook/assets/p1010851_wynik.JPG)
 
-## 10. WiFi modem assembly
+### 10. WiFi modem assembly
 
 ![](../.gitbook/assets/p1010853_wynik.JPG)
 
@@ -204,7 +204,7 @@ description: Main Electronics Box = MEB (for future references)
 
 ![](../.gitbook/assets/p1010884_wynik.JPG)
 
-## 11. Seal assembly
+### 11. Seal assembly
 
 ![](../.gitbook/assets/p1010887_wynik.JPG)
 
@@ -214,7 +214,7 @@ description: Main Electronics Box = MEB (for future references)
 
 ![](../.gitbook/assets/p1010895_wynik.JPG)
 
-## 12. Cover assembly
+### 12. Cover assembly
 
 ![](../.gitbook/assets/p1010898_wynik.JPG)
 
