@@ -328,5 +328,116 @@ You should now be able to do all the things from `the first section` of this tut
 
 ## Examples of ROS use 
 
-coming soon!
+Apart from communicating different processes on Raspberry Pi, ROS will give us the possibility to remotely control the Rover on your computer, as well as run graphical tools to introspect and visualize what is currently happening. A lot of these tools are available in distribution packages in the form of [rqt](http://wiki.ros.org/rqt) and [rviz](http://wiki.ros.org/rviz) plugins.
+
+Below are some examples possible to do on stock Leo Rover.
+
+### Introspecting the ROS computation graph 
+
+A [node graph](http://wiki.ros.org/rqt_graph) is an `rqt` plugin that can visualize [ROS computation graph](http://wiki.ros.org/ROS/Concepts#ROS_Computation_Graph_Level). It is a very handy tool for debugging communication problems.
+
+First, make sure you have the plugin installed:
+
+```bash
+sudo apt update
+sudo apt install ros-melodic-rqt-graph
+```
+
+Start `rqt` by typing:
+
+```bash
+rqt
+```
+
+Now choose **Plugins -&gt; Introspection -&gt; Node Graph**
+
+If your are connected to your Rover, you should see all the nodes running on Raspberry Pi. You can experiment with Node Graph settings, so it can look like this:
+
+![a placeholder screenshot \[TODO\]](../../.gitbook/assets/image%20%286%29.png)
+
+### Visualizing the model  
+
+To visualize the model, you need to build [leo\_description](https://github.com/LeoRover/leo_description) package first.  
+Start by creating a new local workspace if you don't have one yet:
+
+```bash
+mkdir -p ~/ros_ws/src && cd ~/ros_ws
+catkin init
+catkin config --extend /opt/ros/melodic
+```
+
+{% hint style="info" %}
+If `catkin` command is not found on your system, you might need to install `catkin-tools` package:
+
+```bash
+sudo apt install python-catkin-tools
+```
+{% endhint %}
+
+Add the package to source space:
+
+```bash
+cd ~/ros_ws/src
+git clone https://github.com/LeoRover/leo_description.git
+```
+
+Then build the workspace and `source` the result space:
+
+```bash
+cd ~/ros_ws
+catkin build
+source devel/setup.bash
+```
+
+If the package was built successfully, the command:
+
+```bash
+rospack find leo_description
+```
+
+should return the correct path to the package.
+
+Now, open RViz by typing:
+
+```bash
+rviz
+```
+
+In the **Fixed Frame** option choose `base_link`.  
+In **Displays** panel, click **Add** and choose **RobotModel** plugin.
+
+![](../../.gitbook/assets/image%20%2815%29.png)
+
+You should see the wheels rotating when steering the Rover.
+
+#### running the visualization offline
+
+You can run the visualization without being connected to the Rover. For this, you will need to change environment variables to point to your loopback device:
+
+```bash
+export ROS_IP=127.0.0.1
+export ROS_MASTER_URI=http://127.0.0.1:11311
+```
+
+Then, use the launch file located in the package:
+
+```bash
+roslaunch leo_description display.launch gui:=true
+```
+
+{% hint style="info" %}
+[roslaunch](http://wiki.ros.org/roslaunch) will automatically spawn [roscore](http://wiki.ros.org/roscore) if it detects that it is not already running.
+{% endhint %}
+
+{% hint style="warning" %}
+If you get error messages about missing packages, you might need to run [rosdep](http://wiki.ros.org/rosdep) to install them.
+
+```bash
+cd ~/ros_ws
+rosdep update
+rosdep install --from-paths src -i
+```
+{% endhint %}
+
+An RViz instantion with `RobotModel` plugin should start, as well as GUI for [joint\_state\_publisher](http://wiki.ros.org/joint_state_publisher) that let's you specify simulated wheel rotation.
 
