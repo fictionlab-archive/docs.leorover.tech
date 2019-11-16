@@ -34,6 +34,7 @@
 * [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
 * [Dev-Covers for addons](development-tutorials/dev-covers-for-addons.md)
 * [UI Structure \(coming soon\)](development-tutorials/ui-structure.md)
+* [Mount different tires](development-tutorials/mount-different-tires.md)
 
 ## Assembly manuals
 
