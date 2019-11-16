@@ -439,5 +439,94 @@ rosdep install --from-paths src -i
 ```
 {% endhint %}
 
-An RViz instantion with `RobotModel` plugin should start, as well as GUI for [joint\_state\_publisher](http://wiki.ros.org/joint_state_publisher) that let's you specify simulated wheel rotation.
+An RViz instance with `RobotModel` plugin should start, as well as GUI for [joint\_state\_publisher](http://wiki.ros.org/joint_state_publisher) that let's you specify simulated wheel rotation.
+
+### Steering the Rover with a joystick
+
+In this example, we will create a simple package that will let you control the Rover using joystick connected to your computer.
+
+We will use two nodes available in distribution:
+
+* `joy_node` \(from [joy](http://wiki.ros.org/joy) package\) - getting input from the joystick and publishing it to a topic.
+* `teleop_node` \(from [teleop\_twist\_joy](http://wiki.ros.org/teleop_twist_joy) package\) - getting messages from joystick topic and publishing appropriate steering commands to the Rover.
+
+We assume you have already created a workspace like in a previous example.  
+Create an empty package with specified dependencies:
+
+```bash
+cd ~/ros_ws/src
+catkin create pkg leo_joy_example --catkin-deps joy teleop_twist_joy
+```
+
+You might need to install dependent packages first:
+
+```bash
+cd ~/ros_ws
+rosdep install --from-paths src -i
+```
+
+Now, add **launch/** and **config/** directories inside your package:
+
+```bash
+cd ~/ros_ws/src/leo_joy_example
+mkdir launch config
+```
+
+Inside **launch/** directory add **joy.launch** with the following content:
+
+```markup
+<launch>
+  <node name="joy_node" pkg="joy" type="joy_node">
+    <param name="dev" value="/dev/input/js0"/>
+    <param name="coalesce_interval" value="0.02"/>
+    <param name="autorepeat_rate" value="30.0"/>
+  </node>
+
+  <node name="tr_teleop_joy" pkg="tr_teleop" type="tr_teleop_joy">
+    <rosparam command="load" file="$(find leo_joy_example)/config/joy_mapping.yaml"/>
+  </node>
+</launch>
+
+```
+
+Inside **config/** directory add **joy\_mapping.yaml** file:
+
+```yaml
+axis_linear: 1
+scale_linear: 0.4
+axis_angular: 3
+scale_angular: 1.0
+```
+
+And build the package:
+
+```bash
+cd ~/ros_ws
+catkin build
+source devel/setup.bash
+```
+
+Before you start your `launch` file, you might need to remap axes to suit the joystick you have. Start `joy_node` by typing:
+
+```bash
+rosrun joy joy_node
+```
+
+And on another terminal, run:
+
+```bash
+rostopic echo /joy
+```
+
+Move the axes you want to map and check which values are being changed on `axes[]` array \(remember that the values are indexed from 0\).
+
+Now, change `axis_linear` and `axis_angular` parameters in **joy\_mapping.yaml** file.
+
+Close the `joy_node` and start your the `joy.launch` file:
+
+```bash
+roslaunch leo_joy_example joy.launch
+```
+
+You should now be able to steer the Rover with the joy axes you set.
 
