@@ -28,13 +28,13 @@ This one comes stock with the Rover. It's designed to be watertight and provide 
 
 
 
-![part 00188 \(stock\)](../.gitbook/assets/00188.png)
+![part 00188 \(stock\)](../../.gitbook/assets/00188.png)
 
 ## 00188\_dev - Easy-access cover
 
 If you don't need any water protection and need to route any cables for addtional electronics - the best way is to use the easy-access cover. It provides a 120x12mm opening at the rear of MEB.
 
-![part 00188\_dev](../.gitbook/assets/00188_dev.png)
+![part 00188\_dev](../../.gitbook/assets/00188_dev.png)
 
 
 
@@ -42,19 +42,19 @@ If you don't need any water protection and need to route any cables for addtiona
 
 It's designed to fit both stock and Dev-Covers. The plate has a grid of 11x7 4.8mm holes \(to fit m4 screws\) and is 3mm thick. If you don't want to redesign the plate and need something to connect your own electronics, just 3d-print this one as a starting point.
 
-![part 00189](../.gitbook/assets/00189.png)
+![part 00189](../../.gitbook/assets/00189.png)
 
 ## 00189\_smooth - Editable mounting plate
 
 This one is easier to open in any 3d-modelling software to just add any holes and extrusions you need for your projects.
 
-![part 00189\_smooth](../.gitbook/assets/00189_smooth.png)
+![part 00189\_smooth](../../.gitbook/assets/00189_smooth.png)
 
 ## Archive - Easy-access cover for Leo Rover 1.5
 
 This cover can be used for older Leo Rovers with square Main Electronics Box. It's compatible with all the 00189 mounting plates.
 
-![](../.gitbook/assets/00158-cover_dev.png)
+![](../../.gitbook/assets/00158-cover_dev.png)
 
 
 

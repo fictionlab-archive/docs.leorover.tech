@@ -32,10 +32,12 @@
 * [Hardware Structure](development-tutorials/hardware-structure/README.md)
   * [Interface pinout](development-tutorials/hardware-structure/interface-pinout.md)
 * [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
-* [Dev-Covers for addons](development-tutorials/dev-covers-for-addons.md)
 * [UI Structure \(coming soon\)](development-tutorials/ui-structure.md)
-* [Mount different tires](development-tutorials/mount-different-tires.md)
-* [Motors specification](development-tutorials/motors-specification.md)
+* [Leo Wheel modification](development-tutorials/leo-wheel-modification/README.md)
+  * [Motors specification](development-tutorials/leo-wheel-modification/motors-specification.md)
+  * [Mount different tires](development-tutorials/leo-wheel-modification/mount-different-tires.md)
+* [Main Electronics Box modification](development-tutorials/main-electronics-box-modification/README.md)
+  * [Dev-Covers for addons](development-tutorials/main-electronics-box-modification/dev-covers-for-addons.md)
 
 ## Assembly manuals
 

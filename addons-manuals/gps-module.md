@@ -56,7 +56,7 @@ The best way to get clear GPS data from the module is to mount is as far from th
 
 First you need to route the module cables out of the main electronics box \(MEB\). The easiest way is to use one of Dev-Covers that we prepared for such projects.
 
-{% page-ref page="../development-tutorials/dev-covers-for-addons.md" %}
+{% page-ref page="../development-tutorials/main-electronics-box-modification/dev-covers-for-addons.md" %}
 
 {% hint style="warning" %}
 We didn't prepare any 3D-model of the module support yet. You'll need to be more creative sourcing or desiging your own.
