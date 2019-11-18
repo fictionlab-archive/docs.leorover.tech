@@ -1,8 +1,10 @@
 # Motors specification
 
-Leo Rover v. 1.6 \(as well as older Turtle Rover\) uses Buehler Motors motors \(sic!\) as the wheels actuators.
+Leo Rover v. 1.6 \(as well as older Turtle Rover\) uses Buehler motors as the wheels actuators.
 
 Here you have all the useful resources listed in case you need to access the motors specifications.
+
+![Buehler Motors 1.61.077.414 with 12 CPR Romi encoder](../../.gitbook/assets/dsc_7623.JPG)
 
 ## Buehler Motors 1.61.077.414
 
