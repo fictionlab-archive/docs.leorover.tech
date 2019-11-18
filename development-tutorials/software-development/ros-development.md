@@ -462,6 +462,7 @@ You might need to install dependent packages first:
 
 ```bash
 cd ~/ros_ws
+rosdep update
 rosdep install --from-paths src -i
 ```
 
@@ -529,4 +530,124 @@ roslaunch leo_joy_example joy.launch
 ```
 
 You should now be able to steer the Rover with the joy axes you set.
+
+### Detecting AR Tags
+
+An **ARTag** is a fiduciary marker system that can help with robot perception challenges, serving as a point of reference for autonomous tasks.
+
+In this example, we will use [ar\_track\_alvar](http://wiki.ros.org/ar_track_alvar) package for detecting individual markers.
+
+As sending raw images from the camera via wireless network may be insufficient, we will relay all the processing to the Raspberry Pi.   
+Start by logging into your Rover's console:
+
+{% page-ref page="../../software-tutorials/connect-to-the-console-ssh.md" %}
+
+Create a workspace in your home directory if you don't have one yet:
+
+```yaml
+mkdir -p ~/ros_ws/src
+cd ~/ros_ws
+catkin init
+catkin config --extend /opt/ros/kinetic
+```
+
+Create a new package that depends on `ar_track_alvar`:
+
+```yaml
+cd ~/ros_ws/src
+catkin create pkg leo_alvar_example --catkin-deps ar_track_alvar
+```
+
+Run `rosdep` to install dependent package:
+
+```bash
+cd ~/ros_ws
+rosdep update
+rosdep install --from-paths src -i
+```
+
+Now, add **launch/** and **config/** directories inside your package:
+
+```bash
+cd ~/ros_ws/src/leo_alvar_example
+mkdir launch config
+```
+
+Inside **launch/** directory add **alvar.launch** with the following content:
+
+```markup
+<launch>
+	<arg name="cam_image_topic" default="camera/image_raw" />
+	<arg name="cam_info_topic" default="camera/camera_info" />
+    
+	<node name="ar_track_alvar" pkg="ar_track_alvar" type="individualMarkersNoKinect" respawn="false" output="screen">
+		<rosparam command="load" file="$(find leo_alvar_example)/config/alvar.yaml" />
+
+		<remap from="camera_image"  to="$(arg cam_image_topic)" />
+		<remap from="camera_info"   to="$(arg cam_info_topic)" />
+	</node>
+</launch>
+```
+
+Inside **config/** directory add **alvar.yaml** file:
+
+```yaml
+marker_size: 10.0
+max_new_marker_error: 0.08
+max_track_error: 0.2
+max_frequency: 8.0
+output_frame: base_link
+```
+
+{% hint style="info" %}
+You will most likely need to change `marker_size` parameter depending on the actual size of your printed AR tag. You can read more about the parameters on the [package wiki](http://wiki.ros.org/ar_track_alvar#ar_track_alvar.2BAC8-post-fuerte.Detecting_individual_tags).
+{% endhint %}
+
+And build the package:
+
+```bash
+cd ~/ros_ws
+catkin build
+source devel/setup.bash
+```
+
+To start the Alvar tracking, type:
+
+```bash
+roslaunch leo_alvar_example alvar.launch
+```
+
+Now, we need to create some markers, so go back to your computer.
+
+Install the `ar_track_alvar` package: 
+
+```bash
+sudo apt install ros-melodic-ar-track-alvar
+```
+
+And run the `createMarker` script:
+
+```bash
+rosrun ar_track_alvar createMarker 0 -s 10.0
+```
+
+This will create **MarkerData\_0.png** file that stores a 10cm x 10cm marker with id 0. Print this file on a sheet of paper.
+
+{% hint style="warning" %}
+Due to differences in printer setups, the actual size of the printed marker may be different. Make sure the `marker_size` parameter represents the actual size \(in centimeters\) of the AR tag.
+{% endhint %}
+
+Now to visualize detected AR Tags, you just need to:
+
+* open RViz, by typing `rviz` in console
+* set **Fixed Frame** to `base_link`
+* Click **Add** -&gt; **Marker** and set **Marker Topic** to `visualization_marker`
+* \(optionally\) Click **Add** -&gt; **RobotModel** to visualize the Rover
+* \(optionally\) Click **Add** -&gt; **Image**, set **Image Topic** to `/camera/image_raw` and **Transport Hint** to `compressed` to open the image stream
+
+If all goes well, you should end up with something like this:
+
+{% embed url="https://www.youtube.com/watch?v=QQpz7LU5eJ4&feature=youtu.be" %}
+
+The detected AR Tags are also published to `/ar_pose_marker` topic, so you could use the output in your custom nodes.
 
