@@ -12,6 +12,7 @@
 * [GPS module](addons-manuals/gps-module.md)
 * [IMU module](addons-manuals/imu-module.md)
 * [USB Camera](addons-manuals/usb-camera.md)
+* [Camera mast](addons-manuals/camera-mast.md)
 
 ## Software tutorials
 

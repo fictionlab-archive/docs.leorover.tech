@@ -4,7 +4,7 @@ This set of tutorials will delve deeper into software architecture on Leo Rover,
 
 ## Software structure
 
-![](../../.gitbook/assets/image%20%2819%29.png)
+![](../../.gitbook/assets/image%20%2821%29.png)
 
 The base Leo Rover software can be divided into 3 main elements:
 
