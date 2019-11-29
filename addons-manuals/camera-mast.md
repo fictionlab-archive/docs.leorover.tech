@@ -2,6 +2,8 @@
 
 ## Introduction
 
+![](../.gitbook/assets/38949_mars-mer-head-neck-artist-concept.jpg)
+
 In this tutorial we will show you how to build and integrate another addon with Leo Rover - Camera Mast. 
 
 It is inspired by camera mast built on top of NASA's rover Opportunity and is able to rotate camera through an angle of 360 degrees, more than 270 mm above the top of the Rover! 
