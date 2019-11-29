@@ -1,3 +1,9 @@
+---
+description: >-
+  This tutorial shows how to 3D print and integrate with Leo Rover camera mast
+  addon.
+---
+
 # Camera mast
 
 ## Introduction
