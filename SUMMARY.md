@@ -5,6 +5,7 @@
 
 ## Addons manuals
 
+* [ArbotiX-M Robocontroller](addons-manuals/arbotix-m-robocontroller.md)
 * [PhantomX Pincher Arm](addons-manuals/control-phantomx-pincher-arm.md)
 * [Relay module](addons-manuals/control-4-relays/README.md)
   * [Make your own UI - Relay switches](addons-manuals/control-4-relays/sample-ui-relay-funcionality.md)
