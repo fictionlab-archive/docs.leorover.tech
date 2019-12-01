@@ -35,6 +35,7 @@
   * [Interface pinout](development-tutorials/hardware-structure/interface-pinout.md)
 * [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
 * [UI Structure \(coming soon\)](development-tutorials/ui-structure.md)
+* [3D-printed parts](development-tutorials/3d-printed-parts.md)
 * [Leo Wheel modification](development-tutorials/leo-wheel-modification/README.md)
   * [Motors specification](development-tutorials/leo-wheel-modification/motors-specification.md)
   * [Mount different tires](development-tutorials/leo-wheel-modification/mount-different-tires.md)
@@ -52,5 +53,4 @@
 * [6. Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
 * [7. Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
 * [8. Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
-* [\[Archive\] 3D printing](assembly-manuals/3d-printing.md)
 

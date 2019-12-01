@@ -28,7 +28,7 @@ This one comes stock with the Rover. It's designed to be watertight and provide 
 
 
 
-![part 00188 \(stock\)](../../.gitbook/assets/00188.png)
+![part 00188 \(stock\)](../../.gitbook/assets/00188%20%281%29.png)
 
 ## 00188\_dev - Easy-access cover
 
