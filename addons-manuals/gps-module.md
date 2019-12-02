@@ -70,6 +70,10 @@ Here you'll upload the newest firmware and learn how to enable addon functionali
 
 Make sure you have the newest firmware uploaded to Core2-ROS. GPS functionality is available only in the current version.
 
+{% hint style="danger" %}
+GPS funcionality is availiable on branch feature/gps and devel- tests in progress
+{% endhint %}
+
 {% page-ref page="../software-tutorials/flash-firmware-to-core2-board.md" %}
 
 ### Enable GPS
