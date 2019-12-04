@@ -95,49 +95,13 @@ cd /opt
 git clone https://github.com/LeoRover/leo_ui_sample_relay.git
 ```
 
-{% hint style="info" %}
-If you like to learn how this UI is build- check this tutoral: [Sample UI- relay funcionality](sample-ui-relay-funcionality.md)
-{% endhint %}
-
-#### 2. Add a configuration file for nginx server to use the interface on additional port :90
-
-Find a directory /etc/nginx/sites-available and create there leo\_ui\_sample\_relay file by copying it from leo\_ui
-
-```text
-cd /etc/nginx/sites-available
-sudo cp leo_ui leo_ui_sample_relay
-```
-
-Open the created file
-
-```text
-sudo nano leo_ui_sample_relay 
-```
-
-and make changes in the lines as below
-
-```text
-listen 80 default_server;        ==>    listen 90 default_server;
-listen [::]:80 default_server;   ==>    listen [::]:90 default_server;
-
-root /opt/leo_ui;                ==>    root /opt/leo_ui_sample_relay;
-```
-
-{% hint style="info" %}
-Save the file - type ctrl+o 
-{% endhint %}
-
-#### 3. Restart nginx service
-
-```text
-systemctl restart nginx
-```
+{% page-ref page="../../development-tutorials/ui-structure/include-additional-ui.md" %}
 
 ## How to control the relays via user interface
 
-### 1. Connect to the Rover wifi network
+#### 1. Connect to the Rover wifi network
 
-### 2. Open web browser and type 10.0.0.1:90
+#### 2. Open web browser and type 10.0.0.1:90
 
 ![](../../.gitbook/assets/zrzut-ekranu-z-2019-08-08-14-27-31.png)
 
