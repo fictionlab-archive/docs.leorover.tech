@@ -27,8 +27,7 @@ Motors that are used for this application are Dynamixel AX-12A servo's which pro
   * 01131 \(Third servo mount\)
   * 01132 \(Camera mount\)
   * 2x 01133 \(Bearing shaft\)
-  * 01110 \(ArbotiX base\)
-  * 01111 \(ArbotiX cover\)
+  * 01134 \(ArbotiX mount\)
 * 3x Dynamixel AX-12A
 * 3x Dynamixel cable
 * ArbotiX-M Robocontroller
@@ -40,7 +39,8 @@ Motors that are used for this application are Dynamixel AX-12A servo's which pro
 * 4x M3 square nut
 * 4x 2,2x6,5 screw
 * 8x M3x10 hex bolt with button head \(actually any M3x10 will be okay\)
-* 4x M3x6 hex bolt with button head \(actually any M3x6 will be okay\)
+* 8x M3x6 hex bolt with button head \(actually any M3x6 will be okay\)
+* 4x cooper M3 inserts
 * 2x M3x10 hex bolt with head cap \(ISO 4762\)
 * 26x M2x8 hex bolt with head cap \(ISO 4762\)
 * 26x M2 nut
