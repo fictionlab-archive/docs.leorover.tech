@@ -139,23 +139,30 @@ Now, that you've built the mast, it's time to mount it on the Rover and install 
 
 ### Mounting and wiring the mast
 
-Camera mast for operation needs 2 things - power supply and communication with rover. Device which will be used for communication is ArbotiX controller suggested by Dynamixel manufacturer. 3 cables needs to be connected to that - power supply, FTDI cable and Dynamixel servo. To make it easier we designed special mount for Arbotix that needs to be attached to the rover.
+Camera mast needs 2 things for the operation - a power supply and an additional controller that will communicate with the Rover. The device, that we will use for communication with the servos, is [ArbotiX-M Robocontroller](https://www.trossenrobotics.com/p/arbotix-robot-controller.aspx), also suggested by Dynamixel manufacturer. 
 
+A total of 3 cables need to be connected to the controller - output of the power supply, FTDI USB-UART cable and a Dynamixel servo. To make the mounting easier, we designed a special mount for the Arbotix board that can be attached to the Rover.
 
+![Step 1: Screw 01134 \(ArbotiX mount\) to the top of the rover near antenna. Remember to hot-press M3 inserts earlier.](../.gitbook/assets/20191208_193210_compress0.jpg)
 
-![Step 1: Bolt 01134 \(ArbotiX mount\) to the top of the rover near antenna. Remember to hot-press M3 inserts earlier.](../.gitbook/assets/20191208_193210_compress0.jpg)
+When the ArbotiX board is safely mounted, we can start wiring the components. Let's start with the power supply. Dynamixel servos are powered with a 12VDC supply, the same as the Leo Rover, so we can power the board from the main battery by soldering a DC barrel jack cable as a second output of the DC-DC converter like in the picture below:
 
-When ArbotiX will be safely mounted we can start wiring. The first thing - power supply. Dynamixel's are powered with 12VDC - fortunately Leo rover also so we can take some juice directly from rover's battery using it's DC-DC converter as on image below:
+![Step 2: Solder the DC connector to a 12V part of the DC-DC converter. For your convenience you can also get this part at our website.](../.gitbook/assets/20191208_194637_compress16.jpg)
 
-![Solder DC connector to 12V part of DC-DC converter. For your convenience you can also get this part at our website.](../.gitbook/assets/20191208_194637_compress16.jpg)
+When it is done just plug in the connector to the ArbotiX board. 
 
-When it will be done just press in the connector to ArbotiX pcb board. Next step is to communicate ArbotiX with Leo rover. For this purpose FTDI cable needs to be used. There are many variations of this connection but basically you need to connect miniUSB socket in the rover with FTDI socket at ArbotiX pcb board. Below we are showing 2 possible connections:
+{% hint style="warning" %}
+Double check the wiring before plugging it in! The barrel jack should be center-positive \(you can confirm it with a multimeter\). The board might not be protected against reverse polarity.
+{% endhint %}
 
-![Possibility 1: FTDI adapter -&amp;gt; double miniUSB cable](../.gitbook/assets/20191208_194444_compress99.jpg)
+Next step is to connect the ArbotiX board to the LeoRover's miniUSB socket \(located at the top\) using a USB-UART FTDI 5V converter.  
+We have tested 2 variations of the connection: using [SparkFun FTDI breakout](https://www.sparkfun.com/products/9716) board and a male to male miniUSB cable or using [FTDI cable](https://www.trossenrobotics.com/store/p/6406-FTDI-Cable-5V.aspx) and a miniUSB to USB adapter.
+
+![Possibility 1: Sparkfun FTDI adapter -&amp;gt; double miniUSB cable](../.gitbook/assets/20191208_194444_compress99.jpg)
 
 ![Possibility 2: Standard FTDI cable -&amp;gt; miniUSB to USB adapter](../.gitbook/assets/20191208_194428_compress22.jpg)
 
-Last step is to connect Dynamixel cable to any of the socket which will fit the connector.
+Last step is to connect the Dynamixel cable to any of the 3 sockets that will fit the connector.
 
 ![](../.gitbook/assets/image.png)
 
