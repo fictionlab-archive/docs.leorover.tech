@@ -20,219 +20,116 @@ Also, you need to have ROS installed on your computer.
 
 And, of course, assembled Pincher Arm together with ArbotiX-M Robocontroller connected to your Rover. 
 
-## 1. On your computer
+## Set servo IDs
 
-### 1.1 Flash ArbotiX-M Robocontroller board
-
-To program Arbotix board, you can follow the [Getting Started Guide](https://learn.trossenrobotics.com/arbotix/7-arbotix-quick-start-guide) from Trossen Robotics.
-
-If everything works, open and upload the following sketch
-
-```text
-File -> Sketchbook -> ArbotiX Sketches -> ros
-```
-
-### 1.2 Install Arbotix ROS drivers
-
-You can install arbotix ROS packages from repository \(`ros-kinetic-arbotix` package\), but for the pincher gripper to fully work, you need to build an unrealeased [0.11.0 version](https://github.com/corb555/arbotix_ros) which adds support for prismatic joints.
-
-To build it, you can follow these steps:
-
-```bash
-source /opt/ros/kinetic/setup.bash
-mkdir -p ~/ros_ws/src && cd ~/ros_ws/src
-git clone https://github.com/corb555/arbotix_ros
-cd ~/ros_ws
-rosdep update
-rosdep install --from-paths src -iry
-catkin build
-```
-
-### 1.3 Set Dynamixel IDs
-
-Connect Arbotix-M board to your computer through [FTDI-USB Cable](http://www.trossenrobotics.com/store/p/6406-FTDI-Cable-5V.aspx)
-
-Source your catkin workspace \(either `/opt/ros/kinetic` or `~/ros_ws/devel` depending on how you installed Arbotix ROS drivers\) and run:
-
-```text
-arbotix_terminal
-```
-
-{% hint style="info" %}
-`arbotix_terminal` by default, assumes the board is connected on `/dev/ttyUSB0` port. If it is attached to another device, you can specify it like this: 
-
-```text
-arbotix_terminal [PORT]
-```
-
-To check which port the device connects to, you can, for instance, run `dmesg -w` \(Ctrl+C to exit\), connect the device and check kernel logs. 
-
-If you are using Ubuntu on `Windows Subsytem for Linux` , you need to open Device Manager and look under Ports for COM port number of the device. `COM[N]` corresponds to `/dev/ttyS[N]` path. \(e.g. COM4 -&gt; /dev/ttyS4\). You might need to run:
-
-```text
- sudo chmod 666 /dev/ttyS[N]
-```
-{% endhint %}
-
-A terminal prompt should appear. Type `help` for list of commands.
-
-![](../.gitbook/assets/image%20%2836%29.png)
-
-Connect the Dynamixel you want to set id to. Then type `ls` to see id of connected servo and `mv [source] [target]` to change it. For example, when the servo has id 1 and we want to set it to 2, just type `mv 1 2`. 
-
-On PhantomX pincher arm, servo ids should look like this:
+To properly communicate with the Dynamixel servos, you will need to set the servo IDs like in the picture below:
 
 ![source: trossenrobotics.com](../.gitbook/assets/image%20%282%29.png)
 
-When done, type `Ctrl+C` to exit the terminal
+To do this, you can follow our guide for the Arbotix controller here:
 
-### 1.4 Test Arbotix ROS drivers
+{% page-ref page="arbotix-m-robocontroller.md" %}
 
-We will create a package that tests arbotix driver. Let's start by creating an empty package
+In there, you will also find how to configure and use the [arbotix ROS driver](http://wiki.ros.org/arbotix).
 
-```bash
-source /opt/ros/kinetic/setup.bash
-mkdir -p ~/ros_ws/src && cd ~/ros_ws/src
-catkin create pkg arbotix_test --catkin-deps arbotix_python
-```
-
-Inside your package, create `config/test.yaml` file with following content \(change port if needed\):
-
-```yaml
-port: /dev/ttyUSB0
-rate: 15
-joints: {
-    servo1: {id: 1},
-    servo2: {id: 2},
-    servo3: {id: 3},
-    servo4: {id: 4},
-    servo5: {id: 5}
-}
-```
-
-{% hint style="info" %}
-You can set more parameters for each joint, like maximum speed, minimum and maximum angle etc. A brief documentation \(Unfortunately, a little outdated\) can be found [here](http://wiki.ros.org/arbotix_python#Parameters)
-{% endhint %}
-
-And `launch/test.launch` with following:
-
-```markup
-<launch>
-  <node name="arbotix" pkg="arbotix_python" type="arbotix_driver" output="screen">
-    <rosparam file="$(find arbotix_test)/config/test.yaml" command="load" />
-  </node>
-</launch>
-```
-
-Now, build your workspace
-
-```bash
-cd ~/ros_ws
-catkin build
-```
-
-{% hint style="info" %}
-From now on, you need to run `source ~/ros_ws/devel/setup.bash` on every terminal session you open \(or add it to `~/.bashrc`\)
-{% endhint %}
-
-Run Master node on one terminal
-
-```bash
-roscore
-```
-
-And on another, run your [launch file](http://wiki.ros.org/roslaunch/XML)
-
-```bash
-roslaunch arbotix_test test.launch
-```
-
-Now, check available topics and services
-
-```text
-rostopic list
-rosservice list
-```
-
-You should see `command` topics that let you set position \(in radians\) for each servo and `joint_states` topic that informs about position and velocity of each joint. There should also be services that allow enabling, relaxing or setting speed \(in radians/sec\) for each servo.
-
-Let's try to move `servo1` joint. 
-
-First, set speed to a safe value \(0.2 r/s in this case\):
-
-```text
-rosservice call /servo1/set_speed 0.2
-```
-
-Move servo to a default neutral value:
-
-```text
-rostopic pub /servo1/command std_mgs/Float64 -- 0.0
-```
-
-{% hint style="info" %}
-The maximum angle range for a dynamixel servo is \[-150, 150\] degrees which is equal to approximately \[-2.62, 2.62\] in radians
-{% endhint %}
-
-Relax joint:
-
-```text
-rosservice call /servo1/relax
-```
-
-You can also use `arbotix_gui` to control each joint. Just type:
-
-```bash
-arbotix_gui
-```
-
-A graphical application should appear:
-
-![](../.gitbook/assets/image%20%287%29.png)
-
-Enable and relax servos by clicking on checkboxes and set position by moving sliders.
-
-#### Summary
-
-Here's a recording of a terminal session in which we do things mentioned in the tutorial up to this point:
-
-[![asciicast](https://asciinema.org/a/2um3pdcf5WVzDLYvs8xI5lo09.svg)](https://asciinema.org/a/2um3pdcf5WVzDLYvs8xI5lo09)
-
-### 1.5 Install turtlebot\_arm packages
+## Install the ROS driver package
 
 The [turtlebot\_arm](http://wiki.ros.org/turtlebot_arm) packages contain very useful utilities for PhantomX Pincher arm such as:
 
-* configuration for arbotix driver
+* configuration for the arbotix driver
 * [URDF](http://wiki.ros.org/urdf) model of the arm
 * [Moveit!](https://moveit.ros.org) configuration package
 * [IKFast](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/ikfast/ikfast_tutorial.html) Kinematics solver plugin
 * MoveIt! pick and place demo
 
-Let's build it
+To use the mentioned features, you need to build the packages and run the driver on your Rover first.
+
+Start by logging into your Rover's console:
+
+{% page-ref page="../software-tutorials/connect-to-the-console-ssh.md" %}
+
+and creating an empty catkin workspace, if you don't have one yet:
 
 ```bash
-source ~/ros_ws/devel/setup.bash
+mkdir -p ~/ros_ws/src && cd ~/ros_ws
+catkin init
+catkin config --extend /opt/ros/kinetic
+```
+
+Clone the packages into the source space:
+
+```bash
 cd ~/ros_ws/src
-git clone https://github.com/turtlebot/turtlebot_arm.git -b kinetic-devel
+git clone https://github.com/corb555/arbotix_ros.git
+git clone https://github.com/turtlebot/turtlebot_arm.git
+```
+
+{% hint style="info" %}
+To fully support the PhantomX Pincher arm, we clone the [unofficial 0.11.0 release](https://github.com/corb555/arbotix_ros) of the arbotix driver, which adds support for prismatic joints.
+{% endhint %}
+
+Install dependencies:
+
+```bash
 cd ~/ros_ws
-rosdep install --from-paths src -iry
+rosdep update
+rosdep install --from-paths src -yi
+```
+
+Build the workspace:
+
+```bash
 catkin build
 ```
 
-To use this packages with PhantomX Pincher, you need to have `TURTLEBOT_ARM1` environment variable set to `pincher` . To set it automatically on every terminal session, add `export` command to `.bashrc` file:
+Source the result space:
+
+```bash
+source ~/ros_ws/devel/setup.bash
+```
+
+To use the packages with PhantomX Pincher arm, set the `TURTLEBOT_ARM1`environment variable to `pincher`.
+
+```bash
+export TURTLEBOT_ARM1=pincher
+```
+
+{% hint style="info" %}
+Add this line to `~/.bashrc` if you don't want to run it on every terminal session you open:
 
 ```bash
 echo "export TURTLEBOT_ARM1=pincher" >> ~/.bashrc
-source ~/.bashrc
 ```
+{% endhint %}
 
-Make sure to have `roscore` running, then type:
+Now, you can use [roslaunch](http://wiki.ros.org/roslaunch) to run the bringup launch file:
 
 ```bash
 roslaunch turtlebot_arm_bringup arm.launch
 ```
 
-This should run Arbotix driver, [robot\_state\_publisher](http://wiki.ros.org/robot_state_publisher) and set `robot_description` parameter.
+This should run the Arbotix driver, [robot\_state\_publisher](http://wiki.ros.org/robot_state_publisher) and set the`robot_description` parameter to the [URDF model ](https://industrial-training-master.readthedocs.io/en/melodic/_source/session3/Intro-to-URDF.html)of the arm.
+
+You should then see new topics to which you can send position commands:
+
+```bash
+/arm_shoulder_pan_joint/command
+/arm_shoulder_lift_joint/command
+/arm_elbow_flex_joint/command
+/arm_wrist_flex_joint/command
+/gripper_joint/command
+```
+
+as well as services for setting speed and relaxing joints.  
+You can learn more about them in the [ArbotiX-M Robocontroller tutorial](https://docs.leorover.tech/addons-manuals/arbotix-m-robocontroller).
+
+The driver will also provide controllers for [FollowJointTrajectory](http://docs.ros.org/api/control_msgs/html/action/FollowJointTrajectory.html) and [GripperCommand](http://docs.ros.org/melodic/api/control_msgs/html/action/GripperCommand.html) actions \(see the [actionlib wiki](http://wiki.ros.org/actionlib) for more information\).
+
+## Visualize and control the arm with MoveIt
+
+You will need to have ROS installed on your computer and properly configured to communicate with the nodes running on your Rover. To learn how to do this, you an follow **Connecting other computer to ROS network** section of ROS Development tutorial:
+
+{% page-ref page="../development-tutorials/software-development/ros-development.md" %}
 
 To view robot arm model with actual position:
 
@@ -241,14 +138,13 @@ To view robot arm model with actual position:
 * Click `Add` in Displays panel
 * Select `RobotModel` and click `Ok`
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Lf4v_-a_RwXihZ7ha2W%2F-LgDttR7GgctqvFzocxH%2F-LgDvjkVlD_NFk9J_htk%2Fimage.png?alt=media&token=b53e1368-84b1-4303-8142-ebc58fe47108)
 
-To test Motion Planning with MoveIt! : 
+To test Motion Planning with MoveIt! :
 
-* Run `turtlebot_arm_moveit` launch file:  
+* Run `turtlebot_arm_moveit` launch file:
 
-
-  ```bash
+  ```text
   roslaunch turtlebot_arm_moveit_config turtlebot_arm_moveit.launch sim:=false
   ```
 
@@ -257,118 +153,11 @@ To test Motion Planning with MoveIt! :
 * Click on `Plan` to see Motion visualization and then `Execute` or just click on `Plan and Execute`
 * Run pick and place demo \(in another terminal session\)
 
+  ​
 
-
-  ```bash
+  ```text
   rosrun turtlebot_arm_moveit_demos pick_and_place.py
   ```
 
-![](../.gitbook/assets/image%20%2822%29.png)
-
-## 2. On your Rover
-
-### 2.1 Prepare catkin workspace
-
-Let's prepare a catkin workspace for pincher arm. Start by sourcing the workspace you want to extend. If you don't have an existing development workspace, just do:
-
-```bash
-source /opt/ros/kinetic/setup.bash
-```
-
-Download necessary packages
-
-```bash
-mkdir -p ~/ros_ws/src && cd ~/ros_ws/src
-git clone https://github.com/corb555/arbotix_ros.git
-git clone https://github.com/turtlebot/turtlebot_arm.git
-```
-
-We only need `turtlebot_arm_bringup` and `turtlebot_arm_description` packages, so we can remove the rest
-
-```bash
-cd ~/ros_ws/src/turtlebot_arm
-mv turtlebot_arm_bringup turtlebot_arm_description ~/ros_ws/src
-cd ~/ros_ws/src
-rm -rf turtlebot_arm
-```
-
-Use `rosdep` to install missing dependencies
-
-```bash
-cd ~/ros_ws
-rosdep update
-rosdep install --from-paths src -iry
-```
-
-Now, build the workspace
-
-```text
-catkin build -j 2
-```
-
-### 2.2 Start necessary Nodes
-
-Source your workspace
-
-```bash
-source ~/ros_ws/devel/setup.bash
-```
-
-For ROS to work on multiple machines, you need to set specific [Environment Variables](http://wiki.ros.org/ROS/EnvironmentVariables):
-
-```bash
-export TURTLEBOT_ARM1=pincher
-export ROS_IP=10.0.0.1
-export ROS_MASTER_URI=http://10.0.0.1:11311
-```
-
-{% hint style="info" %}
-Add these lines to `~/.bashrc` to set them automatically
-{% endhint %}
-
-Now, run Master node on one terminal
-
-```text
-roscore
-```
-
-And on another, type:
-
-```bash
-roslaunch turtlebot_arm_bringup arm.launch
-```
-
-### 2.3 Control the arm from your computer
-
-Source your workspace containing turtlebot\_arm packages
-
-```bash
-source ~/ros_ws/devel/setup.bash
-```
-
-Set required variables
-
-```bash
-export TURTLEBOT_ARM1=pincher
-export ROS_IP=X.X.X.X
-export ROS_MASTER_URI=http://10.0.0.1:11311
-```
-
-{% hint style="info" %}
-Replace X.X.X.X with your local IP address. To check your address, you can use `ip address` command
-{% endhint %}
-
-You can now use the examples we described earlier, e.g.:
-
-```text
-arbotix_gui
-```
-
-or MoveIt! demo:
-
-```text
-roslaunch turtlebot_arm_moveit_config turtlebot_arm_moveit.launch sim:=false
-```
-
-
+![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Lf4v_-a_RwXihZ7ha2W%2F-LgDttR7GgctqvFzocxH%2F-LgDvqXKtwW2afxBnYUG%2Fimage.png?alt=media&token=cd32a873-4c06-4595-8a6a-822b6b578efc)
 
