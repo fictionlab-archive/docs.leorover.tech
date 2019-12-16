@@ -253,7 +253,7 @@ The UI source is available at our[ Github repositories](https://github.com/LeoRo
 
 To install it on your Rover, follow the tutorial below: 
 
-{% page-ref page="../development-tutorials/software-development/web-ui-development.md" %}
+{% page-ref page="../development-tutorials/ui-structure/include-additional-ui.md" %}
 
 Then, type in you web browser the LeoRover's address and choose the port number \(for example `10.0.0.1:90`\). If the UI was loaded correctly, you should see the same interface as below:
 
