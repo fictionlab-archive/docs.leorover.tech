@@ -46,7 +46,7 @@
 ## Assembly manuals
 
 * [0. Check if you have everything](assembly-manuals/check-the-boxes.md)
-* [1. Wheel assembly](assembly-manuals/wheel-assembly.md)
+* [1. Wheel assembly](assembly-manuals/1.-wheel-assembly.md)
 * [2. Frame assembly manual](assembly-manuals/frame-assembly-manual.md)
 * [3. Suspension assembly manual](assembly-manuals/suspension-assembly-manual.md)
 * [4. Wheels to suspension](assembly-manuals/4.-wheels-to-suspension.md)
@@ -54,4 +54,8 @@
 * [6. Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
 * [7. Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
 * [8. Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
+
+## Archive
+
+* [Leo 1.5 Wheel assembly](archive/wheel-assembly.md)
 

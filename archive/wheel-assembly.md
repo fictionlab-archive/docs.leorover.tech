@@ -1,4 +1,4 @@
-# 1. Wheel assembly
+# Leo 1.5 Wheel assembly
 
 ![](../.gitbook/assets/a0002-section.jpg)
 
