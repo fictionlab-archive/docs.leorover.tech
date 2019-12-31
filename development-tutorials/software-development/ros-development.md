@@ -353,7 +353,7 @@ Now choose **Plugins -&gt; Introspection -&gt; Node Graph**
 
 If your are connected to your Rover, you should see all the nodes running on Raspberry Pi. You can experiment with Node Graph settings, so it can look like this:
 
-![a placeholder screenshot \[TODO\]](../../.gitbook/assets/image%20%289%29.png)
+![](../../.gitbook/assets/image%20%2835%29.png)
 
 ### Visualizing the model  
 
