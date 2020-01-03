@@ -1,5 +1,9 @@
 # 2. Frame and suspension assembly manual
 
+## Assembly manual
+
+### Main axis bearing holder
+
 ![](../.gitbook/assets/p1020111.jpeg)
 
 ![](../.gitbook/assets/p1020113.jpeg)
@@ -16,6 +20,8 @@
 
 ![](../.gitbook/assets/p1020128.jpeg)
 
+### Differential bar holder
+
 ![](../.gitbook/assets/p1020172.jpeg)
 
 ![](../.gitbook/assets/p1020175.jpeg)
@@ -27,6 +33,8 @@
 ![](../.gitbook/assets/p1020180.jpeg)
 
 ![](../.gitbook/assets/p1020183.jpeg)
+
+### Differential bar
 
 ![](../.gitbook/assets/p1020184.jpeg)
 
@@ -58,6 +66,8 @@
 
 ![](../.gitbook/assets/p1020214.jpeg)
 
+### Suspension beam
+
 ![](../.gitbook/assets/p1020216.jpeg)
 
 ![](../.gitbook/assets/p1020217.jpeg)
@@ -69,6 +79,8 @@
 ![](../.gitbook/assets/p1020223.jpeg)
 
 ![](../.gitbook/assets/p1020226.jpeg)
+
+### Suspension to frame assembly
 
 ![](../.gitbook/assets/p1020228.jpeg)
 
@@ -106,6 +118,8 @@
 
 ![](../.gitbook/assets/p1020298.jpeg)
 
+### Differential to suspension connection
+
 ![](../.gitbook/assets/p1020301.jpeg)
 
 ![](../.gitbook/assets/p1020303.jpeg)
@@ -120,7 +134,15 @@
 
 ![](../.gitbook/assets/p1020313.jpeg)
 
+## Troubleshooting
+
+### Loose suspension
+
+It may happen that after the assembly your Rover suspension is wobbly and loose. Check if the main axis nut is properly tightened. If the connection is tight and the issue occurs, please unscrew the nut, add an extra spacer between the nut and the bearing and then tighten the joint.
+
 ![](../.gitbook/assets/p1020315.jpeg)
+
+
 
 Same as in Turtle Rover:
 
