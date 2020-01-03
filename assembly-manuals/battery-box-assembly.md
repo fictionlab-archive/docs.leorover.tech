@@ -1,4 +1,4 @@
-# 7. Battery quarter \(left\) assembly
+# 6. Battery quarter \(left\) assembly
 
 ## Battey quarter assembly guide
 

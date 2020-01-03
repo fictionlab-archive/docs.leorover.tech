@@ -1,4 +1,4 @@
-# 2. Frame assembly manual
+# 2. Frame and suspension assembly manual
 
 ![](../.gitbook/assets/p1020111.jpeg)
 
