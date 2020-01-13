@@ -50,8 +50,8 @@
 * [2. Frame and suspension assembly manual](assembly-manuals/frame-assembly-manual.md)
 * [3. Wheels to suspension](assembly-manuals/4.-wheels-to-suspension.md)
 * [4. Front cover](assembly-manuals/5.-front-cover.md)
-* [5. Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
-* [6. Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
+* [5. Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
+* [6. Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
 * [7. Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
 
 ## Archive
