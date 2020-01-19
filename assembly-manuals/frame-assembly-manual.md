@@ -1,4 +1,4 @@
-# 2. Frame and suspension assembly manual
+# 3. Frame and suspension assembly manual
 
 ## Assembly manual
 
@@ -133,6 +133,28 @@
 ![](../.gitbook/assets/p1020311.jpeg)
 
 ![](../.gitbook/assets/p1020313.jpeg)
+
+### Backframe
+
+![](../.gitbook/assets/p1020354.jpg)
+
+![](../.gitbook/assets/p1020358.jpg)
+
+![](../.gitbook/assets/p1020359.jpg)
+
+![](../.gitbook/assets/p1020363.jpg)
+
+![](../.gitbook/assets/p1020365.jpg)
+
+![](../.gitbook/assets/p1020367.jpg)
+
+![](../.gitbook/assets/p1020369.jpg)
+
+### Done!
+
+![](../.gitbook/assets/p1020372.jpg)
+
+![](../.gitbook/assets/p1020374.jpg)
 
 ## Troubleshooting
 

@@ -1,19 +1,32 @@
 # 7. Additional quarter \(right\) assembly
 
-Currently the additional quarter is used to hold 24V-12V DC converter used to run 24V batteries with 12V internal electronics.
-
-This way, depending on where you connect, you can use 12V and 24V power supply for your own projects.
-
 ## Assembly guide
 
-Sorry, no detailed description yet. But we have a photo! :\)
+![](../.gitbook/assets/p1020647.jpg)
 
-![](../.gitbook/assets/p1010677.JPG)
+![](../.gitbook/assets/p1020649.jpg)
 
-## Power limits
+![](../.gitbook/assets/p1020652%20%281%29.jpg)
 
-| Voltage | Current |
-| :--- | :--- |
-| 12V DC | max. 10A |
-| 24V DC | max. 8A |
+![](../.gitbook/assets/p1020653.jpg)
+
+![](../.gitbook/assets/p1020656.jpg)
+
+## Connect the quarter to the Rover
+
+![](../.gitbook/assets/p1020658.jpg)
+
+![](../.gitbook/assets/p1020659.jpg)
+
+![](../.gitbook/assets/p1020661.jpg)
+
+![](../.gitbook/assets/p1020662.jpg)
+
+![](../.gitbook/assets/p1020663.jpg)
+
+![](../.gitbook/assets/p1020665.jpg)
+
+![](../.gitbook/assets/p1020667.jpg)
+
+![](../.gitbook/assets/p1020670.jpg)
 

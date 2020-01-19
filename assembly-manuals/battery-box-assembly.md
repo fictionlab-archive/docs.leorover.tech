@@ -1,40 +1,128 @@
-# 5. Battery quarter \(left\) assembly
+# 6. Battery quarter \(left\) assembly
 
-## Battey quarter assembly guide
+## Assembly guide
 
-### 1. Button and power socket
+![](../.gitbook/assets/p1020556.jpg)
 
-![1. At first mount button and 3pin socket. Remember about orings.](../.gitbook/assets/20190731-160411.jpg)
+### Plastic cover
 
-### 2. Plastic cover and frame
+![](../.gitbook/assets/p1020559.jpg)
 
-![2. Next step is to assemble 3D part with metal part.](../.gitbook/assets/20190731-161151.jpg)
+![](../.gitbook/assets/p1020560%20%281%29.jpg)
 
-![3. Mount square nuts into 3D printed part.](../.gitbook/assets/20190731-161219.jpg)
+![](../.gitbook/assets/p1020561.jpg)
 
-### 3. Box assembly
+![](../.gitbook/assets/p1020562%20%281%29.jpg)
 
-![4. Assemble with torx bolts but don&apos;t tighten them.](../.gitbook/assets/20190731-161312.jpg)
+![](../.gitbook/assets/p1020564.jpg)
 
-![5. Take bottom of battery box and M4x16 bolts.](../.gitbook/assets/20190731-161438.jpg)
+### Battery button
 
-![6. Assemble everything together - center button with hole in the metal part.](../.gitbook/assets/20190731-161648.jpg)
+![](../.gitbook/assets/p1020565.jpg)
 
-![7. Tighten torx bolts.](../.gitbook/assets/20190731-161708.jpg)
+![](../.gitbook/assets/p1020568.jpg)
 
-### 4. Soldering
+![](../.gitbook/assets/p1020570.jpg)
 
-![8. Solder everything according to the scheme. Both black cables \(from battery and socket\) should be soldered together to the \(-\) pin in the button.](../.gitbook/assets/20190731-160522.jpg)
+![](../.gitbook/assets/p1020572.jpg)
 
-### 5. Battery
+![](../.gitbook/assets/p1020573.jpg)
 
-![9. Put distance sponge at the bottom of battery box.](../.gitbook/assets/20190731-162844.jpg)
+![](../.gitbook/assets/p1020575.jpg)
 
-![10. Insert battery.](../.gitbook/assets/20190731-162905.jpg)
+### Box to cover
 
-![11. Close the cover with plastic screws.](../.gitbook/assets/20190731-163223.jpg)
+![](../.gitbook/assets/p1020577.jpg)
 
-{% hint style="success" %}
-![12. And that&apos;s it!](../.gitbook/assets/20190731-163232.jpg)And that's it!
-{% endhint %}
+![](../.gitbook/assets/p1020578.jpg)
+
+![](../.gitbook/assets/p1020579.jpg)
+
+![](../.gitbook/assets/p1020582.jpg)
+
+### Power connector
+
+![](../.gitbook/assets/p1020583.jpg)
+
+![](../.gitbook/assets/p1020585.jpg)
+
+![](../.gitbook/assets/p1020587.jpg)
+
+![](../.gitbook/assets/p1020589.jpg)
+
+![](../.gitbook/assets/p1020590.jpg)
+
+![](../.gitbook/assets/p1020591.jpg)
+
+![](../.gitbook/assets/p1020592.jpg)
+
+![](../.gitbook/assets/p1020593.jpg)
+
+![](../.gitbook/assets/p1020594.jpg)
+
+![](../.gitbook/assets/p1020596.jpg)
+
+![](../.gitbook/assets/p1020598.jpg)
+
+![](../.gitbook/assets/p1020599.jpg)
+
+![](../.gitbook/assets/p1020600.jpg)
+
+![Green cable to +](../.gitbook/assets/p1020602.jpg)
+
+![Black with white stripe cable to NO](../.gitbook/assets/p1020603.jpg)
+
+![Black with white stripe cable to NO](../.gitbook/assets/p1020605.jpg)
+
+![Red cable to C \(solder\)](../.gitbook/assets/p1020606.jpg)
+
+![Black cable of the connector and black cable of the battery need to be soldered together and soldered to -](../.gitbook/assets/p1020608.jpg)
+
+![Black cable of the connector and black cable of the battery need to be soldered together and soldered to -](../.gitbook/assets/p1020610.jpg)
+
+![](../.gitbook/assets/p1020612.jpg)
+
+![](../.gitbook/assets/p1020614.jpg)
+
+![](../.gitbook/assets/p1020615.jpg)
+
+![](../.gitbook/assets/p1020616.jpg)
+
+![](../.gitbook/assets/p1020618.jpg)
+
+![](../.gitbook/assets/p1020619.jpg)
+
+![](../.gitbook/assets/p1020621.jpg)
+
+![](../.gitbook/assets/p1020623%20%281%29.jpg)
+
+## Connect the battery to the Rover
+
+![](../.gitbook/assets/p1020625.jpg)
+
+![](../.gitbook/assets/p1020626.jpg)
+
+![](../.gitbook/assets/p1020628.jpg)
+
+![](../.gitbook/assets/p1020629.jpg)
+
+![](../.gitbook/assets/p1020631.jpg)
+
+![](../.gitbook/assets/p1020633.jpg)
+
+![](../.gitbook/assets/p1020634.jpg)
+
+![](../.gitbook/assets/p1020635.jpg)
+
+![](../.gitbook/assets/p1020638.jpg)
+
+![](../.gitbook/assets/p1020639.jpg)
+
+![](../.gitbook/assets/p1020640.jpg)
+
+![](../.gitbook/assets/p1020642.jpg)
+
+![](../.gitbook/assets/p1020644.jpg)
+
+![](../.gitbook/assets/p1020646.jpg)
 
