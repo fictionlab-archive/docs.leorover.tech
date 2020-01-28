@@ -60,7 +60,7 @@ description: Main Electronics Box = MEB (for future references)
 
 ![](../.gitbook/assets/p1010735_wynik%20%281%29.JPG)
 
-![](../.gitbook/assets/p1010736_wynik%20%281%29.JPG)
+![It&apos;s tough to push the nut through the plug, but it&apos;s doable - don&apos;t worry.](../.gitbook/assets/p1010736_wynik%20%281%29.JPG)
 
 ![](../.gitbook/assets/p1010737_wynik%20%281%29.JPG)
 
@@ -179,6 +179,10 @@ description: Main Electronics Box = MEB (for future references)
 ![](../.gitbook/assets/p1010840_wynik.JPG)
 
 ![](../.gitbook/assets/p1010841_wynik.JPG)
+
+{% hint style="info" %}
+Make sure you turn the power switch of the board to ON.
+{% endhint %}
 
 ![](../.gitbook/assets/p1010842_wynik.JPG)
 

@@ -55,6 +55,7 @@
 * [6. Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
 * [7. Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
 * [8. Antenna and connector cover mounting](assembly-manuals/8.-antenna-and-connector-cover-mounting.md)
+* [9. Prepare the software and firmware](assembly-manuals/9.-prepare-the-software-and-firmware.md)
 
 ## Archive
 
