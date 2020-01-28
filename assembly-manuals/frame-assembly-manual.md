@@ -1,5 +1,19 @@
 # 3. Frame and suspension assembly manual
 
+## Intro
+
+### Assembly time
+
+30 minutes
+
+### Tools needed
+
+* [ ] T20 torx screwdriver
+* [ ] no. 4 hex-head key \(metric; provided\)
+* [ ] no. 5 hex-head key 
+* [ ] hex-head wrench no. 7
+* [ ] hex-head wrench no. 10
+
 ## Assembly manual
 
 ### Main axis bearing holder
@@ -150,7 +164,7 @@
 
 ![](../.gitbook/assets/p1020369.jpg)
 
-### Done!
+## Done!
 
 ![](../.gitbook/assets/p1020372.jpg)
 

@@ -252,7 +252,9 @@ It may be easier to glue the seal to the box using any cyanoacrylate \(fast-bond
 
 ![](../.gitbook/assets/p1010910_wynik.JPG)
 
-## Wheel connection
+## Additional info
+
+### Wheel connection
 
 Depending on the Kit setup you'll be provided with either 1x6 goldpin plugs or 2x6 goldpin. In case of 2x6 connect mating pair of wheels into one plug.
 
