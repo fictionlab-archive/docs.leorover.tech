@@ -41,6 +41,7 @@
   * [Motors specification](development-tutorials/leo-wheel-modification/motors-specification.md)
   * [Mount different tires](development-tutorials/leo-wheel-modification/mount-different-tires.md)
 * [Main Electronics Box modification](development-tutorials/main-electronics-box-modification/README.md)
+  * [IR lights in MEB cover](development-tutorials/main-electronics-box-modification/ir-lights-in-meb-cover.md)
   * [Dev-Covers for addons](development-tutorials/main-electronics-box-modification/dev-covers-for-addons.md)
 
 ## Assembly manuals

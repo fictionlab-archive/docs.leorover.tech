@@ -7,7 +7,9 @@
 Make sure that your RaspberryPi is connected to CORE2 board through a micro USB hSerial port.
 
 {% hint style="info" %}
-You'll need a USB A - USB micro cable, if you get a 5 cm one you'll be able to leave it connected all the time inside the main electronics box \(MEB\).
+You'll need a USB A - USB micro cable provided with the Rover.
+
+If you want to flash the firmware more ofter, buy a short \(5 cm\) one so you'll be able to leave it connected all the time inside the main electronics box \(MEB\).
 {% endhint %}
 
 ### Check if there's a firmware file in the filesystem

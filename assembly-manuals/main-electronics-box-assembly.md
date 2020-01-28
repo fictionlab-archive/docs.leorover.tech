@@ -4,6 +4,20 @@ description: Main Electronics Box = MEB (for future references)
 
 # 2. Main Electronics Box assembly
 
+## Intro
+
+### Assembly time
+
+60 minutes
+
+### Tools needed
+
+* [ ] cross-head screwdriver
+* [ ] T5x40 torx screwdriver \(provided\)
+* [ ] no. 3 hex-head key \(metric; provided\)
+* [ ] vaseline \(provided\)
+* [ ] hex-head wrench no. 8
+
 ## MEB assembly guide
 
 ### 1. Camera shield
@@ -209,6 +223,10 @@ description: Main Electronics Box = MEB (for future references)
 ![](../.gitbook/assets/p1010887_wynik.JPG)
 
 ![](../.gitbook/assets/p1010891_wynik.JPG)
+
+{% hint style="info" %}
+It may be easier to glue the seal to the box using any cyanoacrylate \(fast-bonding\) glue.
+{% endhint %}
 
 ![](../.gitbook/assets/p1010893_wynik.JPG)
 
