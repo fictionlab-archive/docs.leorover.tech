@@ -1,5 +1,18 @@
 # 6. Battery quarter \(left\) assembly
 
+## Intro
+
+### Assembly time
+
+15 minutes
+
+### Tools needed
+
+* [ ] T20 torx screwdriver
+* [ ] no. 4 hex-head key \(metric; provided\)
+* [ ] cross-headed screwdriver
+* [ ] soldering iron / flat connector crimping tool \(+ 1x flat connector\)
+
 ## Assembly guide
 
 ![](../.gitbook/assets/p1020556.jpg)

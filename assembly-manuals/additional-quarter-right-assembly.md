@@ -1,5 +1,16 @@
 # 7. Additional quarter \(right\) assembly
 
+## Intro
+
+### Assembly time
+
+5 minutes
+
+### Tools needed
+
+* [ ] T20 torx screwdriver
+* [ ] no. 4 hex-head key \(metric; provided\)
+
 ## Assembly guide
 
 ![](../.gitbook/assets/p1020647.jpg)
