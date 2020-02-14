@@ -50,11 +50,7 @@ The first thing you can do is to make sure your device has the correct permissio
 {% tab title="Hokuyo" %}
 {% code title="/etc/udev/rules.d/lidar.rules" %}
 ```text
-KERNEL=="ttyACM*", 
-ATTRS{idVendor}=="15d1", 
-MODE="0666", 
-GROUP="dialout", 
-SYMLINK+="lidar"
+KERNEL=="ttyACM*", ATTRS{idVendor}=="15d1", MODE="0666", GROUP="dialout", SYMLINK+="lidar"
 ```
 {% endcode %}
 {% endtab %}
@@ -62,12 +58,7 @@ SYMLINK+="lidar"
 {% tab title="RPLIDAR" %}
 {% code title="/etc/udev/rules.d/lidar.rules" %}
 ```
-KERNEL=="ttyUSB*", 
-ATTRS{idVendor}=="10c4", 
-ATTRS{idProduct}=="ea60", 
-MODE="0666", 
-GROUP="dialout", 
-SYMLINK+="lidar"
+KERNEL=="ttyUSB*", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE="0666", GROUP="dialout", SYMLINK+="lidar"
 ```
 {% endcode %}
 {% endtab %}
