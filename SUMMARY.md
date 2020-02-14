@@ -13,6 +13,7 @@
 * [GPS module](addons-manuals/gps-module.md)
 * [IMU module](addons-manuals/imu-module.md)
 * [USB Camera](addons-manuals/usb-camera.md)
+* [LiDAR sensor](addons-manuals/lidar-sensor.md)
 * [Camera mast](addons-manuals/camera-mast.md)
 
 ## Software tutorials

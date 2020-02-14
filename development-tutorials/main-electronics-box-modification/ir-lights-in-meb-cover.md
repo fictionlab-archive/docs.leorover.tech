@@ -17,6 +17,12 @@ In this tutorial we will show you how to edit Main Electronic Bay cover \(by exa
 
 Always in this kind of modification the most important thing is to have 3D models of components that we want to connect. The easiest way to assemble additional component to existing component is to join two 3D models \(even if everything is interfering\) and then remove all of the interferences. In our case we want to assemble two IR lights to MEB cover - so lets find good place for them and assemble them in 3D software. 
 
+{% hint style="warning" %}
+IR diodes may vary! Check if dimensions from 3D model are matching real sample!
+{% endhint %}
+
+
+
 ![](../../.gitbook/assets/1.JPG)
 
 **Step 1.** Measure diameter of IR diode in order to assemble it to MEB cover.
@@ -63,9 +69,9 @@ Always in this kind of modification the most important thing is to have 3D model
 
 **Step 11.** Last dimension needed for this cutout is depth of extrusion that we will be making. In this case it will be distance from top of the cover \(plane of our extrusion\) and bottom of IR light.
 
-![](../../.gitbook/assets/image%20%2827%29.png)
+![](../../.gitbook/assets/image%20%2830%29.png)
 
-![](../../.gitbook/assets/image%20%287%29.png)
+![](../../.gitbook/assets/image%20%2810%29.png)
 
 **Step 12.** It is a good practice to make cutouts slightly bigger - I decided that it will be 0.3mm bigger. That's why dimension of rectangle is 30x1,5mm. X position of cutout is 6.15 mm \(6.3 mm was measured but I substracted half of 0.3 mm\). Y position is 9.75mm from center of hole for IR diode because it is radius of this hole. As we know from **step 11** depth of cutout should be 21.5mm + 0.3 mm = 21.8mm.
 
@@ -109,9 +115,53 @@ As for this part of tutorial you should visit our manual about creating Camera m
 
 {% page-ref page="../../addons-manuals/camera-mast.md" %}
 
-![](../../.gitbook/assets/image%20%2826%29.png)
+![](../../.gitbook/assets/image%20%2829%29.png)
 
 ## Assembling 
 
-SOON!
+![](../../.gitbook/assets/20200201_133452_compress18.jpg)
+
+**Step 1.** Check if everything fits.
+
+![](../../.gitbook/assets/20200201_133509_compress21.jpg)
+
+**Step 2.** Using small screws \(I used 2,2x6\) assemble IR diodes to the MEB cover.
+
+![](../../.gitbook/assets/20200201_151249_compress24.jpg)
+
+**Step 3.** Now we need to take care about powering our IR diodes. Upper hole is VCC and lower is GND. I created small wire harness with male goldpin connector. You can use small ring connectors or solder cables directly to the pads on the diodes as I did.
+
+![](../../.gitbook/assets/20200201_144504_compress7.jpg)
+
+**Step 4.** Unfortunately Husarion Core2ROS board doesn't have 3.3VDC on its pinout. The simpliest place from where we can take 3.3V is camera board itself. Disassemble WIFI module, Husarion Core2ROS board and camera mount in order to have more place. Pad used for mounting the camera is also power supply - the one closer to the conector is VCC and further one is GND. Here also you can use ring connector or solder cable directly to the board as I did. On the second end of cables place female goldpin connector.
+
+![](../../.gitbook/assets/20200201_144750_compress36.jpg)
+
+
+
+**Step 5.** Fasten 2 screws holding camera mount
+
+![](../../.gitbook/assets/przechwytywanie.JPG)
+
+**Step 6.** Place Husarion Core2ROS and fasten 4 M2,5 distances to the RaspberryPi.
+
+![](../../.gitbook/assets/przechwytywanie1.JPG)
+
+**Step 7.** Place WIFI module and **f**asten 4 M2,5 bolts to the distances.
+
+![](../../.gitbook/assets/20200201_151322_compress37.jpg)
+
+**Step 8.** Plug the connector.
+
+{% hint style="warning" %}
+Double check the connection. Use multimeter to check polarity - GND is for example on the female USB connector of Husarion CORE2ROS board.
+{% endhint %}
+
+![](../../.gitbook/assets/20200201_151542_compress48.jpg)
+
+**Step 9.** Assemble MEB cover to the MEB
+
+![](../../.gitbook/assets/20200201_151533_compress86.jpg)
+
+**Step 10.** And that's it! You have Leo rover that can see even in full darkness! ENJOY!
 

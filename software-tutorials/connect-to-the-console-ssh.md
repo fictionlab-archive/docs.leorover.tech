@@ -14,16 +14,16 @@ Download and install [Putty](https://www.putty.org/) - it will allow you to esta
 
  Open Putty, type '10.0.0.1' as IP address and press `open`.
 
-![](../.gitbook/assets/image%20%2818%29.png)
+![](../.gitbook/assets/image%20%2821%29.png)
 
 The first time you try to connect, you may see the security warning shown below. You can safely ignore it and click the `Yes` button.
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
 When asked for credentials, type:  
 login: `husarion`  password: `husarion`
 
-![](../.gitbook/assets/image%20%2821%29.png)
+![](../.gitbook/assets/image%20%2824%29.png)
 
 You'll see something like this. You're in!
 
