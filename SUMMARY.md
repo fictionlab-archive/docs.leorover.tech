@@ -2,6 +2,7 @@
 
 * [Welcome to Leo Rover Docs](README.md)
 * [Getting started](getting-started.md)
+* [Downloads](downloads.md)
 
 ## Addons manuals
 
