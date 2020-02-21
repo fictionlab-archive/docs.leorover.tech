@@ -2,7 +2,7 @@
 
 > The Robot Operating System \(ROS\) is a flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms. - [https://www.ros.org/about-ros/](https://www.ros.org/about-ros/)
 
-In the simplest terms, ROS will give us the possibility to write and run different processes \(called [nodes](http://wiki.ros.org/Nodes)\) that communicate with each other by sending and receiving messages on named buses \(called [topics](http://wiki.ros.org/Topics)\) or by calling remote procedures \(called [services](http://wiki.ros.org/Services)\).
+In the simplest terms, ROS will give us the possibility to write and run different processes \(called [nodes](http://wiki.ros.org/Nodes)\) that communicate with each other by sending and receiving messages on named buses \(called [topics](http://wiki.ros.org/Topics)\) or by calling remote procedures \(called [services](http://wiki.ros.org/Services)\). Please read the [ROS/Concepts Wiki page](http://wiki.ros.org/ROS/Concepts) to get a more clear overview of the concepts related to ROS.
 
 This section will describe some basic ROS functionality that can be accomplished with stock Leo Rover.
 
@@ -160,32 +160,205 @@ The Rover should drive forward and backward. then turn in place in left and righ
 make sure you don't have a Web UI running at the moment as it may cause conflicts on `/cmd_vel` topic
 {% endhint %}
 
-## Building leo\_bringup and starting the nodes manually 
+## Adding additional functionality to the rover
 
-ROS source code is divided into packages that are build using [catkin](http://wiki.ros.org/catkin) build system. Catkin packages can be built as a standalone project, in the same way that normal CMake projects can be built, but catkin also provides the concept of [workspaces](http://wiki.ros.org/catkin/workspaces). 
+The Leo Image \(since version `2020-02-12`\) provides an easy mechanism for adding new functionalities without building any of the base packages. The whole process of starting the ROS nodes at boot can be summarized by the following files:
 
-When building a catkin workspace, the install targets are placed into [FHS compliant](https://www.ros.org/reps/rep-0122.html) hierarchy inside the [result space](http://wiki.ros.org/catkin/workspaces#Result_space). A set of [environment setup files](http://wiki.ros.org/catkin/workspaces#Environment_Setup_File) allow extending your shell environment, so that you can find and use any resources that have been installed to that location.
+* **/etc/ros/robot.launch** - a `launch file` that starts the robot's functionality. It includes the launch file from the [leo\_bringup](https://github.com/LeoRover/leo_bringup) package which starts the base functionality of the rover, but also allows to add additional nodes to be started or parameters to be set on the Parameter Server.
 
 {% hint style="info" %}
-The prebuilt ROS packages \(installed from repository\) are placed into `/opt/ros/distribution_name` directory \(`/opt/ros/kinetic` in this case\). To use the environment setup file, just type:
+A [launch file](http://wiki.ros.org/roslaunch/XML) is an XML file that describes a set of nodes to be stared with specified parameters. It can be interpreted with [`roslaunch`](http://wiki.ros.org/roslaunch) tool.
+{% endhint %}
+
+* **/etc/ros/setup.bash** - The environment setup file that sets all the environment variables necessary for the successful start of the ROS nodes. It sources the environment setup file from the target ROS distribution \(by default, `/opt/ros/kinetic/setup.bash`\) and sets additional [environment variables used by ROS](http://wiki.ros.org/ROS/EnvironmentVariables). 
+* **/etc/ros/urdf/robot.urdf.xacro** - the URDF description \(in [xacro](http://wiki.ros.org/xacro) format\) that is uploaded to the Parameter Server by the `robot.launch` file. It includes the robot's model from the [leo\_description](https://github.com/LeoRover/leo_description) package, but also allows to add additional links or joints to the model.
+* **/usr/sbin/leo-start** - a script that starts the robot's functionality. In short, it sources the `/etc/ros/setup.bash` file and launches the `/etc/ros/robot.launch` file.
+* **/usr/sbin/leo-stop** - a script that stops the currently running `leo-start` process.
+
+On top of that the `leo` systemd service starts the `leo-start` script when the computer boots.
+
+#### starting the functionality manually
+
+To start the nodes manually, you need to stop the currently running ones first. You can do this either by using the `leo-stop` script:
+
+```bash
+sudo leo-stop
+```
+
+or by stopping the `leo` service:
+
+```bash
+sudo systemctl stop leo
+```
+
+If you wish to disable the service from starting at boot, you can type:
+
+```bash
+sudo systemctl disable leo
+```
+
+To turn the service back on, just type:
+
+```bash
+sudo systemctl enable leo
+```
+
+Now, to start the nodes manually, type:
+
+```bash
+sudo leo-start
+```
+
+Type `Ctrl+C` to stop the nodes and exit the script.
+
+#### adding additional nodes to the launch file
+
+To add additional nodes to be started, you can modify the `/etc/ros/robot.launch` file. Take a look at the [launch file XML specification](http://wiki.ros.org/roslaunch/XML) \(especially the [node](http://wiki.ros.org/roslaunch/XML/node) and [param](http://wiki.ros.org/roslaunch/XML/param) tags\) for reference. 
+
+Here's an example that uses `node` and `param` tags:
+
+```markup
+<param name="name_of_the_global_parameter"
+       value="value_of_the_parameter"/>
+
+<node name="name_of_the_node"
+      pkg="name_of_the_package"
+      type="name_of_the_executable">
+      
+      <param name="name_of_the_private_parameter"
+             value="value_of_the_parameter"/>
+</node>
+```
+
+Modify it to your needs, add it to the `/etc/ros/robot.launch` file and restart the nodes.
+
+If you want your additional functionality to be easily switchable, you can put these lines, embedded into `<launch>` tag, into a separate file \(e.g. `/etc/ros/function1.launch`\) and add this lines to the `/etc/ros/robot.launch` file:
+
+{% code title="/etc/ros/robot.launch" %}
+```markup
+<include if="$(optenv USE_FUNCTION1 false)"
+         file="/etc/ros/function1.launch"/>
+```
+{% endcode %}
+
+Then, add this line to the `/etc/ros/setup.bash` file:
+
+{% code title="/etc/ros/setup.bash" %}
+```bash
+export USE_FUNCTION1=true
+```
+{% endcode %}
+
+Now you can toggle the functionality simply by changing the `USE_FUNCTION1` environment variable and restarting the nodes.
+
+#### expanding the URDF model
+
+When integrating a sensor or other device to your rover, you might sometimes want to extend the robot's URDF model to:
+
+* visualize the device attached to the rover in RViz
+* make the robot aware of device's collision geometry
+* provide additional reference frames \(for example for the sensor readings\)
+
+You can create a separate URDF file for your attached device, like this one:
+
+{% code title="/etc/ros/urdf/sensor.urdf.xacro" %}
+```markup
+<?xml version="1.0"?>
+<robot>
+  <!-- a link representing visual and collision 
+       properties of the sensor -->
+  <link name="sensor_base_link">
+    <visual>
+      <origin xyz="0 0 0.05"/>
+      <geometry>
+        <box size="0.05 0.05 0.1"/>
+      </geometry>
+      <material name="red">
+        <color rgba="1 0 0 0.7"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05"/>
+      <geometry>
+        <box size="0.05 0.05 0.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- fixed joint that attaches
+       the sensor to the rover's body -->
+  <joint name="sensor_base_joint" type="fixed">
+    <origin xyz="0.08 0 0"/>
+    <parent link="base_link"/>
+    <child link="sensor_base_link"/>
+  </joint>
+
+  <!-- reference frame for sensor readings -->
+  <link name="sensor_frame"/>
+
+  <!-- fixed joint that sets the origin 
+       of the reference frame -->
+  <joint name="sensor_joint" type="fixed">
+    <origin xyz="0 0 0.06"/>
+    <parent link="sensor_base_link"/>
+    <child link="sensor_frame"/>
+  </joint>
+
+</robot>
+```
+{% endcode %}
+
+and include it in the robot's main URDF file, by adding:
+
+{% code title="/etc/ros/urdf/robot.urdf.xacro" %}
+```markup
+<xacro:include filename="/etc/ros/urdf/sensor.urdf.xacro"/> 
+```
+{% endcode %}
+
+Now, when you restart the nodes, a new URDF model should be uploaded to the Parameter Server and you should be able to view the new model in RViz.
+
+![](../../.gitbook/assets/image%20%2816%29.png)
+
+You can use `base_link` as a reference frame for other links in the model. The exact position of the `base_link` origin is defined as the center this mounting hole: 
+
+![X - red, Y - green, Z - blue](../../.gitbook/assets/image%20%2841%29.png)
+
+on the upper plane of the mounting plate. The distance can be easily measured in CAD programs or even using physical measuring tools.
+
+For more examples, you can look at these tutorials:
+
+{% page-ref page="../../addons-manuals/lidar-sensor.md" %}
+
+{% page-ref page="../../addons-manuals/imu-module.md" %}
+
+## Building additional ROS packages
+
+ROS uses its own build system for building packages. To learn about it, read the [catkin/conceptual\_overview](http://wiki.ros.org/catkin/conceptual_overview) and [catkin/workspaces](http://wiki.ros.org/catkin/workspaces) ROS wiki pages. Here's a brief summary:
+
+> The packages are the main unit for organizing software in ROS. The current build system that is used to build ROS packages is [catkin](http://wiki.ros.org/catkin). Catkin packages can be built as a standalone project, but catkin also provides the concept of [workspaces](http://wiki.ros.org/catkin/workspaces). 
+>
+> When building a catkin workspace, the install targets are placed into an [FHS compliant](https://www.ros.org/reps/rep-0122.html) hierarchy inside the [result space](http://wiki.ros.org/catkin/workspaces#Result_space). A set of [environment setup files](http://wiki.ros.org/catkin/workspaces#Environment_Setup_File) allow extending your shell environment, so that you can find and use any resources that have been installed to that location.
+
+{% hint style="info" %}
+The prebuilt ROS packages \(installed from the repository\) are placed into `/opt/ros/distribution_name` directory \(`/opt/ros/kinetic` in this case\). To use the environment setup file, just type:
 
 ```bash
 source /opt/ros/kinetic/setup.bash
 ```
 
-If you use Leo image, this line is already added to `~/.bashrc` file, so it will be automatically executed when you log into the console.
+If you use Leo Image, this line is already added to `~/.bashrc` file, so it will be automatically executed when you log into the console.
 {% endhint %}
 
-The catkin build system also supports an [overlay](http://wiki.ros.org/catkin/workspaces#Overlays) mechanism, where one workspace can extend another result space. An `environment setup file` from the result space of such workspace will extend your shell environment by packages from both workspaces.
-
-The build system provides a [catkin\_make](http://wiki.ros.org/catkin/commands/catkin_make) command for building workspaces, but we will use `catkin` command line tool from Python package [catkin-tools](https://catkin-tools.readthedocs.io/en/latest/) as it delivers more user-friendly and robust environment for building catkin packages.
+> The catkin build system also supports an [overlay](http://wiki.ros.org/catkin/workspaces#Overlays) mechanism, where one workspace can extend another result space. An `environment setup file` from the result space of such workspace will extend your shell environment by packages from both workspaces.
+>
+> The build system provides a [catkin\_make](http://wiki.ros.org/catkin/commands/catkin_make) command for building workspaces, but we will use `catkin` command line tool from Python package [catkin-tools](https://catkin-tools.readthedocs.io/en/latest/) as it delivers more user-friendly and robust environment for building catkin packages.
 
 In this chapter, will will try to:
 
-* create workspace that extends `kinetic` result space
+* create workspace that extends `kinetic` distribution
 * add `leo_bringup` to this workspace and build the package
-* run the startup nodes manually
-* modify the nodes that are started at boot
+* modify the `/etc/ros/setup.bash` file to use our overlay
 
 Let's start by creating an empty workspace inside home directory on Raspberry Pi:
 
@@ -215,7 +388,7 @@ cd ~/ros_ws
 catkin build
 ```
 
-If everything works, a [development space](http://wiki.ros.org/catkin/workspaces#Development_.28Devel.29_Space) should be created inside `devel` directory. Let's source the environment setup file inside it:
+If everything works, a [development space](http://wiki.ros.org/catkin/workspaces#Development_.28Devel.29_Space) should be created inside the `devel` directory. Let's source the environment setup file inside it:
 
 ```bash
 source devel/setup.bash
@@ -223,48 +396,14 @@ source devel/setup.bash
 
 Now, when you execute `rospack list`, you should see all of the packages installed on your system, but `rospack find leo_bringup` should point you to the directory on your newly created workspace.
 
-The `leo_bringup` package contains a `launch file` that is started by `leo` service at boot.
-
-{% hint style="info" %}
-A [launch file](http://wiki.ros.org/roslaunch/XML) can describe a set of nodes to be stared with specified parameters in XML format which can be interpreted with [`roslaunch`](http://wiki.ros.org/roslaunch) tool.
-{% endhint %}
-
-To start the nodes manually, you should stop the service first:
+The last step is to modify the `/etc/ros/setup.bash` to use our overlay. Simply edit this file \(e.g. with `nano`\) by removing or commenting out the first line and adding:
 
 ```bash
-sudo systemctl stop leo
+# source /opt/ros/kinetic/setup.bash
+source /home/husarion/ros_ws/devel/setup.bash
 ```
 
-Then, execute the `roslaunch` tool like this:
-
-```bash
-roslaunch leo_bringup leo_bringup.launch
-```
-
-This should start all the nodes that are normally running on Leo Rover.  
-You can tweak the launch file to suit your needs more.
-
-If you want your modified launch file to be started at boot time, you need to disable `leo` service first:
-
-```bash
-sudo systemctl disable leo
-```
-
-Then, run `install` script from [robot\_upstart](http://wiki.ros.org/robot_upstart) like this:
-
-```bash
-rosrun robot_upstart install --job leo-custom --user root --setup /home/husarion/ros_ws/devel/setup.bash --symlink leo_bringup/launch/leo_bringup.launch
-```
-
-{% hint style="info" %}
-You can change `leo-custom` to your custom name, but don't call it `leo` to avoid conflict with already existing service.
-{% endhint %}
-
-The service should start when the Rapsberry Pi boots again. To start it now, you can type:
-
-```bash
-sudo systemctl daemon-reload && sudo systemctl start leo-custom
-```
+When you start the nodes with `leo-start` script, the `/etc/ros/setup.bash` will use your overlay and the `/etc/ros/robot.launch` file should use the version of `leo_bringup` that you have built in your workspace. 
 
 ## Connecting other computer to ROS network 
 
@@ -353,7 +492,7 @@ Now choose **Plugins -&gt; Introspection -&gt; Node Graph**
 
 If your are connected to your Rover, you should see all the nodes running on Raspberry Pi. You can experiment with Node Graph settings, so it can look like this:
 
-![](../../.gitbook/assets/image%20%2841%29.png)
+![](../../.gitbook/assets/image%20%2843%29.png)
 
 ### Visualizing the model  
 
@@ -406,7 +545,13 @@ rviz
 In the **Fixed Frame** option choose `base_link`.  
 In **Displays** panel, click **Add** and choose **RobotModel** plugin.
 
-![](../../.gitbook/assets/image%20%2825%29.png)
+Or, just type:
+
+```bash
+roslaunch leo_description rviz.launch
+```
+
+![](../../.gitbook/assets/image%20%2844%29.png)
 
 You should see the wheels rotating when steering the Rover.
 
@@ -426,7 +571,7 @@ roslaunch leo_description display.launch gui:=true
 ```
 
 {% hint style="info" %}
-[roslaunch](http://wiki.ros.org/roslaunch) will automatically spawn [roscore](http://wiki.ros.org/roscore) if it detects that it is not already running.
+[roslaunch](http://wiki.ros.org/roslaunch) will automatically spawn the Master node \([roscore](http://wiki.ros.org/roscore)\) if it detects that it is not already running.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -575,6 +720,7 @@ mkdir launch config
 
 Inside **launch/** directory add **alvar.launch** with the following content:
 
+{% code title="leo\_alvar\_example/launch/alvar.launch" %}
 ```markup
 <launch>
 	<arg name="cam_image_topic" default="camera/image_raw" />
@@ -588,9 +734,11 @@ Inside **launch/** directory add **alvar.launch** with the following content:
 	</node>
 </launch>
 ```
+{% endcode %}
 
 Inside **config/** directory add **alvar.yaml** file:
 
+{% code title="leo\_alvar\_example/config/alvar.yaml" %}
 ```yaml
 marker_size: 10.0
 max_new_marker_error: 0.08
@@ -598,6 +746,7 @@ max_track_error: 0.2
 max_frequency: 8.0
 output_frame: base_link
 ```
+{% endcode %}
 
 {% hint style="info" %}
 You will most likely need to change `marker_size` parameter depending on the actual size of your printed AR tag. You can read more about the parameters on the [package wiki](http://wiki.ros.org/ar_track_alvar#ar_track_alvar.2BAC8-post-fuerte.Detecting_individual_tags).
@@ -616,6 +765,14 @@ To start the Alvar tracking, type:
 ```bash
 roslaunch leo_alvar_example alvar.launch
 ```
+
+If you want to start the node when the rover boots, add this line to `robot.launch` file:
+
+{% code title="/etc/ros/robot.launch" %}
+```bash
+<include file="$(find leo_alvar_example)/launch/alvar.launch"/>
+```
+{% endcode %}
 
 Now, we need to create some markers, so go back to your computer.
 

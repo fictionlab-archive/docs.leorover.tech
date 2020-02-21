@@ -22,7 +22,7 @@ Open [Etcher](https://www.balena.io/etcher/) and point it to your new SD card im
 
 Click `Select drive` option and choose your card, then click `Flash!`.
 
-![](../.gitbook/assets/image%20%2828%29.png)
+![](../.gitbook/assets/image%20%2829%29.png)
 
 After the flashing completes, disconnect the card and put it back into the Rover.
 
