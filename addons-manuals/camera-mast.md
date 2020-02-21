@@ -224,15 +224,22 @@ roslaunch leo_mast_bringup leo_mast.launch
 ```
 
 {% hint style="info" %}
-If you want the driver to start automatically when the RaspberryPi boots, you can follow the `Building leo_bringup` section of ROS development tutorial:
+If you want the driver to start automatically when the RaspberryPi boots, you can change the overlay in `/etc/ros/setup.bash` to point at your workspace:
 
-{% page-ref page="../development-tutorials/software-development/ros-development.md" %}
+{% code title="/etc/ros/setup.bash" %}
+```bash
+# source /opt/ros/kinetic/setup.bash
+source /home/husarion/ros_ws/devel/setup.bash
+```
+{% endcode %}
 
-Then, add this line to `leo_bringup.launch` file:
+Then, add this line to `/etc/ros/robot.launch` file:
 
+{% code title="/etc/ros/robot.launch" %}
 ```markup
 <include file="$(find leo_mast_bringup)/launch/leo_mast.launch">
 ```
+{% endcode %}
 {% endhint %}
 
 Apart from the topics and services described in the [Arbotix tutorial](https://docs.leorover.tech/addons-manuals/arbotix-m-robocontroller), you will see two new services: `/mast/lift` and `/mast/lower`. The first one will lift the mast to standing position, the second one will lower the mast to the back of the Rover and relax the servo.
