@@ -180,7 +180,7 @@ To learn how to do this, you can follow our guide for the Arbotix controller her
 
 ### Install the ROS driver package
 
-The [leo\_mast\_bringup](https://github.com/LeoRover/leo_mast_bringup) package contains a configuration for arbotix driver as well as a script that provides mast lift and lower operation through ROS services.
+The [leo\_mast\_bringup](https://github.com/LeoRover/leo_mast_bringup) package contains a configuration for Arbotix driver as well as a script that provides mast lift and lower operation through ROS services.
 
 You can build it like any other ROS package. Start by creating an empty catkin workspace, if you don't have one yet:
 
