@@ -588,15 +588,16 @@ An RViz instance with `RobotModel` plugin should start, as well as GUI for [join
 
 ### Steering the Rover with a joystick
 
-In this example, we will create a simple package that will let you control the Rover using joystick connected to your computer.
+In this example, we will create a simple package that will let you control the Rover using a joystick connected to your computer.
 
-We will use two nodes available in distribution:
+We will use two nodes that are available in the ROS distribution:
 
-* `joy_node` \(from [joy](http://wiki.ros.org/joy) package\) - getting input from the joystick and publishing it to a topic.
-* `teleop_node` \(from [teleop\_twist\_joy](http://wiki.ros.org/teleop_twist_joy) package\) - getting messages from joystick topic and publishing appropriate steering commands to the Rover.
+* `joy_node` \(from [joy](http://wiki.ros.org/joy) package\) - for getting input from the joystick and publishing it on a topic.
+* `teleop_node` \(from [teleop\_twist\_joy](http://wiki.ros.org/teleop_twist_joy) package\) - for getting messages from the joystick topic and publishing corresponding steering commands to the Rover.
 
-We assume you have already created a workspace like in a previous example.  
-Create an empty package with specified dependencies:
+We assume that you have already created a workspace like in the previous example.
+
+Start by creating an empty package with the specified dependencies:
 
 ```bash
 cd ~/ros_ws/src
@@ -618,8 +619,9 @@ cd ~/ros_ws/src/leo_joy_example
 mkdir launch config
 ```
 
-Inside **launch/** directory add **joy.launch** with the following content:
+Inside **launch/** directory, add the **joy.launch** file with the following content:
 
+{% code title="leo\_joy\_example/launch/joy.launch" %}
 ```markup
 <launch>
   <node name="joy_node" pkg="joy" type="joy_node">
@@ -628,23 +630,26 @@ Inside **launch/** directory add **joy.launch** with the following content:
     <param name="autorepeat_rate" value="30.0"/>
   </node>
 
-  <node name="tr_teleop_joy" pkg="tr_teleop" type="tr_teleop_joy">
+  <node name="teleop_node" pkg="teleop_twist_joy" type="teleop_node">
     <rosparam command="load" file="$(find leo_joy_example)/config/joy_mapping.yaml"/>
   </node>
 </launch>
-
 ```
+{% endcode %}
 
-Inside **config/** directory add **joy\_mapping.yaml** file:
+Inside **config/** directory, add the **joy\_mapping.yaml** file:
 
+{% code title="leo\_joy\_example/config/joy\_mapping.yaml" %}
 ```yaml
 axis_linear: 1
 scale_linear: 0.4
 axis_angular: 3
-scale_angular: 1.0
+scale_angular: 2.0
+enable_button: 5
 ```
+{% endcode %}
 
-And build the package:
+Now, build the package:
 
 ```bash
 cd ~/ros_ws
@@ -652,7 +657,7 @@ catkin build
 source devel/setup.bash
 ```
 
-Before you start your `launch` file, you might need to remap axes to suit the joystick you have. Start `joy_node` by typing:
+Before you start your `launch` file, you might need to remap axes and buttons to suit the joystick you have. Start `joy_node` by typing:
 
 ```bash
 rosrun joy joy_node
@@ -664,9 +669,11 @@ And on another terminal, run:
 rostopic echo /joy
 ```
 
-Move the axes you want to map and check which values are being changed on `axes[]` array \(remember that the values are indexed from 0\).
+Move the axes you want to use for the linear and angular movements of the Rover and check which values are being changed on `axes[]` array \(remember that the values are indexed from 0\).
 
-Now, change `axis_linear` and `axis_angular` parameters in **joy\_mapping.yaml** file.
+Choose the button that will be used to enable the command publishing. Check which value is being changed on the `buttons[]` array when you click the button.
+
+Now, change the `axis_linear` , `axis_angular`, `enable_button` parameters in **joy\_mapping.yaml** file.
 
 Close the `joy_node` and start your the `joy.launch` file:
 
@@ -674,15 +681,16 @@ Close the `joy_node` and start your the `joy.launch` file:
 roslaunch leo_joy_example joy.launch
 ```
 
-You should now be able to steer the Rover with the joy axes you set.
+You should now be able to steer the Rover by holding down the enable button and moving the joy axes you set.
 
 ### Detecting AR Tags
 
-An **ARTag** is a fiduciary marker system that can help with robot perception challenges, serving as a point of reference for autonomous tasks.
+An **AR-tag** is a fiduciary marker system that can help with robot perception challenges, serving as a point of reference for autonomous tasks.
 
 In this example, we will use [ar\_track\_alvar](http://wiki.ros.org/ar_track_alvar) package for detecting individual markers.
 
-As sending raw images from the camera via wireless network may be insufficient, we will relay all the processing to the Raspberry Pi.   
+As sending raw images from the camera via wireless network may be insufficient, we will relay all the processing to the Raspberry Pi. 
+
 Start by logging into your Rover's console:
 
 {% page-ref page="../../software-tutorials/connect-to-the-console-ssh.md" %}
