@@ -8,14 +8,13 @@
 
 * [ArbotiX-M Robocontroller](addons-manuals/arbotix-m-robocontroller.md)
 * [PhantomX Pincher Arm](addons-manuals/control-phantomx-pincher-arm.md)
-* [Relay module](addons-manuals/control-4-relays/README.md)
-  * [Make your own UI - Relay switches](addons-manuals/control-4-relays/sample-ui-relay-funcionality.md)
-  * [Firmware modification - Relay switches \(coming soon\)](addons-manuals/control-4-relays/firmware-modification-relay-functionality.md)
+* [Relay module](addons-manuals/control-4-relays.md)
 * [GPS module](addons-manuals/gps-module.md)
 * [IMU module](addons-manuals/imu-module.md)
 * [USB Camera](addons-manuals/usb-camera.md)
 * [LiDAR sensor](addons-manuals/lidar-sensor.md)
 * [Camera mast](addons-manuals/camera-mast.md)
+* [IR lights in MEB cover](addons-manuals/ir-lights-in-meb-cover.md)
 
 ## Software tutorials
 
@@ -38,12 +37,12 @@
 * [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
 * [UI Development](development-tutorials/ui-structure/README.md)
   * [Include additional UI](development-tutorials/ui-structure/include-additional-ui.md)
+  * [Make your own UI - Relay switches](development-tutorials/ui-structure/sample-ui-relay-funcionality.md)
 * [3D-printed parts](development-tutorials/3d-printed-parts.md)
 * [Leo Wheel modification](development-tutorials/leo-wheel-modification/README.md)
   * [Motors specification](development-tutorials/leo-wheel-modification/motors-specification.md)
   * [Mount different tires](development-tutorials/leo-wheel-modification/mount-different-tires.md)
 * [Main Electronics Box modification](development-tutorials/main-electronics-box-modification/README.md)
-  * [IR lights in MEB cover](development-tutorials/main-electronics-box-modification/ir-lights-in-meb-cover.md)
   * [Dev-Covers for addons](development-tutorials/main-electronics-box-modification/dev-covers-for-addons.md)
 
 ## Assembly manuals

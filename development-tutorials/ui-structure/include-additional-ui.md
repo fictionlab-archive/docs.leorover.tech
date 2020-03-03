@@ -12,7 +12,7 @@ git clone https://github.com/LeoRover/leo_ui_sample_relay.git
 ```
 
 {% hint style="info" %}
-If you like to learn how simple UI is build- check this tutoral: [Sample UI- relay funcionality](../../addons-manuals/control-4-relays/sample-ui-relay-funcionality.md)
+If you like to learn how simple UI is build- check this tutoral: [Sample UI- relay funcionality](sample-ui-relay-funcionality.md)
 {% endhint %}
 
 #### 2. Add a configuration file for nginx server to use the interface on additional port
