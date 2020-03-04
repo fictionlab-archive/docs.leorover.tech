@@ -2,7 +2,7 @@
 
 ## Leo Rover v.1.6
 
-![](../../.gitbook/assets/leo-schemat.jpg)
+![](../../.gitbook/assets/leo-rover-scheme.png)
 
 ## Leo Rover v.1.5
 
