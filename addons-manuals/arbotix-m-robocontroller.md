@@ -2,6 +2,8 @@
 
 
 
+![](../.gitbook/assets/blank-diagram.jpeg)
+
 This tutorial will show you how to use the Arbotix-M Robocontroller board to control DYNAMIXEL servos with ROS. 
 
 ![source: trossenrobotics.com](../.gitbook/assets/image%20%2823%29.png)
