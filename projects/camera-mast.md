@@ -103,7 +103,7 @@ When you'll finish admiring your work, you can click on the `Export G-code` butt
 Remember to clean 3D printer table before any print! We recommend IPA for this purpose. 
 {% endhint %}
 
-### Assembling 
+### Assembly
 
 ![Flat layout of all elements](../.gitbook/assets/20191116_151318-min.jpg)
 
