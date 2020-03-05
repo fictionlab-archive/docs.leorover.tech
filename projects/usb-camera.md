@@ -10,7 +10,7 @@ Here we prepared a graphic description how to assemble your own camera using eit
 Disclaimer: the camera is not a plug&play solution for Leo Rover. You still need to treat it as a typical USB camera \(install drivers and stuff\).
 {% endhint %}
 
-## 0. BOM
+## Parts list
 
 |  |  | Where? |
 | :--- | :--- | :--- |
@@ -28,7 +28,7 @@ Or you can just buy the kit from our e-shop:
 
 {% embed url="http://shop.leorover.tech/collection/main-page/fisheye-usb-camera-with-waterproof-case" %}
 
-## 1. Prepare
+## Gather all the components
 
 ![](../.gitbook/assets/p1010331.JPG)
 
@@ -36,7 +36,7 @@ Or you can just buy the kit from our e-shop:
 
 ![](../.gitbook/assets/p1010335.JPG)
 
-## 2. Prepare the USB cable and the camera cover
+## Prepare the USB cable and the camera cover
 
 ![](../.gitbook/assets/p1010341.JPG)
 
@@ -100,7 +100,7 @@ Pull the cable until it touches the bushing.
 
 ![](../.gitbook/assets/p1010394.JPG)
 
-## 3. Prepare the camera shield
+## Prepare the camera shield
 
 ![](../.gitbook/assets/p1010397.JPG)
 
@@ -122,7 +122,7 @@ Make sure the seal is evenly squeezed. If not, tighten the corresponding screw.
 
 ![](../.gitbook/assets/p1010416.JPG)
 
-## 4. Assemble the camera board
+## Assemble the camera board
 
 Before you do the next step, cut the outer frame of the camera with any hand cutter you have. Just do it with caution as you won't get any second chance!
 
@@ -138,7 +138,7 @@ Use 4x 2.2x6.5 self-tapping screws.
 
 ![](../.gitbook/assets/p1010430.JPG)
 
-## 5. Put the cover seal in its groove
+## Put the cover seal in its groove
 
 ![](../.gitbook/assets/p1010434.JPG)
 
@@ -164,7 +164,7 @@ Use 2x 2.9x9.5 self-tapping screws at first to make sure the seal is properly se
 
 ![](../.gitbook/assets/p1010453.JPG)
 
-## 6. Done!
+## Done!
 
 The front holes act as a mounting points. You can use the 2.9x9.5 self-tapping screws to mount the camera to anything you need.
 
