@@ -18,9 +18,9 @@ IMU functionality was introduced in [leo\_firmware](https://github.com/LeoRover/
 
 {% page-ref page="../../software-tutorials/flash-firmware-to-core2-board.md" %}
 
-## 1. Connect the IMU module to CORE2 board
+## 1. Connect the IMU module to Core2-ROS board
 
-By default, the IMU will work on hSens2 port. You can change it to hSens1 by modifying [params.h](https://github.com/LeoRover/leo_firmware/blob/master/params.h) in `leo_firmare`. 
+By default, the IMU will work on hSens2 port. You can change it to hSens1 by modifying [params.h](https://github.com/LeoRover/leo_firmware/blob/master/params.h) in `leo_firmware`. 
 
 ![hSens2 port location](../../.gitbook/assets/hsens2.png)
 
