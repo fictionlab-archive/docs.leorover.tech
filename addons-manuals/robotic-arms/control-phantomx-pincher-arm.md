@@ -2,25 +2,25 @@
 
 
 
-![](../.gitbook/assets/blank-diagram-2.jpeg)
+![](../../.gitbook/assets/blank-diagram-2.jpeg)
 
 In this tutorial, we will show you how to configure and remotely control PhantomX Pincher Robot connected to the Rover.
 
-![](../.gitbook/assets/71099672_434779074055562_670313626036338688_n%20%281%29.jpg)
+![](../../.gitbook/assets/71099672_434779074055562_670313626036338688_n%20%281%29.jpg)
 
 
 
-![source: trossenrobotics.com](../.gitbook/assets/image%20%2817%29.png)
+![source: trossenrobotics.com](../../.gitbook/assets/image%20%2817%29.png)
 
 ## Prerequisites
 
 Before you begin, make sure you have internet connection on your Rover.
 
-{% page-ref page="../software-tutorials/connect-to-the-internet.md" %}
+{% page-ref page="../../software-tutorials/connect-to-the-internet.md" %}
 
 Also, you need to have ROS installed on your computer.
 
-{% page-ref page="../development-tutorials/install-ros-on-your-computer.md" %}
+{% page-ref page="../../development-tutorials/ros-development/install-ros-on-your-computer.md" %}
 
 And, of course, assembled Pincher Arm together with ArbotiX-M Robocontroller connected to your Rover. 
 
@@ -28,11 +28,11 @@ And, of course, assembled Pincher Arm together with ArbotiX-M Robocontroller con
 
 To properly communicate with the Dynamixel servos, you will need to set the servo IDs like in the picture below:
 
-![source: trossenrobotics.com](../.gitbook/assets/image%20%282%29.png)
+![source: trossenrobotics.com](../../.gitbook/assets/image%20%282%29.png)
 
 To do this, you can follow our guide for the Arbotix controller here:
 
-{% page-ref page="arbotix-m-robocontroller.md" %}
+{% page-ref page="../controllers/arbotix-m-robocontroller.md" %}
 
 In there, you will also find how to configure and use the [arbotix ROS driver](http://wiki.ros.org/arbotix).
 
@@ -50,7 +50,7 @@ To use the mentioned features, you need to build the packages and run the driver
 
 Start by logging into your Rover's console:
 
-{% page-ref page="../software-tutorials/connect-to-the-console-ssh.md" %}
+{% page-ref page="../../software-tutorials/connect-to-the-console-ssh.md" %}
 
 and creating an empty catkin workspace, if you don't have one yet:
 
@@ -133,7 +133,7 @@ The driver will also provide controllers for [FollowJointTrajectory](http://docs
 
 You will need to have ROS installed on your computer and properly configured to communicate with the nodes running on your Rover. To learn how to do this, you an follow **Connecting other computer to ROS network** section of ROS Development tutorial:
 
-{% page-ref page="../development-tutorials/software-development/ros-development.md" %}
+{% page-ref page="../../development-tutorials/ros-development/" %}
 
 To view robot arm model with actual position:
 

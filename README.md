@@ -20,7 +20,7 @@ If you need assembly instructions, begin here:
 
 Need more info about an electronics controller used in the Rover?
 
-{% page-ref page="development-tutorials/husarion-core2-ros-controller.md" %}
+{% page-ref page="documentation/husarion-core2-ros-controller.md" %}
 
 {% hint style="info" %}
 If you want to access Turtle Rover docs \(previous version of the Rover\), see:

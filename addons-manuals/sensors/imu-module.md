@@ -4,29 +4,29 @@ description: >-
   Rover.
 ---
 
-# IMU module
+# IMU
 
 ## Prerequisites
 
 First, make sure you have compatible IMU module. We recommend `Grove - IMU 9DOF v2.0` but any module with `MPU-9250` sensor should work.
 
-![Grove - IMU 9DOF v2.0](../.gitbook/assets/image%20%289%29.png)
+![Grove - IMU 9DOF v2.0](../../.gitbook/assets/image%20%289%29.png)
 
 IMU functionality was introduced in [leo\_firmware](https://github.com/LeoRover/leo_firmware/releases) version 0.5, so make sure to stay updated.
 
-{% page-ref page="../software-tutorials/software-update-flashing.md" %}
+{% page-ref page="../../software-tutorials/software-update-flashing.md" %}
 
-{% page-ref page="../software-tutorials/flash-firmware-to-core2-board.md" %}
+{% page-ref page="../../software-tutorials/flash-firmware-to-core2-board.md" %}
 
 ## 1. Connect the IMU module to CORE2 board
 
 By default, the IMU will work on hSens2 port. You can change it to hSens1 by modifying [params.h](https://github.com/LeoRover/leo_firmware/blob/master/params.h) in `leo_firmare`. 
 
-![hSens2 port location](../.gitbook/assets/hsens2.png)
+![hSens2 port location](../../.gitbook/assets/hsens2.png)
 
 Connect the sensor pins according to [CORE2 manual](https://husarion.com/manuals/core2/#hsensor)
 
-![](../.gitbook/assets/image%20%2820%29.png)
+![](../../.gitbook/assets/image%20%2820%29.png)
 
 | hSens pin | IMU pin |
 | :--- | :--- |
@@ -37,17 +37,17 @@ Connect the sensor pins according to [CORE2 manual](https://husarion.com/manuals
 
 You can use female jumper cables, or create your own IDC cable, like this one:
 
-![](../.gitbook/assets/img_20191008_131640.jpg)
+![](../../.gitbook/assets/img_20191008_131640.jpg)
 
 If you use Grove IMU, you can 3D print one of our `custom elecronic box lids` \(TODO: link\) to attach the module inside the box:
 
-![](../.gitbook/assets/image%20%2818%29.png)
+![](../../.gitbook/assets/image%20%2818%29.png)
 
 ## 2. Turn on IMU functionality
 
 Log in to the Rover's console via SSH
 
-{% page-ref page="../software-tutorials/connect-to-the-console-ssh.md" %}
+{% page-ref page="../../software-tutorials/connect-to-the-console-ssh.md" %}
 
 To set IMU functionality on or off, you need to send message to `/core2/set_imu` topic.
 
@@ -73,7 +73,7 @@ rostopic echo /imu/gyro
 
 The sensor's accelerometer and gyroscope X, Y and Z axes should be printed on the board. If they are not, you can check MPU9250 IC orientation and identify the axes with this drawing:
 
-![accelerometer and gyroscope axes](../.gitbook/assets/image%20%2842%29.png)
+![accelerometer and gyroscope axes](../../.gitbook/assets/image%20%2842%29.png)
 
 The magnetometer axes were also transformed to these axes to comply with North-West-Up world frame.
 

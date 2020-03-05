@@ -328,9 +328,9 @@ on the upper plane of the mounting plate. The distance can be easily measured in
 
 For more examples, you can look at these tutorials:
 
-{% page-ref page="../../addons-manuals/lidar-sensor.md" %}
+{% page-ref page="../../addons-manuals/sensors/lidar-sensor.md" %}
 
-{% page-ref page="../../addons-manuals/imu-module.md" %}
+{% page-ref page="../../addons-manuals/sensors/imu-module.md" %}
 
 ## Building additional ROS packages
 
@@ -411,7 +411,7 @@ ROS is designed with distributed computing in mind. The nodes make no assumption
 
 To install ROS on your computer, you can follow this tutorial:
 
-{% page-ref page="../install-ros-on-your-computer.md" %}
+{% page-ref page="install-ros-on-your-computer.md" %}
 
 In this section we will assume, you run Ubuntu 18.04 with ROS Melodic.
 

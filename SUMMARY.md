@@ -4,46 +4,53 @@
 * [Getting started](getting-started.md)
 * [Downloads](downloads.md)
 
-## Addons manuals
+## Integrations <a id="addons-manuals"></a>
 
-* [ArbotiX-M Robocontroller](addons-manuals/arbotix-m-robocontroller.md)
-* [PhantomX Pincher Arm](addons-manuals/control-phantomx-pincher-arm.md)
-* [Relay module](addons-manuals/control-4-relays.md)
-* [GPS module](addons-manuals/gps-module.md)
-* [IMU module](addons-manuals/imu-module.md)
-* [USB Camera](addons-manuals/usb-camera.md)
-* [LiDAR sensor](addons-manuals/lidar-sensor.md)
-* [Camera mast](addons-manuals/camera-mast.md)
-* [IR lights in MEB cover](addons-manuals/ir-lights-in-meb-cover.md)
+* [Controllers](addons-manuals/controllers/README.md)
+  * [ArbotiX-M Robocontroller](addons-manuals/controllers/arbotix-m-robocontroller.md)
+* [Sensors](addons-manuals/sensors/README.md)
+  * [LiDAR](addons-manuals/sensors/lidar-sensor.md)
+  * [IMU](addons-manuals/sensors/imu-module.md)
+  * [GPS](addons-manuals/sensors/gps-module.md)
+* [Robotic Arms](addons-manuals/robotic-arms/README.md)
+  * [PhantomX Pincher Arm](addons-manuals/robotic-arms/control-phantomx-pincher-arm.md)
 
-## Software tutorials
+## Projects
 
+* [Relay module](projects/control-4-relays.md)
+* [Camera mast](projects/camera-mast.md)
+* [IR lights in MEB cover](projects/ir-lights-in-meb-cover.md)
+* [USB Camera](projects/usb-camera.md)
+* [Dev-Covers for addons](projects/dev-covers-for-addons.md)
+
+## Basic guides <a id="software-tutorials"></a>
+
+* [Connect to the console \(SSH\)](software-tutorials/connect-to-the-console-ssh.md)
 * [Software update](software-tutorials/software-update-flashing.md)
 * [Firmware update](software-tutorials/flash-firmware-to-core2-board.md)
-* [Connect to the console \(SSH\)](software-tutorials/connect-to-the-console-ssh.md)
 * [Change WiFi name & password](software-tutorials/change-wifi-name-and-password.md)
 * [Connect to the Internet](software-tutorials/connect-to-the-internet.md)
 * [Upload files to your Rover](software-tutorials/upload-files-to-your-rover.md)
 
+## Documentation
+
+* [Hardware Structure](documentation/hardware-structure/README.md)
+  * [Interface pinout](documentation/hardware-structure/interface-pinout.md)
+* [Software Structure](documentation/software-development.md)
+* [Husarion CORE2-ROS controller](documentation/husarion-core2-ros-controller.md)
+* [Leo Rover Wheels](documentation/leo-wheel/README.md)
+  * [Motors specification](documentation/leo-wheel/motors-specification.md)
+  * [Tires dimensions](documentation/leo-wheel/mount-different-tires.md)
+* [3D-printed parts](documentation/3d-printed-parts.md)
+
 ## Development tutorials
 
-* [Husarion CORE2-ROS controller](development-tutorials/husarion-core2-ros-controller.md)
-* [Software Development](development-tutorials/software-development/README.md)
-  * [Firmware Development](development-tutorials/software-development/firmware-development.md)
-  * [ROS Development](development-tutorials/software-development/ros-development.md)
-  * [Web UI Development](development-tutorials/software-development/web-ui-development.md)
-* [Hardware Structure](development-tutorials/hardware-structure/README.md)
-  * [Interface pinout](development-tutorials/hardware-structure/interface-pinout.md)
-* [Install ROS on your computer](development-tutorials/install-ros-on-your-computer.md)
-* [UI Development](development-tutorials/ui-structure/README.md)
+* [Firmware development](development-tutorials/firmware-development.md)
+* [ROS Development](development-tutorials/ros-development/README.md)
+  * [Install ROS on your computer](development-tutorials/ros-development/install-ros-on-your-computer.md)
+* [Web UI Development](development-tutorials/ui-structure/README.md)
   * [Include additional UI](development-tutorials/ui-structure/include-additional-ui.md)
   * [Make your own UI - Relay switches](development-tutorials/ui-structure/sample-ui-relay-funcionality.md)
-* [3D-printed parts](development-tutorials/3d-printed-parts.md)
-* [Leo Wheel modification](development-tutorials/leo-wheel-modification/README.md)
-  * [Motors specification](development-tutorials/leo-wheel-modification/motors-specification.md)
-  * [Mount different tires](development-tutorials/leo-wheel-modification/mount-different-tires.md)
-* [Main Electronics Box modification](development-tutorials/main-electronics-box-modification/README.md)
-  * [Dev-Covers for addons](development-tutorials/main-electronics-box-modification/dev-covers-for-addons.md)
 
 ## Assembly manuals
 

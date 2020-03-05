@@ -1,10 +1,10 @@
-# Software Development
+# Software Structure
 
 This set of tutorials will delve deeper into software architecture on Leo Rover, explain how different elements work together and how can they be developed further.
 
 ## Software structure
 
-![](../../.gitbook/assets/image%20%2832%29.png)
+![](../.gitbook/assets/image%20%2832%29.png)
 
 The base Leo Rover software can be divided into 3 main elements:
 

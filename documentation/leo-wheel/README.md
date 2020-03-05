@@ -1,4 +1,4 @@
-# Leo Wheel modification
+# Leo Rover Wheels
 
 Here we'll gather all the info, specifications and tutorials on how to mod your Rover wheels to your needs.
 

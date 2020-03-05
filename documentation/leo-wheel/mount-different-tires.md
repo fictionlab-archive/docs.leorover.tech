@@ -1,4 +1,4 @@
-# Mount different tires
+# Tires dimensions
 
 You can change the Rover tires to different compound \(toughness\) and thread easily. Just source for standard 1/10 RC-car tires of a certain specifications listed below.
 

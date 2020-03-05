@@ -1,4 +1,4 @@
-# Firmware Development
+# Firmware development
 
 The firmware is written in C++ language using [Husarion hFramework](https://husarion.com/software/hframework/) library.   
 The easiest way to build it is to use Visual Studio Code with Husarion extension.
@@ -39,7 +39,7 @@ To flash the firmware, you can connect USB A &lt;--&gt; microUSB cable between y
 
 You can also upload the `leo_firmware.hex` file to your Rover and follow this tutorial:
 
-{% page-ref page="../../software-tutorials/flash-firmware-to-core2-board.md" %}
+{% page-ref page="../software-tutorials/flash-firmware-to-core2-board.md" %}
 
 ## Modifying firmware parameters
 

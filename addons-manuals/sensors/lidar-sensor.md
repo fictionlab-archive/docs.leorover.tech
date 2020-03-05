@@ -1,10 +1,10 @@
-# LiDAR sensor
+# LiDAR
 
 2D LiDAR sensors are widely used in robotics for things such as indoor SLAM \([Simultaneous localization and mapping](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping)\) or safety systems.
 
 This tutorial will guide you through the process of connecting a LiDAR sensor to your Rover and integrating it with the system. We will present the complete instructions on Hokuyo URG-04LX and RPLIDAR A2M8 examples.
 
-![left: Hokuyo URG-04LX; right: RPLIDAR A2M8](../.gitbook/assets/lidars.png)
+![left: Hokuyo URG-04LX; right: RPLIDAR A2M8](../../.gitbook/assets/lidars.png)
 
 {% hint style="warning" %}
 The steps for RPLIDAR are not complete and were not tested yet.
@@ -14,7 +14,7 @@ The steps might slightly differ for other LiDAR sensors but should be essentiall
 
 After completing this tutorial, you should be able to visualize the model and data from the sensor like in the image below.
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../../.gitbook/assets/image%20%285%29.png)
 
 ## Mounting and wiring the sensor 
 
@@ -24,7 +24,7 @@ When mounting the sensor, you should be particularly ****careful not to obstruct
 
 We developed 3D printable models of parts that allow mounting the aforementioned sensors to the mounting plate located at the top of the robot. The files are listed here:
 
-{% page-ref page="../development-tutorials/3d-printed-parts.md" %}
+{% page-ref page="../../documentation/3d-printed-parts.md" %}
 
 The sensor can be connected to the robot's main computer via the mounting plate USB socket. 
 
@@ -34,7 +34,7 @@ The mounted sensor should look similar to this:
 
 {% tabs %}
 {% tab title="Hokuyo" %}
-![](../.gitbook/assets/image%20%287%29.png)
+![](../../.gitbook/assets/image%20%287%29.png)
 {% endtab %}
 
 {% tab title="RPLIDAR" %}
@@ -224,11 +224,11 @@ rostopic echo /scan
 
 If you have ROS installed on your computer, you can get a more graphical representation of the data with RViz. If you don't have ROS, you can follow this guide:
 
-{% page-ref page="../development-tutorials/install-ros-on-your-computer.md" %}
+{% page-ref page="../../development-tutorials/ros-development/install-ros-on-your-computer.md" %}
 
 Before starting RViz, make sure you completed the `Connecting other computer to ROS network` section of `ROS Development` tutorial:
 
-{% page-ref page="../development-tutorials/software-development/ros-development.md" %}
+{% page-ref page="../../development-tutorials/ros-development/" %}
 
 Now, open RViz by typing `rviz` in the console or, if you have the `leo_description` package installed, type:
 
