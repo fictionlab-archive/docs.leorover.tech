@@ -6,6 +6,8 @@ description: >-
 
 # Camera mast
 
+![](../.gitbook/assets/blank-diagram-3.jpeg)
+
 ## Introduction
 
 ![](../.gitbook/assets/38949_mars-mer-head-neck-artist-concept.jpg)
