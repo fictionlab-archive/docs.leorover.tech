@@ -164,11 +164,7 @@ It may happen that after the assembly your Rover suspension is wobbly and loose.
 
 ![](../.gitbook/assets/p1020315.jpeg)
 
-
-
 Same as in Turtle Rover:
 
-{% embed url="https://docs.turtlerover.com/maker-kit-assembly-manual/frame-assembly-manual" %}
-
-
+{% embed url="https://docs.turtlerover.com/maker-kit-assembly-manual/frame-assembly-manual" caption="" %}
 

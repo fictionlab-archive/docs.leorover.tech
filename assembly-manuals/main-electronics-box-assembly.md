@@ -276,5 +276,3 @@ Find the proper wheel name on Core2ROS driver to connect. The connectors are loc
 
 ![](../.gitbook/assets/core2_top_small.jpg)
 
-
-

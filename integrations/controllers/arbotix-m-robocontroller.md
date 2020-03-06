@@ -6,7 +6,7 @@
 
 This tutorial will show you how to use the Arbotix-M Robocontroller board to control DYNAMIXEL servos with ROS. 
 
-![source: trossenrobotics.com](../../.gitbook/assets/image%20%2824%29.png)
+![source: trossenrobotics.com](../../.gitbook/assets/image%20%2825%29.png)
 
 ## 1. Flash the Arbotix board
 
@@ -68,7 +68,7 @@ If you are using Ubuntu on `Windows Subsytem for Linux` , you need to open Devic
 
 A terminal prompt should appear. Type `help` for the list of commands.
 
-![](../../.gitbook/assets/image%20%2847%29.png)
+![](../../.gitbook/assets/image%20%2848%29.png)
 
 Connect the Dynamixel you want to set id to. Then type `ls` to see id of connected servo and `mv [source] [target]` to change it. For example, when the servo has ID 1 and we want to set it to 2, just type:
 

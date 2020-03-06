@@ -10,7 +10,7 @@ In this tutorial, we will show you how to configure and remotely control Phantom
 
 
 
-![source: trossenrobotics.com](../../.gitbook/assets/image%20%2818%29.png)
+![source: trossenrobotics.com](../../.gitbook/assets/image%20%2819%29.png)
 
 ## Prerequisites
 

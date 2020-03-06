@@ -322,7 +322,7 @@ Now, when you restart the nodes, a new URDF model should be uploaded to the Para
 
 You can use `base_link` as a reference frame for other links in the model. The exact position of the `base_link` origin is defined as the center this mounting hole: 
 
-![X - red, Y - green, Z - blue](../../.gitbook/assets/image%20%2842%29.png)
+![X - red, Y - green, Z - blue](../../.gitbook/assets/image%20%2843%29.png)
 
 on the upper plane of the mounting plate. The distance can be easily measured in CAD programs or even using physical measuring tools.
 
@@ -492,7 +492,7 @@ Now choose **Plugins -&gt; Introspection -&gt; Node Graph**
 
 If your are connected to your Rover, you should see all the nodes running on Raspberry Pi. You can experiment with Node Graph settings, so it can look like this:
 
-![](../../.gitbook/assets/image%20%2844%29.png)
+![](../../.gitbook/assets/image%20%2845%29.png)
 
 ### Visualizing the model  
 
@@ -551,7 +551,7 @@ Or, just type:
 roslaunch leo_description rviz.launch
 ```
 
-![](../../.gitbook/assets/image%20%2845%29.png)
+![](../../.gitbook/assets/image%20%2846%29.png)
 
 You should see the wheels rotating when steering the Rover.
 
