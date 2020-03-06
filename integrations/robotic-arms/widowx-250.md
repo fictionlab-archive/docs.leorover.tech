@@ -118,9 +118,9 @@ You can also edit the robot's URDF file to connect the arm's base link to the ro
 
 {% hint style="info" %}
 To learn more about what the files under `/etc/ros` are used for and how do they correlate with each other, visit the **Adding additional functionality to the rover** section on **ROS Development** guide:
+{% page-ref page="../../development-tutorials/ros-development/" %}
 {% endhint %}
 
-{% page-ref page="../../development-tutorials/ros-development/" %}
 
 That's it! On the next boot, the arm driver node will start together with all the other nodes. You can manually restart the running nodes, by typing:
 
