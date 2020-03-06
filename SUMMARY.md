@@ -13,7 +13,8 @@
   * [IMU](addons-manuals/sensors/imu-module.md)
   * [GPS](addons-manuals/sensors/gps-module.md)
 * [Robotic Arms](addons-manuals/robotic-arms/README.md)
-  * [PhantomX Pincher Arm](addons-manuals/robotic-arms/control-phantomx-pincher-arm.md)
+  * [WidowX 250](addons-manuals/robotic-arms/widowx-250.md)
+  * [PhantomX Pincher](addons-manuals/robotic-arms/control-phantomx-pincher-arm.md)
 
 ## Projects
 
