@@ -4,44 +4,44 @@
 * [Getting started](getting-started.md)
 * [Downloads](downloads.md)
 
-## Integrations <a id="addons-manuals"></a>
+## Integrations
 
-* [Controllers](addons-manuals/controllers/README.md)
-  * [ArbotiX-M Robocontroller](addons-manuals/controllers/arbotix-m-robocontroller.md)
-* [Sensors](addons-manuals/sensors/README.md)
-  * [LiDAR](addons-manuals/sensors/lidar-sensor.md)
-  * [IMU](addons-manuals/sensors/imu-module.md)
-  * [GPS](addons-manuals/sensors/gps-module.md)
-* [Robotic Arms](addons-manuals/robotic-arms/README.md)
-  * [WidowX 250](addons-manuals/robotic-arms/widowx-250.md)
-  * [PhantomX Pincher](addons-manuals/robotic-arms/control-phantomx-pincher-arm.md)
+* [Controllers](integrations/controllers/README.md)
+  * [ArbotiX-M Robocontroller](integrations/controllers/arbotix-m-robocontroller.md)
+* [Sensors](integrations/sensors/README.md)
+  * [LiDAR](integrations/sensors/lidar-sensor.md)
+  * [IMU](integrations/sensors/imu-module.md)
+  * [GPS](integrations/sensors/gps-module.md)
+* [Robotic Arms](integrations/robotic-arms/README.md)
+  * [WidowX 250](integrations/robotic-arms/widowx-250.md)
+  * [PhantomX Pincher](integrations/robotic-arms/phantomx-pincher.md)
 
 ## Projects
 
-* [Relay module](projects/control-4-relays.md)
+* [Relay module](projects/relay-module.md)
 * [Camera mast](projects/camera-mast.md)
 * [IR lights in MEB cover](projects/ir-lights-in-meb-cover.md)
 * [USB Camera](projects/usb-camera.md)
 * [Dev-Covers for addons](projects/dev-covers-for-addons.md)
 
-## Basic guides <a id="software-tutorials"></a>
+## Basic guides
 
-* [Connect to the console \(SSH\)](software-tutorials/connect-to-the-console-ssh.md)
-* [Software update](software-tutorials/software-update-flashing.md)
-* [Firmware update](software-tutorials/flash-firmware-to-core2-board.md)
-* [Change WiFi name & password](software-tutorials/change-wifi-name-and-password.md)
-* [Connect to the Internet](software-tutorials/connect-to-the-internet.md)
-* [Upload files to your Rover](software-tutorials/upload-files-to-your-rover.md)
+* [Connect to the console \(SSH\)](basic-guides/connect-to-the-console-ssh.md)
+* [Software update](basic-guides/software-update.md)
+* [Firmware update](basic-guides/firmware-update.md)
+* [Change WiFi name & password](basic-guides/change-wifi-name-and-password.md)
+* [Connect to the Internet](basic-guides/connect-to-the-internet.md)
+* [Upload files to your Rover](basic-guides/upload-files-to-your-rover.md)
 
 ## Documentation
 
 * [Hardware Structure](documentation/hardware-structure/README.md)
   * [Interface pinout](documentation/hardware-structure/interface-pinout.md)
-* [Software Structure](documentation/software-development.md)
+* [Software Structure](documentation/software-structure.md)
 * [Husarion CORE2-ROS controller](documentation/husarion-core2-ros-controller.md)
-* [Leo Rover Wheels](documentation/leo-wheel/README.md)
-  * [Motors specification](documentation/leo-wheel/motors-specification.md)
-  * [Tires dimensions](documentation/leo-wheel/mount-different-tires.md)
+* [Leo Rover Wheels](documentation/leo-rover-wheels/README.md)
+  * [Motors specification](documentation/leo-rover-wheels/motors-specification.md)
+  * [Tires dimensions](documentation/leo-rover-wheels/mount-different-tires.md)
 * [3D-printed parts](documentation/3d-printed-parts.md)
 
 ## Development tutorials
@@ -49,9 +49,9 @@
 * [Firmware development](development-tutorials/firmware-development.md)
 * [ROS Development](development-tutorials/ros-development/README.md)
   * [Install ROS on your computer](development-tutorials/ros-development/install-ros-on-your-computer.md)
-* [Web UI Development](development-tutorials/ui-structure/README.md)
-  * [Include additional UI](development-tutorials/ui-structure/include-additional-ui.md)
-  * [Make your own UI - Relay switches](development-tutorials/ui-structure/sample-ui-relay-funcionality.md)
+* [Web UI Development](development-tutorials/web-ui-development/README.md)
+  * [Include additional UI](development-tutorials/web-ui-development/include-additional-ui.md)
+  * [Make your own UI - Relay switches](development-tutorials/web-ui-development/sample-ui-relay-funcionality.md)
 
 ## Assembly manuals
 

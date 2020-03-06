@@ -178,7 +178,7 @@ Set the Dynamixel ID's like in the image below:
 
 To learn how to do this, you can follow our guide for the Arbotix controller here:
 
-{% page-ref page="../addons-manuals/controllers/arbotix-m-robocontroller.md" %}
+{% page-ref page="../integrations/controllers/arbotix-m-robocontroller.md" %}
 
 ### Install the ROS driver package
 
@@ -262,7 +262,7 @@ The UI source is available at our[ Github repositories](https://github.com/LeoRo
 
 To install it on your Rover, follow the tutorial below: 
 
-{% page-ref page="../development-tutorials/ui-structure/include-additional-ui.md" %}
+{% page-ref page="../development-tutorials/web-ui-development/include-additional-ui.md" %}
 
 Then, type in you web browser the LeoRover's address and choose the port number \(for example `10.0.0.1:90`\). If the UI was loaded correctly, you should see the same interface as below:
 

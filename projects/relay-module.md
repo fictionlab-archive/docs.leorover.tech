@@ -16,11 +16,11 @@ In this tutorial, we will show you how to configure and remotely control relays 
 
 Connect to the Rover through SSH
 
-{% page-ref page="../software-tutorials/connect-to-the-console-ssh.md" %}
+{% page-ref page="../basic-guides/connect-to-the-console-ssh.md" %}
 
 Make sure the Rover is connected to the internet
 
-{% page-ref page="../software-tutorials/connect-to-the-internet.md" %}
+{% page-ref page="../basic-guides/connect-to-the-internet.md" %}
 
 ## 1. Connect the relay board to Core2-ROS
 
@@ -46,7 +46,7 @@ Well done! Hardware is ready
 
 ### 2. Upload the downloaded .hex file to your Rover
 
-{% page-ref page="../software-tutorials/upload-files-to-your-rover.md" %}
+{% page-ref page="../basic-guides/upload-files-to-your-rover.md" %}
 
 ### 3. Flash the firmware
 
@@ -95,7 +95,7 @@ cd /opt
 git clone https://github.com/LeoRover/leo_ui_sample_relay.git
 ```
 
-{% page-ref page="../development-tutorials/ui-structure/include-additional-ui.md" %}
+{% page-ref page="../development-tutorials/web-ui-development/include-additional-ui.md" %}
 
 ## How to control the relays via user interface
 

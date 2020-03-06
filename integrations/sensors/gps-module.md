@@ -74,13 +74,13 @@ Make sure you have the newest firmware uploaded to Core2-ROS. GPS functionality 
 GPS funcionality is availiable on branch feature/gps and devel- tests in progress
 {% endhint %}
 
-{% page-ref page="../../software-tutorials/flash-firmware-to-core2-board.md" %}
+{% page-ref page="../../basic-guides/firmware-update.md" %}
 
 ### Enable GPS
 
 Open a new ssh connection to the Rover's console.
 
-{% page-ref page="../../software-tutorials/connect-to-the-console-ssh.md" %}
+{% page-ref page="../../basic-guides/connect-to-the-console-ssh.md" %}
 
 Set the GPS functionality on by sending the message to `/gps_enable` topic:
 

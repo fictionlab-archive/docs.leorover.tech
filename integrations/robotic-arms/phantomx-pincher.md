@@ -16,7 +16,7 @@ In this tutorial, we will show you how to configure and remotely control Phantom
 
 Before you begin, make sure you have internet connection on your Rover.
 
-{% page-ref page="../../software-tutorials/connect-to-the-internet.md" %}
+{% page-ref page="../../basic-guides/connect-to-the-internet.md" %}
 
 Also, you need to have ROS installed on your computer.
 
@@ -50,7 +50,7 @@ To use the mentioned features, you need to build the packages and run the driver
 
 Start by logging into your Rover's console:
 
-{% page-ref page="../../software-tutorials/connect-to-the-console-ssh.md" %}
+{% page-ref page="../../basic-guides/connect-to-the-console-ssh.md" %}
 
 and creating an empty catkin workspace, if you don't have one yet:
 

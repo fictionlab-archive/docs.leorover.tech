@@ -17,7 +17,7 @@ ROS comes with some command line tools that can help to introspect the current n
 
 Let's try to run some examples. Before that, connect to the Rover's console:
 
-{% page-ref page="../../software-tutorials/connect-to-the-console-ssh.md" %}
+{% page-ref page="../../basic-guides/connect-to-the-console-ssh.md" %}
 
 Start by reading currently running nodes:
 
@@ -328,9 +328,9 @@ on the upper plane of the mounting plate. The distance can be easily measured in
 
 For more examples, you can look at these tutorials:
 
-{% page-ref page="../../addons-manuals/sensors/lidar-sensor.md" %}
+{% page-ref page="../../integrations/sensors/lidar-sensor.md" %}
 
-{% page-ref page="../../addons-manuals/sensors/imu-module.md" %}
+{% page-ref page="../../integrations/sensors/imu-module.md" %}
 
 ## Building additional ROS packages
 
@@ -693,7 +693,7 @@ As sending raw images from the camera via wireless network may be insufficient, 
 
 Start by logging into your Rover's console:
 
-{% page-ref page="../../software-tutorials/connect-to-the-console-ssh.md" %}
+{% page-ref page="../../basic-guides/connect-to-the-console-ssh.md" %}
 
 Create a workspace in your home directory if you don't have one yet:
 

@@ -47,7 +47,7 @@ We prepared bootable images with Ubuntu and ROS preinstalled. They support 64-bi
 
 You will need an USB drive with at least 8GB storage capacity. To flash the image you can follow the same instructions as when flashing Rover image to SD card:
 
-{% page-ref page="../../software-tutorials/software-update-flashing.md" %}
+{% page-ref page="../../basic-guides/software-update.md" %}
 
 {% hint style="warning" %}
 Keep in mind that this will wipe all your data from the drive.

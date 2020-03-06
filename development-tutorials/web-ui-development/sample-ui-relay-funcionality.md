@@ -26,7 +26,7 @@ git clone https://github.com/LeoRover/leo_ui_sample_relay.git
 
 2. In other case you can download it directly from [https://github.com/LeoRover/leo\_ui\_sample\_relay](https://github.com/LeoRover/leo_ui_sample_relay) and upload the files manually.
 
-{% page-ref page="../../software-tutorials/upload-files-to-your-rover.md" %}
+{% page-ref page="../../basic-guides/upload-files-to-your-rover.md" %}
 
 ### 4. VSC configuration
 

@@ -20,9 +20,9 @@ File -> Sketchbook -> ArbotiX Sketches -> ros
 
 The rest of this tutorial can be done in any machine that runs ROS and have an Internet connection. It can be Leo Rover
 
-{% page-ref page="../../software-tutorials/connect-to-the-console-ssh.md" %}
+{% page-ref page="../../basic-guides/connect-to-the-console-ssh.md" %}
 
-{% page-ref page="../../software-tutorials/connect-to-the-internet.md" %}
+{% page-ref page="../../basic-guides/connect-to-the-internet.md" %}
 
 or your computer
 

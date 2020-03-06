@@ -14,9 +14,9 @@ First, make sure you have compatible IMU module. We recommend `Grove - IMU 9DOF 
 
 IMU functionality was introduced in [leo\_firmware](https://github.com/LeoRover/leo_firmware/releases) version 0.5, so make sure to stay updated.
 
-{% page-ref page="../../software-tutorials/software-update-flashing.md" %}
+{% page-ref page="../../basic-guides/software-update.md" %}
 
-{% page-ref page="../../software-tutorials/flash-firmware-to-core2-board.md" %}
+{% page-ref page="../../basic-guides/firmware-update.md" %}
 
 ## 1. Connect the IMU module to Core2-ROS board
 
@@ -47,7 +47,7 @@ If you use Grove IMU, you can 3D print one of our `custom elecronic box lids` \(
 
 Log in to the Rover's console via SSH
 
-{% page-ref page="../../software-tutorials/connect-to-the-console-ssh.md" %}
+{% page-ref page="../../basic-guides/connect-to-the-console-ssh.md" %}
 
 To set IMU functionality on or off, you need to send message to `/core2/set_imu` topic.
 
