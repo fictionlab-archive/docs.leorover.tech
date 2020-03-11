@@ -41,11 +41,60 @@ description: >-
 
 ### Addons
 
-| Image | Slicer orientation & support | Name | Info |
-| :--- | :--- | :--- | :--- |
-| ![](../.gitbook/assets/00182-v1.png) | ![](../.gitbook/assets/00182.png) | 00182 24-12V Converter adapter  | 20% infill |
-| ![](../.gitbook/assets/00189-v1.png) | ![](../.gitbook/assets/00189%20%281%29.png) | 00189 Universal mounting plate | 20% infill |
-| ![](../.gitbook/assets/01113-v1.png) | ![](../.gitbook/assets/01113.png) | 01113 Robotic arm adapter | 20% infill |
-
-## 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Image</th>
+      <th style="text-align:left">Slicer orientation &amp; support</th>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../.gitbook/assets/00182-v1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <img src="../.gitbook/assets/00182.png" alt/>
+      </td>
+      <td style="text-align:left">00182 24-12V Converter adapter</td>
+      <td style="text-align:left">20% infill</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../.gitbook/assets/00189-v1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <img src="../.gitbook/assets/00189 (1).png" alt/>
+      </td>
+      <td style="text-align:left">00189 Universal mounting plate</td>
+      <td style="text-align:left">20% infill</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../.gitbook/assets/01113-v1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <img src="../.gitbook/assets/01113.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>01113</p>
+        <p>PhantomX Pincher</p>
+        <p>adapter</p>
+      </td>
+      <td style="text-align:left">20% infill</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../.gitbook/assets/zrzut-ekranu-2020-03-11-o-17.04.39.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <img src="../.gitbook/assets/zrzut-ekranu-2020-03-11-o-16.57.34.png" alt/>
+      </td>
+      <td style="text-align:left">WidowX 250 adapter</td>
+      <td style="text-align:left">20% infill</td>
+    </tr>
+  </tbody>
+</table>## 
 

@@ -1,5 +1,7 @@
 # WidowX 250
 
+![](../../.gitbook/assets/blank-diagram%20%281%29.jpeg)
+
 In this tutorial, we will show you how to integrate and remotely control the WidowX 250 robotic arm.
 
 ![](../../.gitbook/assets/image%20%2818%29.png)
@@ -8,7 +10,7 @@ In this tutorial, we will show you how to integrate and remotely control the Wid
 
 The mounting of the arm is particularly easy. If you have bought the arm with the modified support plate designed for our robot, you can use screws and nuts to connect the arm to the rover's mounting plate.
 
-If you have the original support plate, you can get the model for 3D printing here:
+If you have the original support plate, you can get the model for 3D printing here \(addons section\):
 
 {% page-ref page="../../documentation/3d-printed-parts.md" %}
 
