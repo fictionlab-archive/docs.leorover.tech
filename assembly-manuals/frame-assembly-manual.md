@@ -1,4 +1,4 @@
-# 3. Frame and suspension assembly manual
+# Task 3: Frame and suspension assembly
 
 ## Assembly manual
 

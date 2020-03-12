@@ -1,4 +1,4 @@
-# 6. Battery quarter \(left\) assembly
+# Task 6: Battery quarter \(left\) assembly
 
 ## Assembly guide
 

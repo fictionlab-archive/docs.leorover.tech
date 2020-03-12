@@ -2,7 +2,7 @@
 description: Main Electronics Box = MEB (for future references)
 ---
 
-# 2. Main Electronics Box assembly
+# Task 2: Main Electronics Box assembly
 
 ## Intro
 

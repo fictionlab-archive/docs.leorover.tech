@@ -55,16 +55,16 @@
 
 ## Assembly manuals
 
-* [0. Check if you have everything](assembly-manuals/check-the-boxes.md)
-* [1. Wheel assembly](assembly-manuals/1.-wheel-assembly.md)
-* [2. Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
-* [3. Frame and suspension assembly manual](assembly-manuals/frame-assembly-manual.md)
-* [4. MEB and front cover to frame assembly and cabling](assembly-manuals/4.-meb-and-front-cover-to-frame-assembly-and-cabling.md)
-* [5. Wheels and tires to suspension mounting](assembly-manuals/4.-wheels-to-suspension.md)
-* [6. Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
-* [7. Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
-* [8. Antenna and connector cover mounting](assembly-manuals/8.-antenna-and-connector-cover-mounting.md)
-* [9. Prepare the software and firmware](assembly-manuals/9.-prepare-the-software-and-firmware.md)
+* [Prepare: Check if you have everything](assembly-manuals/check-the-boxes.md)
+* [Task 1: Wheel assembly](assembly-manuals/1.-wheel-assembly.md)
+* [Task 2: Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
+* [Task 3: Frame and suspension assembly](assembly-manuals/frame-assembly-manual.md)
+* [Task 4: MEB and front cover to frame assembly and cabling](assembly-manuals/4.-meb-and-front-cover-to-frame-assembly-and-cabling.md)
+* [Task 5: Wheels and tires to suspension mounting](assembly-manuals/4.-wheels-to-suspension.md)
+* [Task 6: Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
+* [Task 7: Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
+* [Task 8: Antenna and connector cover mounting](assembly-manuals/8.-antenna-and-connector-cover-mounting.md)
+* [Task 9: Software and firmware](assembly-manuals/9.-prepare-the-software-and-firmware.md)
 
 ## Archive
 

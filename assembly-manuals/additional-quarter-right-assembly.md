@@ -1,4 +1,4 @@
-# 7. Additional quarter \(right\) assembly
+# Task 7: Additional quarter \(right\) assembly
 
 ## Assembly guide
 
