@@ -4,7 +4,7 @@
 
 In this tutorial, we will show you how to integrate and remotely control the WidowX 250 robotic arm.
 
-![](../../.gitbook/assets/image%20%2818%29.png)
+![](../../.gitbook/assets/image%20%2819%29.png)
 
 ## Mounting and wiring the arm
 
@@ -96,6 +96,7 @@ and include the arm's driver in the rover's launch file, by adding these lines:
   <arg name="arm_profile_velocity"        value="131"/>
   <arg name="arm_profile_acceleration"    value="15"/>
   <arg name="gripper_operating_mode"      value="position"/>
+  <arg name="use_time_based_profile"      value="false"/>
 </include>
 ```
 {% endcode %}
@@ -129,4 +130,192 @@ That's it! On the next boot, the arm driver node will start together with all th
 ```bash
 sudo systemctl restart leo
 ```
+
+## Controlling the arm
+
+Now that you have the driver running, you should see new ROS topics and services under the `/wx250` namespace. For a full description of the ROS API, visit the [interbotix\_sdk README page](https://github.com/Interbotix/interbotix_ros_arms/tree/master/interbotix_sdk). You can test some of the features with the `rostopic` and `rosservice` command-line tools:
+
+Retrieve the information about the arm:
+
+```bash
+rosservice call /wx250/get_robot_info
+```
+
+Publish position command to the elbow joint:
+
+```bash
+rostopic pub /wx250/single_joint/command interbotix_sdk/SingleCommand "{joint_name: elbow, cmd: -0.5}"
+```
+
+Turn off the torque on the joints:
+
+```bash
+rosservice call /wx250/torque_joints_off
+```
+
+The [interbotix\_ros\_arms](https://github.com/Interbotix/interbotix_ros_arms) repository contains some packages that will let you control the arm in different ways. To use them on your computer, you will need to have ROS installed:
+
+{% page-ref page="../../development-tutorials/ros-development/install-ros-on-your-computer.md" %}
+
+and properly configured to communicate with the nodes running on the rover. For this, you can visit **Connecting other computer to ROS network** section of the ROS Development tutorial:
+
+{% page-ref page="../../development-tutorials/ros-development/" %}
+
+First, install some prerequisites:
+
+```bash
+sudo apt install python-catkin-tools
+sudo -H pip install modern_robotics
+```
+
+{% hint style="info" %}
+The `modern_robotics` python package is required to run the joystick control example.
+{% endhint %}
+
+and create a catkin workspace:
+
+```bash
+mkdir -p ~/ros_ws/src
+cd ~/ros_ws
+catkin config --extend /opt/ros/melodic
+```
+
+Clone the `interbotix_ros_arms` and `leo_description` repositories into the source space:
+
+```bash
+cd ~/ros_ws/src
+git clone https://github.com/Interbotix/interbotix_ros_arms.git -b melodic
+git clone https://github.com/LeoRover/leo_description.git
+```
+
+Install dependencies using the `rosdep` tool:
+
+```bash
+cd ~/ros_ws
+rosdep update
+rosdep install --from-paths src -iy
+```
+
+and build the workspace:
+
+```bash
+catkin build
+```
+
+Now, `source` the devel space to make the new packages visible in your shell environment:
+
+```bash
+source ~/ros_ws/devel/setup.bash
+```
+
+{% hint style="info" %}
+You will have to do this at every terminal session you want to use the packages on, so it is convenient to add this line to the `~/.bashrc` file.
+{% endhint %}
+
+### Visualizing the model
+
+1. Open RViz by typing `rviz` in the console.
+2. Choose `base_link` as the **Fixed Frame**.
+3. On the **Displays** panel click on **Add** and choose **RobotModel**.
+4. For the **Robot Description** parameter, choose `robot_description`.
+5. Add another **RobotModel** display, but for the **Robot Description** parameter choose `wx250/robot_description`.
+
+The effect should look similar to this:
+
+![](../../.gitbook/assets/image%20%288%29.png)
+
+### Planning the trajectory with MoveIt
+
+MoveIt motion planning framework will allow us to plan and execute a collision-free trajectory to the destination pose of the end-effector. To use it, first make sure you have the `use_moveit` parameter for the arm driver set to `true`:
+
+{% code title="/etc/ros/robot.launch" %}
+```markup
+<arg name="use_moveit" value="true"/>
+```
+{% endcode %}
+
+On your computer, type:
+
+```bash
+roslaunch interbotix_moveit interbotix_moveit.launch robot_name:=wx250 rviz_frame:=wx250/base_link
+```
+
+The MoveIt GUI should appear:
+
+![](../../.gitbook/assets/image%20%2827%29.png)
+
+On the **MotionPlanning** panel, click on the **Planning** tab, choose `interbotix_arm` for the **Planning Group** and `<current>` for the **Start State**.
+
+There are some predefined poses which you can choose for the **Goal State**, such as `home`, `sleep` or `upright`. To set the pose manually, navigate to the **DIsplays** panel -&gt; **MotionPlanning** - &gt; **Planning Request** and check `Query Goal State`. You should now be able to manually set the end-effector pose for the goal state.
+
+When the goal state is set, click on the **Plan** button to plan the trajectory \(the simulated trajectory visualization should appear\) and **Execute** to send the trajectory to the driver.
+
+If you want to use the MoveIt capabilities in a Python script or a C++ program, please look at the [interbotix\_moveit\_interface](https://github.com/Interbotix/interbotix_ros_arms/tree/master/interbotix_examples/interbotix_moveit_interface) example. 
+
+### Using joystick to control the arm
+
+The `interbotix_joy_control` example package provides the capability to control the movement of the arm \(utilizing inverse kinematics\) with a PS3 or PS4 joystick. 
+
+To use the package with the arm connected to your rover:
+
+1. Change the parameters for the driver node. The joy control node uses the `pwm` mode for the gripper and is more suited to work with the Time-Based-Profile.  Here are the settings that work well:
+
+   {% code title="/etc/ros/robot.launch" %}
+   ```markup
+   <arg name="arm_operating_mode"          value="position"/>
+   <arg name="arm_profile_velocity"        value="200"/>
+   <arg name="arm_profile_acceleration"    value="200"/>
+   <arg name="gripper_operating_mode"      value="pwm"/>
+   <arg name="use_time_based_profile"      value="true"/>
+   ```
+   {% endcode %}
+
+2. Modify the `joy_control.launch` file to add the option to not run the driver:
+
+   {% code title="interbotix\_joy\_control/launch/joy\_control.launch" %}
+   ```markup
+   <arg name="run_arm" default="true"/>
+
+   <include if="$(arg run_arm)" file="$(find interbotix_sdk)/launch/arm_run.launch">
+   ```
+   {% endcode %}
+
+3. Connect the joystick to your computer. You can find the instructions on the package's [README file](https://github.com/Interbotix/interbotix_ros_arms/blob/master/interbotix_examples/interbotix_joy_control/README.md).
+4. Start the `joy_control.launch` file:
+
+   ```bash
+   roslaunch interbotix_joy_control joy_control.launch robot_name:=wx250 controller:=ps3 run_arm:=false
+   ```
+
+   Change `controller` to `ps4` if you are using a PS4 joystick.
+
+### Using the Python API
+
+Aside from the driver, the `interbotix_sdk` package also provides a Python API for manipulating the arm. It is designed to mainly work with the `position` mode for the arm, `pwm` mode for the gripper and the Time-Based-Profile. For a start, you can set the same parameters for the driver as in the previous example.
+
+There are some example scripts that demonstrate the use of the API at the `interbotix_examples/python_demos` directory.
+
+```bash
+cd ~/ros_ws/src/interbotix_ros_arms/interbotix_examples/python_demos
+```
+
+The `bartender.py` demo performs some pick, pour and place operations. To run it, first open the file in a text editor and search for this line:
+
+```python
+arm = InterbotixRobot(robot_name="wx250s", mrd=mrd)
+```
+
+Change `wx250s` to `wx250` and then type on the console:
+
+```bash
+python bartender.py
+```
+
+{% hint style="warning" %}
+Make sure that you are not running any other script that takes control of the arm simultaneously \(e.g. the joy control node\). 
+{% endhint %}
+
+If everything went right, you should see the arm in action.
+
+You can check the other files in the directory for more examples. To view the available functions in the API and their documentation, take a look at the [robot\_manipulation.py file](https://github.com/Interbotix/interbotix_ros_arms/blob/master/interbotix_sdk/src/interbotix_sdk/robot_manipulation.py).
 

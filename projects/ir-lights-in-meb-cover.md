@@ -69,9 +69,9 @@ IR diodes may vary! Check if dimensions from 3D model are matching real sample!
 
 **Step 11.** Last dimension needed for this cutout is depth of extrusion that we will be making. In this case it will be distance from top of the cover \(plane of our extrusion\) and bottom of IR light.
 
-![](../.gitbook/assets/image%20%2833%29.png)
+![](../.gitbook/assets/image%20%2835%29.png)
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%2811%29.png)
 
 **Step 12.** It is a good practice to make cutouts slightly bigger - I decided that it will be 0.3mm bigger. That's why dimension of rectangle is 30x1,5mm. X position of cutout is 6.15 mm \(6.3 mm was measured but I substracted half of 0.3 mm\). Y position is 9.75mm from center of hole for IR diode because it is radius of this hole. As we know from **step 11** depth of cutout should be 21.5mm + 0.3 mm = 21.8mm.
 
@@ -115,7 +115,7 @@ As for this part of tutorial you should visit our manual about creating Camera m
 
 {% page-ref page="camera-mast.md" %}
 
-![](../.gitbook/assets/image%20%2832%29.png)
+![](../.gitbook/assets/image%20%2834%29.png)
 
 ## Assembling 
 

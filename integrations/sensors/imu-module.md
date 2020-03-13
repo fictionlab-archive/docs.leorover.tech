@@ -10,7 +10,7 @@ description: >-
 
 First, make sure you have compatible IMU module. We recommend `Grove - IMU 9DOF v2.0` but any module with `MPU-9250` sensor should work.
 
-![Grove - IMU 9DOF v2.0](../../.gitbook/assets/image%20%289%29.png)
+![Grove - IMU 9DOF v2.0](../../.gitbook/assets/image%20%2810%29.png)
 
 IMU functionality was introduced in [leo\_firmware](https://github.com/LeoRover/leo_firmware/releases) version 0.5, so make sure to stay updated.
 
@@ -26,7 +26,7 @@ By default, the IMU will work on hSens2 port. You can change it to hSens1 by mod
 
 Connect the sensor pins according to [CORE2 manual](https://husarion.com/manuals/core2/#hsensor)
 
-![](../../.gitbook/assets/image%20%2822%29.png)
+![](../../.gitbook/assets/image%20%2823%29.png)
 
 | hSens pin | IMU pin |
 | :--- | :--- |
@@ -41,7 +41,7 @@ You can use female jumper cables, or create your own IDC cable, like this one:
 
 If you use Grove IMU, you can 3D print one of our `custom elecronic box lids` \(TODO: link\) to attach the module inside the box:
 
-![](../../.gitbook/assets/image%20%2820%29.png)
+![](../../.gitbook/assets/image%20%2821%29.png)
 
 ## 2. Turn on IMU functionality
 
@@ -73,7 +73,7 @@ rostopic echo /imu/gyro
 
 The sensor's accelerometer and gyroscope X, Y and Z axes should be printed on the board. If they are not, you can check MPU9250 IC orientation and identify the axes with this drawing:
 
-![accelerometer and gyroscope axes](../../.gitbook/assets/image%20%2844%29.png)
+![accelerometer and gyroscope axes](../../.gitbook/assets/image%20%2846%29.png)
 
 The magnetometer axes were also transformed to these axes to comply with North-West-Up world frame.
 
