@@ -35,7 +35,7 @@ Motors that are used for this application are Dynamixel AX-12A servo's which pro
 * 3x Dynamixel AX-12A - [\(link\)](https://www.generationrobots.com/en/401075-dynamixel-ax-12-a-actuator-robotis.html)
 * 3x Dynamixel cable [\(link\)](https://www.generationrobots.com/en/268-dynamixel-cables)
 * ArbotiX-M Robocontroller [\(link\)](https://www.generationrobots.com/en/401684-arbotix-m-robocontroller.html)
-* FTDI USB-UART cable or FTDI converter [\(link\)](https://www.generationrobots.com/en/401904-mini-usb-to-serial-33v-ftdi-basic-breakout.html)
+* FTDI USB-UART cable or FTDI converter \(5V\)
 * miniUSB \(male\) - USB \(female\) adapter
 * 2x 6800Z ball bearing \(dimensions -&gt; 19x10x5 mm\)
 * 52x40x7 mm ball bearing
@@ -44,7 +44,7 @@ Motors that are used for this application are Dynamixel AX-12A servo's which pro
 * 4x 2,2x6,5 screw
 * 8x M3x10 hex bolt with button head \(actually any M3x10 will be okay\)
 * 8x M3x6 hex bolt with button head \(actually any M3x6 will be okay\)
-* 4x M3 cooper inserts
+* 4x M3 brass inserts
 * 2x M3x10 hex bolt with head cap \(ISO 4762\)
 * 26x M2x8 hex bolt with head cap \(ISO 4762\)
 * 26x M2 nut
@@ -157,8 +157,8 @@ When it is done just plug in the connector to the ArbotiX board.
 Double check the wiring before plugging it in! The barrel jack should be center-positive \(you can confirm it with a multimeter\). The board might not be protected against reverse polarity.
 {% endhint %}
 
-Next step is to connect the ArbotiX board to the LeoRover's miniUSB socket \(located at the top\) using a USB-UART FTDI 3.3V converter.  
-We have tested 2 variations of the connection: using [SparkFun FTDI breakout](https://www.generationrobots.com/en/401904-mini-usb-to-serial-33v-ftdi-basic-breakout.html) board and a male to male miniUSB cable or using [FTDI cable](https://www.trossenrobotics.com/store/p/6406-FTDI-Cable-5V.aspx) and a miniUSB to USB adapter.
+Next step is to connect the ArbotiX board to the LeoRover's miniUSB socket \(located at the top\) using a USB-UART FTDI 5V converter.  
+We have tested 2 variations of the connection: using SparkFun FTDI breakout board and a male to male miniUSB cable or using [FTDI cable](https://www.trossenrobotics.com/store/p/6406-FTDI-Cable-5V.aspx) and a miniUSB to USB adapter.
 
 ![Possibility 1: Sparkfun FTDI adapter -&amp;gt; double miniUSB cable](../.gitbook/assets/20191208_194444_compress99.jpg)
 
