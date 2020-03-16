@@ -8,6 +8,7 @@
 
 * [Controllers](integrations/controllers/README.md)
   * [ArbotiX-M Robocontroller](integrations/controllers/arbotix-m-robocontroller.md)
+  * [Relay Module](integrations/controllers/relay-module.md)
 * [Sensors](integrations/sensors/README.md)
   * [LiDAR](integrations/sensors/lidar-sensor.md)
   * [IMU](integrations/sensors/imu-module.md)
@@ -18,10 +19,9 @@
 
 ## Projects
 
-* [Relay module](projects/relay-module.md)
-* [Camera mast](projects/camera-mast.md)
+* [Leo Rover Mast](projects/camera-mast.md)
 * [IR lights in MEB cover](projects/ir-lights-in-meb-cover.md)
-* [USB Camera](projects/usb-camera.md)
+* [Waterproof USB Camera](projects/usb-camera.md)
 * [Dev-Covers for addons](projects/dev-covers-for-addons.md)
 
 ## Basic guides

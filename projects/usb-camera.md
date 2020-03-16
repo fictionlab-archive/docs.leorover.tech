@@ -1,4 +1,4 @@
-# USB Camera
+# Waterproof USB Camera
 
 A little IP66 USB camera that we use in our robots. Originally we use 180-degree fisheye 2MPx camera, but you can mount anything you like.
 

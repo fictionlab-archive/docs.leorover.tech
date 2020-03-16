@@ -4,7 +4,7 @@ description: >-
   addon.
 ---
 
-# Camera mast
+# Leo Rover Mast
 
 ![](../.gitbook/assets/blank-diagram-3.jpeg)
 
