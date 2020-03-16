@@ -4,6 +4,8 @@
 
 In this tutorial, we will show you how to integrate and remotely control the WidowX 250 robotic arm.
 
+{% embed url="https://youtu.be/SP4WlP3YPl4" %}
+
 ![](../../.gitbook/assets/image%20%2819%29.png)
 
 ## Mounting and wiring the arm
@@ -318,4 +320,8 @@ Make sure that you are not running any other script that takes control of the ar
 If everything went right, you should see the arm in action.
 
 You can check the other files in the directory for more examples. To view the available functions in the API and their documentation, take a look at the [robot\_manipulation.py file](https://github.com/Interbotix/interbotix_ros_arms/blob/master/interbotix_sdk/src/interbotix_sdk/robot_manipulation.py).
+
+{% embed url="https://youtu.be/XedSRNmOrFY" %}
+
+
 
