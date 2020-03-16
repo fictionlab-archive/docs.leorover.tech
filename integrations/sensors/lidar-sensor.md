@@ -1,5 +1,7 @@
 # LiDAR
 
+![Leo Rover with Hokuyo LiDAR](../../.gitbook/assets/5e4873a59065e70b8f12ce67_p1020797.jpeg)
+
 2D LiDAR sensors are widely used in robotics for things such as indoor SLAM \([Simultaneous localization and mapping](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping)\) or safety systems.
 
 This tutorial will guide you through the process of connecting a LiDAR sensor to your Rover and integrating it with the system. We will present the complete instructions on Hokuyo URG-04LX and RPLIDAR A2M8 examples.

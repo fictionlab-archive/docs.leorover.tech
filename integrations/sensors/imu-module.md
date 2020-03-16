@@ -6,6 +6,8 @@ description: >-
 
 # IMU
 
+{% embed url="https://youtu.be/hZZzMtRVv\_M" %}
+
 ## Prerequisites
 
 First, make sure you have compatible IMU module. We recommend `Grove - IMU 9DOF v2.0` but any module with `MPU-9250` sensor should work.
