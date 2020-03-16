@@ -1,3 +1,9 @@
+---
+description: >-
+  In this tutorial, we will show you how to integrate and remotely control the
+  WidowX 250 robotic arm.
+---
+
 # WidowX 250
 
 ![](../../.gitbook/assets/blank-diagram%20%281%29.jpeg)

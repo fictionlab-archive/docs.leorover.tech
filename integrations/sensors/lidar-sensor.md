@@ -1,3 +1,10 @@
+---
+description: >-
+  2D LiDAR sensors are widely used in robotics for things such as indoor SLAM or
+  safety systems.This tutorial will guide you through the process of connecting
+  a LiDAR sensor to your Rover.
+---
+
 # LiDAR
 
 ![Leo Rover with Hokuyo LiDAR](../../.gitbook/assets/5e4873a59065e70b8f12ce67_p1020797.jpeg)

@@ -1,3 +1,9 @@
+---
+description: >-
+  Here we prepared a graphic description how to assemble your own camera using
+  either our kit or parts that you source based on a BOM provided.
+---
+
 # Waterproof USB Camera
 
 A little IP66 USB camera that we use in our robots. Originally we use 180-degree fisheye 2MPx camera, but you can mount anything you like.
