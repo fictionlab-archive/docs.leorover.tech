@@ -64,7 +64,7 @@
 * [Task 7: Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
 * [Task 8: Antenna and connector cover mounting](assembly-manuals/8.-antenna-and-connector-cover-mounting.md)
 * [Task 9: Software and firmware](assembly-manuals/9.-prepare-the-software-and-firmware.md)
-* [Finish: Troubleshooting](assembly-manuals/finish-troubleshooting.md)
+* [Extra: Troubleshooting](assembly-manuals/finish-troubleshooting.md)
 
 ## Archive
 

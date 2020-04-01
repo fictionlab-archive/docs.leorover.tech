@@ -1,4 +1,4 @@
-# Finish: Troubleshooting
+# Extra: Troubleshooting
 
 Here you can find the most common problems happening during and after the assembly. You'll be able to tackle them with the solutions we provide - hopefully. If not, feel free to write [contact@turtlerover.com](mailto:contact@turtlerover.com)
 
@@ -48,7 +48,9 @@ Check if the wheel gold-pin connector is connected right way. OutA \(on Core2-RO
 
 ### Wheel jumps back and forth instead of driving
 
-There's a problem with encoder signal. Please check white and yellow cables all the way from the wheel to Core2-ROS controller. Check the wheel after each of the steps listed. 
+First: Make sure you flashed the proper firmware \(Buehler or Pololu motors\).
+
+Second: There may be a problem with encoder signal. Please check white and yellow cables all the way from the wheel to Core2-ROS controller. Check the wheel after each of the steps listed. 
 
 1. Reconnect the wheel gold-pin connector on the board.
 2. Move the connector in place of different wheel and see if still happens.
