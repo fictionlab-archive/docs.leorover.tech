@@ -35,8 +35,7 @@
 
 ## Documentation
 
-* [Hardware Structure](documentation/hardware-structure/README.md)
-  * [Interface pinout](documentation/hardware-structure/interface-pinout.md)
+* [Hardware Structure](documentation/hardware-structure.md)
 * [Software Structure](documentation/software-structure.md)
 * [Husarion CORE2-ROS controller](documentation/husarion-core2-ros-controller.md)
 * [Leo Rover Wheels](documentation/leo-rover-wheels/README.md)
@@ -65,10 +64,12 @@
 * [Task 7: Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
 * [Task 8: Antenna and connector cover mounting](assembly-manuals/8.-antenna-and-connector-cover-mounting.md)
 * [Task 9: Software and firmware](assembly-manuals/9.-prepare-the-software-and-firmware.md)
+* [Finish: Troubleshooting](assembly-manuals/finish-troubleshooting.md)
 
 ## Archive
 
 * [Leo Rover version 1.5](archive/leo-rover-version-1.5/README.md)
   * [Leo 1.5 Wheel assembly](archive/leo-rover-version-1.5/wheel-assembly.md)
   * [Leo 1.5 Main electronics box assembly](archive/leo-rover-version-1.5/leo-1.5-main-electronics-box-assembly.md)
+  * [Leo 1.5 Hardware Structure](archive/leo-rover-version-1.5/leo-1.5-hardware-structure.md)
 

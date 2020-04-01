@@ -22,7 +22,7 @@ If you have the original support plate, you can get the model for 3D printing he
 
 {% page-ref page="../../documentation/3d-printed-parts.md" %}
 
-Use the modified Battery &lt;-&gt; MEB cable, included in the set, to connect the battery to the power socket located the arm.
+Use the modified Battery &lt;-&gt; MEB cable, included in the set, to connect the battery to the power socket located on the arm.
 
 Last but not least, connect the arm's U2D2 driver to the rover's computer through the miniUSB socket located on the mounting plate.
 
@@ -141,7 +141,7 @@ sudo systemctl restart leo
 
 ## Controlling the arm
 
-Now that you have the driver running, you should see new ROS topics and services under the `/wx250` namespace. For a full description of the ROS API, visit the [interbotix\_sdk README page](https://github.com/Interbotix/interbotix_ros_arms/tree/master/interbotix_sdk). You can test some of the features with the `rostopic` and `rosservice` command-line tools:
+Now that you have the driver running, you should see the new ROS topics and services under the `/wx250` namespace. For a full description of the ROS API, visit the [interbotix\_sdk README page](https://github.com/Interbotix/interbotix_ros_arms/tree/master/interbotix_sdk). You can test some of the features with the `rostopic` and `rosservice` command-line tools:
 
 Retrieve the information about the arm:
 
@@ -155,7 +155,7 @@ Publish position command to the elbow joint:
 rostopic pub /wx250/single_joint/command interbotix_sdk/SingleCommand "{joint_name: elbow, cmd: -0.5}"
 ```
 
-Turn off the torque on the joints:
+Turn off the torque on all joints:
 
 ```bash
 rosservice call /wx250/torque_joints_off
@@ -262,7 +262,7 @@ If you want to use the MoveIt capabilities in a Python script or a C++ program, 
 
 ### Using joystick to control the arm
 
-The `interbotix_joy_control` example package provides the capability to control the movement of the arm \(utilizing inverse kinematics\) with a PS3 or PS4 joystick. 
+The `interbotix_joy_control` example package provides the capability to control the movement of the arm \(utilizing inverse kinematics\) with a PS3, PS4 or an Xbox 360 joystick. 
 
 To use the package with the arm connected to your rover:
 
@@ -278,24 +278,14 @@ To use the package with the arm connected to your rover:
    ```
    {% endcode %}
 
-2. Modify the `joy_control.launch` file to add the option to not run the driver:
-
-   {% code title="interbotix\_joy\_control/launch/joy\_control.launch" %}
-   ```markup
-   <arg name="run_arm" default="true"/>
-
-   <include if="$(arg run_arm)" file="$(find interbotix_sdk)/launch/arm_run.launch">
-   ```
-   {% endcode %}
-
-3. Connect the joystick to your computer. You can find the instructions on the package's [README file](https://github.com/Interbotix/interbotix_ros_arms/blob/master/interbotix_examples/interbotix_joy_control/README.md).
-4. Start the `joy_control.launch` file:
+2. Connect the joystick to your computer. You can find the instructions on the package's [README file](https://github.com/Interbotix/interbotix_ros_arms/blob/master/interbotix_examples/interbotix_joy_control/README.md).
+3. Start the `joy_control.launch` file:
 
    ```bash
-   roslaunch interbotix_joy_control joy_control.launch robot_name:=wx250 controller:=ps3 run_arm:=false
+   roslaunch interbotix_joy_control joy_control.launch robot_name:=wx250 controller:=ps3 arm_run:=false
    ```
 
-   Change `controller` to `ps4` if you are using a PS4 joystick.
+   Change `controller` to either `ps3`, `ps4` or `xbox360` depending on the joystick you have connected.
 
 ### Using the Python API
 
