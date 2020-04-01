@@ -32,6 +32,7 @@
 * [Change WiFi name & password](basic-guides/change-wifi-name-and-password.md)
 * [Connect to the Internet](basic-guides/connect-to-the-internet.md)
 * [Upload files to your Rover](basic-guides/upload-files-to-your-rover.md)
+* [Connect via remote desktop](basic-guides/connect-via-remote-desktop.md)
 
 ## Documentation
 
