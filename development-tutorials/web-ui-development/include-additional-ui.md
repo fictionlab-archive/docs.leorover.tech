@@ -2,7 +2,7 @@
 
 This tutorial describes how to include an additional interface to nginx server on LeoRover. We will show you all operations step by step on the example of adding sample UI- [Make your own UI - Relay switches](/@leorover/s/leorover/~/drafts/-LvFY6eH5l95n1mjfabo/addons-manuals/control-4-relays/sample-ui-relay-funcionality). 
 
-## 3. Add user web interface to nginx server
+## Add user web interface to nginx server
 
 #### 1. Clone a repository that contains UI to include
 
