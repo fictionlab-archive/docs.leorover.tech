@@ -4,7 +4,7 @@ Having ROS on your host machine has many advantages. First of all, it allows you
 
 There is a couple of ROS installation options depending on your system:
 
-### A. Linux Installation
+## A. Linux Installation
 
 If you have Linux distribution installed \(either natively or on virtual machine\) you can follow instructions on [ROS wiki](http://wiki.ros.org/ROS/Installation).
 
@@ -12,7 +12,7 @@ ROS repository contains prebuild packages for ubuntu and debian systems.
 Kinetic distribution is available for Ubuntu Xenial \(16.04 LTS\) and Debian Jessie.  
 Melodic requires Ubuntu Bionic \(18.04 LTS\) or Debian Stretch.
 
-### B. Windows 10 WSL
+## B. Windows 10 WSL
 
 Ensure that `Windows Subsystem for Linux` feature is enabled by opening `PowerShell` as Administrator and running: 
 
@@ -41,7 +41,9 @@ Now, to test it, run `roscore` on one session and `rqt` or `rviz` on another.
 Windows is not a supported platform for ROS at the moment, so some parts may not work as expected
 {% endhint %}
 
-### C. Bootable USB drive with Ubuntu
+## C. Bootable USB drive with Ubuntu
+
+### Download and flash Ubuntu+ROS image to USB drive
 
 We prepared bootable images with Ubuntu and ROS preinstalled. They support 64-bit architecture and both UEFI and Legacy boot. The images can be found [here](http://files.fictionlab.pl/ubuntu_ros_images/). Choose either Ubuntu 16.04 with ROS Kinetic or Ubuntu 18.04 with ROS Melodic.
 
@@ -55,11 +57,17 @@ Keep in mind that this will wipe all your data from the drive.
 
 Now boot your computer from USB drive. Choose the first option in `GRUB menu`. User should be automatically logged and desktop environment should appear.
 
+{% hint style="info" %}
+Ubuntu system password: `ubuntu`
+{% endhint %}
+
+### Extend your root partition to fill the whole drive
+
+This way your root storage will be extended to full storage capacity of USB drive - by default it's limited and would end up filling fast will any additional software installed.
+
 Open terminal \(`Ctrl+Shift+t` shortcut\) and type:
 
 ```bash
 sudo ./extend-rootfs.sh
 ```
-
-When asked for password, type `ubuntu`. This script will extend your root partition to fill the whole drive.
 
