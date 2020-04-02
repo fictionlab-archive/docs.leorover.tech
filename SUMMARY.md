@@ -70,6 +70,7 @@
 ## Archive
 
 * [Leo Rover version 1.5](archive/leo-rover-version-1.5/README.md)
+  * [Check if you have everything](archive/leo-rover-version-1.5/check-if-you-have-everything.md)
   * [Leo 1.5 Wheel assembly](archive/leo-rover-version-1.5/wheel-assembly.md)
   * [Leo 1.5 Main electronics box assembly](archive/leo-rover-version-1.5/leo-1.5-main-electronics-box-assembly.md)
   * [Leo 1.5 Hardware Structure](archive/leo-rover-version-1.5/leo-1.5-hardware-structure.md)
