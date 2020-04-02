@@ -67,9 +67,15 @@ Open the newly added connection and enter the password you set previously in the
 
 ### Welcome inside
 
-Here's what you will see when connected. Remember to change the desktop to something more suitable for Leo fanbase. Have fun!
+Here's what you will see when connected. 
 
 ![](../.gitbook/assets/zrzut-ekranu-2020-04-1-o-14.42.54.png)
+
+Remember to change the desktop to something more suitable for Leo fanbase. [Like this one.](https://drive.google.com/open?id=1iX9Bf2PuQw7AZQgTGgEsxVQ1M2Eie6ZH)
+
+![](../.gitbook/assets/zrzut-ekranu-2020-04-1-o-15.25.02%20%281%29.png)
+
+Have fun!
 
 
 
