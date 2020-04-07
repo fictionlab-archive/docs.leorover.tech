@@ -30,7 +30,7 @@ Last but not least, connect the arm's U2D2 driver to the rover's computer throug
 
 We need to make sure, the U2D2 device is available at a fixed path on rover's system. To do this, you can add the following rule to `udev`:
 
-{% code title="/etc/udev/rules.d/u2d2.rules" %}
+{% code title="sudo nano /etc/udev/rules.d/u2d2.rules" %}
 ```text
 SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6014", ENV{ID_MM_DEVICE_IGNORE}="1", ATTR{device/latency_timer}="1", SYMLINK+="ttyDXL"
 ```
@@ -43,6 +43,14 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 ```
 
 The device should now be available under `/dev/ttyDXL` path.
+
+You can check it by typing:
+
+```bash
+cd /dev
+```
+
+And look for `ttyDXL` in the list.
 
 To integrate the arm, you will need to build some additional ROS packages. Start by creating a local catkin workspace, if you don't have one yet:
 
@@ -62,7 +70,7 @@ git clone https://github.com/Interbotix/interbotix_ros_arms.git
 On the rover, you will only need the driver node for the arm \(`interbotix_sdk` package\) and the URDF description \(`interbotix_description` package\). To speed up the building process, remove the unwanted packages:
 
 ```bash
-mv interbotix_ros_arms/interbotix_description ./
+mv interbotix_ros_arms/interbotix_descriptions ./
 mv interbotix_ros_arms/interbotix_sdk ./
 rm -rf interbotix_ros_arms
 ```
@@ -83,7 +91,7 @@ catkin build -j 1
 
 Once the packages have been built, you can edit the environmental setup file to point to your result space:
 
-{% code title="/etc/ros/setup.bash" %}
+{% code title="sudo nano /etc/ros/setup.bash" %}
 ```bash
 # source /opt/ros/kinetic/setup.bash
 source /home/husarion/ros_ws/devel/setup.bash
@@ -92,7 +100,7 @@ source /home/husarion/ros_ws/devel/setup.bash
 
 and include the arm's driver in the rover's launch file, by adding these lines:
 
-{% code title="/etc/ros/robot.launch" %}
+{% code title="sudo nano /etc/ros/robot.launch" %}
 ```markup
 <include file="$(find interbotix_sdk)/launch/arm_run.launch">
   <arg name="port"                        value="/dev/ttyDXL"/>
@@ -115,7 +123,7 @@ You can learn more about the driver's parameters and functionalities at the [int
 
 You can also edit the robot's URDF file to connect the arm's base link to the rover's model.
 
-{% code title="/etc/ros/urdf/robot.urdf.xacro" %}
+{% code title="sudo nano /etc/ros/urdf/robot.urdf.xacro" %}
 ```markup
 <link name="wx250/base_link"/>
 
