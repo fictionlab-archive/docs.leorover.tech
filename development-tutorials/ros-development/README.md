@@ -417,7 +417,7 @@ In this section we will assume, you run Ubuntu 18.04 with ROS Melodic.
 
 First, connect your computer to the same network your Rover is connected. It can be either the Rover's Access Point \(`LeoRover-XXYYY` by default\) or an external router \(if you followed `Connect to the Internet` tutorial\).
 
-To properly communicate over the ROS network, you need to be able to resolve husarion hostname. Type:
+To properly communicate over the ROS network, your computer needs to be able to resolve `husarion` hostname. Open a terminal on your computer and type:
 
 ```bash
 getent hosts husarion
@@ -425,7 +425,7 @@ getent hosts husarion
 
 If you don't see any output, that means you cannot resolve the hostname.
 
-If you are connected to Rover's Access Point, you should be able to resolve it, but if there is and issue with DNS server on the Rover or you are connected through external router, add this line to `/etc/hosts` file on you computer:
+If you are connected to Rover's Access Point, you should be able to resolve it, but if there is and issue with DNS server on the Rover or you are connected through external router, add this line to `/etc/hosts` file on your computer:
 
 ```bash
 10.0.0.1 husarion
@@ -461,7 +461,7 @@ Replace `X.X.X.X` with your IP address.
 You can check your address by typing `ip address`. Search for your wireless network interface and the `inet` keyword.
 {% endhint %}
 
-You will need this lines executed at every terminal session you want to use ROS on. To do this automatically at the start of every session, you can add this lines to `~/.bashrc` file.
+You will need this lines executed at every terminal session you want to use ROS on. To do this automatically at the start of every session, you can add this lines to the `~/.bashrc` file.
 
 You should now be able to do all the things from `the first section` of this tutorial on your computer.
 
