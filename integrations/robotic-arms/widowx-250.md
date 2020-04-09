@@ -10,9 +10,9 @@ description: >-
 
 In this tutorial, we will show you how to integrate and remotely control the WidowX 250 robotic arm.
 
-{% embed url="https://youtu.be/SP4WlP3YPl4" %}
+![](../../.gitbook/assets/dsc_8572.jpg)
 
-![](../../.gitbook/assets/image%20%2819%29.png)
+{% embed url="https://youtu.be/SP4WlP3YPl4" %}
 
 ## Mounting and wiring the arm
 
