@@ -322,7 +322,7 @@ Now, when you restart the nodes, a new URDF model should be uploaded to the Para
 
 You can use `base_link` as a reference frame for other links in the model. The exact position of the `base_link` origin is defined as the center this mounting hole: 
 
-![X - red, Y - green, Z - blue](../../.gitbook/assets/image%20%2845%29.png)
+![X - red, Y - green, Z - blue](../../.gitbook/assets/image%20%2846%29.png)
 
 on the upper plane of the mounting plate. The distance can be easily measured in CAD programs or even using physical measuring tools.
 
@@ -492,11 +492,15 @@ Now choose **Plugins -&gt; Introspection -&gt; Node Graph**
 
 If your are connected to your Rover, you should see all the nodes running on Raspberry Pi. You can experiment with Node Graph settings, so it can look like this:
 
-![](../../.gitbook/assets/image%20%2847%29.png)
+![](../../.gitbook/assets/image%20%2848%29.png)
 
 ### Visualizing the model  
 
-To visualize the model, you need to build [leo\_description](https://github.com/LeoRover/leo_description) package first.  
+To visualize the model, you will need to build 2 packages:
+
+1. [leo\_description](https://github.com/LeoRover/leo_description) − contains the URDF model of Leo Rover with all the required mesh files.
+2. [leo\_viz](https://github.com/LeoRover/leo_viz) − contains 
+
 Start by creating a new local workspace if you don't have one yet:
 
 ```bash
@@ -513,11 +517,12 @@ sudo apt install python-catkin-tools
 ```
 {% endhint %}
 
-Add the package to source space:
+Add the packages to the source space:
 
 ```bash
 cd ~/ros_ws/src
 git clone https://github.com/LeoRover/leo_description.git
+git clone https://github.com/LeoRover/leo_viz.git
 ```
 
 Then build the workspace and `source` the result space:
@@ -528,32 +533,34 @@ catkin build
 source devel/setup.bash
 ```
 
-If the package was built successfully, the command:
+If the packages were built successfully, the commands:
 
 ```bash
 rospack find leo_description
+rospack find leo_viz
 ```
 
-should return the correct path to the package.
+should return the correct paths to the packages.
 
-Now, open RViz by typing:
+Now, to visualize the model in RViz, just type:
+
+```bash
+roslaunch leo_viz rviz.launch
+```
+
+![](../../.gitbook/assets/image%20%2822%29.png)
+
+Alternatively, you can open a fresh instance of RViz by typing:
 
 ```bash
 rviz
 ```
 
 In the **Fixed Frame** option choose `base_link`.  
-In **Displays** panel, click **Add** and choose **RobotModel** plugin.
+In **Displays** panel, click **Add** and choose **RobotModel** plugin.  
+Change the **Background Color** to make the model more visible.
 
-Or, just type:
-
-```bash
-roslaunch leo_description rviz.launch
-```
-
-![](../../.gitbook/assets/image%20%2848%29.png)
-
-You should see the wheels rotating when steering the Rover.
+You should see the wheels rotating when the Rover is being steered.
 
 #### running the visualization offline
 
@@ -564,10 +571,10 @@ export ROS_IP=127.0.0.1
 export ROS_MASTER_URI=http://127.0.0.1:11311
 ```
 
-Then, use the launch file located in the package:
+Then, use the launch file located in the `leo_viz` package:
 
 ```bash
-roslaunch leo_description display.launch gui:=true
+roslaunch leo_viz view_model.launch
 ```
 
 {% hint style="info" %}
@@ -584,7 +591,7 @@ rosdep install --from-paths src -i
 ```
 {% endhint %}
 
-An RViz instance with `RobotModel` plugin should start, as well as GUI for [joint\_state\_publisher](http://wiki.ros.org/joint_state_publisher) that let's you specify simulated wheel rotation.
+An RViz instance with `RobotModel` plugin should start, as well as GUI for [joint\_state\_publisher](http://wiki.ros.org/joint_state_publisher) that let's you specify simulated wheel positions.
 
 ### Steering the Rover with a joystick
 

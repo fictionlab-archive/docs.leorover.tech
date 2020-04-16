@@ -276,7 +276,7 @@ roslaunch interbotix_moveit interbotix_moveit.launch robot_name:=wx250 rviz_fram
 
 The MoveIt GUI should appear:
 
-![](../../.gitbook/assets/image%20%2827%29.png)
+![](../../.gitbook/assets/image%20%2828%29.png)
 
 On the **MotionPlanning** panel, click on the **Planning** tab, choose `interbotix_arm` for the **Planning Group** and `<current>` for the **Start State**.
 

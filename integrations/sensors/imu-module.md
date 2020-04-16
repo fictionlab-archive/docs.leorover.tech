@@ -28,7 +28,7 @@ By default, the IMU will work on hSens2 port. You can change it to hSens1 by mod
 
 Connect the sensor pins according to [CORE2 manual](https://husarion.com/manuals/core2/#hsensor)
 
-![](../../.gitbook/assets/image%20%2823%29.png)
+![](../../.gitbook/assets/image%20%2824%29.png)
 
 | hSens pin | IMU pin |
 | :--- | :--- |
@@ -75,7 +75,7 @@ rostopic echo /imu/gyro
 
 The sensor's accelerometer and gyroscope X, Y and Z axes should be printed on the board. If they are not, you can check MPU9250 IC orientation and identify the axes with this drawing:
 
-![accelerometer and gyroscope axes](../../.gitbook/assets/image%20%2846%29.png)
+![accelerometer and gyroscope axes](../../.gitbook/assets/image%20%2847%29.png)
 
 The magnetometer axes were also transformed to these axes to comply with North-West-Up world frame.
 

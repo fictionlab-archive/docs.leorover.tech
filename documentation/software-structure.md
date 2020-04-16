@@ -2,7 +2,7 @@
 
 ## Software structure
 
-![](../.gitbook/assets/image%20%2836%29.png)
+![](../.gitbook/assets/image%20%2837%29.png)
 
 The base Leo Rover software can be divided into 3 main elements:
 

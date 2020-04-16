@@ -69,7 +69,7 @@ IR diodes may vary! Check if dimensions from 3D model are matching real sample!
 
 **Step 11.** Last dimension needed for this cutout is depth of extrusion that we will be making. In this case it will be distance from top of the cover \(plane of our extrusion\) and bottom of IR light.
 
-![](../.gitbook/assets/image%20%2835%29.png)
+![](../.gitbook/assets/image%20%2836%29.png)
 
 ![](../.gitbook/assets/image%20%2811%29.png)
 
@@ -115,7 +115,7 @@ As for this part of tutorial you should visit our manual about creating Camera m
 
 {% page-ref page="camera-mast.md" %}
 
-![](../.gitbook/assets/image%20%2834%29.png)
+![](../.gitbook/assets/image%20%2835%29.png)
 
 ## Assembling 
 
