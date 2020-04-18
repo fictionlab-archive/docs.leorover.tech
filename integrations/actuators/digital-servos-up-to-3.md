@@ -14,7 +14,9 @@ Connect your actuators using standard servo 3pin cables. Use the first 3 ports, 
 
 ## Route the cables outside of MEB
 
-The best way to route the servo cables is to use an Easy Access Cover for MEB. The cover has a cutout in the back for the cables to be easily routed. Find the right cover files below and 3D-print it. If needed, get cable extenders to be able to locate the servos depending on your project.
+The best way to route the servo cables is to use an Easy-access cover for MEB. The cover has a cutout in the back for the cables to be easily routed. Find the right cover file below and 3D-print it. 
+
+If needed, get cable extenders to be able to locate the servos depending on your project.
 
 {% page-ref page="../../projects/dev-covers-for-addons.md" %}
 
