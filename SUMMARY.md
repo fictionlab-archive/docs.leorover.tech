@@ -27,12 +27,12 @@
 ## Basic guides
 
 * [Connect to the console \(SSH\)](basic-guides/connect-to-the-console-ssh.md)
+* [Connect via remote desktop](basic-guides/connect-via-remote-desktop.md)
 * [Software update](basic-guides/software-update.md)
 * [Firmware update](basic-guides/firmware-update.md)
 * [Change the Rover access point settings](basic-guides/change-wifi-name-and-password.md)
-* [Connect to the Internet](basic-guides/connect-to-the-internet.md)
+* [Connect to a local network \(+ internet\)](basic-guides/connect-to-the-internet.md)
 * [Upload files to your Rover](basic-guides/upload-files-to-your-rover.md)
-* [Connect via remote desktop](basic-guides/connect-via-remote-desktop.md)
 * [Access the video stream](basic-guides/access-the-video-stream.md)
 
 ## Documentation
