@@ -11,7 +11,7 @@ description: >-
 
 ![](../.gitbook/assets/assembly3.jpg)
 
-In this tutorial we will show you how to edit Main Electronic Bay cover \(by example of IR lights\) to suit your needs. We wanted to show that all of our 3D printed parts are easily modifiable. This particular part \(MEB cover\) was designed especially for you - you can change it or use 4 mount points to attach additional PCB's. So let's get started with IR lights!
+In this tutorial we will show you how to edit Main Electronics Bay cover to suit your needs. All of the Rover 3D printed parts are easily modifiable, so you can edit them as you like for your projects. Here we'll add IR lights that work together with the Rover camera to allow for night-vision feature. Let's get started.
 
 ## Step-by-step modification
 
