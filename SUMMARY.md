@@ -47,7 +47,8 @@
 
 ## Development tutorials
 
-* [Firmware development](development-tutorials/firmware-development.md)
+* [Firmware development](development-tutorials/firmware-development/README.md)
+  * [Modify motor torque and speed settings](development-tutorials/firmware-development/modify-motor-torque-and-speed-settings.md)
 * [ROS Development](development-tutorials/ros-development/README.md)
   * [Install ROS on your computer](development-tutorials/ros-development/install-ros-on-your-computer.md)
 * [Web UI Development](development-tutorials/web-ui-development/README.md)

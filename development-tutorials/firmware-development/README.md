@@ -39,7 +39,7 @@ To flash the firmware, you can connect USB A &lt;--&gt; microUSB cable between y
 
 You can also upload the `leo_firmware.hex` file to your Rover and follow this tutorial:
 
-{% page-ref page="../basic-guides/firmware-update.md" %}
+{% page-ref page="../../basic-guides/firmware-update.md" %}
 
 ## Modifying firmware parameters
 
