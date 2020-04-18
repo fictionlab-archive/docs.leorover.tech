@@ -16,6 +16,8 @@
 * [Robotic Arms](integrations/robotic-arms/README.md)
   * [WidowX 250](integrations/robotic-arms/widowx-250.md)
   * [PhantomX Pincher](integrations/robotic-arms/phantomx-pincher.md)
+* [Actuators](integrations/actuators/README.md)
+  * [Digital servos \(up to 3\)](integrations/actuators/digital-servos-up-to-3.md)
 
 ## Projects
 

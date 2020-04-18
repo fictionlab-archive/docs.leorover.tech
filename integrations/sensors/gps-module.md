@@ -33,7 +33,7 @@ More info:
 
 Our default firmware uses hSense port 3 highlighted below. For your own needs you can change it to hSense port 4 as well, but it will come with some code modifications.
 
-![Core2-ROS hSense port 3](../../.gitbook/assets/core2_top_small%20%282%29.jpg)
+![Core2-ROS hSense port 3](../../.gitbook/assets/core2_top_small%20%283%29.jpg)
 
 Connect the GPS module according to pin description below. The easiest way to connect GPS module to the controller is to use IDC connector and four jumper cables.
 
