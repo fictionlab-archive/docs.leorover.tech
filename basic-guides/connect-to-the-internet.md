@@ -1,4 +1,4 @@
-# Connect to a local network \(+ internet\)
+# Connect to a local network and Internet
 
 When you add the Rover to your local network that provides Internet connection, you'll be able not only to download files to the Rover, but as well forward the access to your computer when you're connected to the Rover access point. Totally useful. 
 

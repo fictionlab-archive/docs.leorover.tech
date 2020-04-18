@@ -31,7 +31,7 @@
 * [Software update](basic-guides/software-update.md)
 * [Firmware update](basic-guides/firmware-update.md)
 * [Change the Rover access point settings](basic-guides/change-wifi-name-and-password.md)
-* [Connect to a local network \(+ internet\)](basic-guides/connect-to-the-internet.md)
+* [Connect to a local network and Internet](basic-guides/connect-to-the-internet.md)
 * [Upload files to your Rover](basic-guides/upload-files-to-your-rover.md)
 * [Access the video stream](basic-guides/access-the-video-stream.md)
 
