@@ -29,7 +29,7 @@
 * [Connect to the console \(SSH\)](basic-guides/connect-to-the-console-ssh.md)
 * [Software update](basic-guides/software-update.md)
 * [Firmware update](basic-guides/firmware-update.md)
-* [Change WiFi name & password](basic-guides/change-wifi-name-and-password.md)
+* [Change the Rover access point settings](basic-guides/change-wifi-name-and-password.md)
 * [Connect to the Internet](basic-guides/connect-to-the-internet.md)
 * [Upload files to your Rover](basic-guides/upload-files-to-your-rover.md)
 * [Connect via remote desktop](basic-guides/connect-via-remote-desktop.md)
