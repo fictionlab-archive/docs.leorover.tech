@@ -10,11 +10,11 @@ Don't worry, we don't read any data from the Rover. We're not so greedy to spy o
 
 This graphical way to establish the connection is the easiest way to do. You'll connect using internal RaspberryPi modem, which means you can connect to either 2.4 GHz or 5.8 GHz network of your choice \(even to another Leo Rover\).
 
-### 1. Connect to the Rover through SSH
+### Connect to the Rover through SSH
 
 {% page-ref page="connect-to-the-console-ssh.md" %}
 
-### 2. Access network manager
+### Access network manager
 
 Then, open the network manager text user interface \(you need root privileges to modify network connections\):
 
