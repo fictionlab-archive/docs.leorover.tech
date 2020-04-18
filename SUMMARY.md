@@ -33,6 +33,7 @@
 * [Connect to the Internet](basic-guides/connect-to-the-internet.md)
 * [Upload files to your Rover](basic-guides/upload-files-to-your-rover.md)
 * [Connect via remote desktop](basic-guides/connect-via-remote-desktop.md)
+* [Access the video stream](basic-guides/access-the-video-stream.md)
 
 ## Documentation
 
