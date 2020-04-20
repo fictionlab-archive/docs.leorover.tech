@@ -368,23 +368,30 @@ cd ~/ros_ws
 catkin init
 ```
 
-We want this workspace to extend the prebuilt packages that are already installed on the system. It should be automatically done if you have already sourced `/opt/ros/kinetic/setup.bash` file, but we can also explicitly point out the directory to extend:
+We want this workspace to extend the prebuilt packages that are already installed on the system. It should be automatically done if you have already sourced `/opt/ros/kinetic/setup.bash` file, but we can also explicitly point out the space to extend:
 
 ```bash
 catkin config --extend /opt/ros/kinetic
 ```
 
-Now, we need to get the sources of `leo_bringup` package:
+We need to get the sources of the package to build. If the package is available as a git repository \(like in our case\), you can use the `git clone` command: 
 
 ```bash
 cd src
 git clone https://github.com/LeoRover/leo_bringup.git
 ```
 
-and build the workspace:
+Some of packages will require installing additional dependencies to build and run them. As the `leo_bringup` package is already installed on the system, this step is redundant. For any other package you can use `rosdep` to automatically install any dependencies:
 
 ```bash
 cd ~/ros_ws
+rosdep update
+rosdep install --from-paths src -iy
+```
+
+ build the workspace:
+
+```bash
 catkin build
 ```
 
@@ -396,12 +403,14 @@ source devel/setup.bash
 
 Now, when you execute `rospack list`, you should see all of the packages installed on your system, but `rospack find leo_bringup` should point you to the directory on your newly created workspace.
 
-The last step is to modify the `/etc/ros/setup.bash` to use our overlay. Simply edit this file \(e.g. with `nano`\) by removing or commenting out the first line and adding:
+The last step is to modify the `/etc/ros/setup.bash` to use our overlay. Simply edit this file \(e.g. with `sudo nano`\) by removing or commenting out the first line and adding:
 
+{% code title="/etc/ros/setup.bash" %}
 ```bash
 # source /opt/ros/kinetic/setup.bash
 source /home/husarion/ros_ws/devel/setup.bash
 ```
+{% endcode %}
 
 When you start the nodes with `leo-start` script, the `/etc/ros/setup.bash` will use your overlay and the `/etc/ros/robot.launch` file should use the version of `leo_bringup` that you have built in your workspace. 
 
