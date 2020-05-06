@@ -640,6 +640,8 @@ Inside **launch/** directory, add the **joy.launch** file with the following con
 {% code title="leo\_joy\_example/launch/joy.launch" %}
 ```markup
 <launch>
+  <arg name="cmd_vel_topic" default="cmd_vel"/>
+
   <node name="joy_node" pkg="joy" type="joy_node">
     <param name="dev" value="/dev/input/js0"/>
     <param name="coalesce_interval" value="0.02"/>
@@ -648,6 +650,7 @@ Inside **launch/** directory, add the **joy.launch** file with the following con
 
   <node name="teleop_node" pkg="teleop_twist_joy" type="teleop_node">
     <rosparam command="load" file="$(find leo_joy_example)/config/joy_mapping.yaml"/>
+    <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/>
   </node>
 </launch>
 ```
