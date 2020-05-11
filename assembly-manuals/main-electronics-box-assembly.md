@@ -22,17 +22,41 @@ description: Main Electronics Box = MEB (for future references)
 
 ### Step 1: Camera shield
 
+Prepare:
+
+* [ ] main electronics box
+* [ ] camera shield
+* [ ] camera shield gasket
+* [ ] 4x self-tapping torx screw \(smallest in the kit\)
+* [ ] T5x40 torx screwdriver
+
 ![](../.gitbook/assets/p1010685_wynik.JPG)
+
+Put the camera shield gasket on the shield. Mind the gasket 'tooth'.
 
 ![](../.gitbook/assets/p1010687_wynik.JPG)
 
+Position the shield with pins to correspond with main electronics box holes.
+
 ![](../.gitbook/assets/p1010691_wynik.JPG)
 
+Push the camera cover all the way to the cutout.
+
 ![](../.gitbook/assets/p1010693_wynik.JPG)
+
+Tighten the self-tapping torx screws.
 
 ![](../.gitbook/assets/p1010694_wynik.JPG)
 
 ![](../.gitbook/assets/p1010696_wynik.JPG)
+
+{% hint style="warning" %}
+Don't tighten the screws one after another, try to first screw each them until they touch the plastic box wall and only then tighten them. They only need to be tightened enough to make sure the shield gasket is pushed against the box wall.
+{% endhint %}
+
+{% hint style="danger" %}
+You may have some issues with the screwdriver provided in the box. We're working on it. Just don't tighten screws too much as the screwdriver will damage.
+{% endhint %}
 
 ![](../.gitbook/assets/p1010699_wynik.JPG)
 
@@ -40,33 +64,80 @@ description: Main Electronics Box = MEB (for future references)
 
 ### Step 2: Camera
 
+Prepare:
+
+* [ ] step 1 assembly
+* [ ] fisheye camera \(may come with IR lights mounted\)
+* [ ] plastic camera mount
+* [ ] camera tape \(wide one\)
+* [ ] 4x 2.2x6.5 self-tapping screws \(cross-headed\)
+* [ ] cross-head screwdriver
+
+{% hint style="warning" %}
+Some of the kits may need 5x 2.2x6.5 self-tapping screws as the camera is mounted using 3 holes instead of 2. You'll get it.
+{% endhint %}
+
 ![](../.gitbook/assets/p1010709_wynik.JPG)
+
+Detach IR lights from the camera.
 
 ![](../.gitbook/assets/p1010712_wynik.JPG)
 
+{% hint style="info" %}
+You can use the lights in one of the tutorials in 'projects' section:
+
+[https://docs.leorover.tech/projects/ir-lights-in-meb-cover](https://docs.leorover.tech/projects/ir-lights-in-meb-cover)
+{% endhint %}
+
 ![](../.gitbook/assets/p1010718_wynik%20%281%29.JPG)
 
+Align the camera with the camera mount holes and screw 2x 2.2x6.5 screws \(or 3x depending on the kit\). Mind the side of the mount.
+
 ![](../.gitbook/assets/p1010720_wynik.JPG)
+
+Assemble the camera mount to the main electronics box using two corresponding standoffs and 2x 2.2x6.5 self-tapping screws.
 
 ![](../.gitbook/assets/p1010724_wynik.JPG)
 
 ![](../.gitbook/assets/p1010729_wynik%20%281%29.JPG)
 
-![The IR flashes are not used in the Rover. You can use them for your own projects.](../.gitbook/assets/p1010732_wynik%20%282%29.JPG)
-
 ### Step 3: USB and power cable
+
+Prepare:
+
+* [ ] step 2 assembly
+* [ ] power cable \(3pin socket with barrel plug and green cable soldered\)
+* [ ] miniUSB socket with USB-A connector
 
 ![](../.gitbook/assets/p1010734_wynik.JPG)
 
+Unscrew power socket nut.
+
 ![](../.gitbook/assets/p1010735_wynik%20%281%29.JPG)
+
+Push the nut through barrel plug.
+
+{% hint style="warning" %}
+It comes off tight - don't worry, you won't break it.
+{% endhint %}
 
 ![It&apos;s tough to push the nut through the plug, but it&apos;s doable - don&apos;t worry.](../.gitbook/assets/p1010736_wynik%20%281%29.JPG)
 
 ![](../.gitbook/assets/p1010737_wynik%20%281%29.JPG)
 
+Route barrel plug and then green cable through a corresponding cutout in main electronics box wall.
+
 ![](../.gitbook/assets/p1010739_wynik.JPG)
 
+Push the socket in place. Mind how the socket is positioned - white dot.
+
 ![](../.gitbook/assets/p1010741_wynik%20%281%29.JPG)
+
+Thread the socket nut back through the barrel plug and green cable. Tighten the nut \(tightening by hand is enough\).
+
+{% hint style="warning" %}
+Make sure the socket o-ring \(red\) is positioned properly. Evenly at the external side of the box wall.
+{% endhint %}
 
 ![](../.gitbook/assets/p1010742_wynik%20%281%29.JPG)
 
