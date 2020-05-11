@@ -8,7 +8,7 @@
 
 ### Tools needed
 
-* [ ] T5x40 torx screwdriver \(provided\)
+* [ ] T10 torx screwdriver \(provided\)
 * [ ] wide flat screwdriver
 * [ ] no. 3 hex-head key \(metric; provided\)
 * [ ] no. 5 hex-head key \(metric; provided\)
@@ -19,49 +19,93 @@
 
 ### Step 1: Main axis bearing holder
 
+Prepare:
+
+* [ ] 8x m4x20 inner hex-headed screw
+* [ ] 8x m4 nut
+* [ ] frame
+* [ ] 2x aluminum bearing holder
+* [ ] hex-head key no. 3
+* [ ] hex-head wrench no. 7
+
 ![](../.gitbook/assets/p1020111.jpeg)
 
 ![](../.gitbook/assets/p1020113.jpeg)
+
+Put the bearing holder in a corresponding cutout in frame side. Align the holes.
 
 ![](../.gitbook/assets/p1020114.jpeg)
 
 ![](../.gitbook/assets/p1020116.jpeg)
 
+Push 4x m4x20 screws in the holes. 
+
+{% hint style="info" %}
+It's easier to push all the screws first, and only then secure the nuts. Sometimes the screws jam due to paint coming in the holes and it's easier to align when the connection is still loose.
+{% endhint %}
+
 ![](../.gitbook/assets/p1020118.jpeg)
+
+Tighten 4x m4 nuts to the screws using both no. 3 key and no. 7 wrench.
 
 ![](../.gitbook/assets/p1020121.jpeg)
 
 ![](../.gitbook/assets/p1020124.jpeg)
 
+Do the same on the opposite side of the frame.
+
 ![](../.gitbook/assets/p1020128.jpeg)
 
 ### Step 2: Differential bar holder
+
+Prepare:
+
+* [ ] step 1 assembly
+* [ ] differential bar holder
+* [ ] 3x m4x10 torx screw
+* [ ] 3x m4 nut
+* [ ] T10 screwdriver
+* [ ] flat wrench no. 7
 
 ![](../.gitbook/assets/p1020172.jpeg)
 
 ![](../.gitbook/assets/p1020175.jpeg)
 
+Connect differential bar holder to the frame using 3x m4x10 torx screws and m4 nuts. Make sure the screw heads are located from the internal side of the frame.
+
 ![](../.gitbook/assets/p1020178.jpeg)
 
 ![](../.gitbook/assets/p1020179.jpeg)
-
-![](../.gitbook/assets/p1020180.jpeg)
 
 ![](../.gitbook/assets/p1020183.jpeg)
 
 ### Step 3: Differential bar
 
+Prepare:
+
+* [ ] differential bar
+* [ ] 2x plastic plain bearings with flanges
+* [ ] 1x black axis screw
+* [ ] 1x fi8 flat washer
+* [ ] 1x m6 nut
+* [ ] wide flat screwdriver
+* [ ] flat wrench no. 10
+
 ![](../.gitbook/assets/p1020184.jpeg)
+
+Push the plastic bearings into the differential bar hole. One bearing on each side.
 
 ![](../.gitbook/assets/p1020188.jpeg)
 
 ![](../.gitbook/assets/p1020189.jpeg)
 
+Make sure the bearings flanges are flat on the bar.
+
 ![](../.gitbook/assets/p1020192.jpeg)
 
 ![](../.gitbook/assets/p1020193.jpeg)
 
-![](../.gitbook/assets/p1020194.jpeg)
+Put the black axis screw into differential bar holder.
 
 ![](../.gitbook/assets/p1020196.jpeg)
 
