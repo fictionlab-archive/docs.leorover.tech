@@ -1,5 +1,19 @@
 # Task 6: Battery quarter \(left\) assembly
 
+## Intro
+
+### Assembly time
+
+10 minutes
+
+### Tools needed
+
+* [ ] T5x40 torx screwdriver \(provided\)
+* [ ] no. 3 hex-head key \(metric; provided\)
+* [ ] wide cross-headed screwdriver
+* [ ] soldering iron
+* [ ] heat shrink tube \(for battery cables isolation\)
+
 ## Assembly guide
 
 ![](../.gitbook/assets/p1020556.jpg)

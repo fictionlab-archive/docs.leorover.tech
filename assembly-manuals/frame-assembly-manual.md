@@ -1,5 +1,20 @@
 # Task 3: Frame and suspension assembly
 
+## Intro
+
+### Assembly time
+
+30 minutes
+
+### Tools needed
+
+* [ ] T5x40 torx screwdriver \(provided\)
+* [ ] wide flat screwdriver
+* [ ] no. 3 hex-head key \(metric; provided\)
+* [ ] no. 5 hex-head key \(metric; provided\)
+* [ ] hex-head wrench no. 7
+* [ ] hex-head wrench no. 10
+
 ## Assembly manual
 
 ### Main axis bearing holder
