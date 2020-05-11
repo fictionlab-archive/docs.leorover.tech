@@ -18,7 +18,7 @@
 
 ![](../.gitbook/assets/p1020556.jpg)
 
-### Plastic cover
+### Step 1: Plastic cover
 
 ![](../.gitbook/assets/p1020559.jpg)
 
@@ -30,7 +30,7 @@
 
 ![](../.gitbook/assets/p1020564.jpg)
 
-### Battery button
+### Step 2: Battery button
 
 ![](../.gitbook/assets/p1020565.jpg)
 
@@ -44,7 +44,7 @@
 
 ![](../.gitbook/assets/p1020575.jpg)
 
-### Box to cover
+### Step 3: Box to cover
 
 ![](../.gitbook/assets/p1020577.jpg)
 
@@ -54,7 +54,7 @@
 
 ![](../.gitbook/assets/p1020582.jpg)
 
-### Power connector
+### Step 4: Power connector
 
 ![](../.gitbook/assets/p1020583.jpg)
 
@@ -71,6 +71,8 @@
 ![](../.gitbook/assets/p1020592.jpg)
 
 ![](../.gitbook/assets/p1020593.jpg)
+
+### Step 5: Cable connection
 
 ![](../.gitbook/assets/p1020594.jpg)
 
@@ -93,6 +95,8 @@
 ![Black cable of the connector and black cable of the battery need to be soldered together and soldered to -](../.gitbook/assets/p1020608.jpg)
 
 ![Black cable of the connector and black cable of the battery need to be soldered together and soldered to -](../.gitbook/assets/p1020610.jpg)
+
+### Step 6: Battery box cover
 
 ![](../.gitbook/assets/p1020612.jpg)
 

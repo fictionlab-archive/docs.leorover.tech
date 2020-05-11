@@ -17,7 +17,7 @@
 
 ## Assembly manual
 
-### Main axis bearing holder
+### Step 1: Main axis bearing holder
 
 ![](../.gitbook/assets/p1020111.jpeg)
 
@@ -35,7 +35,7 @@
 
 ![](../.gitbook/assets/p1020128.jpeg)
 
-### Differential bar holder
+### Step 2: Differential bar holder
 
 ![](../.gitbook/assets/p1020172.jpeg)
 
@@ -49,7 +49,7 @@
 
 ![](../.gitbook/assets/p1020183.jpeg)
 
-### Differential bar
+### Step 3: Differential bar
 
 ![](../.gitbook/assets/p1020184.jpeg)
 
@@ -81,7 +81,7 @@
 
 ![](../.gitbook/assets/p1020214.jpeg)
 
-### Suspension beam
+### Step 4: Suspension beam
 
 ![](../.gitbook/assets/p1020216.jpeg)
 
@@ -95,7 +95,7 @@
 
 ![](../.gitbook/assets/p1020226.jpeg)
 
-### Suspension to frame assembly
+### Step 5: Suspension to frame assembly
 
 ![](../.gitbook/assets/p1020228.jpeg)
 
@@ -133,7 +133,7 @@
 
 ![](../.gitbook/assets/p1020298.jpeg)
 
-### Differential to suspension connection
+### Step 6: Differential to suspension connection
 
 ![](../.gitbook/assets/p1020301.jpeg)
 
@@ -149,7 +149,7 @@
 
 ![](../.gitbook/assets/p1020313.jpeg)
 
-### Backframe
+### Step 7: Backframe
 
 ![](../.gitbook/assets/p1020354.jpg)
 

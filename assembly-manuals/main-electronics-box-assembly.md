@@ -20,7 +20,7 @@ description: Main Electronics Box = MEB (for future references)
 
 ## MEB assembly guide
 
-### 1. Camera shield
+### Step 1: Camera shield
 
 ![](../.gitbook/assets/p1010685_wynik.JPG)
 
@@ -38,7 +38,7 @@ description: Main Electronics Box = MEB (for future references)
 
 ![](../.gitbook/assets/p1010703_wynik.JPG)
 
-### 2. Camera
+### Step 2: Camera
 
 ![](../.gitbook/assets/p1010709_wynik.JPG)
 
@@ -54,7 +54,7 @@ description: Main Electronics Box = MEB (for future references)
 
 ![The IR flashes are not used in the Rover. You can use them for your own projects.](../.gitbook/assets/p1010732_wynik%20%282%29.JPG)
 
-### 3. USB and power cable
+### Step 3: USB and power cable
 
 ![](../.gitbook/assets/p1010734_wynik.JPG)
 
@@ -76,7 +76,7 @@ description: Main Electronics Box = MEB (for future references)
 
 ![](../.gitbook/assets/p1010751_wynik%20%281%29.JPG)
 
-### 4. Antenna cable
+### Step 4: Antenna cable
 
 ![](../.gitbook/assets/p1010755_wynik.JPG)
 
@@ -88,7 +88,7 @@ description: Main Electronics Box = MEB (for future references)
 
 ![](../.gitbook/assets/p1010763_wynik%20%281%29.JPG)
 
-### 5. Wheel cable bushings
+### Step 5: Wheel cable bushings
 
 ![](../.gitbook/assets/p1010767_wynik%20%281%29.JPG)
 
@@ -102,7 +102,7 @@ description: Main Electronics Box = MEB (for future references)
 
 ![](../.gitbook/assets/p1010775_wynik.JPG)
 
-### 6. Wheel cables
+### Step 6: Wheel cables
 
 ![](../.gitbook/assets/p1010776_wynik.JPG)
 
@@ -120,7 +120,7 @@ description: Main Electronics Box = MEB (for future references)
 
 ![](../.gitbook/assets/p1010790_wynik.JPG)
 
-### 7. Box mounting distances
+### Step 7: Box mounting distances
 
 ![](../.gitbook/assets/p1010791_wynik.JPG)
 
@@ -128,7 +128,7 @@ description: Main Electronics Box = MEB (for future references)
 
 ![](../.gitbook/assets/p1010798_wynik%20%281%29.JPG)
 
-### 8. RaspberryPi assembly and cabling
+### Step 8: RaspberryPi assembly and cabling
 
 ![](../.gitbook/assets/p1010801_wynik%20%281%29.JPG)
 
@@ -154,7 +154,7 @@ description: Main Electronics Box = MEB (for future references)
 
 ![](../.gitbook/assets/p1010825_wynik.JPG)
 
-### 9. Core2-ROS assembly and cabling
+### Step 9: Core2-ROS assembly and cabling
 
 ![](../.gitbook/assets/p1010827_wynik.JPG)
 
@@ -194,7 +194,7 @@ Make sure you turn the power switch of the board to ON.
 
 ![](../.gitbook/assets/p1010851_wynik.JPG)
 
-### 10. WiFi modem assembly
+### Step 10: WiFi modem assembly
 
 ![](../.gitbook/assets/p1010853_wynik.JPG)
 
@@ -222,7 +222,7 @@ Make sure you turn the power switch of the board to ON.
 
 ![](../.gitbook/assets/p1010884_wynik.JPG)
 
-### 11. Seal assembly
+### Step 11: Seal assembly
 
 ![](../.gitbook/assets/p1010887_wynik.JPG)
 
@@ -236,7 +236,7 @@ It may be easier to glue the seal to the box using any cyanoacrylate \(fast-bond
 
 ![](../.gitbook/assets/p1010895_wynik.JPG)
 
-### 12. Cover assembly
+### Step 12: Cover assembly
 
 ![](../.gitbook/assets/p1010898_wynik.JPG)
 

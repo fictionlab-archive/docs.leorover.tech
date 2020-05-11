@@ -13,6 +13,8 @@
 
 ## Assembly guide
 
+### Step 1: Plastic cover
+
 ![](../.gitbook/assets/p1020647.jpg)
 
 ![](../.gitbook/assets/p1020649.jpg)
