@@ -57,7 +57,7 @@ You can get all of the needed files here:
 
 As at our company we are using Prusa 3D printers, we will show how to prepare 3D models for printing using their software - [PrusaSlicer](https://www.prusa3d.pl/prusaslicer/). This application will provide a special file for the printer \(G-code\) which tells the machine what are the settings and how it should move to create our model.
 
-![PrusaSlicer layout](../.gitbook/assets/image%20%2846%29.png)
+![PrusaSlicer layout](../.gitbook/assets/image%20%2847%29.png)
 
 First thing we need to do is to import our files to the application. Click on the `Add` button \(box with a plus sign at the top of the screen\) and select the files you want to add.
 
@@ -67,7 +67,7 @@ After uploading the files, it should look like this:
 
 Now we need to spread the models in order to avoid interference. To automatize the process, press the `Arrange` button \(on the right from bin icon\).
 
-![](../.gitbook/assets/image%20%2840%29.png)
+![](../.gitbook/assets/image%20%2841%29.png)
 
 The arrangement is still not perfect. Our goal is to minimize the number of walls that are "levitating" in the air to avoid support constructions that needs to be printed. Here are some hints for positioning components:
 
@@ -81,7 +81,7 @@ The arrangement is still not perfect. Our goal is to minimize the number of wall
 
 By using the buttons on the left, we can rotate and change position of every component. As you can see, we need 2 pcs of Bearing shaft \(01133\), so click on this part and press `+` button to add another instance of this model. When you are satisfied with the orientation of the models, press the `Arrange` button again for optimal arrangement of components at the 3D printer table. 
 
-![](../.gitbook/assets/image%20%2841%29.png)
+![](../.gitbook/assets/image%20%2842%29.png)
 
 Now we can move on to the settings. You can go through all the detailed options by clicking on different tabs at the top, but if you don't have much experience in 3D printing, we recommend using system presets. 
 
@@ -95,7 +95,7 @@ The presets can be chosen from the panel on the right side and they consist of:
 
 If everything is set, click on `Slice now` button.
 
-![](../.gitbook/assets/image%20%2845%29.png)
+![](../.gitbook/assets/image%20%2846%29.png)
 
 You can now see exactly how your print will look like. Use your mouse to rotate, move or zoom your preview and the slider on the right side to discover individual layers of the build.
 

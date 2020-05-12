@@ -56,6 +56,7 @@
 * [Web UI Development](development-tutorials/web-ui-development/README.md)
   * [Include additional UI](development-tutorials/web-ui-development/include-additional-ui.md)
   * [Make your own UI - Relay switches](development-tutorials/web-ui-development/sample-ui-relay-funcionality.md)
+* [Autonomous Navigation](development-tutorials/autonomous-navigation.md)
 
 ## Assembly manuals
 

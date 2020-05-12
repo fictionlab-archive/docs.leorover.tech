@@ -73,7 +73,7 @@ rostopic echo /imu/gyro
 
 The sensor's accelerometer and gyroscope X, Y and Z axes should be printed on the board. If they are not, you can check MPU9250 IC orientation and identify the axes with this drawing:
 
-![accelerometer and gyroscope axes](../../.gitbook/assets/image%20%2848%29.png)
+![accelerometer and gyroscope axes](../../.gitbook/assets/image%20%2849%29.png)
 
 The magnetometer axes were also transformed to these axes to comply with the North-West-Up world frame.
 
