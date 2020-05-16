@@ -225,13 +225,21 @@ And then get back to Step 7.
 
 ![](../.gitbook/assets/img_20200423_170941.jpg)
 
+Make sure the t-nuts rotated when tightening the screws. The t-nuts should press on the internal walls of the beam grooves.
+
 ![](../.gitbook/assets/img_20200423_171028.jpg)
 
+Position the main axis plate in the center of the beam. Use any kind of measuring device. There should be 77 mm from the beam end to the axis plate.
+
 ![](../.gitbook/assets/img_20200423_171253.jpg)
+
+Now tighten the screws on each side.
 
 ![](../.gitbook/assets/img_20200423_171310.jpg)
 
 ![](../.gitbook/assets/img_20200423_171315.jpg)
+
+Do the same on the opposite side of the suspension.
 
 ### Step 6: Wheel holders
 
