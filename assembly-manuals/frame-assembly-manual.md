@@ -142,7 +142,7 @@ Tighten the bolt just enough to keep the parts together, but still able to rotat
 {% hint style="warning" %}
 From May 2020 we changed the Rover suspension beam design. If you see your beam looks as in the photo below, proceed to:
 
-
+[https://docs.leorover.tech/suspension-beam-before-may-2020](https://docs.leorover.tech/suspension-beam-before-may-2020)
 
 And then get back to Step 7.
 {% endhint %}

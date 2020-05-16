@@ -136,5 +136,13 @@ Do the same on the opposite side.
 
 ![](.gitbook/assets/p1020311.jpeg)
 
+Done!
+
 ![](.gitbook/assets/p1020313.jpeg)
+
+{% hint style="info" %}
+Now you can get back to Step 7 of suspension Assembly:
+
+[https://docs.leorover.tech/assembly-manuals/frame-assembly-manual\#step-7-backframe](https://docs.leorover.tech/assembly-manuals/frame-assembly-manual#step-7-backframe)
+{% endhint %}
 
