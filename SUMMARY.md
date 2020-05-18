@@ -79,5 +79,5 @@
   * [Leo 1.5 Wheel assembly](archive/leo-rover-version-1.5/wheel-assembly.md)
   * [Leo 1.5 Main electronics box assembly](archive/leo-rover-version-1.5/leo-1.5-main-electronics-box-assembly.md)
   * [Leo 1.5 Hardware Structure](archive/leo-rover-version-1.5/leo-1.5-hardware-structure.md)
-* [Suspension beam before May 2020](suspension-beam-before-may-2020.md)
+* [Suspension beam before May 2020](archive/suspension-beam-before-may-2020.md)
 
