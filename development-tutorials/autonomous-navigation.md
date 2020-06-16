@@ -34,7 +34,7 @@ There are a few things you will need to prepare on the rover and on your compute
 
 ### On the Rover
 
-You will need to build the `leo_description` package first. To do this, start by accessing the rover's console by logging through ssh:
+You will need to build the `leo_navigation` package first. To do this, start by accessing the rover's console by logging through ssh:
 
 {% page-ref page="../basic-guides/connect-to-the-console-ssh.md" %}
 
@@ -74,7 +74,7 @@ source ~/ros_ws/devel/setup.bash
 ```
 
 {% hint style="info" %}
-You will have to source the devel space on every console session you want to use the package on. A good way to do it automatically is to add the above line to the `~/.bashrc` file. 
+You will have to source the devel space on every console session you want to use the package on. If you want to do it automatically upon logging into a session, add the above line to the `~/.bashrc` file. 
 {% endhint %}
 
 #### Checking the sensors

@@ -107,6 +107,7 @@ Now, create a launch file that would start the node with a fitting configuration
   <node name="urg_node" pkg="urg_node" type="urg_node" output="screen">
     <param name="port" value="/dev/lidar"/>
     <param name="frame_id" value="laser_frame"/>
+    <param name="calibrate_time" value="true"/>
   </node>
 </launch>
 ```

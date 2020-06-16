@@ -61,7 +61,9 @@ To make it easier, we listed all the interfaces used by the Rover as default. Ju
       </td>
     </tr>
   </tbody>
-</table>## Additional warning
+</table>
+
+## Additional warning
 
 {% hint style="warning" %}
 Take into consideration during the Rover assembly and development.
