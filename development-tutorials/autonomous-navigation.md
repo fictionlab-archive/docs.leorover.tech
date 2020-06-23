@@ -200,10 +200,10 @@ Notice that we didn't use much from the measurements returned by the IMU sensor,
 
 Thanks to the [imu\_filter\_madgwick](http://wiki.ros.org/imu_filter_madgwick) package, we can get pretty good orientation estimate, which, combined with the wheel odometry, can be used to track the robot's position in 3D. The package uses the [Madgwick's filter](https://x-io.co.uk/open-source-imu-and-ahrs-algorithms/) to fuse data from a gyroscope, an accelerometer and \(optionally\) a magnetometer.
 
-To try the robot's state estimation in 3D, start the same launch file as in the previous example, but with the `3d` argument set to `true`: 
+To try the robot's state estimation in 3D, start the same launch file as in the previous example, but with the `three_d` argument set to `true`: 
 
 ```bash
-roslaunch leo_navigation odometry.launch 3d:=true
+roslaunch leo_navigation odometry.launch three_d:=true
 ```
 
 Now try to steer the rover on uneven terrain and observe the result in RViz
