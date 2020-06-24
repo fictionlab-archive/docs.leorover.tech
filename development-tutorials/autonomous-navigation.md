@@ -175,7 +175,7 @@ roslaunch leo_viz rviz.launch config:=odometry
 
 The RViz instance should start and you should see the robot model. Now, try to steer the rover \(either from the Web UI or by using a joystick\). If everything works, you should see the model moving along the ground plane like in this video:
 
-TODO - Video
+{% embed url="https://youtu.be/bH-mJ7cOwGQ" %}
 
 Here's a diagram that illustrates the nodes launched by the `odometry.launch` file and the connections between them:
 
@@ -206,9 +206,7 @@ To try the robot's state estimation in 3D, start the same launch file as in the 
 roslaunch leo_navigation odometry.launch three_d:=true
 ```
 
-Now try to steer the rover on uneven terrain and observe the result in RViz
-
-TODO - Video
+Now try to steer the rover on uneven terrain and observe the result in RViz.
 
 The diagram for the `odometry.launch` file now changes a little:
 
@@ -270,7 +268,7 @@ roslaunch leo_viz rviz.launch config:=slam
 
 Now try to explore the terrain with your rover and see the map being created. You will probably experience the model doing discrete jumps on the map from time to time. This is due to gmapping correcting robot's position within the map. Here's a video demonstration:
 
-TODO - Video
+{% embed url="https://youtu.be/2I3isieU250" %}
 
 The diagram for the `gmapping.launch` file is pretty straightforward:
 
@@ -309,9 +307,7 @@ rosrun map_server map_saver -f mymap
 
 This will create 2 files: **mymap.yaml** containing map's metadata and **mymap.pgm** containing the actual occupancy grid in binary format.
 
-Close the `gmapping.launch` instance by clicking **Ctrl+C** on the terminal session it is running on. Move the rover close to the \(0,0\) position on the map \(the position where you started the `gmapping.launch` file\). 
-
-Now, start `amcl.launch` by typing:
+Close the `gmapping.launch` instance by clicking **Ctrl+C** on the terminal session it is running on. Then start `amcl.launch` by typing:
 
 ```yaml
 roslaunch leo_navigation amcl.launch map_file:=<path_to_the_map_file>
@@ -323,7 +319,11 @@ Replace `<path_to_the_map_file>` with the absolute path to the **mymap.yaml** fi
 roslaunch leo_navigation amcl.launch map_file:=$(realpath mymap.yaml)
 ```
 
-Now steer the robot and notice how the position of the robot model in RViz is being corrected by AMCL. 
+If your initial pose is far from the real one, AMCL might not be able to correctly localize the robot on the map. To fix this, you can use the **2D Pose Estimate** tool in RViz to manually set the initial pose.
+
+When your initial pose is close enough to the real one, try to steer the robot and notice how the position of the robot model in RViz is being corrected by AMCL.
+
+{% embed url="https://youtu.be/8A\_rYK\_ImLk" %}
 
 ![](../.gitbook/assets/leo_navigation-slam-amcl.svg)
 
@@ -334,7 +334,7 @@ You can also notice 2 additional topics published by the `/amcl` node:
 * `/amcl_pose` − estimated pose of the robot within a map, with covariance,
 * `/particlecloud` − a set of pose estimates being maintained by the Monte Carlo localization algorithm.
 
-You can visualize the `/particlecloud` topic by enabling the `AMCL Particle Cloud` display in RViz.
+You can visualize the data published on these topics by enabling the `AMCL Pose` and/or the `AMCL Particle Cloud` displays in RViz.
 
 #### Configuration
 
@@ -371,11 +371,15 @@ To do this, we will utilize 2 packages:
 * [move\_base](http://wiki.ros.org/move_base) − provides a node which, given a navigation goal, will try to reach it by sending appropriate velocity commands. It incorporates many other components that have their own ROS API to achieve autonomous navigation capabilities. 
 * [twist\_mux](http://wiki.ros.org/twist_mux) − provides a node which will let us multiplex several velocity commands, prioritizing one over the other. This will allow us to take control of the robot with a joystick or the Web UI if the navigation goes out of control.
 
-To start the navigation stack on you rover, just type:
+To start these two nodes on you rover, just type:
 
 ```yaml
 roslaunch leo_navigation navigation.launch
 ```
+
+{% hint style="info" %}
+You can start these components separately using `twist_mux.launch` and `move_base.launch` files.
+{% endhint %}
 
 On your computer, close any running RViz instance and start a new one with the `navigation` configuration:
 
@@ -385,9 +389,9 @@ roslaunch leo_viz rviz.launch config:=navigation
 
 Now to send a navigation goal from RViz, select the **2D Nav Goal** tool from the toolbar located at the top, then click somewhere on the map to set position or click and drag to set position and orientation. 
 
-If the goal is achievable, you should see the planned path in RViz and the navigation stack should start sending commands to the robot. Make sure no other node is publishing velocity commands \(`/cmd_vel` topic\).
+If the goal is achievable, you should see the planned path in RViz and the navigation software should start sending commands to the robot. Make sure no other node is publishing velocity commands \(`/cmd_vel` topic\).
 
-TODO - Video
+{% embed url="https://youtu.be/wDbFUIzjiz4" %}
 
 Here's a diagram for the `navigation.launch` file:
 
@@ -420,7 +424,7 @@ For the Web UI, you need to change `cmd_vel` to `ui_vel` in the **/opt/leo\_ui/j
 
 #### move\_base brief explanation
 
-Up to now, we treated the `/move_base` node as a black box to which we send navigation goals and get velocity commands in return. This is fine to start with, but if you want to fine-tune configuration for your environment, you might need to know about various components of the navigation stack and how do they work with each other. This will help you to understand the meaning behind the parameters.
+Up to now, we treated the `/move_base` node as a black box to which we send navigation goals and get velocity commands in return. This is fine to start with, but if you want to fine-tune configuration for your environment, you might need to know about various components of `move_base` and how do they work with each other. This will help you to understand the meaning behind the parameters.
 
 ![source: http://wiki.ros.org/move\_base](../.gitbook/assets/image%20%2840%29.png)
 
@@ -480,7 +484,7 @@ As the `/move_base` node uses components that have their own ROS APIs, the confi
   * `yaw_goal_tolerance` – you can increase it if you don't care that much about the resulting orientation of the rover.
   * `pdist_scale`, `gdist_scale`, `occdist_scale` – these parameters may require some trial and error to fine-tune them to your environment.
 
-All of these parameters are available through [dynamic\_reconfigure](http://wiki.ros.org/dynamic_reconfigure) so you can modify them at runtime before changing the files, e.g. with the [rqt\_reconfigure](http://wiki.ros.org/rqt_reconfigure) tool:
+Most of these parameters are available through [dynamic\_reconfigure](http://wiki.ros.org/dynamic_reconfigure) so you can modify them at runtime before changing the configuration files, e.g. by running the [rqt\_reconfigure](http://wiki.ros.org/rqt_reconfigure) tool on your computer:
 
 ```yaml
 rosrun rqt_reconfigure rqt_reconfigure
