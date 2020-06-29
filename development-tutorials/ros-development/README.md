@@ -328,9 +328,9 @@ on the upper plane of the mounting plate. The distance can be easily measured in
 
 For more examples, you can look at these tutorials:
 
-{% page-ref page="../../integrations/sensors/lidar-sensor.md" %}
+{% page-ref page="../../integrations/lidar-sensor.md" %}
 
-{% page-ref page="../../integrations/sensors/imu-module.md" %}
+{% page-ref page="../../integrations/imu-module.md" %}
 
 ## Building additional ROS packages
 

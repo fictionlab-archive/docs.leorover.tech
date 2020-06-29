@@ -1,4 +1,4 @@
-# IMU
+# Inertial Measurement Unit \(IMU\)
 
 In this tutorial, we will show you how to connect and use IMU module on your Rover.
 
@@ -8,23 +8,23 @@ In this tutorial, we will show you how to connect and use IMU module on your Rov
 
 First, make sure you have a compatible IMU module. We recommend `Grove - IMU 9DOF v2.0` but any module with `MPU-9250` sensor should work.
 
-![Grove - IMU 9DOF v2.0](../../.gitbook/assets/image%20%2810%29.png)
+![Grove - IMU 9DOF v2.0](../.gitbook/assets/image%20%2810%29.png)
 
 IMU functionality was introduced in [leo\_firmware](https://github.com/LeoRover/leo_firmware/releases) version 0.5, so make sure to stay updated.
 
-{% page-ref page="../../basic-guides/software-update.md" %}
+{% page-ref page="../basic-guides/software-update.md" %}
 
-{% page-ref page="../../basic-guides/firmware-update.md" %}
+{% page-ref page="../basic-guides/firmware-update.md" %}
 
 ## Mounting and wiring the sensor
 
 By default, the IMU will work on hSens2 port. You can change it to hSens1 by modifying the [params.h](https://github.com/LeoRover/leo_firmware/blob/master/params.h) file in `leo_firmware`. 
 
-![hSens2 port location](../../.gitbook/assets/hsens2.png)
+![hSens2 port location](../.gitbook/assets/hsens2.png)
 
 Connect the sensor pins according to the [CORE2 manual](https://husarion.com/manuals/core2/#hsensor).
 
-![](../../.gitbook/assets/image%20%2824%29.png)
+![](../.gitbook/assets/image%20%2824%29.png)
 
 | hSens pin | IMU pin |
 | :--- | :--- |
@@ -35,11 +35,11 @@ Connect the sensor pins according to the [CORE2 manual](https://husarion.com/man
 
 You can use female jumper cables, or create your own IDC cable, like this one:
 
-![](../../.gitbook/assets/img_20191008_131640.jpg)
+![](../.gitbook/assets/img_20191008_131640.jpg)
 
 If you use the Grove IMU, you can 3D print the mounting plate for the MEB cover which contains holes for the self-tapping screws \(`00189_imu` part\). The files can be found here:
 
-{% page-ref page="../../projects/dev-covers-for-addons.md" %}
+{% page-ref page="../projects/dev-covers-for-addons.md" %}
 
 ## Integrating the sensor with the system
 
@@ -47,7 +47,7 @@ If you use the Grove IMU, you can 3D print the mounting plate for the MEB cover 
 
 Log in to the Rover's console via SSH
 
-{% page-ref page="../../basic-guides/connect-to-the-console-ssh.md" %}
+{% page-ref page="../basic-guides/connect-to-the-console-ssh.md" %}
 
 To set IMU functionality on or off, you need to send message on the `/core2/set_imu` topic.
 
@@ -73,7 +73,7 @@ rostopic echo /imu/gyro
 
 The sensor's accelerometer and gyroscope X, Y and Z axes should be printed on the board. If they are not, you can check MPU9250 IC orientation and identify the axes with this drawing:
 
-![accelerometer and gyroscope axes](../../.gitbook/assets/image%20%2849%29.png)
+![accelerometer and gyroscope axes](../.gitbook/assets/image%20%2849%29.png)
 
 The magnetometer axes were also transformed to these axes to comply with the North-West-Up world frame.
 
@@ -107,11 +107,11 @@ Add these lines somewhere between the `<robot>` tags:
 
 You might need to modify the transformation \(`<origin>` tag\) depending on how you mounted the module.
 
-![base\_link -&amp;gt; imu transform visualization](../../.gitbook/assets/image%20%2826%29.png)
+![base\_link -&amp;gt; imu transform visualization](../.gitbook/assets/image%20%2826%29.png)
 
 For more information, visit **ROS Development** -&gt; **Adding additional functionality to the rover** -&gt; **expanding the URDF model**
 
-{% page-ref page="../../development-tutorials/ros-development/" %}
+{% page-ref page="../development-tutorials/ros-development/" %}
 
 ### Calibrating the sensor
 

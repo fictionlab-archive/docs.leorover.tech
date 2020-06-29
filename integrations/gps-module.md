@@ -4,7 +4,7 @@ description: >-
   functionalties.
 ---
 
-# GPS
+# GPS module
 
 ## Prerequisites
 
@@ -27,17 +27,17 @@ More info:
 
 {% embed url="https://www.waveshare.com/uart-gps-neo-6m.htm" %}
 
-![u-blox NEO-6m GPS module](../../.gitbook/assets/u-blox-neo-6m-gps-module-robotics-bangladesh.jpg)
+![u-blox NEO-6m GPS module](../.gitbook/assets/u-blox-neo-6m-gps-module-robotics-bangladesh.jpg)
 
 ## Connect the module to Core2-ROS controller
 
 Our default firmware uses hSense port 3 highlighted below. For your own needs you can change it to hSense port 4 as well, but it will come with some code modifications.
 
-![Core2-ROS hSense port 3](../../.gitbook/assets/core2_top_small%20%283%29.jpg)
+![Core2-ROS hSense port 3](../.gitbook/assets/core2_top_small%20%283%29.jpg)
 
 Connect the GPS module according to pin description below. The easiest way to connect GPS module to the controller is to use IDC connector and four jumper cables.
 
-![](../../.gitbook/assets/gps_conection.png)
+![](../.gitbook/assets/gps_conection.png)
 
 | hSense pin | GPS pin |
 | :--- | :--- |
@@ -48,7 +48,7 @@ Connect the GPS module according to pin description below. The easiest way to co
 | 5 | +5V |
 | 6 | GND |
 
-![](../../.gitbook/assets/p1010915.JPG)
+![](../.gitbook/assets/p1010915.JPG)
 
 ### Mounting GPS module on the top of the Rover
 
@@ -56,7 +56,7 @@ The best way to get clear GPS data from the module is to mount is as far from th
 
 First you need to route the module cables out of the main electronics box \(MEB\). The easiest way is to use one of Dev-Covers that we prepared for such projects.
 
-{% page-ref page="../../projects/dev-covers-for-addons.md" %}
+{% page-ref page="../projects/dev-covers-for-addons.md" %}
 
 {% hint style="warning" %}
 We didn't prepare any 3D-model of the module support yet. You'll need to be more creative sourcing or desiging your own.
@@ -74,13 +74,13 @@ Make sure you have the newest firmware uploaded to Core2-ROS. GPS functionality 
 GPS funcionality is availiable on branch feature/gps and devel- tests in progress
 {% endhint %}
 
-{% page-ref page="../../basic-guides/firmware-update.md" %}
+{% page-ref page="../basic-guides/firmware-update.md" %}
 
 ### Enable GPS
 
 Open a new ssh connection to the Rover's console.
 
-{% page-ref page="../../basic-guides/connect-to-the-console-ssh.md" %}
+{% page-ref page="../basic-guides/connect-to-the-console-ssh.md" %}
 
 Set the GPS functionality on by sending the message to `/gps_enable` topic:
 
@@ -118,5 +118,5 @@ There will be coordinate data occuring only if GPS found its position.
 
 Check if the coordinates obtained are correct in Google Maps. We tested the GPS around our office and he precision was pretty good.
 
-![](../../.gitbook/assets/zrzut-ekranu-z-2019-11-04-19-50-56.png)
+![](../.gitbook/assets/zrzut-ekranu-z-2019-11-04-19-50-56.png)
 

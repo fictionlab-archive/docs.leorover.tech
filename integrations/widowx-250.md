@@ -4,13 +4,13 @@ description: >-
   WidowX 250 robotic arm.
 ---
 
-# WidowX 250
+# WidowX 250 \(Robotic Arm\)
 
-![](../../.gitbook/assets/blank-diagram%20%281%29.jpeg)
+![](../.gitbook/assets/blank-diagram%20%281%29.jpeg)
 
 In this tutorial, we will show you how to integrate and remotely control the WidowX 250 robotic arm.
 
-![](../../.gitbook/assets/dsc_8572.jpg)
+![](../.gitbook/assets/dsc_8572.jpg)
 
 {% embed url="https://youtu.be/SP4WlP3YPl4" %}
 
@@ -20,7 +20,7 @@ The mounting of the arm is particularly easy. If you have bought the arm with th
 
 If you have the original support plate, you can get the model for 3D printing here \(**addons** section\):
 
-{% page-ref page="../../documentation/3d-printed-parts.md" %}
+{% page-ref page="../documentation/3d-printed-parts.md" %}
 
 Use the modified Battery &lt;-&gt; MEB cable, included in the set, to connect the battery to the power socket located on the arm.
 
@@ -156,7 +156,7 @@ and paste these lines somewhere between the `<robot>` tags:
 {% hint style="info" %}
 To learn more about what the files under `/etc/ros` are used for and how do they correlate with each other, visit the **Adding additional functionality to the rover** section on **ROS Development** guide:
 
-{% page-ref page="../../development-tutorials/ros-development/" %}
+{% page-ref page="../development-tutorials/ros-development/" %}
 {% endhint %}
 
 That's it! On the next boot, the arm driver node will start together with all the other nodes. You can manually restart the running nodes, by typing:
@@ -189,11 +189,11 @@ rosservice call /wx250/torque_joints_off
 
 The [interbotix\_ros\_arms](https://github.com/Interbotix/interbotix_ros_arms) repository contains some packages that will let you control the arm in different ways. To use them on your computer, you will need to have ROS installed:
 
-{% page-ref page="../../development-tutorials/ros-development/install-ros-on-your-computer.md" %}
+{% page-ref page="../development-tutorials/ros-development/install-ros-on-your-computer.md" %}
 
 and properly configured to communicate with the nodes running on the rover. For this, you can visit **Connecting other computer to ROS network** section of the ROS Development tutorial:
 
-{% page-ref page="../../development-tutorials/ros-development/" %}
+{% page-ref page="../development-tutorials/ros-development/" %}
 
 First, install some prerequisites:
 
@@ -256,7 +256,7 @@ You will have to do this at every terminal session you want to use the packages 
 
 The effect should look similar to this:
 
-![](../../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%288%29.png)
 
 ### Planning the trajectory with MoveIt
 
@@ -276,7 +276,7 @@ roslaunch interbotix_moveit interbotix_moveit.launch robot_name:=wx250 rviz_fram
 
 The MoveIt GUI should appear:
 
-![](../../.gitbook/assets/image%20%2829%29.png)
+![](../.gitbook/assets/image%20%2829%29.png)
 
 On the **MotionPlanning** panel, click on the **Planning** tab, choose `interbotix_arm` for the **Planning Group** and `<current>` for the **Start State**.
 

@@ -8,9 +8,9 @@ For this purpose, we prepared the [leo\_navigation](https://github.com/LeoRover/
 
 To complete this guide, you will need to, first of all, have the IMU and LiDAR sensors integrated with the system:
 
-{% page-ref page="../integrations/sensors/imu-module.md" %}
+{% page-ref page="../integrations/imu-module.md" %}
 
-{% page-ref page="../integrations/sensors/lidar-sensor.md" %}
+{% page-ref page="../integrations/lidar-sensor.md" %}
 
 Make sure you are operating on the newest image for the Raspberry Pi and you are up-to-date with the packages:
 

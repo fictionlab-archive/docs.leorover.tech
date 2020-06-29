@@ -178,7 +178,7 @@ Set the Dynamixel ID's like in the image below:
 
 To learn how to do this, you can follow our guide for the Arbotix controller here:
 
-{% page-ref page="../integrations/controllers/arbotix-m-robocontroller.md" %}
+{% page-ref page="../integrations/arbotix-m-robocontroller.md" %}
 
 ### Install the ROS driver package
 
