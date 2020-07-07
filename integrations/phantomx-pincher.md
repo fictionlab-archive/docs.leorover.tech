@@ -54,7 +54,7 @@ The [turtlebot\_arm](http://wiki.ros.org/turtlebot_arm) packages contain very us
 
 To use the mentioned features, you need to build the packages and run the driver on your Rover first.
 
-Start by logging into your Rover's console:
+Start by logging into your Rover via SSH:
 
 {% page-ref page="../basic-guides/connect-via-ssh.md" %}
 

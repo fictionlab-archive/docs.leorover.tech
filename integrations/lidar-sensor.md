@@ -241,7 +241,7 @@ Before starting RViz, make sure you completed the `Connecting other computer to 
 
 {% page-ref page="../development-tutorials/ros-development/" %}
 
-Now, open RViz by typing `rviz` in the console or, if you have the `leo_viz` package installed, type:
+Now, open RViz by typing `rviz` in the terminal, or, if you have the `leo_viz` package installed, type:
 
 ```bash
 roslaunch leo_viz rviz.launch

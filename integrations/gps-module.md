@@ -78,7 +78,7 @@ GPS funcionality is availiable on branch feature/gps and devel- tests in progres
 
 ### Enable GPS
 
-Open a new ssh connection to the Rover's console.
+Open a new remote terminal session on the Rover:.
 
 {% page-ref page="../basic-guides/connect-via-ssh.md" %}
 

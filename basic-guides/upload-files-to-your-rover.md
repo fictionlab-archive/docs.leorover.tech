@@ -57,7 +57,7 @@ By default, when logging as `pi` user, you have write permission only on files i
 
 #### Recommended: take ownership of the directory
 
-First, login to the Rover's console via ssh
+First, login to the Rover via ssh:
 
 {% page-ref page="connect-via-ssh.md" %}
 
