@@ -74,7 +74,7 @@ source ~/ros_ws/devel/setup.bash
 ```
 
 {% hint style="info" %}
-You will have to source the devel space on every console session you want to use the package on. If you want to do it automatically upon logging into a session, add the above line to the `~/.bashrc` file. 
+You will have to source the devel space on every terminal session you want to use the package on. If you want to do it automatically upon logging into a session, add the above line to the `~/.bashrc` file. 
 {% endhint %}
 
 #### Checking the sensors
