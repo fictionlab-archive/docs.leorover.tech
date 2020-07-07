@@ -137,7 +137,7 @@ void hMain()
 
 Replace `main.cpp` with this code, build it and flash to your Board.
 
-Now log into your Rover's console, and type:
+Now log into your Rover via SSH, and type:
 
 ```bash
 sudo systemctl restart leo
@@ -263,7 +263,7 @@ if (publish_gpio_in){
 In case you missed something, here's a working example \(built on top of 0.5.1 version of leo firmware\):  
 [https://pastebin.com/7xJRShsS](https://pastebin.com/7xJRShsS)
 
-Build and flash the firmware, log into the console and check with `rostopic list` if the new topics have spawned.
+Build and flash the firmware, log into the terminal and check with `rostopic list` if the new topics have spawned.
 
 Now, you should be able to check the voltage readings with:
 
