@@ -15,7 +15,7 @@ ROS comes with some command line tools that can help to introspect the current n
 * [rosservice](http://wiki.ros.org/rosservice) - listing and printing information about available services, calling the service with provided arguments,
 * [rosmsg](http://wiki.ros.org/rosmsg#rosmsg-1) - displaying the fields of a specified ROS message type
 
-Let's try to run some examples. Before that, connect to the Rover's console:
+Let's try to run some examples. Before that, connect to the Rover via SSH:
 
 {% page-ref page="../../basic-guides/connect-via-ssh.md" %}
 
@@ -710,7 +710,7 @@ In this example, we will use [ar\_track\_alvar](http://wiki.ros.org/ar_track_alv
 
 As sending raw images from the camera via wireless network may be insufficient, we will relay all the processing to the Raspberry Pi. 
 
-Start by logging into your Rover's console:
+Start by logging into your Rover via SSH:
 
 {% page-ref page="../../basic-guides/connect-via-ssh.md" %}
 
@@ -823,7 +823,7 @@ Due to differences in printer setups, the actual size of the printed marker may 
 
 Now to visualize detected AR Tags, you just need to:
 
-* open RViz, by typing `rviz` in console
+* open RViz, by typing `rviz` in the terminal
 * set **Fixed Frame** to `base_link`
 * Click **Add** -&gt; **Marker** and set **Marker Topic** to `visualization_marker`
 * \(optionally\) Click **Add** -&gt; **RobotModel** to visualize the Rover
