@@ -248,7 +248,7 @@ You will have to do this at every terminal session you want to use the packages 
 
 ### Visualizing the model
 
-1. Open RViz by typing `rviz` in the console.
+1. Open RViz by typing `rviz` in the terminal.
 2. Choose `base_link` as the **Fixed Frame**.
 3. On the **Displays** panel click on **Add** and choose **RobotModel**.
 4. For the **Robot Description** parameter, choose `robot_description`.
@@ -329,7 +329,7 @@ The `bartender.py` demo performs some pick, pour and place operations. To run it
 arm = InterbotixRobot(robot_name="wx250s", mrd=mrd)
 ```
 
-Change `wx250s` to `wx250` and then type on the console:
+Change `wx250s` to `wx250` and then type on the terminal:
 
 ```bash
 python bartender.py
