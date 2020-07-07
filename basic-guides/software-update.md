@@ -45,7 +45,7 @@ If you are not sure your \[SD\_CARD\_DEVICE\] is correct, we suggest using [Etch
 
 ## Updating software
 
-To download newest versions of system packages and ROS packages \(including[ leo\_bringup](https://github.com/LeoRover/leo_bringup) and [leo\_ui](https://github.com/LeoRover/leo_ui.git)\), connect to the Rover's console:
+To download newest versions of system packages and ROS packages \(including[ leo\_bringup](https://github.com/LeoRover/leo_bringup) and [leo\_ui](https://github.com/LeoRover/leo_ui.git)\), connect to the Rover via SSH:
 
 {% page-ref page="connect-via-ssh.md" %}
 

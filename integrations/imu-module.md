@@ -45,7 +45,7 @@ If you use the Grove IMU, you can 3D print the mounting plate for the MEB cover 
 
 ### Turning on the IMU functionality
 
-Log in to the Rover's console via SSH
+Start a remote terminal session on the Rover via SSH
 
 {% page-ref page="../basic-guides/connect-via-ssh.md" %}
 

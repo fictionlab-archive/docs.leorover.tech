@@ -34,7 +34,7 @@ There are a few things you will need to prepare on the rover and on your compute
 
 ### On the Rover
 
-You will need to build the `leo_navigation` package first. To do this, start by accessing the rover's console by logging through ssh:
+You will need to build the `leo_navigation` package first. To do this, start by accessing a remote terminal session on the Rover by logging via ssh:
 
 {% page-ref page="../basic-guides/connect-via-ssh.md" %}
 

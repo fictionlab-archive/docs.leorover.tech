@@ -22,21 +22,21 @@ Beginning with [firmware version 1.0.0](https://github.com/LeoRover/leo_firmware
 
 ### Software
 
-Type in the console:
+Type in the terminal:
 
 ```text
 sudo apt update
-sudo apt install --upgrade ros-kinetic-leo-bringup
+sudo apt install --upgrade ros-melodic-leo-bringup
 ```
 
 And wait until the install completes.
 
 ## Access launch file
 
-Type in the console:
+Type in the terminal:
 
 ```text
-sudo nano /etc/ros/robot.launch
+nano /etc/ros/robot.launch
 ```
 
 You'll access `robot.launch` file that drives the firmware settings.

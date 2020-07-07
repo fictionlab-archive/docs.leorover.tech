@@ -44,7 +44,7 @@ Make sure your setup looks like this:
 
 ![source: trossenrobotics.com](../.gitbook/assets/image%20%289%29.png)
 
-Then, type in your console:
+Then, type in your terminal:
 
 ```text
 arbotix_terminal
