@@ -86,7 +86,7 @@ The magnetometer data \(`imu/mag` topic\) represents magnetic field along sensor
 The system should be aware of where the module is located on the robot, in order to be able to use the sensor readings. To specify the location, you can extend the URDF model of the Rover by editing the `/etc/ros/urdf/robot.urdf.xacro`. Simply open the file in `nano` editor by typing:
 
 ```bash
-sudo nano /etc/ros/urdf/robot.urdf.xacro
+nano /etc/ros/urdf/robot.urdf.xacro
 ```
 
 Add these lines somewhere between the `<robot>` tags:
