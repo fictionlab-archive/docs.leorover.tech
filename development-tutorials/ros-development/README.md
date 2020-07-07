@@ -347,7 +347,7 @@ The prebuilt ROS packages \(installed from the repository\) are placed into `/op
 source /opt/ros/melodic/setup.bash
 ```
 
-If you use LeoOS, this line is already added to `~/.bashrc` file, so it will be automatically executed when you log into the console.
+If you use LeoOS, this line is already added to `~/.bashrc` file, so it will be automatically executed when you log into the terminal session.
 {% endhint %}
 
 > The catkin build system also supports an [overlay](http://wiki.ros.org/catkin/workspaces#Overlays) mechanism, where one workspace can extend another result space. An `environment setup file` from the result space of such workspace will extend your shell environment by packages from both workspaces.
