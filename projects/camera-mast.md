@@ -230,7 +230,7 @@ If you want the driver to start automatically when the RaspberryPi boots, you ca
 
 {% code title="/etc/ros/setup.bash" %}
 ```bash
-# source /opt/ros/kinetic/setup.bash
+# source /opt/ros/melodic/setup.bash
 source /home/pi/ros_ws/devel/setup.bash
 ```
 {% endcode %}
