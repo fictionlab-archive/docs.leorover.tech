@@ -87,13 +87,13 @@ We want the sensor functionality to be available in the ROS ecosystem, so you sh
 {% tabs %}
 {% tab title="Hokuyo" %}
 ```bash
-sudo apt install ros-kinetic-urg-node
+sudo apt install ros-melodic-urg-node
 ```
 {% endtab %}
 
 {% tab title="RPLIDAR" %}
 ```bash
-sudo apt install ros-kinetic-rplidar-ros
+sudo apt install ros-melodic-rplidar-ros
 ```
 {% endtab %}
 {% endtabs %}
@@ -241,10 +241,10 @@ Before starting RViz, make sure you completed the `Connecting other computer to 
 
 {% page-ref page="../development-tutorials/ros-development/" %}
 
-Now, open RViz by typing `rviz` in the console or, if you have the `leo_description` package installed, type:
+Now, open RViz by typing `rviz` in the console or, if you have the `leo_viz` package installed, type:
 
 ```bash
-roslaunch leo_description rviz.launch
+roslaunch leo_viz rviz.launch
 ```
 
 This will start RViz with visualization of the current robot model.

@@ -1,0 +1,83 @@
+# Task 5: Wheels and tires to suspension mounting
+
+## Intro
+
+### Assembly time
+
+45 minutes
+
+### Tools needed
+
+* [ ] cyanoacrylate glue \(optional\)
+* [ ] no. 5 hex-head key \(metric; provided\)
+* [ ] soldering iron
+* [ ] heat shrink tube \(to isolate cables\)
+* [ ] wire cutters
+
+## Assembly guide
+
+![](../.gitbook/assets/p1020496.jpg)
+
+### Step 1: Tires
+
+Prepare:
+
+* [ ] Task 4 assembly
+* [ ] 4x Task 1 assembly
+* [ ] 4x tire
+* [ ] cyanoacrylate glue \(optional\)
+
+![](../.gitbook/assets/p1020499.jpg)
+
+![](../.gitbook/assets/p1020501.jpg)
+
+![](../.gitbook/assets/p1020503.jpg)
+
+![](../.gitbook/assets/p1020505.jpg)
+
+![](../.gitbook/assets/p1020507.jpg)
+
+![](../.gitbook/assets/p1020509.jpg)
+
+![](../.gitbook/assets/p1020513.jpg)
+
+![](../.gitbook/assets/p1020514.jpg)
+
+![](../.gitbook/assets/p1020519.jpg)
+
+![](../.gitbook/assets/p1020521.jpg)
+
+![](../.gitbook/assets/p1020522.jpg)
+
+![](../.gitbook/assets/p1020523.jpg)
+
+### Step 2: Wheels to suspension
+
+![](../.gitbook/assets/p1020525.jpg)
+
+![](../.gitbook/assets/p1020526.jpg)
+
+### Step 3: Cable soldering
+
+![](../.gitbook/assets/p1020529.jpg)
+
+![](../.gitbook/assets/p1020531.jpg)
+
+![](../.gitbook/assets/p1020532.jpg)
+
+![](../.gitbook/assets/p1020535.jpg)
+
+![](../.gitbook/assets/p1020536.jpg)
+
+![](../.gitbook/assets/p1020540.jpg)
+
+![](../.gitbook/assets/p1020541.jpg)
+
+![](../.gitbook/assets/p1020544.jpg)
+
+![](../.gitbook/assets/p1020547.jpg)
+
+![](../.gitbook/assets/p1020549.jpg)
+
+![](../.gitbook/assets/p1020553.jpg)
+

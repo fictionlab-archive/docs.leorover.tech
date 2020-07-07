@@ -16,7 +16,7 @@ In this tutorial, we will show you how to configure and remotely control relays 
 
 Connect to the Rover through SSH
 
-{% page-ref page="../basic-guides/connect-to-the-console-ssh.md" %}
+{% page-ref page="../basic-guides/connect-via-ssh.md" %}
 
 Make sure the Rover is connected to the internet
 
@@ -50,10 +50,10 @@ Well done! Hardware is ready
 
 ### 3. Flash the firmware
 
-Make sure you are in the home directory \(`/home/husarion`\) and type:
+Make sure you are in the home directory \(`/home/pi`\) and type:
 
 ```bash
-/opt/husarion/tools/rpi-linux/core2-flasher leo_firmware.hex
+core2-flasher leo_firmware.hex
 ```
 
 The process of flashing should begin. After it completes, type:
@@ -63,28 +63,6 @@ sudo systemctl restart leo
 ```
 
 to restart ROS serial node.
-
-{% hint style="info" %}
-### Troubleshooting - if bootloader not flashed
-
-If you have a brand new CORE2 board \(never flashed\), you may need to flash its bootloader for a firmware to work.
-
-Download the bootloader from [here](https://files.husarion.com/bootloader/bootloader_1_0_0_core2.hex) and upload it to your Rover or, if you connected the Rover to the Internet, just type:
-
-```bash
-wget https://files.husarion.com/bootloader/bootloader_1_0_0_core2.hex
-```
-
-Then, type the following commands:
-
-```bash
-/opt/husarion/tools/rpi-linux/core2-flasher --unprotect
-/opt/husarion/tools/rpi-linux/core2-flasher bootloader_1_0_0_core2.hex
-/opt/husarion/tools/rpi-linux/core2-flasher --protect
-```
-
-Now you can get back to the firmware flashing operation.
-{% endhint %}
 
 ## 3. Add user web interface to nginx server
 

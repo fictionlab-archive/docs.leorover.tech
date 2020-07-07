@@ -22,9 +22,9 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 Reboot when prompted
 
-Install [Ubuntu 16.04](https://www.microsoft.com/pl-pl/p/ubuntu-1604-lts/9pjn388hp8c9) or [Ubuntu 18.04](https://www.microsoft.com/pl-pl/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab) from Microsoft Store and open the application.
+Install [Ubuntu 18.04](https://www.microsoft.com/pl-pl/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab) from Microsoft Store and open the application.
 
-You can now follow steps from [ros installation tutorial](http://wiki.ros.org/ROS/Installation) on ROS wiki \(Choose Kinetic for Ubuntu 16.04 or Melodic for 18.04\).
+You can now follow steps from [ros installation tutorial](http://wiki.ros.org/melodic/Installation/Ubuntu) on ROS wiki.
 
 To run graphical applications, you need to install X server on Windows. We recommend using [VcXsrv](https://sourceforge.net/projects/vcxsrv/). Install it and run with default configuration except for `Native OpenGL` which should be unchecked \(otherwise, `rviz` may fail to launch\)
 
@@ -36,10 +36,6 @@ source ~/.bashrc
 ```
 
 Now, to test it, run `roscore` on one session and `rqt` or `rviz` on another.
-
-{% hint style="warning" %}
-Windows is not a supported platform for ROS at the moment, so some parts may not work as expected
-{% endhint %}
 
 ## C. Bootable USB drive with Ubuntu
 

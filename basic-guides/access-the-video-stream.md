@@ -10,7 +10,7 @@ With the steps provided you'll be able to access a clean video stream preview in
 
 ## Access the stream via your browser
 
-### 1. Connect to the Rover Wifi network
+### 1. Connect to the Rover's access point
 
 ### 2. Enter the dedicated port
 

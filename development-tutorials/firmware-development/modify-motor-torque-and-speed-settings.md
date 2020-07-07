@@ -10,7 +10,7 @@ Beginning with [firmware version 1.0.0](https://github.com/LeoRover/leo_firmware
 
 ## Prerequisites
 
-{% page-ref page="../../basic-guides/connect-to-the-console-ssh.md" %}
+{% page-ref page="../../basic-guides/connect-via-ssh.md" %}
 
 {% page-ref page="../../basic-guides/connect-to-the-internet.md" %}
 

@@ -47,7 +47,7 @@ If you use the Grove IMU, you can 3D print the mounting plate for the MEB cover 
 
 Log in to the Rover's console via SSH
 
-{% page-ref page="../basic-guides/connect-to-the-console-ssh.md" %}
+{% page-ref page="../basic-guides/connect-via-ssh.md" %}
 
 To set IMU functionality on or off, you need to send message on the `/core2/set_imu` topic.
 

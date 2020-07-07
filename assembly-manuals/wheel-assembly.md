@@ -1,0 +1,321 @@
+# Task 1: Wheel assembly
+
+## Intro
+
+### Assembly time
+
+20 minutes / wheel
+
+### Tools needed
+
+* [ ] cross-head screwdriver
+* [ ] no. 2.5 hex-head key \(metric\)
+* [ ] no. 3 hex-head key \(metric; provided\)
+* [ ] vaseline \(provided\)
+* [ ] lithium grease
+* [ ] Loctite glue \(anaerobic, low-strength\)
+
+## Assembly manual
+
+### Step 1: Motor assembly
+
+Prepare
+
+1. [ ] 1x DC motor
+2. [ ] 1x wheel tube
+3. [ ] 4x 2.5x9.5 self tapping screw \(bigger one\)
+4. [ ] cross-head screwdriver
+
+![](../.gitbook/assets/p1010934.JPG)
+
+Put the motor inside the tube.
+
+![](../.gitbook/assets/p1010936.JPG)
+
+Rotate the motor so its holes match the ones of the tube.
+
+![](../.gitbook/assets/p1010938.JPG)
+
+Screw one of the screws. Don't tighten it.
+
+![](../.gitbook/assets/p1010943.JPG)
+
+Screw the rest of self-tapping screws. Tighten them together with the first one.
+
+![](../.gitbook/assets/p1010948.JPG)
+
+### Step 2: Bearings
+
+Prepare:
+
+* [ ] Step 1 assembly
+* [ ] 2x ball bearings
+* [ ] 1x waseline grease
+
+![](../.gitbook/assets/p1010951.JPG)
+
+Grease the tube surfaces that will match the bearings,
+
+![](../.gitbook/assets/p1010952.JPG)
+
+Put the rear bearing on the tube. It may be tight - just slide it gently and even on the pre-greased tube.
+
+{% hint style="warning" %}
+If the bearing jams on the tube, don't push it too hard. Try to take it back, grease the bearing and slide again. If it still doesn't help, tackle the bearing evenly around its circumference.
+{% endhint %}
+
+![](../.gitbook/assets/p1010956.JPG)
+
+![](../.gitbook/assets/p1010959.JPG)
+
+Put the front bearing on the tube.
+
+![](../.gitbook/assets/p1010962.JPG)
+
+![](../.gitbook/assets/p1010965.JPG)
+
+### Step 3: Wheel mounts
+
+Prepare:
+
+* [ ] Step 2 assembly
+* [ ] Lower wheel mounting
+* [ ] Upper wheel mounting
+* [ ] 4x m4x12 screw
+* [ ] no. 3 hex-head key
+
+![](../.gitbook/assets/p1010966.JPG)
+
+Put the lower and upper wheel mounting together.
+
+![](../.gitbook/assets/p1010968.JPG)
+
+Put 4x m4x12 screws in the holes provided. Don't tighten them, just turn to keep them in place.
+
+![](../.gitbook/assets/p1010972.JPG)
+
+Put the assembly on the wheel tube. Make sure the brass inserts are located outwards \(as in the photo\).
+
+![](../.gitbook/assets/p1010974.JPG)
+
+Push the assembly all the way to touch the bearing.
+
+![](../.gitbook/assets/p1010979.JPG)
+
+Tighten the mounting screws. 
+
+![](../.gitbook/assets/p1010981.JPG)
+
+### Step 4: Wheel rim
+
+Prepare:
+
+* [ ] 1x Step 3 assembly
+* [ ] 1x Wheel rim
+* [ ] 1x m3x12 screw
+* [ ] 1x m3 square nut
+* [ ] 1x fi3 washer
+* [ ] no. 2,5 hex-head key
+
+![](../.gitbook/assets/p1010983.JPG)
+
+![](../.gitbook/assets/p1010986.JPG)
+
+Push the tube assembly in the wheel rim. 
+
+{% hint style="warning" %}
+Mind there may be some 3d-print imperfections in the rim to be tackled before you push the assembly. Take a look at the rim and notice if there are any bumps or filament leftovers - cut them if needed,
+{% endhint %}
+
+![](../.gitbook/assets/p1010988.JPG)
+
+Push all the way to meet the front bearing. There should be no gap between the bearing and the rim front lip.
+
+![](../.gitbook/assets/p1010989%20%281%29.JPG)
+
+![](../.gitbook/assets/p1010990.JPG)
+
+![](../.gitbook/assets/p1010994.JPG)
+
+Use the wheel hub as a tool during the assembly.
+
+![](../.gitbook/assets/p1010995.JPG)
+
+Put the hub all the way on the motor shaft \(don't worry about any positioning this time\).
+
+![](../.gitbook/assets/p1010996.JPG)
+
+Place the whole wheel on the motor hub.
+
+![](../.gitbook/assets/p1010999.JPG)
+
+Locate the rim tightening slot.
+
+![](../.gitbook/assets/p1020002.JPG)
+
+Assemble the m3x12 and fi3 washer and m3 square nut together. Don't tighten them, just put together.
+
+![](../.gitbook/assets/p1020005.JPG)
+
+Put the screw assembly in the tightening slot. Tighten the screw with the nut. Use no. 2,5 key for the screw and your fingers to secure the nut. Make sure the screw doesn't come out of the slot.
+
+![](../.gitbook/assets/p1020008.JPG)
+
+Take the wheel hub off.
+
+![](../.gitbook/assets/p1020011.JPG)
+
+![](../.gitbook/assets/p1020012.JPG)
+
+### Step 5: Simmering
+
+Prepare:
+
+* [ ] Step 3 assembly
+* [ ] 1x rubber simmering \(sealing ring\)
+* [ ] waseline grease
+* [ ] lithium grease
+
+![](../.gitbook/assets/p1020015.JPG)
+
+Grease the inner front part of the wheel tube.
+
+![](../.gitbook/assets/p1020017.JPG)
+
+Put the simmering in the tube.
+
+![](../.gitbook/assets/p1020021.JPG)
+
+Push the simmering with your fingers until it stays even in its position.
+
+![](../.gitbook/assets/p1020024.JPG)
+
+### Step 6: Wheel hub
+
+Prepare:
+
+* [ ] 1x wheel hub
+* [ ] 1x m5 torque screw
+* [ ] no. 3 hex-head key
+* [ ] anaerobic glue for threads \(not provided\)
+
+![](../.gitbook/assets/p1020028.JPG)
+
+Put a drop of anaerobic glue on the screw.
+
+{% hint style="danger" %}
+MindL if you don't use the glue here your Rover will end up untightening the wheels every 15-20 minutes of work. Make sure you use a proper glue here.
+{% endhint %}
+
+![](../.gitbook/assets/p1020029.JPG)
+
+Put the screw in a corresponding hole in the wheel hub. Don't tighten.
+
+![](../.gitbook/assets/p1020031.JPG)
+
+Open your lithium grease.
+
+![](../.gitbook/assets/p1020037.JPG)
+
+Put grease everywhere between the wheel tube and simmering. It will act both as greasing agent and as a sealant.
+
+![](../.gitbook/assets/p1020039.JPG)
+
+Put the wheel hub on the motor shaft.
+
+![](../.gitbook/assets/p1020042.JPG)
+
+Leave ca. 1 mm gap between the wheel tube and wheel hub.
+
+![](../.gitbook/assets/p1020045.JPG)
+
+Tighten the torque screw.
+
+![](../.gitbook/assets/p1020048.JPG)
+
+### Step 7: Torque plate
+
+Prepare:
+
+* [ ] Step 5 assembly
+* [ ] 1x torque plate
+* [ ] 5x m4x8 round head screw
+* [ ] no. 2,5 hex-head key
+
+![](../.gitbook/assets/p1020050.JPG)
+
+Put a torque plate on the wheel hub. It may be tight, don't worry about pushing it all the way as the screws will do the job for you.
+
+{% hint style="warning" %}
+Make sure you line the torque plate holes with wheel hub threaded holes.
+{% endhint %}
+
+![](../.gitbook/assets/p1020053.JPG)
+
+Tighten 3x m4x8 round head screws on the torque plate. Tighten them as shown in the photo.
+
+![](../.gitbook/assets/p1020057.JPG)
+
+Tighten the rest of round head screws.
+
+![](../.gitbook/assets/p1020058.JPG)
+
+### Step 8: Motor cap
+
+Prepare:
+
+* [ ] 1x wheel cap
+* [ ] 1x rubber o-ring
+* [ ] 3x rubber square inserts
+* [ ] vaseline grease
+
+![](../.gitbook/assets/p1020061.JPG)
+
+Grease the square inserts.
+
+![](../.gitbook/assets/p1020064.JPG)
+
+Put the inserts in corresponding slots in the wheel cap.
+
+![](../.gitbook/assets/p1020069.JPG)
+
+Put the o-ring in a corresponding groove in the wheel cap.
+
+![](../.gitbook/assets/p1020072.JPG)
+
+Grease the o-ring.
+
+![](../.gitbook/assets/p1020078.JPG)
+
+### Step 9: Cable routing
+
+Prepare:
+
+* [ ] Step 7 assembly
+* [ ] Step 8 assembly
+* [ ] vaseline grease
+
+![](../.gitbook/assets/p1020080.JPG)
+
+Grease the motor cables all the way.
+
+![](../.gitbook/assets/p1020083.JPG)
+
+Put each cable in a corresponding rubber bushing hole. Maintain the encoder cable order.
+
+![](../.gitbook/assets/p1020094.JPG)
+
+Slide the wheel cap on the cables.
+
+![](../.gitbook/assets/p1020097.JPG)
+
+Push the wheel cap into the wheel tube.
+
+![](../.gitbook/assets/p1020100.JPG)
+
+### Done!
+
+![](../.gitbook/assets/p1020102.JPG)
+
+![](../.gitbook/assets/p1020104.JPG)
+

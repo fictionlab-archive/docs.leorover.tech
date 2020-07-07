@@ -41,28 +41,6 @@ You can also upload the `leo_firmware.hex` file to your Rover and follow this tu
 
 {% page-ref page="../../basic-guides/firmware-update.md" %}
 
-## Modifying firmware parameters
-
-Leo firmware provides many parameters that can be adjusted for more personalized use. The parameters include:
-
-* Servo configuration
-  * PWM period
-  * Voltage
-  * angle to PWM pulse width mapping
-* Controller configuration
-  * encoder resolution
-  * encoder pullup
-  * wheel radius
-  * robot width
-  * PID configuration
-  * power and torque limits
-  * input timeout
-* Other
-  * informative LED pin assignment
-  * IMU hSens port assignment
-
-To modify some parameters, open `params.h` file and change selected values. Next, build the firmware again \(`Ctrl+Shift+B`\).
-
 ## Writing your own custom firmware
 
 To write a custom project, create a new folder and open it in VS Code. Then, type `Ctrl+Shift+P`, `Create Husarion project`. New files should spawn. 

@@ -17,7 +17,7 @@ ROS comes with some command line tools that can help to introspect the current n
 
 Let's try to run some examples. Before that, connect to the Rover's console:
 
-{% page-ref page="../../basic-guides/connect-to-the-console-ssh.md" %}
+{% page-ref page="../../basic-guides/connect-via-ssh.md" %}
 
 Start by reading currently running nodes:
 
@@ -162,7 +162,7 @@ make sure you don't have a Web UI running at the moment as it may cause conflict
 
 ## Adding additional functionality to the rover
 
-The Leo Image \(since version `2020-02-12`\) provides an easy mechanism for adding new functionalities without building any of the base packages. The whole process of starting the ROS nodes at boot can be summarized by the following files:
+LeoOS provides an easy mechanism for adding new functionalities without building any of the base packages. The whole process of starting the ROS nodes at boot can be summarized by the following files:
 
 * **/etc/ros/robot.launch** - a `launch file` that starts the robot's functionality. It includes the launch file from the [leo\_bringup](https://github.com/LeoRover/leo_bringup) package which starts the base functionality of the rover, but also allows to add additional nodes to be started or parameters to be set on the Parameter Server.
 
@@ -170,7 +170,7 @@ The Leo Image \(since version `2020-02-12`\) provides an easy mechanism for addi
 A [launch file](http://wiki.ros.org/roslaunch/XML) is an XML file that describes a set of nodes to be stared with specified parameters. It can be interpreted with [`roslaunch`](http://wiki.ros.org/roslaunch) tool.
 {% endhint %}
 
-* **/etc/ros/setup.bash** - The environment setup file that sets all the environment variables necessary for the successful start of the ROS nodes. It sources the environment setup file from the target ROS distribution \(by default, `/opt/ros/kinetic/setup.bash`\) and sets additional [environment variables used by ROS](http://wiki.ros.org/ROS/EnvironmentVariables). 
+* **/etc/ros/setup.bash** - The environment setup file that sets all the environment variables necessary for the successful start of the ROS nodes. It sources the environment setup file from the target ROS distribution \(by default, `/opt/ros/melodic/setup.bash`\) and sets additional [environment variables used by ROS](http://wiki.ros.org/ROS/EnvironmentVariables). 
 * **/etc/ros/urdf/robot.urdf.xacro** - the URDF description \(in [xacro](http://wiki.ros.org/xacro) format\) that is uploaded to the Parameter Server by the `robot.launch` file. It includes the robot's model from the [leo\_description](https://github.com/LeoRover/leo_description) package, but also allows to add additional links or joints to the model.
 * **/usr/sbin/leo-start** - a script that starts the robot's functionality. In short, it sources the `/etc/ros/setup.bash` file and launches the `/etc/ros/robot.launch` file.
 * **/usr/sbin/leo-stop** - a script that stops the currently running `leo-start` process.
@@ -206,7 +206,7 @@ sudo systemctl enable leo
 Now, to start the nodes manually, type:
 
 ```bash
-sudo leo-start
+leo-start
 ```
 
 Type `Ctrl+C` to stop the nodes and exit the script.
@@ -341,13 +341,13 @@ ROS uses its own build system for building packages. To learn about it, read the
 > When building a catkin workspace, the install targets are placed into an [FHS compliant](https://www.ros.org/reps/rep-0122.html) hierarchy inside the [result space](http://wiki.ros.org/catkin/workspaces#Result_space). A set of [environment setup files](http://wiki.ros.org/catkin/workspaces#Environment_Setup_File) allow extending your shell environment, so that you can find and use any resources that have been installed to that location.
 
 {% hint style="info" %}
-The prebuilt ROS packages \(installed from the repository\) are placed into `/opt/ros/distribution_name` directory \(`/opt/ros/kinetic` in this case\). To use the environment setup file, just type:
+The prebuilt ROS packages \(installed from the repository\) are placed into `/opt/ros/distribution_name` directory \(`/opt/ros/melodic` in this case\). To use the environment setup file, just type:
 
 ```bash
-source /opt/ros/kinetic/setup.bash
+source /opt/ros/melodic/setup.bash
 ```
 
-If you use Leo Image, this line is already added to `~/.bashrc` file, so it will be automatically executed when you log into the console.
+If you use LeoOS, this line is already added to `~/.bashrc` file, so it will be automatically executed when you log into the console.
 {% endhint %}
 
 > The catkin build system also supports an [overlay](http://wiki.ros.org/catkin/workspaces#Overlays) mechanism, where one workspace can extend another result space. An `environment setup file` from the result space of such workspace will extend your shell environment by packages from both workspaces.
@@ -356,7 +356,7 @@ If you use Leo Image, this line is already added to `~/.bashrc` file, so it will
 
 In this chapter, will will try to:
 
-* create workspace that extends `kinetic` distribution
+* create workspace that extends the `melodic` distribution
 * add `leo_bringup` to this workspace and build the package
 * modify the `/etc/ros/setup.bash` file to use our overlay
 
@@ -368,10 +368,10 @@ cd ~/ros_ws
 catkin init
 ```
 
-We want this workspace to extend the prebuilt packages that are already installed on the system. It should be automatically done if you have already sourced `/opt/ros/kinetic/setup.bash` file, but we can also explicitly point out the space to extend:
+We want this workspace to extend the prebuilt packages that are already installed on the system. It should be automatically done if you have already sourced `/opt/ros/melodic/setup.bash` file, but we can also explicitly point out the space to extend:
 
 ```bash
-catkin config --extend /opt/ros/kinetic
+catkin config --extend /opt/ros/melodic
 ```
 
 We need to get the sources of the package to build. If the package is available as a git repository \(like in our case\), you can use the `git clone` command: 
@@ -398,16 +398,16 @@ catkin build
 If everything works, a [development space](http://wiki.ros.org/catkin/workspaces#Development_.28Devel.29_Space) should be created inside the `devel` directory. Let's source the environment setup file inside it:
 
 ```bash
-source devel/setup.bash
+source ~/ros_ws/devel/setup.bash
 ```
 
 Now, when you execute `rospack list`, you should see all of the packages installed on your system, but `rospack find leo_bringup` should point you to the directory on your newly created workspace.
 
-The last step is to modify the `/etc/ros/setup.bash` to use our overlay. Simply edit this file \(e.g. with `sudo nano`\) by removing or commenting out the first line and adding:
+The last step is to modify the `/etc/ros/setup.bash` to use our overlay. Simply edit this file \(e.g. with `nano`\) by removing or commenting out the first line and adding:
 
 {% code title="/etc/ros/setup.bash" %}
 ```bash
-# source /opt/ros/kinetic/setup.bash
+# source /opt/ros/melodic/setup.bash
 source /home/husarion/ros_ws/devel/setup.bash
 ```
 {% endcode %}
@@ -424,9 +424,9 @@ To install ROS on your computer, you can follow this tutorial:
 
 In this section we will assume, you run Ubuntu 18.04 with ROS Melodic.
 
-First, connect your computer to the same network your Rover is connected. It can be either the Rover's Access Point \(`LeoRover-XXYYY` by default\) or an external router \(if you followed `Connect to the Internet` tutorial\).
+First, connect your computer to the same network your Rover is connected. It can be either the Rover's Access Point \(`LeoRover-XXXX` by default\) or an external router \(if you followed `Connect to the Internet` tutorial\).
 
-To properly communicate over the ROS network, your computer needs to be able to resolve `husarion` hostname. Open a terminal on your computer and type:
+To properly communicate over the ROS network, your computer needs to be able to resolve the `master.localnet` hostname. Open a terminal on your computer and type:
 
 ```bash
 getent hosts husarion
@@ -437,16 +437,16 @@ If you don't see any output, that means you cannot resolve the hostname.
 If you are connected to Rover's Access Point, you should be able to resolve it, but if there is and issue with DNS server on the Rover or you are connected through external router, add this line to `/etc/hosts` file on your computer:
 
 ```bash
-10.0.0.1 husarion
+10.0.0.1 master.localnet
 ```
 
 {% hint style="warning" %}
 If you are connected through router, you need to change `10.0.0.1` to IP address of the Rover on your local network.
 {% endhint %}
 
-If everything works, you should be able to `ping` the Rover by it's hostname. Type `ping husarion` to check.
+If everything works, you should be able to `ping` the Rover by it's hostname. Type `ping master.localnet` to check.
 
-Now, to be connected in ROS network, you need to set some environment variables. Start by `sourcing` the result space you are using:
+Now, to be connected in ROS network, you need to set some environment variables. Start by sourcing the result space you are using:
 
 ```bash
 source /opt/ros/melodic/setup.bash
@@ -455,7 +455,7 @@ source /opt/ros/melodic/setup.bash
 Specify the address of the master node:
 
 ```bash
-export ROS_MASTER_URI=http://husarion:11311
+export ROS_MASTER_URI=http://master.localnet:11311
 ```
 
 And your IP on the network:
@@ -476,9 +476,9 @@ You should now be able to do all the things from `the first section` of this tut
 
 ## Examples of ROS use 
 
-Apart from communicating different processes on Raspberry Pi, ROS will give us the possibility to remotely control the Rover on your computer, as well as run graphical tools to introspect and visualize what is currently happening. A lot of these tools are available in distribution packages in the form of [rqt](http://wiki.ros.org/rqt) and [rviz](http://wiki.ros.org/rviz) plugins.
+Apart from allowing communication between different processes on Raspberry Pi, ROS will give us the possibility to remotely control the Rover on your computer, as well as run graphical tools to introspect and visualize the current state of the Rover. A lot of these tools are available in distribution packages in the form of [rqt](http://wiki.ros.org/rqt) and [rviz](http://wiki.ros.org/rviz) plugins.
 
-Below are some examples possible to do on stock Leo Rover.
+Below are some examples possible to do on the stock Leo Rover.
 
 ### Introspecting the ROS computation graph 
 
@@ -508,7 +508,7 @@ If your are connected to your Rover, you should see all the nodes running on Ras
 To visualize the model, you will need to build 2 packages:
 
 1. [leo\_description](https://github.com/LeoRover/leo_description) − contains the URDF model of Leo Rover with all the required mesh files.
-2. [leo\_viz](https://github.com/LeoRover/leo_viz) − contains 
+2. [leo\_viz](https://github.com/LeoRover/leo_viz) − contains visualization launch files and RViz configurations for Leo Rover.
 
 Start by creating a new local workspace if you don't have one yet:
 
@@ -712,7 +712,7 @@ As sending raw images from the camera via wireless network may be insufficient, 
 
 Start by logging into your Rover's console:
 
-{% page-ref page="../../basic-guides/connect-to-the-console-ssh.md" %}
+{% page-ref page="../../basic-guides/connect-via-ssh.md" %}
 
 Create a workspace in your home directory if you don't have one yet:
 
@@ -720,7 +720,7 @@ Create a workspace in your home directory if you don't have one yet:
 mkdir -p ~/ros_ws/src
 cd ~/ros_ws
 catkin init
-catkin config --extend /opt/ros/kinetic
+catkin config --extend /opt/ros/melodic
 ```
 
 Create a new package that depends on `ar_track_alvar`:

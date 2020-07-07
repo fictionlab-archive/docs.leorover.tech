@@ -1,8 +1,8 @@
 # Husarion CORE2-ROS controller
 
-Leo Rover is based on CORE2-ROS electronics board which, together with RoaspberryPi 3B+, controlls all the Rover functionalities.
+Leo Rover is based on CORE2-ROS electronics board which, together with the Raspberry Pi computer, controls all the Rover's functionalities.
 
-We encourage you to check all the specs of the board itself as there's a great amount of intrfaces to be used for further development.
+We encourage you to check all the specs of the board itself as there's a great amount of interfaces to be used for further development.
 
 ![](../.gitbook/assets/core2_top_small.jpg)
 
@@ -40,10 +40,10 @@ To make it easier, we listed all the interfaces used by the Rover as default. Ju
   <tbody>
     <tr>
       <td style="text-align:left">Power input</td>
-      <td style="text-align:left">to power the board and RaspberryPi 3B+</td>
+      <td style="text-align:left">to power the board and Raspberry Pi</td>
     </tr>
     <tr>
-      <td style="text-align:left">hExt P1 pin (I/O)</td>
+      <td style="text-align:left">hExt pin 1 (I/O)</td>
       <td style="text-align:left">to control the battery LED (to show the system readiness)</td>
     </tr>
     <tr>

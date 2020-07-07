@@ -1,85 +1,63 @@
 # Connect via remote desktop
 
-As the Rover runs on Ubuntu with GUI you are able to access the internal desktop using VNC server and client from your PC/Mac. You can use that to make it easier to work on files, run ROS GUI apps and even run [Minetest \(free Minecraft\)](http://www.minetest.net/downloads/).
+If you are using the `full` version of LeoOS, you should have a desktop environment installed, as well as an RDP \(Microsoft Remote Desktop Protocol\) server. This allows you to remotely control a desktop session on your Rover from your computer.
 
-## Set a VNC server on the Rover
+## On Windows
 
-### 1. Connect to the Internet
+Click **Start**, type `remote` and choose **Remote Desktop Connection** app. 
 
-{% page-ref page="connect-to-the-internet.md" %}
+![](../.gitbook/assets/image%20%2867%29.png)
 
-### 2. Connect to the console
+Type `10.0.0.1` in the **Computer** field and click **Connect**.
 
-{% page-ref page="connect-to-the-console-ssh.md" %}
+![](../.gitbook/assets/image%20%2868%29.png)
 
-### 3. Install and run VNC server
+You should see a similar warning. Click **Yes** to proceed.
 
-We'll use Tight VNC Server. Type in the console:
+![](../.gitbook/assets/image%20%2864%29.png)
 
-```text
-sudo apt install tightvncserver
-```
+You should see the login screen. Choose `Xorg` session, type `pi` for the username, `raspberry` for the password and click **OK**.
 
-And after installation is complete. Type to run the server:
+## On Linux
 
-```text
-tightvncserver
-```
+Install and open [Remmina Remote Desktop Client](https://remmina.org/how-to-install-remmina/).
 
-You'll need to set a password for the connection. Use anything between 6-8 characters.
+![](../.gitbook/assets/image%20%2857%29.png)
 
-```text
-You will require a password to access your desktops.
+Click on the `+` icon and fill the following fields:
 
-Password:
-Verify:
-```
+* Server: `10.0.0.1` 
+* User name: `pi` 
+* User password: `raspberry` 
+* Color depth: `True color (32 bpp)` 
+* \(Optional\) Name - if you want to save the settings
+* \(Optional\) Resolution - If you want to use a custom resolution
 
-Done!
+![](../.gitbook/assets/image%20%2870%29.png)
 
-## Access the desktop from your device
+Click on **Save and Connect**.
 
-There are several ways to do that, but we'll describe the most universal one here - with VNC Viewer.
+![](../.gitbook/assets/image%20%2862%29.png)
 
-### Install VNC Viewer on your device \(Windows/ macOS/ Linux/etc.\)
+If you get a prompt about the certificate, click **OK**.
 
-{% embed url="https://www.realvnc.com/en/connect/download/viewer/" %}
+## On macOS
 
-### **Add New Connection**
+Install and open [Microsoft Remote Desktop](https://apps.apple.com/pl/app/microsoft-remote-desktop/id1295203466?l=pl&mt=12).
 
-**By default the Rover will have the server set on port :5901**
+![](../.gitbook/assets/zrzut-ekranu-2020-07-7-o-16.24.51.png)
 
-**Type in the VNC Server setting:**
+Click on **Add PC**, type `10.0.0.1` in the **PC name** field, `leo` in the **Friendly name** field and click on **Add**.
 
-```text
-10.0.0.1:5901
-```
+![](../.gitbook/assets/zrzut-ekranu-2020-07-7-o-16.26.11.png)
 
-![Screenshot from macOS](../.gitbook/assets/zrzut-ekranu-2020-04-1-o-14.37.47.png)
+Double click on the `leo` computer to connect.
 
-And press OK.
+![](../.gitbook/assets/zrzut-ekranu-2020-07-7-o-16.26.44.png)
 
-### Connect to the server
+When asked, fill in the Username and Password.
 
-Open the newly added connection and enter the password you set previously in the Rover terminal. Press OK.
+![](../.gitbook/assets/zrzut-ekranu-2020-07-7-o-16.27.15.png)
 
-![Screenshot from macOS](../.gitbook/assets/zrzut-ekranu-2020-04-1-o-14.39.53.png)
-
-### Welcome inside
-
-Here's what you will see when connected. 
-
-![](../.gitbook/assets/zrzut-ekranu-2020-04-1-o-14.42.54.png)
-
-Remember to change the desktop to something more suitable for Leo fanbase. [Like this one.](https://drive.google.com/open?id=1iX9Bf2PuQw7AZQgTGgEsxVQ1M2Eie6ZH)
-
-![](../.gitbook/assets/zrzut-ekranu-2020-04-1-o-15.25.02%20%281%29.png)
-
-Have fun!
-
-
-
-
-
-
+If you get a prompt about the certificate, click **Continue**.
 

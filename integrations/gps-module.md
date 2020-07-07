@@ -8,7 +8,7 @@ description: >-
 
 ## Prerequisites
 
-First what you need is GPS module ;-\) Our code is made to communicate with GPS module via serial and parse NMEA sentence- probably most of the GPS module available on market will be compatible. To make sure that your module will cooperate correctly with our firmware, we recommend you to use the u-blox neo-6m GPS module. Link to[ the datasheet](https://www.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_%28GPS.G6-HW-09005%29.pdf). In our case, we tested firmware with off the shelf module with u-blox NEO-6M, build-in antenna and data backup battery.
+First what you need is GPS module ;-\) Our code is made to communicate with GPS module via serial and parse NMEA sentence- probably most of the GPS module available on market will be compatible. To make sure that your module will cooperate correctly with our firmware, we recommend you to use the u-blox neo-6m GPS module. Link to[ the datasheet](https://www.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_%28GPS.G6-HW-09005%29.pdf). In our case, we tested firmware with off-the-shelf module with u-blox NEO-6M, build-in antenna and data backup battery.
 
 First step is to buy a GPS module that fits the tutorial requirements. We're using an of-the-shelf module which communicates via UART and parses NMEA sentences. It may happen that most of the modules on the market fit the job, but we recommend to get the same one as the one we used here just for easier integration.
 
@@ -31,7 +31,7 @@ More info:
 
 ## Connect the module to Core2-ROS controller
 
-Our default firmware uses hSense port 3 highlighted below. For your own needs you can change it to hSense port 4 as well, but it will come with some code modifications.
+Our default firmware uses hSens3 port highlighted below. For your own needs you can change it to hSens4 port as well, but it will come with some code modifications.
 
 ![Core2-ROS hSense port 3](../.gitbook/assets/core2_top_small%20%283%29.jpg)
 
@@ -80,7 +80,7 @@ GPS funcionality is availiable on branch feature/gps and devel- tests in progres
 
 Open a new ssh connection to the Rover's console.
 
-{% page-ref page="../basic-guides/connect-to-the-console-ssh.md" %}
+{% page-ref page="../basic-guides/connect-via-ssh.md" %}
 
 Set the GPS functionality on by sending the message to `/gps_enable` topic:
 

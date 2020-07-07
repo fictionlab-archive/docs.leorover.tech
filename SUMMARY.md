@@ -11,30 +11,30 @@
 * [Husarion CORE2-ROS controller](documentation/husarion-core2-ros-controller.md)
 * [Leo Rover Wheels](documentation/leo-rover-wheels/README.md)
   * [Motors specification](documentation/leo-rover-wheels/motors-specification.md)
-  * [Tires dimensions](documentation/leo-rover-wheels/mount-different-tires.md)
+  * [Tires dimensions](documentation/leo-rover-wheels/tires-dimensions.md)
 * [3D-printed parts](documentation/3d-printed-parts.md)
 
 ## Assembly manuals
 
 * [Prepare: Check if you have everything](assembly-manuals/check-the-boxes.md)
-* [Task 1: Wheel assembly](assembly-manuals/1.-wheel-assembly.md)
+* [Task 1: Wheel assembly](assembly-manuals/wheel-assembly.md)
 * [Task 2: Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
 * [Task 3: Frame and suspension assembly](assembly-manuals/frame-assembly-manual.md)
-* [Task 4: MEB and front cover to frame assembly and cabling](assembly-manuals/4.-meb-and-front-cover-to-frame-assembly-and-cabling.md)
-* [Task 5: Wheels and tires to suspension mounting](assembly-manuals/4.-wheels-to-suspension.md)
+* [Task 4: MEB and front cover to frame assembly and cabling](assembly-manuals/meb-and-front-cover-to-frame-assembly-and-cabling.md)
+* [Task 5: Wheels and tires to suspension mounting](assembly-manuals/wheels-to-suspension.md)
 * [Task 6: Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
 * [Task 7: Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
-* [Task 8: Antenna and connector cover mounting](assembly-manuals/8.-antenna-and-connector-cover-mounting.md)
-* [Task 9: Software and firmware](assembly-manuals/9.-prepare-the-software-and-firmware.md)
+* [Task 8: Antenna and connector cover mounting](assembly-manuals/antenna-and-connector-cover-mounting.md)
+* [Task 9: Software and firmware](assembly-manuals/prepare-the-software-and-firmware.md)
 * [Extra: Troubleshooting](assembly-manuals/finish-troubleshooting.md)
 
 ## Basic guides
 
-* [Connect to the console \(SSH\)](basic-guides/connect-to-the-console-ssh.md)
+* [Connect via SSH](basic-guides/connect-via-ssh.md)
 * [Connect via remote desktop](basic-guides/connect-via-remote-desktop.md)
 * [Software update](basic-guides/software-update.md)
 * [Firmware update](basic-guides/firmware-update.md)
-* [Change the Rover access point settings](basic-guides/change-wifi-name-and-password.md)
+* [Change the access point settings](basic-guides/change-the-access-point-settings.md)
 * [Connect to a local network and Internet](basic-guides/connect-to-the-internet.md)
 * [Upload files to your Rover](basic-guides/upload-files-to-your-rover.md)
 * [Access the video stream](basic-guides/access-the-video-stream.md)

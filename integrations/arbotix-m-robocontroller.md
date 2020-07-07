@@ -20,7 +20,7 @@ File -> Sketchbook -> ArbotiX Sketches -> ros
 
 The rest of this tutorial can be done in any machine that runs ROS and have an Internet connection. It can be Leo Rover
 
-{% page-ref page="../basic-guides/connect-to-the-console-ssh.md" %}
+{% page-ref page="../basic-guides/connect-via-ssh.md" %}
 
 {% page-ref page="../basic-guides/connect-to-the-internet.md" %}
 
@@ -36,7 +36,7 @@ The driver for Arbotix board is distributed in [arbotix](http://wiki.ros.org/arb
 sudo apt install ros-[DISTRO]-arbotix
 ```
 
-replace `[DISTRO]` with either `kinetic` or `melodic` depending on your system.
+replace `[DISTRO]` with the ROS distribution you are using \(If you are on LeoOS, type: `melodic`\).
 
 ## 3. Set Dynamixel IDs and test the servos
 
@@ -123,11 +123,11 @@ Inside the package, create `config/test.yaml` file with the following content:
 port: /dev/ttyUSB0
 rate: 15
 joints: {
-    servo1: {id: 1},
-    servo2: {id: 2},
-    servo3: {id: 3},
-    servo4: {id: 4},
-    servo5: {id: 5}
+    dynamixel1: {id: 1},
+    dynamixel2: {id: 2},
+    dynamixel3: {id: 3},
+    dynamixel4: {id: 4},
+    dynamixel5: {id: 5}
 }
 ```
 
@@ -167,43 +167,43 @@ You should see new topics spawned \(check with `rostopic list`\):
 
 ```bash
 /joint_states
-/servo1/command
-/servo2/command
-/servo3/command
-/servo4/command
-/servo5/command
+/dynamixel1/command
+/dynamixel2/command
+/dynamixel3/command
+/dynamixel4/command
+/dynamixel5/command
 ```
 
 And new services \(check with `rosservice list`\):
 
 ```bash
-/servo1/enable
-/servo1/relax
-/servo1/set_speed
-/servo2/enable
+/dynamixel1/enable
+/dynamixel1/relax
+/dynamixel1/set_speed
+/dynamixel2/enable
 ...
 ```
 
 To shortly summarize the features:
 
-* `/servoX/command` topic will enable the torque and move the servo with ID X to a specified position if published to. The position is specified in radians.
-* `/servoX/enable` service will just enable the torque on the servo.
-* `/servoX/relax` service will relax the servo \(disable the torque\).
-* `/servoX/set_speed` service will set the speed the servo will move with when it receives a new command. The speed is specified in radians per second.
+* `/dynamixelX/command` topic will enable the torque and move the servo with ID X to a specified position if published to. The position is specified in radians.
+* `/dynamixelX/enable` service will just enable the torque on the servo.
+* `/dynamixelX/relax` service will relax the servo \(disable the torque\).
+* `/dynamixelX/set_speed` service will set the speed the servo will move with when it receives a new command. The speed is specified in radians per second.
 * The current joint positions and velocities are published to `/joint_states` topic.
 
 We can try to test the features using `rostopic` and `rosservice` tools.
 
-Assuming you have connected the servo with ID 1, start by setting a the speed to a safe value \(0.2 r/s in this case\):
+Assuming you have connected the servo with ID 1, start by setting the speed to a safe value \(0.2 rad/s in this case\):
 
 ```bash
-rosservice call /servo1/set_speed 0.2
+rosservice call /dynamixel1/set_speed 0.2
 ```
 
 Move servo to a default neutral value:
 
 ```text
-rostopic pub /servo1/command std_mgs/Float64 -- 0.0
+rostopic pub /dynamixel1/command std_mgs/Float64 -- 0.0
 ```
 
 {% hint style="info" %}
@@ -213,6 +213,6 @@ The maximum angle range for a Dynamixel servo is \[-150, 150\] degrees which is 
 Relax joint:
 
 ```text
-rosservice call /servo1/relax
+rosservice call /dynamixel1/relax
 ```
 

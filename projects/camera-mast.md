@@ -16,7 +16,7 @@ In this tutorial we will show you how to build and integrate another addon with 
 
 It is inspired by camera mast built on top of NASA's rover Opportunity and is able to rotate camera through an angle of 360 degrees, more than 270 mm above the top of the Rover! 
 
-Motors that are used for this application are Dynamixel AX-12A servo's which provide feedback, are quite easy to control with usage of ArbotiX and are in decent price. If you have access to a 3D printer, everything you need to build this addon is really easy to get and no special knowledge is needed. We will get through creating G-codes for 3D printer, assembling everything and at the end integrating it with Leo Rover.
+Motors that are used for this application are Dynamixel AX-12A servo's which provide feedback, are quite easy to control with usage of ArbotiX and are in decent price. If you have an access to a 3D printer, everything you need to build this addon is really easy to get and no special knowledge is needed. We will get through creating G-codes for 3D printer, assembling everything and at the end integrating it with Leo Rover.
 
 ## Manufacturing
 
@@ -189,7 +189,7 @@ You can build it like any other ROS package. Start by creating an empty catkin w
 ```text
 mkdir -p ~/ros_ws/src && cd ~/ros_ws
 catkin init
-catkin config --extend /opt/ros/kinetic
+catkin config --extend /opt/ros/melodic
 ```
 
 Clone the package into the source space:
@@ -231,11 +231,11 @@ If you want the driver to start automatically when the RaspberryPi boots, you ca
 {% code title="/etc/ros/setup.bash" %}
 ```bash
 # source /opt/ros/kinetic/setup.bash
-source /home/husarion/ros_ws/devel/setup.bash
+source /home/pi/ros_ws/devel/setup.bash
 ```
 {% endcode %}
 
-Then, add this line to `/etc/ros/robot.launch` file:
+Then, add this line to `/etc/ros/robot.launch` file \(between the `<launch>` tags\):
 
 {% code title="/etc/ros/robot.launch" %}
 ```markup

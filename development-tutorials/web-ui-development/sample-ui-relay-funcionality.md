@@ -206,7 +206,7 @@ Check description of Bootstrap 4 switches class: [https://getbootstrap.com/docs/
 Code description will be soon ;-\)
 {% endhint %}
 
-```text
+```javascript
 var manager;
 var ros;
 var batterySub;

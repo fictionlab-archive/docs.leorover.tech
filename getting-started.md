@@ -2,25 +2,15 @@
 
 ## **Before you power on the Rover**
 
-### **How to use Leo Rover connectors?**
-
-![](.gitbook/assets/3.jpg)
-
-
-
-First, make sure you are connecting the right pair of the connectors, the male and female connector should have the same number of pins. Then find a white spot on both the male and female connector body and fix the connectors with the spots pointing each other. Then manually screw the blue nut to secure the connection.
-
-The connectors should fit with no play and the nut should be screwed straightly with no excessive friction.
-
 ### How to connect the battery to the Rover?
 
-Connect the mating pair of the 3-pin connectors: the battery and the converter located on the opposite side of the Rover. Then fit the battery cables inside the Rover back-rib and slide the battery on back-left quarter of the Rover body. Tighten the 3x M5 screws using the screwdriver provided.
+Connect the mating pair of the 3-pin connectors: the battery and the converter located on the opposite side of the Rover. Then fit the battery cables inside the Rover's back-rib and slide the battery on back-left quarter of the Rover's body. Tighten the 3x M5 screws using the provided screwdriver.
 
 ![](.gitbook/assets/1.png)
 
 ### How to connect the converter quarter to the Rover?
 
-Connect the mating pair of the 3-pin connectors: the electronics box and the converter. Then fit the battery cables inside the Rover back-rib and slide the converter on back-right quarter of the Rover body. Tighten the 3x M5 screws using the screwdriver provided.
+Connect the mating pair of the 3-pin connectors: the electronics box and the converter. Then fit the battery cables inside the Rover back-rib and slide the converter on back-right quarter of the Rover body. Tighten the 3x M5 screws using the provided screwdriver.
 
 ![Old photo, but you&apos;ll know what to do :\)](.gitbook/assets/2.png)
 
@@ -28,22 +18,26 @@ Connect the mating pair of the 3-pin connectors: the electronics box and the con
 
 ### **How to connect to the Rover?**
 
-To connect to the Rover, turn Leo on using its main power button located on the left side of the battery. The button will be lighted green when turned on.
+To connect to the Rover, turn Leo on using its main power button located on the left side of the battery. The LED on the button should start blinking green. After ca. 30 s the LED should stop blinking and the Rover should be operational. 
 
-After ca. 60 s the Rover system should begin to work, check your controller device for WiFi network:
+Check your host device for the WiFi network. The default credentials should look like this:
 
 ```text
-Name: LeoRover[+serial number]
+SSID: LeoRover-XXXX
 Password: password
 ```
 
+{% hint style="info" %}
+Instead of the `XXXX` keyword, you should see an identifier unique to your Rover's computer.
+{% endhint %}
+
 For instructions on how to change WiFi network credentials, you can visit this page:
 
-{% page-ref page="basic-guides/change-wifi-name-and-password.md" %}
+{% page-ref page="basic-guides/change-the-access-point-settings.md" %}
 
 Connect to the network.
 
-To access Web User Interface, enter your web browser and type in the address line:
+To access the Web User Interface, open your web browser and type in the address line:
 
 ```text
 http://10.0.0.1/
@@ -65,13 +59,13 @@ This way you'll extend the life of the software filesystem.
 
 ### **Battery charging**
 
-First, disconnect the battery from the rover. To do that, untighten 3x inner hex head screws located on the rear left side of the rover. Then slide the battery off the rover frame and disconnect the 3-pin connector.
+First, disconnect the battery from the rover. To do that, untighten 3x inner hex head screws located on the rear left side of the rover. Then, slide the battery off the rover frame and disconnect the 3-pin connector.
 
 Connect the charger provided with the Rover to AC power socket - LED located on the charger will light green.
 
 Connect the battery to the charger and click the battery button. The charger LED will change from green to red - meaning that it's charging now.
 
-When the battery is fully charged LED on the battery should turn back green. Turn the battery off and connect it back to the rover.
+When the battery is fully charged, the LED on the battery should turn back green. Turn the battery off and connect it back to the rover.
 
 {% hint style="warning" %}
 Do not click the button during charging!

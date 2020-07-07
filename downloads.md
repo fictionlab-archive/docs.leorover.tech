@@ -6,11 +6,11 @@ description: >-
 
 # Downloads
 
-## Software image
+## LeoOS - SD card image for the Rover's computer
 
-{% embed url="http://files.fictionlab.pl/leo\_images/" %}
+{% embed url="https://github.com/LeoRover/leo\_os/releases" %}
 
-## Firmware for Core2-ROS
+## Firmware for the Core2 controller
 
 {% embed url="https://github.com/LeoRover/leo\_firmware/releases" %}
 

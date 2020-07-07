@@ -63,7 +63,7 @@ To integrate the arm, you will need to build some additional ROS packages. Start
 ```bash
 mkdir -p ~/ros_ws/src
 cd ~/ros_ws
-catkin config --extend /opt/ros/kinetic
+catkin config --extend /opt/ros/melodic
 ```
 
 The package sources for the arm are available on Github at the [interbotix\_ros\_arms](https://github.com/Interbotix/interbotix_ros_arms) repository. Clone the repository to your source space:
@@ -104,8 +104,8 @@ sudo nano /etc/ros/setup.bash
 Comment out the first line by adding `#` sign and add the source command for your workspace. The first 2 lines should look essentially like this:
 
 ```bash
-# source /opt/ros/kinetic/setup.bash
-source /home/husarion/ros_ws/devel/setup.bash
+# source /opt/ros/melodic/setup.bash
+source /home/pi/ros_ws/devel/setup.bash
 ```
 
 Now, to add the arm's driver to the rover's launch file, open the `robot.launch` file:

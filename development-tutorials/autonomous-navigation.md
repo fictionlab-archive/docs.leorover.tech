@@ -36,14 +36,14 @@ There are a few things you will need to prepare on the rover and on your compute
 
 You will need to build the `leo_navigation` package first. To do this, start by accessing the rover's console by logging through ssh:
 
-{% page-ref page="../basic-guides/connect-to-the-console-ssh.md" %}
+{% page-ref page="../basic-guides/connect-via-ssh.md" %}
 
 Create a catkin workspace:
 
 ```text
 mkdir -p ~/ros_ws/src
 cd ~/ros_ws
-catkin config --extend /opt/ros/kinetic
+catkin config --extend /opt/ros/melodic
 ```
 
 Clone the `leo_navigation` package to the source space:

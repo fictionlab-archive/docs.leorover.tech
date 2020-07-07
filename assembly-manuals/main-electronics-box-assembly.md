@@ -312,7 +312,7 @@ Take USB-A plug and twist it to connect to the nearest RaspberryPi USB port.
 
 Put microSD card in the card extender. We'll flash software to the card in Task 9.
 
-{% page-ref page="9.-prepare-the-software-and-firmware.md" %}
+{% page-ref page="prepare-the-software-and-firmware.md" %}
 
 ![](../.gitbook/assets/p1010824_wynik.JPG)
 

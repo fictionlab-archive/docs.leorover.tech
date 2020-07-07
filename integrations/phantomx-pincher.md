@@ -56,14 +56,14 @@ To use the mentioned features, you need to build the packages and run the driver
 
 Start by logging into your Rover's console:
 
-{% page-ref page="../basic-guides/connect-to-the-console-ssh.md" %}
+{% page-ref page="../basic-guides/connect-via-ssh.md" %}
 
 and creating an empty catkin workspace, if you don't have one yet:
 
 ```bash
 mkdir -p ~/ros_ws/src && cd ~/ros_ws
 catkin init
-catkin config --extend /opt/ros/kinetic
+catkin config --extend /opt/ros/melodic
 ```
 
 Clone the packages into the source space:
