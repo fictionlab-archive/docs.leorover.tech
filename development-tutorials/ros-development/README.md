@@ -408,7 +408,7 @@ The last step is to modify the `/etc/ros/setup.bash` to use our overlay. Simply 
 {% code title="/etc/ros/setup.bash" %}
 ```bash
 # source /opt/ros/melodic/setup.bash
-source /home/husarion/ros_ws/devel/setup.bash
+source /home/pi/ros_ws/devel/setup.bash
 ```
 {% endcode %}
 
@@ -429,7 +429,7 @@ First, connect your computer to the same network your Rover is connected. It can
 To properly communicate over the ROS network, your computer needs to be able to resolve the `master.localnet` hostname. Open a terminal on your computer and type:
 
 ```bash
-getent hosts husarion
+getent hosts master.localnet
 ```
 
 If you don't see any output, that means you cannot resolve the hostname.
