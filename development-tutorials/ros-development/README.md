@@ -513,8 +513,12 @@ To visualize the model, you will need 2 additional packages:
 You can build them using the instructions from [this chapter](https://docs.leorover.tech/development-tutorials/ros-development#building-additional-ros-packages). You can also download the prebuilt packages from the ROS repository by executing:
 
 ```bash
-sudo apt install ros-melodic-leo-viz
+sudo apt install ros-<distribution>-leo-viz
 ```
+
+{% hint style="info" %}
+Replace `<distribution>` with the ROS distribution you have installed on your computer \(either `kinetic` or `melodic`\). 
+{% endhint %}
 
 Now, to visualize the model in RViz, just type:
 

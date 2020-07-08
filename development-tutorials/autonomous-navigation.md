@@ -99,41 +99,19 @@ If you see errors, it probably means you omitted the part about extending the UR
 
 ### On your computer
 
-In this guide, your computer will be used for visualizing the data processed on the rover and sending navigation goals. For this purpose, you will need to build the [leo\_description](https://github.com/LeoRover/leo_description) package, which contains the robot model and the [leo\_viz](https://github.com/LeoRover/leo_viz) package which contains configuration files for RViz.
+In this guide, your computer will be used for visualizing the data processed on the rover and sending navigation goals. For this purpose, you will need to install the [leo\_description](https://github.com/LeoRover/leo_description) package, which contains the robot model and the [leo\_viz](https://github.com/LeoRover/leo_viz) package which contains configuration files for RViz.
 
-Start by installing some prerequisites:
+You can build them using the instructions from [this chapter](https://docs.leorover.tech/development-tutorials/ros-development#building-additional-ros-packages). You can also download the prebuilt packages from the ROS repository by executing:
 
-```text
-sudo apt update
-sudo apt install python-rosdep python-catkin-tools
-```
-
-If you have never run `rosdep` before on your computer, type:
-
-```text
-sudo rosdep init
-```
-
-The rest of the steps should be already familiar:
-
-```text
-mkdir -p ~/ros_ws/src && cd ~/ros_ws
-catkin config --extend /opt/ros/<distribution>
-cd src
-git clone https://github.com/LeoRover/leo_description
-git clone https://github.com/LeoRover/leo_viz.git
-cd ..
-rosdep update
-rosdep install --from-paths src -iy
-catkin build
-source ~/ros_ws/devel/setup.bash
+```bash
+sudo apt install ros-<distribution>-leo-viz
 ```
 
 {% hint style="info" %}
 Replace `<distribution>` with the ROS distribution you have installed on your computer \(either `kinetic` or `melodic`\). 
 {% endhint %}
 
-You will also need to properly configure your computer to communicate in ROS network, so be sure to correctly set these environment variables:
+You will also need to properly configure your computer to communicate in the ROS network, so be sure you have correctly set these environment variables:
 
 ```text
 export ROS_IP=<your ip>
