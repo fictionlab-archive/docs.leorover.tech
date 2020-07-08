@@ -505,51 +505,16 @@ If your are connected to your Rover, you should see all the nodes running on Ras
 
 ### Visualizing the model  
 
-To visualize the model, you will need to build 2 packages:
+To visualize the model, you will need 2 additional packages:
 
 1. [leo\_description](https://github.com/LeoRover/leo_description) − contains the URDF model of Leo Rover with all the required mesh files.
 2. [leo\_viz](https://github.com/LeoRover/leo_viz) − contains visualization launch files and RViz configurations for Leo Rover.
 
-Start by creating a new local workspace if you don't have one yet:
+You can build them using the instructions from [this chapter](https://docs.leorover.tech/development-tutorials/ros-development#building-additional-ros-packages). You can also download the prebuilt packages from the ROS repository by executing:
 
 ```bash
-mkdir -p ~/ros_ws/src && cd ~/ros_ws
-catkin init
-catkin config --extend /opt/ros/melodic
+sudo apt install ros-melodic-leo-viz
 ```
-
-{% hint style="info" %}
-If `catkin` command is not found on your system, you might need to install `catkin-tools` package:
-
-```bash
-sudo apt install python-catkin-tools
-```
-{% endhint %}
-
-Add the packages to the source space:
-
-```bash
-cd ~/ros_ws/src
-git clone https://github.com/LeoRover/leo_description.git
-git clone https://github.com/LeoRover/leo_viz.git
-```
-
-Then build the workspace and `source` the result space:
-
-```bash
-cd ~/ros_ws
-catkin build
-source devel/setup.bash
-```
-
-If the packages were built successfully, the commands:
-
-```bash
-rospack find leo_description
-rospack find leo_viz
-```
-
-should return the correct paths to the packages.
 
 Now, to visualize the model in RViz, just type:
 
@@ -588,16 +553,6 @@ roslaunch leo_viz view_model.launch
 
 {% hint style="info" %}
 [roslaunch](http://wiki.ros.org/roslaunch) will automatically spawn the Master node \([roscore](http://wiki.ros.org/roscore)\) if it detects that it is not already running.
-{% endhint %}
-
-{% hint style="warning" %}
-If you get error messages about missing packages, you might need to run [rosdep](http://wiki.ros.org/rosdep) to install them.
-
-```bash
-cd ~/ros_ws
-rosdep update
-rosdep install --from-paths src -i
-```
 {% endhint %}
 
 An RViz instance with `RobotModel` plugin should start, as well as GUI for [joint\_state\_publisher](http://wiki.ros.org/joint_state_publisher) that let's you specify simulated wheel positions.
