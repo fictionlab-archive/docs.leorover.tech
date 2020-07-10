@@ -14,20 +14,6 @@
   * [Tires dimensions](documentation/leo-rover-wheels/tires-dimensions.md)
 * [3D-printed parts](documentation/3d-printed-parts.md)
 
-## Assembly manuals
-
-* [Prepare: Check if you have everything](assembly-manuals/check-the-boxes.md)
-* [Task 1: Wheel assembly](assembly-manuals/wheel-assembly.md)
-* [Task 2: Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
-* [Task 3: Frame and suspension assembly](assembly-manuals/frame-assembly-manual.md)
-* [Task 4: MEB and front cover to frame assembly and cabling](assembly-manuals/meb-and-front-cover-to-frame-assembly-and-cabling.md)
-* [Task 5: Wheels and tires to suspension mounting](assembly-manuals/wheels-to-suspension.md)
-* [Task 6: Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
-* [Task 7: Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
-* [Task 8: Antenna and connector cover mounting](assembly-manuals/antenna-and-connector-cover-mounting.md)
-* [Task 9: Software and firmware](assembly-manuals/prepare-the-software-and-firmware.md)
-* [Extra: Troubleshooting](assembly-manuals/finish-troubleshooting.md)
-
 ## Basic guides
 
 * [Connect via SSH](basic-guides/connect-via-ssh.md)
@@ -67,6 +53,20 @@
 * [IR lights in MEB cover](projects/ir-lights-in-meb-cover.md)
 * [Waterproof USB Camera](projects/usb-camera.md)
 * [Dev-Covers for addons](projects/dev-covers-for-addons.md)
+
+## Assembly manuals
+
+* [Prepare: Check if you have everything](assembly-manuals/check-the-boxes.md)
+* [Task 1: Wheel assembly](assembly-manuals/wheel-assembly.md)
+* [Task 2: Main Electronics Box assembly](assembly-manuals/main-electronics-box-assembly.md)
+* [Task 3: Frame and suspension assembly](assembly-manuals/frame-assembly-manual.md)
+* [Task 4: MEB and front cover to frame assembly and cabling](assembly-manuals/meb-and-front-cover-to-frame-assembly-and-cabling.md)
+* [Task 5: Wheels and tires to suspension mounting](assembly-manuals/wheels-to-suspension.md)
+* [Task 6: Battery quarter \(left\) assembly](assembly-manuals/battery-box-assembly.md)
+* [Task 7: Additional quarter \(right\) assembly](assembly-manuals/additional-quarter-right-assembly.md)
+* [Task 8: Antenna and connector cover mounting](assembly-manuals/antenna-and-connector-cover-mounting.md)
+* [Task 9: Software and firmware](assembly-manuals/prepare-the-software-and-firmware.md)
+* [Extra: Troubleshooting](assembly-manuals/finish-troubleshooting.md)
 
 ## Archive
 
