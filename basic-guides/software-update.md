@@ -29,13 +29,13 @@ After the flashing completes, disconnect the card and put it back into the Rover
 If you are using Linux or Mac, you can use `xz` and `dd` tools to copy compressed image file into your card like this:
 
 ```bash
-xz -d -c [IMAGE_FILE] | sudo dd of=[SD_CARD_DEVICE] bs=4M status=progress
+xz -d -c [IMAGE_FILE] | sudo dd of=[SD_CARD_DEVICE] bs=4M status=progress && sync
 ```
 
 example usage:
 
 ```bash
-xz -d -c LeoOS-0.1-2020-06-29-full.img.xz | sudo dd of=/dev/mmcblk0 bs=4M status=progress
+xz -d -c LeoOS-0.1-2020-06-29-full.img.xz | sudo dd of=/dev/mmcblk0 bs=4M status=progress && sync
 ```
 
 {% hint style="danger" %}
