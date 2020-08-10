@@ -105,6 +105,12 @@ Position the parts as shown in the table below and you'll end up with pretty muc
       <td style="text-align:left">WidowX 250 adapter</td>
       <td style="text-align:left">20% infill</td>
     </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Hokuyo URG-04-LX adapter</td>
+      <td style="text-align:left">20% infill</td>
+    </tr>
   </tbody>
 </table>
 
