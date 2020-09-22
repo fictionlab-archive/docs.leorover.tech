@@ -49,16 +49,16 @@ Start a remote terminal session on the Rover via SSH
 
 {% page-ref page="../basic-guides/connect-via-ssh.md" %}
 
-To set IMU functionality on or off, you need to send message on the `/core2/set_imu` topic.
+To set IMU functionality on or off, you need to call the `/core2/set_imu` service.
 
 ```bash
-rostopic pub /core2/set_imu std_msgs/Bool true
+rosservice call /core2/set_imu true
 ```
 
-Now, you need to reset the board to apply changes. You can do this by turning on and off the whole Rover, or by sending an empty message on the `/core2/reset_board` topic.
+Now, you need to reset the board to apply changes. You can do this by turning on and off the whole Rover, or by calling the `/core2/reset_board` service:
 
 ```bash
-rostopic pub /core2/reset_board std_msgs/Empty
+rosservice call /core2/reset_board
 ```
 
 After the board reset, new topics should spawn: `/imu/gyro`, `/imu/accel`,  `/imu/mag` on which IMU gyroscope, accelerometer and magnetometer readings are published. \(you can check available topics with `rostopic list`\)
