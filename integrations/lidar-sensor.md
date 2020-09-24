@@ -47,7 +47,7 @@ The mounted sensor should look similar to this:
 {% endtab %}
 
 {% tab title="RPLIDAR" %}
-TODO
+![](../.gitbook/assets/image%20%2872%29.png)
 {% endtab %}
 {% endtabs %}
 
@@ -172,7 +172,7 @@ Your robot should be aware of where the sensor is located and what space it occu
       </geometry>
     </collision>
     <collision>
-      <origin xyz="0 0 0.038"/>
+      <origin xyz="0 0 0.041"/>
       <geometry>
         <box size="0.05 0.05 0.07"/>
       </geometry>
@@ -180,7 +180,7 @@ Your robot should be aware of where the sensor is located and what space it occu
   </link>
 
   <joint name="hokuyo_joint" type="fixed">
-    <origin xyz="0.08 0 0"/>
+    <origin xyz="0.0775 0 0"/>
     <parent link="base_link"/>
     <child link="hokuyo_link"/>
   </joint>
@@ -200,8 +200,58 @@ Your robot should be aware of where the sensor is located and what space it occu
 
 {% tab title="RPLIDAR" %}
 {% code title="/etc/ros/urdf/laser.urdf.xacro" %}
-```
-TODO
+```markup
+<?xml version="1.0"?>
+<robot>
+
+  <link name="rplidar_link">
+    <visual>
+      <origin xyz="0 0 0.003"/>
+      <geometry>
+        <box size="0.079 0.086 0.006"/>
+      </geometry>
+      <material name="support">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0.023"/>
+      <geometry>
+        <cylinder radius="0.038" length="0.04"/>
+      </geometry>
+      <material name="lidar">
+        <color rgba="1.0 0.0 0.0 0.7"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.003"/>
+      <geometry>
+        <box size="0.079 0.086 0.006"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0.023"/>
+      <geometry>
+        <cylinder radius="0.038" length="0.04"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="rplidar_joint" type="fixed">
+    <origin xyz="0.0775 0 0"/>
+    <parent link="base_link"/>
+    <child link="rplidar_link"/>
+  </joint>
+
+  <link name="laser_frame"/>
+
+  <joint name="laser_joint" type="fixed">
+    <origin xyz="0 0 0.0368" rpy="0 0 ${pi}"/>
+    <parent link="rplidar_link"/>
+    <child link="laser_frame"/>
+  </joint>
+
+</robot>
 ```
 {% endcode %}
 {% endtab %}
