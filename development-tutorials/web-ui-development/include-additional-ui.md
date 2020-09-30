@@ -3,7 +3,7 @@
 This tutorial describes how to include an additional UI to be running on the LeoRover. We will show you all the needed steps to include a new interface and reconfigure the HTTP server. 
 
 {% hint style="info" %}
-The tutorial will be based on the sample UI dedicated to controlling the additional relay module. You can design your own UI on the basis of [Make your own UI ](sample-ui-relay-funcionality.md)tutorial.
+The tutorial will be based on the sample UI dedicated to controlling the additional relay module. You can design your own UI on the basis of [Create a custom UI](sample-ui-relay-funcionality.md) tutorial.
 {% endhint %}
 
 ## Clone the UI files
