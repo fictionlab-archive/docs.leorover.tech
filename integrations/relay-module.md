@@ -1,16 +1,15 @@
 # Relay Module
 
-In this tutorial, we will show you how to configure and remotely control relays via additional user's web interface.
+This tutorial will show you how to connect a generic relay module, flash specific firmware, and launch the additional user's interface. 
 
 ![Relay board ](../.gitbook/assets/20f89e2c6f6df9d5aecdb9c46b559d5478fdd8e2.jpg)
 
 ## Items needed
 
 * Leo Rover
-* 4 channel relay board 
+* 1-4 channels relay module
 * IDC plug 2x3
-* ribbon cable \(6 cores\)
-* 3D printed cover
+* a ribbon cable \(6 core\)
 
 ## Prerequisites
 
@@ -18,68 +17,86 @@ Connect to the Rover through SSH
 
 {% page-ref page="../basic-guides/connect-via-ssh.md" %}
 
-Make sure the Rover is connected to the internet
+Make sure the Rover is connected to the Internet
 
 {% page-ref page="../basic-guides/connect-to-the-internet.md" %}
 
-## 1. Connect the relay board to Core2-ROS
+## Connect the module
 
-In the tutorial we are using hSens1 port to connect relays to the board.
+In case of powering and controlling a relay module, we highly recommend using the hSense1 port.
 
-Connect the relay board to hSens1 port using IDC plug. Pins 1-4 are for signals, 5 is +5V and the last one is GND.
+{% hint style="info" %}
+By default hSense2 and hSense3 are reserved for a GPS and an IMU module. 
+{% endhint %}
+
+Connect the relay board to the hSens1 port using the IDC plug. Pins 1-4 are dedicated for signals, pin 5 is +5V and the last one is GND.
 
 ![](../.gitbook/assets/core2_top_small%20%281%29.jpg)
 
-![](../.gitbook/assets/zrzut-ekranu-z-2019-08-08-10-54-15.png)
+![](../.gitbook/assets/image%20%2824%29.png)
 
+| hSens pi | Module pin |
+| :--- | :--- |
+| 1 | CH1 |
+| 2 | CH2 |
+| 3 | CH3 |
+| 4 | CH4 |
+| 5 | +5V |
+| 6 | GND |
 
+## Flash the dedicated firmware
 
-{% hint style="info" %}
-Well done! Hardware is ready
-{% endhint %}
+We developed a version of the [leo\_firmware](https://github.com/LeoRover/leo_firmware) with added features for controlling the relays. 
 
-## 2. Flash a dedicated firmware to enable hSense1 port
+Make sure you have the `git` tool installed on your system, then clone firmware repository to any folder on your computer and change the branch to `feature/relay`:
 
-### 1. Download a dedicated firmware
-
-[https://github.com/szlachcic/leo\_firmware\_relay/releases](https://github.com/szlachcic/leo_firmware_relay/releases)
-
-### 2. Upload the downloaded .hex file to your Rover
-
-{% page-ref page="../basic-guides/upload-files-to-your-rover.md" %}
-
-### 3. Flash the firmware
-
-Make sure you are in the home directory \(`/home/pi`\) and type:
-
-```bash
-core2-flasher leo_firmware.hex
+```text
+git clone https://github.com/LeoRover/leo_firmware.git
+cd leo_firmware
+git checkout feature/relay
 ```
 
-The process of flashing should begin. After it completes, type:
+Now, you need to build the firmware and flash it to the Rover. For instructions on how to do it, please follow the **Firmware development** tutorial:
+
+{% page-ref page="../development-tutorials/firmware-development/" %}
+
+ODTĄD
+
+The next step is to compile the firmware in case of creating the .hex file. Do it according to the first two paragraphs of the **Firmware development** tutorial. As a result, you should have the `.hex` file.
+
+{% page-ref page="../development-tutorials/firmware-development/" %}
+
+To flash compiled firmware directly from the computer you can follow the third paragraph of the Firmware development tutorial or upload the .hex file to the LeoRover home directory and use the flasher script as described in the Firmware update tutorial.
+
+{% page-ref page="../basic-guides/firmware-update.md" %}
+
+DOTĄD bym wywalł
+
+Restart the `leo` service to be sure that new topics are registered properly.
 
 ```bash
 sudo systemctl restart leo
 ```
 
-to restart ROS serial node.
+## Configure the additional UI
 
-## 3. Add user web interface to nginx server
-
-#### 1. Clone a repository that contains a relay interface from GitHub
+The first step of adding the new interface is to clone UI's repository from GitHub to the home directory.
 
 ```text
-cd /opt
 git clone https://github.com/LeoRover/leo_ui_sample_relay.git
 ```
 
+In case of launching the additional UI reconfiguration of the nginx service is needed. Follow the tutorial below:
+
 {% page-ref page="../development-tutorials/web-ui-development/include-additional-ui.md" %}
 
-## How to control the relays via user interface
+## Launch the additional UI
 
-#### 1. Connect to the Rover wifi network
+The new interface is available on port 90. To launch it in your WEB browser just type LeoRover's IP address colon port number.
 
-#### 2. Open web browser and type 10.0.0.1:90
+```text
+http://10.0.0.1:90
+```
 
 ![](../.gitbook/assets/zrzut-ekranu-z-2019-08-08-14-27-31.png)
 

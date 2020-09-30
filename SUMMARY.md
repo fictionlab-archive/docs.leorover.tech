@@ -32,7 +32,7 @@
 * [ROS Development](development-tutorials/ros-development/README.md)
   * [Install ROS on your computer](development-tutorials/ros-development/install-ros-on-your-computer.md)
 * [Web UI Development](development-tutorials/web-ui-development/README.md)
-  * [Include additional UI](development-tutorials/web-ui-development/include-additional-ui.md)
+  * [Include an additional UI](development-tutorials/web-ui-development/include-additional-ui.md)
   * [Create a custom UI](development-tutorials/web-ui-development/sample-ui-relay-funcionality.md)
 * [Autonomous Navigation](development-tutorials/autonomous-navigation.md)
 

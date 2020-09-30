@@ -1,56 +1,66 @@
-# Include additional UI
+# Include an additional UI
 
-This tutorial describes how to include an additional interface to nginx server on LeoRover. We will show you all operations step by step on the example of adding sample UI- [Make your own UI - Relay switches](/@leorover/s/leorover/~/drafts/-LvFY6eH5l95n1mjfabo/addons-manuals/control-4-relays/sample-ui-relay-funcionality). 
+This tutorial describes how to include an additional UI to be running on the LeoRover. We will show you all the needed steps to include a new interface and reconfigure the HTTP server. 
 
-## Add user web interface to nginx server
+{% hint style="info" %}
+The tutorial will be based on the sample UI dedicated to controlling the additional relay module. You can design your own UI on the basis of [Make your own UI ](sample-ui-relay-funcionality.md)tutorial.
+{% endhint %}
 
-#### 1. Clone a repository that contains UI to include
+## Clone the UI files
+
+The first step is to download the directory containing user interface files. Clone the additional UI from our GitHub repository. We highly recommended placing the additional UI folder in the home directory.
 
 ```text
-cd /opt
+cd ~
 git clone https://github.com/LeoRover/leo_ui_sample_relay.git
 ```
 
-{% hint style="info" %}
-If you like to learn how simple UI is build- check this tutoral: [Sample UI- relay funcionality](sample-ui-relay-funcionality.md)
-{% endhint %}
+## Configure the nginx service
 
-#### 2. Add a configuration file for nginx server to use the interface on additional port
+The next step is to create the configuration file for the HTTP service. The file contains the path to the UI folder and the port number on which the UI will be available.
 
-Find a directory /etc/nginx/sites-available and create there leo\_ui\_sample\_relay file by copying it from leo\_ui file
+‌Create a new configuration file based on the default Leo UI configuration file. You can use the `cp` command to clone the file inside the `/etc/nginx/sites-available` folder. By default, when logging as `pi` user, you don't have permission to write files outside of the home directory. You must do all operations as a 'root' user.
 
 ```text
 cd /etc/nginx/sites-available
-sudo cp leo_ui leo_ui_sample_relay
+sudo cp leo_ui leo_ui_sample
 ```
 
-Open the created file
+The nginx service is searching for the configuration file in `/etc/nginx/sites-enable.` To make nginx load your configuration at start, you need to add a symbolic link in the `sites-enabled` folder, pointing to the configuration file in `sites-available` folder.
 
 ```text
-sudo nano leo_ui_sample_relay 
+sudo ln -s /etc/nginx/sites-available/leo_ui_sample /etc/nginx/sites-enabled/
 ```
 
-and make changes in the lines as below
+In case of creating the custom configuration, you must change settings in the cloned file in the `/etc/nginx/sites-available`. Use the nano text editor to make some changes. Don't forget to open the file as the root user.
 
-{% hint style="info" %}
-You can choose any not registered and not assigned port as you like. For more info check this link [https://en.wikipedia.org/wiki/List\_of\_TCP\_and\_UDP\_port\_numbers](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
+```text
+sudo nano leo_ui_sample
+```
+
+There are two params to change, the port number and the path to the root website's directory. Make changes according to the code block below. 
+
+{% hint style="warning" %}
+Chose a port not assigned to any other running service
 {% endhint %}
 
 ```text
 listen 80 default_server;        ==>    listen 90 default_server;
 listen [::]:80 default_server;   ==>    listen [::]:90 default_server;
 
-root /opt/leo_ui;                ==>    root /opt/leo_ui_sample_relay;
+root /opt/leo_ui;                ==>    root /home/pi/leo_ui_sample_relay;
 ```
 
 {% hint style="info" %}
-Save the file - type ctrl+o 
+Save the file - `CTRL+o`
+
+Close the text editor-`CTRL+x` 
 {% endhint %}
 
-#### 3. Restart nginx service
+At the end of the whole process, an nginx service restart is needed. It will make the new interface available.
 
 ```text
-systemctl restart nginx
+sudo systemctl restart nginx
 ```
 
 ## 
