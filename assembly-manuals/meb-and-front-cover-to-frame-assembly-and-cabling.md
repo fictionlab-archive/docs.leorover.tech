@@ -20,7 +20,7 @@ Prepare:
 * [ ] Task 3 assembly
 * [ ] Task 2 assembly
 * [ ] metal mounting plate
-* [ ] 4x m4x10 torx screws
+* [ ] 4x m4x8 torx screws
 * [ ] T10 torx screwdriver
 
 ![](../.gitbook/assets/p1020376.jpg)
