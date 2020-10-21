@@ -46,6 +46,10 @@ Screw the rest of self-tapping screws. Tighten them together with the first one.
 
 ### Step 2: Bearings
 
+{% hint style="info" %}
+In some cases you may get the bearings already pre-assembled on the wheel tube. Don't take them off and proceed directly to Step 3.
+{% endhint %}
+
 Prepare:
 
 * [ ] Step 1 assembly
@@ -137,7 +141,16 @@ Push all the way to meet the front bearing. There should be no gap between the b
 
 ![](../.gitbook/assets/p1010994.JPG)
 
-Use the wheel hub as a tool during the assembly.
+{% hint style="info" %}
+Perform only for kits delivered before October 2020.
+
+To see if it applies, check if your wheel rim is cut all the way though from the back side and if it has a tightening slot there:
+
+![](../.gitbook/assets/p1020002.JPG)
+
+
+
+Step: Use the wheel hub as a tool during the assembly.
 
 ![](../.gitbook/assets/p1010995.JPG)
 
@@ -166,6 +179,11 @@ Take the wheel hub off.
 ![](../.gitbook/assets/p1020011.JPG)
 
 ![](../.gitbook/assets/p1020012.JPG)
+
+### 
+{% endhint %}
+
+
 
 ### Step 5: Simmering
 

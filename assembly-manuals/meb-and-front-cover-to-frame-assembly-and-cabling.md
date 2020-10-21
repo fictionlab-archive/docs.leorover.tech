@@ -122,6 +122,50 @@ Put 4x m4x10 torx screws in the corresponding holes and tighten them.
 Prepare:
 
 * [ ] step 2 assembly
+* [ ] 4x round rubber bushings
+
+![](../.gitbook/assets/p1020446%20%281%29.jpg)
+
+First you need to align the MEB cables properly to make sure the right cable is connected to the right wheel. Take the cables out of the frame cutout after step 1.
+
+![](../.gitbook/assets/p1020448.jpg)
+
+Insert the front cable \(the one located closer to the Rover front\) first into the cutout.
+
+![](../.gitbook/assets/p1020449.jpg)
+
+Insert the rear cable second. Front and rear cable position in MEB corresponds in front and rear wheel.
+
+![](../.gitbook/assets/p1020450.jpg)
+
+Keep the wheel cables ends covered with heat-shinks as provided out of the box. Don't take them off until the manual says so.
+
+![](../.gitbook/assets/p1020451.jpg)
+
+Slide a rubber bushing on each of the wheel cable.
+
+![](../.gitbook/assets/p1020452.jpg)
+
+Take the lower \(rear\) cable out of the groove.
+
+![](../.gitbook/assets/p1020453.jpg)
+
+Slide the higher \(front\) cable bushing into the groove. And then to the same with lower cable. Repeat on the other side.
+
+![](../.gitbook/assets/p1020454.jpg)
+
+![](../.gitbook/assets/p1020457.jpg)
+
+For kits delivered after September 2020 - the ones with groved suspension beams, further cable routing is staightforward. You'll need to lay the cables on the suspension beams and fix them in place using zip-ties. This improvement allows for replacement of the suspension beams without any need of cutting the cables.
+
+{% hint style="info" %}
+Perform only for kits delivered before September 2020.
+
+To check if it applies, see if your suspension beams are in form of aluminum tubes \(older\) or groved aluminum extrusions \(newer\).
+
+Prepare:
+
+* [ ] step 2 assembly
 * [ ] vaseline grease
 * [ ] 12x round rubber bushings
 
@@ -206,4 +250,7 @@ Do the same with each of the cable. Remember the relation: front cable coming fr
 ![](../.gitbook/assets/p1020493.jpg)
 
 ![](../.gitbook/assets/p1020494.jpg)
+{% endhint %}
+
+
 
