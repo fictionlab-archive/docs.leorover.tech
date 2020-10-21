@@ -14,9 +14,9 @@ description: >-
 
 If you want to reprint some parts and get the same aesthetics, here are the filaments we use internally to manufacture.
 
-Gray - Filamentum Easy PLA Gray - 0.3 layer
+Gray - Fiberology Easy PLA Gray - 0.3 layer
 
-Black - Filamentum Easy PLA Black - 0.3 layer
+Black - Fiberology Easy PLA Black - 0.3 layer
 
 Position the parts as shown in the table below and you'll end up with pretty much the same results.
 
