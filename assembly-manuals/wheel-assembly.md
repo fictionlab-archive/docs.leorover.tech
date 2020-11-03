@@ -98,7 +98,7 @@ Put 4x m4x12 screws in the holes provided. Don't tighten them, just turn to keep
 
 ![](../.gitbook/assets/p1010972.JPG)
 
-Put the assembly on the wheel tube. Make sure the brass inserts are located outwards \(as in the photo\).
+Put the assembly on the wheel tube. Make sure the brass inserts are located outwards. Rotate the wheel holder the way the brass inserts are aligned with motor cables \(as in the photo\)
 
 ![](../.gitbook/assets/p1010974.JPG)
 
