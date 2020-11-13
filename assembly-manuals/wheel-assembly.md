@@ -213,7 +213,7 @@ Prepare:
 
 * [ ] 1x wheel hub
 * [ ] 1x m5 torque screw
-* [ ] no. 3 hex-head key
+* [ ] no. 2.5 hex-head key
 * [ ] anaerobic glue for threads \(not provided\)
 
 ![](../.gitbook/assets/p1020028.JPG)
