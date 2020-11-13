@@ -409,6 +409,10 @@ Prepare:
 * [ ] zip-ties
 * [ ] cross-headed screwdriver
 
+{% hint style="warning" %}
+There's a new version of Wifi modem provided since Oct 2020. We switched from the one in the photos to ALFA AWUS036ACS. To assemble it you'll connect the modem to RaspberryPi USB, then connect angled antenna adapter and connect antenna cables to the adapter. Use the "Welcome Inside" plate to ziptie antenna cable in place.
+{% endhint %}
+
 {% hint style="info" %}
 You may get a little antenna together with the Wifi modem. Toss the antenna away as it's garbage anyway - we'll use another antenna here.
 {% endhint %}
