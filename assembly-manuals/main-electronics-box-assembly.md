@@ -458,7 +458,7 @@ Push microSD card extender between Core2-ROS board and Wifi modem adapter to kee
 Prepare:
 
 * [ ] step 10 assembly
-* [ ] rubber real
+* [ ] rubber seal
 * [ ] scissors
 * [ ] cyanoacrylate glue \(optionally\)
 
