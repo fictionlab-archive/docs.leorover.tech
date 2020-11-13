@@ -161,6 +161,10 @@ Prepare:
 * [ ] vaseline
 * [ ] flat wrench no. 8
 
+{% hint style="warning" %}
+Don't use spring washer that may be provided with the antenna cable. Use the toothed one.
+{% endhint %}
+
 ![](../.gitbook/assets/p1010755_wynik.JPG)
 
 Put some vaseline on the socket o-ring.
