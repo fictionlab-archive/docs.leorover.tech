@@ -270,11 +270,15 @@ Prepare:
 
 * [ ] step 7 assembly
 * [ ] RaspberryPi board
-* [ ] microSD card extender
 * [ ] 4x m2.5x18 plastic distances
 * [ ] microSD card
 * [ ] wide camera tape \(white; from camera box\)
 * [ ] little screwdriver
+* [ ] microSD card extender \(older version\)
+
+{% hint style="warning" %}
+In new kits \(with RaspberryPi 4 instead of 3B+\) we don't use microSD card extender. Just skip all the steps with the extender and put the microSD card into RaspberryPi slot only after you flash it in Task 9.
+{% endhint %}
 
 ![](../.gitbook/assets/p1010801_wynik%20%281%29.JPG)
 
