@@ -192,7 +192,6 @@ Prepare:
 * [ ] Step 3 assembly
 * [ ] 1x rubber simmering \(sealing ring\)
 * [ ] waseline grease
-* [ ] lithium grease
 
 ![](../.gitbook/assets/p1020015.JPG)
 
