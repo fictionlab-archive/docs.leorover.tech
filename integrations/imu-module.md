@@ -113,6 +113,18 @@ For more information, visit **ROS Development** -&gt; **Adding additional functi
 
 {% page-ref page="../development-tutorials/ros-development/" %}
 
+After modifying the description, restart the nodes to apply the changes:
+
+```text
+sudo systemctl restart leo
+```
+
+To check if it's working correctly, you can check for the transformation between `base_link` and `imu` frames:
+
+```text
+rosrun tf tf_echo base_link imu
+```
+
 ### Calibrating the sensor
 
 The firmware also provides services that perform sensor calibration and store the results in a persistent storage.
