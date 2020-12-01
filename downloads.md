@@ -16,7 +16,13 @@ description: >-
 
 ## Leo Rover 3D model
 
-{% embed url="https://drive.google.com/open?id=1M-7OKcveiUdblUjCjxr7PB2ADJHa3VLp" %}
+![](.gitbook/assets/3d-model.png)
+
+## Preview and download here:
+
+{% embed url="https://a360.co/38g5wWx?fbclid=IwAR3hmp1QoC-XsvU9uMtXaOCozWccR1tzaOgG37-aKwwn42u\_OWlnhw8vFUU" %}
+
+
 
 ## 3D-printing files
 
