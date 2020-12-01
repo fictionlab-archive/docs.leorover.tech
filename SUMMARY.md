@@ -45,6 +45,7 @@
 * [GPS module](integrations/gps-module.md)
 * [WidowX 250 \(Robotic Arm\)](integrations/widowx-250.md)
 * [PhantomX Pincher \(Robotic Arm\)](integrations/phantomx-pincher.md)
+* [Scratch 3.0](integrations/scratch-3.0.md)
 * [Digital servos \(up to 3\)](integrations/digital-servos-up-to-3.md)
 
 ## Projects
