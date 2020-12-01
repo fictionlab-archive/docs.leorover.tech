@@ -123,7 +123,7 @@ See more: [https://docs.freedomrobotics.ai/docs/start-control](https://docs.free
 
 Assemble IMU module to your Rover and follow the IMU tutorial to enable IMU data streaming to ROS environment.
 
-{% page-ref page="../integrations/imu-module.md" %}
+{% page-ref page="imu-module.md" %}
 
 Now add new topic to Included topics in Settings -&gt;Bandwidth. 
 

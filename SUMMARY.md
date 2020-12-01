@@ -2,8 +2,7 @@
 
 * [Welcome to Leo Rover Docs](README.md)
 * [Getting started](getting-started.md)
-* [Downloads](downloads/README.md)
-  * [Freedom Robotics](downloads/freedom-robotics.md)
+* [Downloads](downloads.md)
 
 ## Documentation
 
@@ -39,6 +38,7 @@
 
 ## Integrations
 
+* [Freedom Robotics](integrations/freedom-robotics.md)
 * [ArbotiX-M Robocontroller](integrations/arbotix-m-robocontroller.md)
 * [Relay Module](integrations/relay-module.md)
 * [Hokuyo URG Lidar & RPLidar](integrations/lidar-sensor.md)
