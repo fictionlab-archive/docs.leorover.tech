@@ -284,6 +284,10 @@ In new kits \(with RaspberryPi 4 instead of 3B+\) we don't use microSD card exte
 
 Connect microSD extender to RaspberryPi microSD port.
 
+{% hint style="info" %}
+From May 2020 we introduced different way of connecting microSD card to the Rover. There's no need of extender as the card access is much easier. Don't worry of missing microSD extender when you see your 3D-printed enclosure has two rails where RaspberryPi has a microSD slot. 
+{% endhint %}
+
 ![](../.gitbook/assets/p1010804_wynik.JPG)
 
 Put RaspberryPi board in the main electronics box. Align to corresponding brass inserts and secure with threaded m2.5 distances. Tighten them by hand \(don't use any tool as they are easy to break\). Keep the microSD extender tape routed outside of MEB.

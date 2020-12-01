@@ -2,7 +2,8 @@
 
 * [Welcome to Leo Rover Docs](README.md)
 * [Getting started](getting-started.md)
-* [Downloads](downloads.md)
+* [Downloads](downloads/README.md)
+  * [Freedom Robotics](downloads/freedom-robotics.md)
 
 ## Documentation
 
