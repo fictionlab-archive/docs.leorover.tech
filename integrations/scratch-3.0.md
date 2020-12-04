@@ -6,56 +6,62 @@ description: >-
 
 # Scratch 3.0
 
-## Project introduction
+Author: Piotr Szlachcic `szlachcic@turtlerover.pl`  
 
-So we did it. Finally, we have the Scratch integration with the LeoOS. Since now you will be able to programing your rover via a graphical interface. How cool it is ;-\) 
+## Introduction
+
+We finally did it! Here's the long awaited Scratch integration tutorial for LeoOS. From now on you will be able to program your Rover via a graphical block-based interface and it's as easy as it looks like ;-\)
+
+![The Scratch GUI hosted locally](../.gitbook/assets/leo-scratch.png)
 
 #### Scratch 3.0
 
-Scratch is a block-based visual programming language dedicated to education. Scratch is taught and used in after-school centers, schools, and colleges, as well as other public knowledge institutions. It is one of the best ways to start a programming adventure.
+Scratch is a block-based visual programming language dedicated to education. It's taught and used in education centers, schools, and colleges, as well as other public knowledge institutions. It is one of the best ways to begin your programming adventure as it doesn't need you to know anything about software to start.
 
-![](../.gitbook/assets/56869603_60x60.gif)
-
-For more information about Scratch in general check this [link](https://scratch.mit.edu/about)
+For more information about Scratch in general check this link: [https://scratch.mit.edu/about](https://scratch.mit.edu/about)
 
 #### Scratch 3.0 GUI hosted locally
 
-The main way to develop a Scratch project is by using an online editor available on the project [website](https://scratch.mit.edu/projects/editor/?tutorial=getStarted). In case of integration with the Leo we need to use Scratch in a different way. First of all, we would like to have the possibility of using the Scratch editor offline. Second, we need to established communication between the Scratch editor and the ROS layer. 
+Normally you would use Scratch with an online editor that is available on their [website](https://scratch.mit.edu/projects/editor/?tutorial=getStarted). But in Leo Rover we'll integrate Scratch in a different way. First of all, we would like to have the possibility of using the editor offline. Second, we need to establish communication between Scratch editor and the Rover ROS layer.
 
-So we build the Scratch interface locally from the [repository](https://github.com/LLK/scratch-gui/wiki/Getting-Started) shared by Scratch developers and install the ROS extension, thanks to the ROS [community](http://ros.fei.edu.br/roswiki/scratch.html) the extension is already developed and ready to use ;\) 
+We'll build the Scratch interface locally and install a ROS extension that was developed by ROS community.
 
 ![The Scratch GUI hosted locally](../.gitbook/assets/leo-scratch.png)
 
 ## Scratch editor installation and configuration
 
-To make the installation process quick and easy, we created a package of necessary dependencies, configuration files, and scripts. So you just need to clone or download the repository from GitHub and run the script- everything will be done automatically. No worries it will be only a few commands. Let's follow the instruction below.
+To make the installation process quick and easy, we created a package of necessary dependencies, configuration files, and scripts. So you just need to clone or download the repository from GitHub and run the script. Everything will be done automatically. No worries it will be only a few commands. Let's follow the instruction below.
 
 #### Prerequisites
 
-Open ssh session. It will be necessary to access a remote Leo Rover's terminal.
+Open ssh session. It will be necessary to access a remote terminal on Leo Rover.
 
 {% page-ref page="../basic-guides/connect-via-ssh.md" %}
 
-Establish an Internet connection.
+Establish the Internet connection.
 
 {% page-ref page="../basic-guides/connect-to-the-internet.md" %}
 
 {% hint style="warning" %}
-It is necessary to establish an Internet connection well. Some dependencies need to be download during the installation process.
+It is necessary to establish the Internet connection as some dependencies need to be downloaded during the installation process.
 {% endhint %}
 
 #### Clone the repository
 
-Clone the leo\_scratch repository from LeoRover's GitHub page. It doesn't matter where you decide to clone it. We recommend you to choose the main directory. It will allow you to follow the next steps directly. Otherwise, pay attention- some of the next commands may be required some changes.
+Clone the leo\_scratch repository from Leo Rover GitHub page. 
+
+We recommend you clone it to the main directory, ****but doesn't matter where you decide to put it. If you put it somewhere else, pay attention as some of the next commands may require some changes.
 
 ```text
 cd ~/
 git clone https://github.com/LeoRover/leo_scratch.git
 ```
 
+#### [https://github.com/LeoRover/leo\_scratch](https://github.com/LeoRover/leo_scratch)
+
 #### Run the script
 
-Go into the cloned repository and run the script with root privileges.  The default password is `raspberry`. Installation may take up to 10 minutes.
+Go into the cloned repository and run the script with root privileges \(sudo\). The default password to access root is `raspberry`. Installation may take up to 10 minutes.
 
 ```text
 cd ~/leo_scratch
@@ -63,10 +69,10 @@ sudo bash run.sh
 ```
 
 {% hint style="info" %}
-During the installation probably you will see some warnings about outdated dependencies. No worries, it is fine :\)
+During the installation you will probably see some warnings about outdated dependencies. No worries, it is fine :\)
 {% endhint %}
 
-After the installation process restarting the created service will be needed. For now, just type the command below in the terminal. More information about services in the following part of the tutorial.
+After the installation, it's needed to restart the service that was created. Type the command below in the terminal. More information about the services will come later in this tutorial.
 
 ```text
 sudo systemctl restart scratch.service
@@ -74,22 +80,22 @@ sudo systemctl restart scratch.service
 
 #### Configuration
 
-To provide proper communication between the Scratch editor and ROS layer the [rosapi](https://github.com/RobotWebTools/rosbridge_suite/tree/develop/rosapi) node is needed. It provides GUI service calls for getting meta-information related to ROS like topic lists as well as interacting with the parameter server. 
+To establish proper communication between the Scratch editor and the ROS layer, [rosapi](https://github.com/RobotWebTools/rosbridge_suite/tree/develop/rosapi) node is needed. It provides GUI service calls to allow for getting meta-information related to ROS \(like topic lists\) as well as interacting with the parameter server.
 
 {% hint style="info" %}
-The last release of the leo\_bringup package didn't include rosapi node initialization. If your package is not up to date, follow **one** of the optional step.
+The last release of leo\_bringup package doesn't include rosapi node initialization. If your package is not up to date, follow **one** of the optional step.
 {% endhint %}
 
-**Upgrade package list \(recommended\)-** _**optional**_
+**Option A \(recommended\): Upgrade package list**
 
 ```text
 sudo apt update
 sudo apt upgrade
 ```
 
-**Or add rosapi node initialization to the main launch file-** _**optional**_
+**or Option B: Add rosapi node initialization to the main launch file**
 
-The rosapi node is a part of the rosbridge\_server package by default installed on the rover. You just need to add a few commands to the main launch file to enable rosapi node.
+The rosapi node is a part of the rosbridge\_server package installed on the Rover by default. You need to add a few commands to the main launch file to enable rosapi node.
 
 Open  `/etc/ros/robot.launch` and add commands under end &lt;/launch&gt; tag.
 
