@@ -8,7 +8,7 @@ Make sure that your Raspberry Pi is connected to CORE2 board through a micro USB
 You'll need a USB A &lt;-&gt; USB micro cable provided with the Rover.
 
 {% hint style="info" %}
-If you want to flash the firmware more ofter, buy a short \(5 cm\) one so you'll be able to leave it connected all the time inside the main electronics box \(MEB\).
+If you want to flash the firmware more often, buy a short \(5 cm\) one so you'll be able to leave it connected all the time inside the main electronics box \(MEB\).
 {% endhint %}
 
 ### Download the newest Leo Rover firmware
