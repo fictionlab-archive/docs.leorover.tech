@@ -28,7 +28,7 @@ Prepare:
 * [ ] camera shield
 * [ ] camera shield gasket
 * [ ] 4x self-tapping torx screw \(smallest in the kit\)
-* [ ] T5x40 torx screwdriver
+* [ ] T5x40 torx screwdriver \(included\)
 
 ![](../.gitbook/assets/p1010685_wynik.JPG)
 
@@ -72,10 +72,6 @@ Prepare:
 * [ ] 4x 2.2x6.5 self-tapping screws \(cross-headed\)
 * [ ] cross-head screwdriver
 
-{% hint style="warning" %}
-Some of the kits may need 5x 2.2x6.5 self-tapping screws as the camera is mounted using 3 holes instead of 2. You'll get it.
-{% endhint %}
-
 ![](../.gitbook/assets/p1010709_wynik.JPG)
 
 Detach IR lights from the camera.
@@ -108,6 +104,10 @@ Prepare:
 * [ ] power cable \(3pin socket with barrel plug and green cable soldered\)
 * [ ] miniUSB socket with USB-A connector
 
+{% hint style="warning" %}
+Make sure your power cable has the green cable longer than the black ones \(ca. 20 cm\), otherwise it won't be enough to reach the proper GPIO port later in the tutorial. If you cable is shorter, please write to us for replacements: [contact@turtlerover.com](mailto:contact@turtlerover.com) Sorry for the trouble!
+{% endhint %}
+
 ![](../.gitbook/assets/p1010734_wynik.JPG)
 
 Unscrew power socket nut.
@@ -116,11 +116,11 @@ Unscrew power socket nut.
 
 Push the nut through barrel plug.
 
-{% hint style="warning" %}
-It comes off tight - don't worry, you won't break it.
+{% hint style="info" %}
+In the newer versions, the barrel-plug connector is straight instead of 90deg.
 {% endhint %}
 
-![It&apos;s tough to push the nut through the plug, but it&apos;s doable - don&apos;t worry.](../.gitbook/assets/p1010736_wynik%20%281%29.JPG)
+![With 90deg version it&apos;s tough to push the nut through the plug, but it&apos;s doable - don&apos;t worry.](../.gitbook/assets/p1010736_wynik%20%281%29.JPG)
 
 ![](../.gitbook/assets/p1010737_wynik%20%281%29.JPG)
 
@@ -253,12 +253,17 @@ Secure the ends of black isolation with zip-ties. This way the cable won't be pu
 Prepare:
 
 * [ ] step 6 assembly
-* [ ] 4x plastic distances \(m4x5\)
+* [ ] 4x m4x5 distances
 * [ ] wrench no. 7
+* [ ] loctite glue \(provided\)
+
+{% hint style="info" %}
+In the newer kits the distances are steel, not plastic.
+{% endhint %}
 
 ![](../.gitbook/assets/p1010791_wynik.JPG)
 
-Tighten the distances to the external side of main electronics box. You can use a wrench, but be careful as plastic threads are easy to break.
+First add a little drop of Loctite glue to each thread in external side of MEB floor. Then tighten the distances.
 
 ![](../.gitbook/assets/p1010796_wynik.JPG)
 
@@ -274,7 +279,7 @@ Prepare:
 * [ ] microSD card
 * [ ] wide camera tape \(white; from camera box\)
 * [ ] little screwdriver
-* [ ] microSD card extender \(older version\)
+* [ ] microSD card extender \(older version only\)
 
 {% hint style="warning" %}
 In new kits \(with RaspberryPi 4 instead of 3B+\) we don't use microSD card extender. Just skip all the steps with the extender and put the microSD card into RaspberryPi slot only after you flash it in Task 9.

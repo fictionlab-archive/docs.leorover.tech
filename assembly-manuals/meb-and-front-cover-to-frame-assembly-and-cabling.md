@@ -41,7 +41,7 @@ Before you push the MEB up to meet the mounting points it's easier to position t
 
 ![](../.gitbook/assets/p1020385.jpg)
 
-Put the cables in the corresponding cutouts in the frame. Don't worry about them as we'll reassemble them in the next steps.
+Put the cables in the corresponding cut-outs in the frame. Don't worry about them as we'll reassemble them in the next steps.
 
 ![](../.gitbook/assets/p1020386.jpg)
 
@@ -57,7 +57,11 @@ Align the MEB to the frame and the mounting plate assembly holes.
 
 ![](../.gitbook/assets/p1020394.jpg)
 
-Insert and tighten m4x10 torx screw in each of the hole. Use T10 torx screwdriver.
+Insert and tighten m4x8 torx screw in each of the hole. Use T10 torx screwdriver.
+
+{% hint style="warning" %}
+Make sure you are using M4x8 screws. Any longer screws can damage the electronics box or its distances.
+{% endhint %}
 
 ![](../.gitbook/assets/p1020399.jpg)
 
