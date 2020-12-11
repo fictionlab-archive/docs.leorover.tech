@@ -6,6 +6,8 @@ description: >-
 
 # Freedom Robotics
 
+
+
 ![](../.gitbook/assets/zrzut-ekranu-z-2020-05-28-15-02-18.png)
 
 ## Introduction
@@ -19,6 +21,8 @@ You can use it together with stock Leo Rover UI with only simple steps needed to
 This way you'll be able to connect to the Rover via Internet from anywhere you want. Together with remote driving functionality, Freedom Robotics allows for data streaming, 3D-mapping visualisation, GPS data overlay on map, and much more.
 
 See more: [https://www.freedomrobotics.ai/](https://www.freedomrobotics.ai/)
+
+![](../.gitbook/assets/zrzut-ekranu-2020-08-5-o-14.19.19.png)
 
 ## Install Freedom Robotics agent on Leo Rover
 
@@ -118,6 +122,8 @@ Click Take Over in the upper section of the video stream. Wait couple of seconds
 Now you're able to drive the Rover.
 
 See more: [https://docs.freedomrobotics.ai/docs/start-control](https://docs.freedomrobotics.ai/docs/start-control)
+
+![](../.gitbook/assets/zrzut-ekranu-2020-08-5-o-14.19.19.png)
 
 ## Example: Add IMU data streaming
 
