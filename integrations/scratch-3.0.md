@@ -16,21 +16,19 @@ We finally did it! Here's the long awaited Scratch integration tutorial for LeoO
 
 #### Scratch 3.0
 
-Scratch is a block-based visual programming language dedicated to education. It's taught and used in education centers, schools, and colleges, as well as other public knowledge institutions. It is one of the best ways to begin your programming adventure as it doesn't need you to know anything about software to start.
+Scratch is a block-based visual programming language dedicated to education. It's taught and used in schools and other edicational institutions as one of the best ways to begin your programming adventure. It doesn't need you to know anything about software to start and it's easy to edit, yet provides all the basic functionality of the Rover.
 
 For more information about Scratch in general check this link: [https://scratch.mit.edu/about](https://scratch.mit.edu/about)
 
 #### Scratch 3.0 GUI hosted locally
 
-Normally you would use Scratch with an online editor that is available on their [website](https://scratch.mit.edu/projects/editor/?tutorial=getStarted). But in Leo Rover we'll integrate Scratch in a different way. First of all, we would like to have the possibility of using the editor offline. Second, we need to establish communication between Scratch editor and the Rover ROS layer.
-
-We'll build the Scratch interface locally and install a ROS extension that was developed by ROS community.
+Normally you would use Scratch with an [online editor](https://scratch.mit.edu/projects/editor/?tutorial=getStarted), but for Leo Rover we'll integrate the editor in a different way. We'll build the Scratch editor locally and install a dedicated ROS extension to establish communication between Scratch editor and the Rover ROS layer.
 
 ![The Scratch GUI hosted locally](../.gitbook/assets/leo-scratch.png)
 
-## Scratch editor installation and configuration
+## Installation and configuration
 
-To make the installation process quick and easy, we created a package of necessary dependencies, configuration files, and scripts. So you just need to clone or download the repository from GitHub and run the script. Everything will be done automatically. No worries it will be only a few commands. Let's follow the instruction below.
+To make the installation process easier, we created a package of necessary dependencies, configuration files, and scripts. You just need to clone or download the repository from GitHub and run the script. With only a few commands everything will be done automatically.Please follow the instruction below.
 
 #### Prerequisites
 

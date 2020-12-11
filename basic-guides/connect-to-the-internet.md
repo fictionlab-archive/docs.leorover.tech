@@ -1,4 +1,4 @@
-# Connect to a local network and Internet
+# Connect to a local network and the Internet
 
 When you connect the Rover to your local network that provides Internet connection, you'll be able to download files to the Rover, as well as forward the Internet to your computer when you're connected to the Rover's access point.
 
