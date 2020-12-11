@@ -10,7 +10,7 @@ Author: Piotr Szlachcic `szlachcic@turtlerover.pl`
 
 ## Introduction
 
-We finally did it! Here's the long awaited Scratch integration tutorial for LeoOS. From now on you will be able to program your Rover via a graphical block-based interface and it's as easy as it looks like ;-\)
+We finally did it! Here's the long awaited Scratch integration tutorial for LeoOS. From now on you will be able to program your Rover via a  block-based graphical user interface and it's as easy as it looks like ;-\)
 
 ![The Scratch GUI hosted locally](../.gitbook/assets/leo-scratch.png)
 
@@ -48,14 +48,14 @@ It is necessary to establish the Internet connection as some dependencies need t
 
 #### Clone the repository
 
-Clone the leo\_scratch repository from Leo Rover GitHub page. 
-
-We recommend you clone it to the main directory, ****but doesn't matter where you decide to put it. If you put it somewhere else, pay attention as some of the next commands may require some changes.
+Clone [leo\_scratch repository](https://github.com/LeoRover/leo_scratch) from Leo Rover GitHub page.
 
 ```text
 cd ~/
 git clone https://github.com/LeoRover/leo_scratch.git
 ```
+
+We recommend you clone it to the main directory, ****but doesn't matter where you decide to put it. If you put it somewhere else, pay attention as some of the next commands may require some changes.
 
 #### [https://github.com/LeoRover/leo\_scratch](https://github.com/LeoRover/leo_scratch)
 
@@ -80,7 +80,7 @@ sudo systemctl restart scratch.service
 
 #### Configuration
 
-To establish proper communication between the Scratch editor and the ROS layer, [rosapi](https://github.com/RobotWebTools/rosbridge_suite/tree/develop/rosapi) node is needed. It provides GUI service calls to allow for getting meta-information related to ROS \(like topic lists\) as well as interacting with the parameter server.
+To establish proper communication between Scratch editor and the ROS layer, [rosapi](https://github.com/RobotWebTools/rosbridge_suite/tree/develop/rosapi) node is needed. It provides GUI service calls and allows for getting meta-information related to ROS \(like topic lists\) and interacting with the parameter server.
 
 {% hint style="info" %}
 The last release of leo\_bringup package doesn't include rosapi node initialization. If your package is not up to date, follow **one** of the optional step.
@@ -95,9 +95,9 @@ sudo apt upgrade
 
 **or Option B: Add rosapi node initialization to the main launch file**
 
-The rosapi node is a part of the rosbridge\_server package installed on the Rover by default. You need to add a few commands to the main launch file to enable rosapi node.
+The [rosapi](https://github.com/RobotWebTools/rosbridge_suite/tree/develop/rosapi) node is a part of the rosbridge\_server package installed on the Rover by default. You need to add a few commands to the main launch file to enable rosapi node.
 
-Open  `/etc/ros/robot.launch` and add commands under end &lt;/launch&gt; tag.
+Open  `/etc/ros/robot.launch` and add commands between &lt;launch&gt; and &lt;/launch&gt; tags. Try to add it as close to the bottom of the space as possible.
 
 ```text
 <node name="rosapi" pkg="rosapi" type="rosapi_node">
@@ -107,85 +107,91 @@ Open  `/etc/ros/robot.launch` and add commands under end &lt;/launch&gt; tag.
 </node>
 ```
 
-## Service
+## Scratch GUI
 
-To provide control under the scratch editor hosted on the Rover  we created a service called `scratch.service`. By default installation script makes the service enable so the interface is loading each time system is starting. The main task of the service is to launch the interface during system booting. Below you can find some helpful commands to check a status and control the service.
+Finally, the installation and configuration of the editor are done. To load the interface you need to open you web browser when connected to the Rover AP and type the IP address of the Rover together with the interface port number.
 
-Check the service status
+#### Default IP and port for Scratch editor below
+
+```text
+10.0.0.1:8601
+```
+
+You'll see something like that in your browser.
+
+![](../.gitbook/assets/zrzut-ekranu-z-2020-11-24-17-40-32.png)
+
+#### Add ROS extension
+
+Click the extension icon in the right bottom corner and choose ROS extension. 
+
+#### Connect the editor to the rosbridge server running on the Rover
+
+Click on the icon to connect with rosbridge. Use the Rover address as the master IP \(10.0.0.1 when you are connected directly to the Rover access point\).
+
+![](../.gitbook/assets/zrzut-ekranu-z-2020-11-24-17-49-49.png)
+
+{% hint style="success" %}
+Now you're good to go and can start creating cool stuff with the Rover using Scratch. 
+
+A sample project below will show you the basic functionality of the Rover described as blocks.
+{% endhint %}
+
+## Sample project: Drive the Rover with arrows
+
+We created an example Scratch project to help you understand the language. You can simply load the project in your Scratch interface and control the Rover using keyboard arrows. 
+
+Download the project file from [here](https://github.com/LeoRover/leo_scratch/blob/master/example/Scratch%20Project.sb3) \(to your PC\) and use the 'load' button in the editor.
+
+![](../.gitbook/assets/leo-scratch.png)
+
+## Troubleshooting the scratch.service
+
+We created a service called `scratch.service` to launch Scratch editor hosting locally on the Rover. By default the service is enabled on every boot. Below you can find some helpful commands to check the servis status and control it.
+
+#### Check the service status
 
 ```text
 systemct status scratch.service
 ```
 
-Stop the service
+#### Stop the service
 
 ```text
 sudo systemctl stop scratch.service
 ```
 
-Start the service
+#### Start the service
 
 ```text
 sudo systemctl start scratch.service
 ```
 
-Enable the service to start every time system is booting
+#### Enable the service to start every time system is booting \(by default\)
 
 ```text
 sudo systemctl enable scratch.service
 ```
 
-Disable the service to start every time system is booting
+#### Disable the service to start every time system is booting
 
 ```text
 sudo systemctl disable scratch.service
 ```
 
-Restart the service
+#### Restart the service
 
 ```text
 sudo systemctl restart scratch.service
 ```
 
 {% hint style="info" %}
-If you find any problem with the Scratch editor in the future, start debugging by checking service status first.
+If you find any problem with Scratch editor, start debugging by checking the service status first.
 {% endhint %}
-
-## GUI
-
-Finally, the installation and configuration of the Scratch editor are done. To load the interface you need to type in a web browser IP address of the rover and the interface port number.
-
-{% hint style="warning" %}
-Make sure your device is connected to the rover's access point or the rover is connected to the same network as your device.
-{% endhint %}
-
-Scratch editor address \(connection to the access point\)
-
-```text
-10.0.0.1:8601
-```
-
-![](../.gitbook/assets/zrzut-ekranu-z-2020-11-24-17-40-32.png)
-
-To start creating the program you need to add ROS extension. Click the extension icon in the right bottom corner and choose ROS extension. 
-
-The next step is to connect the Scratch editor with the rosbridge server running on the rover. Click on the icon to connect with rosbridge. Use the rover address as the master IP. 
-
-![](../.gitbook/assets/zrzut-ekranu-z-2020-11-24-17-49-49.png)
-
-Now what you need to do is to start creating cool stuff on the Rover using Scratch. 
-
-## Sample project
-
-We create an example scratch project to help you at the beginning of a Scratch adventure. You can simply load the project in the Scratch interface. Download project file from [here](https://github.com/LeoRover/leo_scratch/blob/master/example/Scratch%20Project.sb3)
-
-![](../.gitbook/assets/leo-scratch.png)
-
-The sample project allows you to control the rover using arrows.
 
 ## Support
 
-In case of any trouble with the tutorial or the Scratch, please open a thread in the [forum](https://forum.fictionlab.pl/) or ask me directly `szlachcic@turtlerover.pl`  
+If you have any issue with the tutorial or the software, please open a thread in the [forum](https://forum.fictionlab.pl/) or write to me directly `szlachcic@turtlerover.pl`  
 
 Piotr
 
