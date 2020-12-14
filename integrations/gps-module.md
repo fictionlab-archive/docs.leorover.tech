@@ -84,7 +84,7 @@ Restart the board to apply changes.
 You can restart the board by calling the service `core2/reset_board`
 
 ```bash
-rosservice call core2/reset_board
+rosservice call /core2/reset_board
 ```
 {% endhint %}
 
