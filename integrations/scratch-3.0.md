@@ -12,7 +12,9 @@ Author: Piotr Szlachcic `szlachcic@turtlerover.pl`
 
 We finally did it! Here's the long awaited Scratch integration tutorial for LeoOS. From now on you will be able to program your Rover via a  block-based graphical user interface and it's as easy as it looks like ;-\)
 
-![The Scratch GUI hosted locally](../.gitbook/assets/leo-scratch.png)
+{% embed url="https://youtu.be/UBC4wftwxf0" %}
+
+
 
 #### Scratch 3.0
 
