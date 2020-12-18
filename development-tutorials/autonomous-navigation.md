@@ -2,7 +2,7 @@
 
 In this tutorial, we will show you how to perform SLAM \(Simultaneous localization and mapping\) and autonomous navigation on Leo Rover equipped with IMU and LiDAR sensors.
 
-For this purpose, we prepared the [leo\_navigation](https://github.com/LeoRover/leo_navigation) package which makes use of many other packages available in ROS to provide autonomous capabilities. You won't have to write a single line of code, but some configuration may need to be tweaked to work best in your environment.
+For this purpose, we prepared the [leo\_navigation](https://github.com/LeoRover/leo_navigation_tutorial) package which makes use of many other packages available in ROS to provide autonomous capabilities. You won't have to write a single line of code, but some configuration may need to be tweaked to work best in your environment.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ Clone the `leo_navigation` package to the source space:
 
 ```text
 cd ~/ros_ws/src
-git clone https://github.com/LeoRover/leo_navigation
+git clone https://github.com/LeoRover/leo_navigation_tutorial.git
 ```
 
 Use `rosdep` to install dependencies:
