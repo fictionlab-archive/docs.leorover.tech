@@ -6,7 +6,7 @@ In this tutorial, we will show you how to connect and use IMU module on your Rov
 
 ## Prerequisites
 
-First, make sure you have a compatible IMU module. We recommend `Grove - IMU 9DOF v2.0` but any module with `MPU-9250` sensor should work.
+First, make sure you have a compatible IMU module. The firmware supports only the `MPU-9250` sensors. We recommend the `Grove - IMU 9DOF v2.0` board but most modules with this sensor should work.
 
 ![Grove - IMU 9DOF v2.0](../.gitbook/assets/image%20%2810%29.png)
 
