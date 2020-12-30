@@ -6,7 +6,7 @@ Here you can find the most common problems happening during and after the assemb
 
 ## Issue table
 
-### The Rover doesn't drive via UI joystick. and voltage meter shows 0V
+### The Rover doesn't drive via UI joystick and voltage meter shows 0V
 
 There's no firmware on Core2-ROS controller.
 
