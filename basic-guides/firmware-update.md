@@ -1,19 +1,41 @@
 # Firmware update
 
-## Firmware flashing
+## Flashing the newest firmware
 
-### Connect to the micro USB hSerial port
+### Through RPi GPIO pins
+
+{% hint style="warning" %}
+This method requires LeoOS 0.2 or newer.
+{% endhint %}
+
+You can use the [leo\_fw](http://wiki.ros.org/leo_fw) package to flash the newest firmware from Raspberry Pi without connecting any additional cables. To do this, login to the Rover:
+
+{% page-ref page="connect-via-ssh.md" %}
+
+Make sure you have the latest versions of the packages:
+
+```bash
+sudo apt update && sudo apt upgrade
+```
+
+And then, run the update script by typing:
+
+```bash
+rosrun leo_fw update
+```
+
+The script will guide you through the flashing process.
+
+### Through USB
+
+#### Connect to the micro USB hSerial port
 
 Make sure that your Raspberry Pi is connected to CORE2 board through a micro USB hSerial port.  
 You'll need a USB A &lt;-&gt; USB micro cable provided with the Rover.
 
-{% hint style="info" %}
-If you want to flash the firmware more often, buy a short \(5 cm\) one so you'll be able to leave it connected all the time inside the main electronics box \(MEB\).
-{% endhint %}
+#### Download the newest Leo Rover firmware
 
-### Download the newest Leo Rover firmware
-
-You can find all firmware versions and their changelogs in our [GitHub releases page](https://github.com/LeoRover/leo_firmware/releases).
+You can find all firmware versions and the list of changes on our [GitHub releases page](https://github.com/LeoRover/leo_firmware/releases).
 
 Check for the newest version and download the .hex file \(ex. `leo_firmware_v1.0.0.hex`\) to your computer.
 
@@ -23,7 +45,7 @@ Place the firmware .hex file inside `/home/pi` directory of your Rover.
 
 {% page-ref page="upload-files-to-your-rover.md" %}
 
-### Flash the firmware
+#### Flash the firmware
 
 {% page-ref page="connect-via-ssh.md" %}
 
@@ -39,13 +61,13 @@ Replace `[VERSION]` with the version you downloaded.
 
 The process of flashing should begin. After it completes, you should be good to go.
 
-{% hint style="success" %}
-Done!
-{% endhint %}
-
 ## Troubleshooting
 
 ### Bootloader not flashed
+
+{% hint style="warning" %}
+The problem does not occur when using the first method to flash the firmware as the `leo_fw` update script will also flash the bootloader.
+{% endhint %}
 
 If your Core2-ROS board has not been previously flashed, you may need to flash the bootloader first for a firmware to work. 
 
