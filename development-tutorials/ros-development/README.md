@@ -172,8 +172,8 @@ A [launch file](http://wiki.ros.org/roslaunch/XML) is an XML file that describes
 
 * **/etc/ros/setup.bash** - The environment setup file that sets all the environment variables necessary for the successful start of the ROS nodes. It sources the environment setup file from the target ROS distribution \(by default, `/opt/ros/melodic/setup.bash`\) and sets additional [environment variables used by ROS](http://wiki.ros.org/ROS/EnvironmentVariables). 
 * **/etc/ros/urdf/robot.urdf.xacro** - the URDF description \(in [xacro](http://wiki.ros.org/xacro) format\) that is uploaded to the Parameter Server by the `robot.launch` file. It includes the robot's model from the [leo\_description](https://github.com/LeoRover/leo_description) package, but also allows to add additional links or joints to the model.
-* **/usr/sbin/leo-start** - a script that starts the robot's functionality. In short, it sources the `/etc/ros/setup.bash` file and launches the `/etc/ros/robot.launch` file.
-* **/usr/sbin/leo-stop** - a script that stops the currently running `leo-start` process.
+* **/usr/bin/leo-start** - a script that starts the robot's functionality. In short, it sources the `/etc/ros/setup.bash` file and launches the `/etc/ros/robot.launch` file.
+* **/usr/bin/leo-stop** - a script that stops the currently running `leo-start` process.
 
 On top of that the `leo` systemd service starts the `leo-start` script when the computer boots.
 
@@ -182,7 +182,7 @@ On top of that the `leo` systemd service starts the `leo-start` script when the 
 To start the nodes manually, you need to stop the currently running ones first. You can do this either by using the `leo-stop` script:
 
 ```bash
-sudo leo-stop
+leo-stop
 ```
 
 or by stopping the `leo` service:

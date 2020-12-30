@@ -9,8 +9,8 @@ There is a couple of ROS installation options depending on your system:
 If you have Linux distribution installed \(either natively or on virtual machine\) you can follow instructions on [ROS wiki](http://wiki.ros.org/ROS/Installation).
 
 ROS repository contains prebuild packages for ubuntu and debian systems.  
-Kinetic distribution is available for Ubuntu Xenial \(16.04 LTS\) and Debian Jessie.  
-Melodic requires Ubuntu Bionic \(18.04 LTS\) or Debian Stretch.
+Melodic distribution requires Ubuntu Bionic \(18.04 LTS\) or Debian Stretch.  
+Noetic requires Ubuntu Focal \(20.04 LTS\) or Debian Buster.
 
 ## B. Windows 10 WSL
 
