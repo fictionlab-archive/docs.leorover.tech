@@ -59,7 +59,7 @@ Restart the Rover for the modifications to work.
 
 See the parameters section of Leo Firmware readme for a list of different modifications possible. 
 
-{% embed url="https://github.com/LeoRover/leo\_firmware" %}
+{% embed url="http://wiki.ros.org/leo\_fw" %}
 
 Alter the launch file line you add to meet the parameter and value of your choice.
 
