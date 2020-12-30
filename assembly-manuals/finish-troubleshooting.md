@@ -48,7 +48,7 @@ Check if the wheel gold-pin connector is connected right way. OutA \(on Core2-RO
 
 ### Wheel jumps back and forth instead of driving
 
-First: Make sure you have proper firmware settings \(Buehler motors are set by default, if you need older Pololu motors check this topic: [https://forum.fictionlab.pl/t/firmware-1-0-settings/162](https://forum.fictionlab.pl/t/firmware-1-0-settings/162)\).
+First: Make sure you have proper motor settings \(Buehler motors are set by default, if you need older Pololu motors check this topic: [https://forum.fictionlab.pl/t/firmware-1-0-settings/162](https://forum.fictionlab.pl/t/firmware-1-0-settings/162)\).
 
 Second: There may be a problem with encoder signal. Please check white and yellow cables all the way from the wheel to Core2-ROS controller. Check the wheel after each of the steps listed. 
 
