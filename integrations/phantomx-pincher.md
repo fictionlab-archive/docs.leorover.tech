@@ -12,11 +12,31 @@ description: >-
 
 In this tutorial, we will show you how to configure and remotely control PhantomX Pincher Robot connected to the Rover.
 
-![](../.gitbook/assets/71099672_434779074055562_670313626036338688_n%20%281%29.jpg)
+> The PhantomX Pincher AX-12 Robot Arm is a 4 degree-of-freedom robotic arm and an easy addition to the TurtleBot ROS robot platform. This hardware kit comes with everything needed to physically assemble and mount the arm as a standalone unit or as an addition to your Turtlebot Robot/mobile platform. \[source: [trossenrobotics.com](https://www.trossenrobotics.com/p/PhantomX-Pincher-Robot-Arm.aspx)\]
+
+The arm has been redesigned to fit Leo Rover mounting plate. As the arm baseplate has became thinner, its range allows to grab objects from the ground as well as reach the rear and sides of Leo Rover.
 
 
 
 ![source: trossenrobotics.com](../.gitbook/assets/image%20%2820%29.png)
+
+## Assembly
+
+You'll follow the official instructions from [Trossen Robotics' website](https://learn.trossenrobotics.com/16-interbotix/robot-arms/pincher-robot-arm/163-phantomx-pincher-robot-arm-assembly-guide.html) to assemble the arm with only few exceptions that are specific to Leo Rover mounting interface.
+
+* In 'Step 1: Build the Upper Deck' point 8 
+  * instead of using 100mm cable as shown in the photo, use 150mm cable that is included in Leo Rover to PhantomX adapter kit.
+* In 'Step 2: Build the Base' instead of point 2-6
+  * use the lower deck provided in Leo Rover to PhantomX adapter kit insted of the default one
+  * first assemble the lower deck \(adapter\) to Leo Rover mounting plate using 2x M5 screws and nuts provided
+  * attach the upper deck \(from Step 1\) to the lower deck using 4x m3 screws included, route the servo cable \(150mm version\) facing the rear of the lower deck
+  * attach ArbotiX-M controller to the lower deck using 4x m3 screws included, the board power socket needs to face the rear of the Rover
+* To power the ArbotiX-M controller use the cable provided in the kit \(triple connector\). The cable should be used instead of standard MEB-to-Battery cable with barrel jack cable routed through one of the cutouts in the rear frame
+* To connect the ArbotiX-M controller FTDI-USB cable use miniUSB-USB adapter provided in the kit and plug it in the miniUSB socket on top of the Rover
+
+{% embed url="https://learn.trossenrobotics.com/16-interbotix/robot-arms/pincher-robot-arm/163-phantomx-pincher-robot-arm-assembly-guide.html" %}
+
+![](../.gitbook/assets/71099672_434779074055562_670313626036338688_n%20%281%29.jpg)
 
 ## Prerequisites
 
