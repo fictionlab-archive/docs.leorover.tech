@@ -64,6 +64,6 @@ This way your root storage will be extended to full storage capacity of USB driv
 Open terminal \(`Ctrl+Shift+t` shortcut\) and type:
 
 ```bash
-sudo ./extend-rootfs.sh
+sudo ./expand_rootfs.sh
 ```
 
