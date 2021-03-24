@@ -151,6 +151,13 @@ And then get back to Step 7.
 
 ### Step 4: Main axis assembly
 
+* [ ] 2x differential arm
+* [ ] 2x ball bearing pushrod
+* [ ] 2x m6 screw
+* [ ] 2x m6 nut
+* [ ] no. 5 hex-head key \(metric; provided\)
+* [ ] flat wrench no. 10
+
 ![](../.gitbook/assets/img_20200423_164433.jpg)
 
 ![](../.gitbook/assets/img_20200423_164534.jpg)
@@ -191,6 +198,8 @@ And then get back to Step 7.
 
 ![](../.gitbook/assets/img_20200423_165509.jpg)
 
+Now perform the same operations on the other side.
+
 ![](../.gitbook/assets/img_20200423_165519.jpg)
 
 ![](../.gitbook/assets/img_20200423_165532.jpg)
@@ -201,6 +210,12 @@ And then get back to Step 7.
 
 ### Step 5: Suspension beams
 
+1. [ ] Step 3 assembly
+2. [ ] 2x suspension beam
+3. [ ] 4x m5x8 inner hex-head screw
+4. [ ] 4x t-nut
+5. [ ] no. 3 hex-head key \(metric; provided\)
+
 ![](../.gitbook/assets/img_20200423_165949.jpg)
 
 ![](../.gitbook/assets/img_20200423_170135.jpg)
@@ -208,8 +223,6 @@ And then get back to Step 7.
 ![](../.gitbook/assets/img_20200423_170542.jpg)
 
 ![](../.gitbook/assets/img_20200423_170550.jpg)
-
-![](../.gitbook/assets/img_20200423_170613.jpg)
 
 ![](../.gitbook/assets/img_20200423_170701.jpg)
 
@@ -243,9 +256,13 @@ Do the same on the opposite side of the suspension.
 
 ### Step 6: Wheel holders
 
-![](../.gitbook/assets/img_20200423_171451.jpg)
+* [ ] 2x type A wheel holder
+* [ ] 2x type B wheel holder
+* [ ] 16x m5x8 inner hex-head screw
+* [ ] 16x t-num
+* [ ] no. 3 hex-head key \(metric; provided\)
 
-![](../.gitbook/assets/img_20200423_171646.jpg)
+![](../.gitbook/assets/img_20200423_171451.jpg)
 
 ![](../.gitbook/assets/img_20200423_171717.jpg)
 
@@ -267,11 +284,13 @@ Do the same on the opposite side of the suspension.
 
 ![](../.gitbook/assets/img_20200423_172557.jpg)
 
-![](../.gitbook/assets/img_20200423_172704.jpg)
-
-Done!
+Now perform the same steps for the other side of the suspension.
 
 ![](../.gitbook/assets/img_20200423_173122.jpg)
+
+{% hint style="success" %}
+Done!
+{% endhint %}
 
 {% hint style="warning" %}
 As the design is a part of May 2020 update, we still haven't updated the next steps photos. The old and new suspension beams behave and interface the same way with other components, so don't worry the beam may look different in different photos.
@@ -281,7 +300,7 @@ As the design is a part of May 2020 update, we still haven't updated the next st
 
 Prepare:
 
-* [ ] step 6 assembly
+* [ ] step 6 assembly \(both can be plain or grooved suspension beams\)
 * [ ] backframe
 * [ ] 4x m4x8 torx screws
 * [ ] T10 torx screwdriver
