@@ -517,7 +517,7 @@ sudo apt install ros-<distribution>-leo-viz
 ```
 
 {% hint style="info" %}
-Replace `<distribution>` with the ROS distribution you have installed on your computer \(either `kinetic` or `melodic`\). 
+Replace `<distribution>` with the ROS distribution you have installed on your computer \(e.g. `melodic`\). 
 {% endhint %}
 
 Now, to visualize the model in RViz, just type:
