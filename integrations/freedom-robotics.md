@@ -32,12 +32,6 @@ See more: [https://www.freedomrobotics.ai/](https://www.freedomrobotics.ai/)
 
 You can choose either free trial, paid plan or use any dedicated discount code.
 
-Connect to the Rover via SSH and connect the Rover to the Internet.
-
-{% page-ref page="../basic-guides/connect-via-ssh.md" %}
-
-{% page-ref page="../basic-guides/connect-to-the-internet.md" %}
-
 ### Generate a custom curl command that will install Freedom Robotics agent
 
 Log in to your Freedom Robotics account and click GET STARTED on the left sidebar. Answer the questions and add new device. Choose "new device" and "new type" rather than any pre-set one to make sure you don't start with strange settings added.
@@ -54,6 +48,14 @@ Make sure that remote SSH and WEB RTC options were enabled. You should see “in
 
 ### Run the generated command in Leo Rover console
 
+Connect to the Rover via SSH and connect the Rover to the Internet.
+
+{% page-ref page="../basic-guides/connect-via-ssh.md" %}
+
+{% page-ref page="../basic-guides/connect-to-the-internet.md" %}
+
+Run the generated command in Leo Rover console.
+
 It will take a while. After the installation is complete you can close the console.
 
 {% hint style="info" %}
@@ -67,7 +69,7 @@ If you ran into any installation issues, take a look at the [Installation Help](
 ## Connect to the Rover via Freedom Robotics platform
 
 1. Log in to your [Freedom App](https://app.freedomrobotics.ai/).
-2. Click the first fleet.
+2. Click the first group.
 3. Choose the first device. It's status should be automatically set as active when your Rover is working.
 4. Click "Go to Device" in the lower right corner.
 
