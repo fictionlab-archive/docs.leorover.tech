@@ -6,6 +6,16 @@ This tutorial describes how to include an additional UI to be running on the Leo
 The tutorial will be based on the sample UI dedicated to controlling the additional relay module. You can design your own UI on the basis of [Create a custom UI](sample-ui-relay-funcionality.md) tutorial.
 {% endhint %}
 
+## Prepare the rover before the start
+
+The following tutorial will be presenting the configuration of a new user interface in the Leo Rover system running on RPi \(LeoOS\). Before starting the following steps, you need to provide two things- Internet connection and ssh connection.
+
+{% page-ref page="../../basic-guides/connect-via-ssh.md" %}
+
+{% page-ref page="../../basic-guides/connect-to-the-internet.md" %}
+
+ The Internet connection is necessary to download the repository from GH, as well as the ssh connection is needed to have access to LeoOS terminal remotely. All the operations presented below need to be applied in LeoOS remote terminal via ssh.
+
 ## Clone the UI files
 
 The first step is to download the directory containing user interface files. Clone the additional UI from our GitHub repository. We highly recommended placing the additional UI folder in the home directory.
@@ -19,7 +29,7 @@ git clone https://github.com/LeoRover/leo_ui_sample_relay.git
 
 The next step is to create the configuration file for the HTTP service. The file contains the path to the UI folder and the port number on which the UI will be available.
 
-‌Create a new configuration file based on the default Leo UI configuration file. You can use the `cp` command to clone the file inside the `/etc/nginx/sites-available` folder. By default, when logging as `pi` user, you don't have permission to write files outside of the home directory. You must do all operations as a 'root' user.
+‌Create a new configuration file based on the default Leo UI configuration file. You can use the `cp` command to clone the file inside the `/etc/nginx/sites-available` folder. The operation need to be done as a 'root' user.
 
 ```text
 cd /etc/nginx/sites-available
