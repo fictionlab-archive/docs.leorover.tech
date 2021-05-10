@@ -10,109 +10,99 @@
 
 * [ ] T10 torx screwdriver \(provided\)
 * [ ] no. 3 hex-head key \(metric; provided\)
-* [ ] wide cross-headed screwdriver
-* [ ] soldering iron
-* [ ] heat shrink tube \(for battery cables isolation\)
+* [ ] wide cross-headed screwdriver \(provided\)
 
 ## Assembly guide
 
-![](../.gitbook/assets/p1020556.jpg)
+![](../.gitbook/assets/p1050013.jpg)
+
+![](../.gitbook/assets/p1050014.jpg)
+
+![](../.gitbook/assets/p1050016.jpg)
 
 ### Step 1: Plastic cover
 
-![](../.gitbook/assets/p1020559.jpg)
+![](../.gitbook/assets/p1050022%20%281%29.jpg)
 
-![](../.gitbook/assets/p1020560%20%281%29.jpg)
+![](../.gitbook/assets/p1050026.jpg)
 
-![](../.gitbook/assets/p1020561.jpg)
-
-![](../.gitbook/assets/p1020562%20%281%29.jpg)
-
-![](../.gitbook/assets/p1020564.jpg)
+![](../.gitbook/assets/p1050027%20%281%29.jpg)
 
 ### Step 2: Battery button
 
-![](../.gitbook/assets/p1020565.jpg)
+![](../.gitbook/assets/p1050029.jpg)
 
-![](../.gitbook/assets/p1020568.jpg)
+![](../.gitbook/assets/p1050031.jpg)
 
-![](../.gitbook/assets/p1020570.jpg)
+![](../.gitbook/assets/p1050033.jpg)
 
-![](../.gitbook/assets/p1020572.jpg)
+![](../.gitbook/assets/p1050035.jpg)
 
-![](../.gitbook/assets/p1020573.jpg)
-
-![](../.gitbook/assets/p1020575.jpg)
+![](../.gitbook/assets/p1050037.jpg)
 
 ### Step 3: Box to cover
 
-![](../.gitbook/assets/p1020577.jpg)
+![](../.gitbook/assets/p1050038%20%281%29.jpg)
 
-![](../.gitbook/assets/p1020578.jpg)
+![](../.gitbook/assets/p1050042.jpg)
 
-![](../.gitbook/assets/p1020579.jpg)
+![](../.gitbook/assets/p1050043%20%281%29.jpg)
 
-![](../.gitbook/assets/p1020582.jpg)
+![](../.gitbook/assets/p1050044.jpg)
 
 ### Step 4: Power connector
 
-![](../.gitbook/assets/p1020583.jpg)
+![](../.gitbook/assets/p1050045.jpg)
 
-![](../.gitbook/assets/p1020585.jpg)
+![](../.gitbook/assets/p1050046.jpg)
 
-![](../.gitbook/assets/p1020587.jpg)
+![](../.gitbook/assets/p1050047.jpg)
 
-![](../.gitbook/assets/p1020589.jpg)
+![](../.gitbook/assets/p1050048.jpg)
 
-![](../.gitbook/assets/p1020590.jpg)
+![](../.gitbook/assets/p1050049.jpg)
 
-![](../.gitbook/assets/p1020591.jpg)
+![](../.gitbook/assets/p1050050.jpg)
 
-![](../.gitbook/assets/p1020592.jpg)
-
-![](../.gitbook/assets/p1020593.jpg)
+![](../.gitbook/assets/p1050051.jpg)
 
 ### Step 5: Cable connection
 
-![](../.gitbook/assets/p1020594.jpg)
+Table of connections
 
-![](../.gitbook/assets/p1020596.jpg)
+* power connector green wire to \(+\) pin on the button
+* power connector black-with-white-stripe wire to NO pin on the button
+* power connector black wire to \(-\) pin on the button
+* battery red wire to C pin on the button
+* batter black wire to power connector black wire
 
-![](../.gitbook/assets/p1020598.jpg)
+![](../.gitbook/assets/p1050052.jpg)
 
-![](../.gitbook/assets/p1020599.jpg)
+![](../.gitbook/assets/p1050054.jpg)
 
-![](../.gitbook/assets/p1020600.jpg)
+![](../.gitbook/assets/p1050056.jpg)
 
-![Green cable to +](../.gitbook/assets/p1020602.jpg)
+![](../.gitbook/assets/p1050057.jpg)
 
-![Black with white stripe cable to NO](../.gitbook/assets/p1020603.jpg)
+![](../.gitbook/assets/p1050058.jpg)
 
-![Black with white stripe cable to NO](../.gitbook/assets/p1020605.jpg)
+![](../.gitbook/assets/p1050059.jpg)
 
-![Red cable to C \(solder\)](../.gitbook/assets/p1020606.jpg)
-
-![Black cable of the connector and black cable of the battery need to be soldered together and soldered to -](../.gitbook/assets/p1020608.jpg)
-
-![Black cable of the connector and black cable of the battery need to be soldered together and soldered to -](../.gitbook/assets/p1020610.jpg)
+![](../.gitbook/assets/p1050061.jpg)
 
 ### Step 6: Battery box cover
 
-![](../.gitbook/assets/p1020612.jpg)
+![](../.gitbook/assets/p1050062.jpg)
 
-![](../.gitbook/assets/p1020614.jpg)
+![](../.gitbook/assets/p1050063.jpg)
 
-![](../.gitbook/assets/p1020615.jpg)
+![](../.gitbook/assets/p1050064.jpg)
 
-![](../.gitbook/assets/p1020616.jpg)
+![](../.gitbook/assets/p1050065.jpg)
 
-![](../.gitbook/assets/p1020618.jpg)
+![](../.gitbook/assets/p1050066.jpg)
 
-![](../.gitbook/assets/p1020619.jpg)
-
-![](../.gitbook/assets/p1020621.jpg)
-
-![](../.gitbook/assets/p1020623%20%281%29.jpg)
+![](../.gitbook/assets/p1050067.jpg)
 
 ## Connect the battery to the Rover
 
