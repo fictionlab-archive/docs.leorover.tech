@@ -152,7 +152,7 @@ We created a service called `scratch.service` to launch Scratch editor hosting l
 #### Check the service status
 
 ```text
-systemct status scratch.service
+systemctl status scratch.service
 ```
 
 #### Stop the service
